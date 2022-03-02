@@ -68,7 +68,7 @@ max_facets <- 20 #how many facets per plot?
 save_plots <- TRUE #toggle if you want to save plots 
 
 #raw spawner abundance and log spawners with different lms 
-#ugly indexing here makes for less cluttered plots in the output 
+  #long and ugly indexing here makes for less cluttered, robust plots in the output 
 for(i in unique(sp_data$Species)){
   sub_data <- filter(sp_data, Species == i) %>%
     na.omit(Spawner.Abundance)
@@ -105,7 +105,7 @@ for(i in unique(sp_data$Species)){
                     se = FALSE, na.rm = TRUE) +
         facet_wrap(~du_cu, scales = "free_y") +
         labs(x= "Year", y = "log(Spawners)", 
-             title = paste0(i, " log spawner abundance ", "(", j, " of ", pages, ")")) +
+             title = paste0("log ", i, " spawner abundance ", "(", j, " of ", pages, ")")) +
         theme_bw() +
         theme(strip.background = element_blank())
       
@@ -135,7 +135,7 @@ for(i in unique(sp_data$Species)){
                   na.rm = TRUE) +
       facet_wrap(~du_cu, scales = "free_y") +
       labs(x= "Year", y = "log(Spawners)", 
-           title = paste0(i, " log spawner abundance ", "(", j, " of ", pages, ")")) +
+           title = paste0("log ", i, "spawner abundance ", "(", j, " of ", pages, ")")) +
       theme_bw() +
       theme(strip.background = element_blank())
     
