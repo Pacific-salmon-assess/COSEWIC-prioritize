@@ -1,0 +1,397 @@
+"cuid","cuname.x","cu_acronym","du_number","du_acronym","DU_name","FULL_CU_IN","spp","gen_length","COSEWIC_status","survey_quality","survey_coverage","survey_execution","catch_quality","dq_score","cu_enh_rank","Sites"
+205,"Ecstall","","CK41","ECST","Ecstall, Ocean, Summer","CK-46","Chinook",6,"",0,0,0,0,0,"None",4
+206,"Kalum-early timing","","CK43","KALUM-E","Kalum Ð Early Timing, Stream, Spring","CK-49","Chinook",6,"",0,0,0,0,0,"Low",2
+207,"Kalum-late timing","","CK44","KALUM-L","Kalum Ð Late Timing, Stream, Summer","CK-50","Chinook",6,"",1,5,4,5,15,"High",7
+210,"Lower Skeena-CK","","CK42","LSK","Lower Skeena, Stream, Summer","CK-48","Chinook",6,"",1,3,1,5,10,"Low",20
+212,"Upper Skeena-CK","","CK48","USK","Upper Skeena River, Stream, Spring","CK-56","Chinook",6,"",0,0,0,0,0,"None",6
+217,"Middle Skeena-mainstem tributaries","","CK47","MSK-M/S","Middle Skeena-M/S Tributary, Stream, Summer","CK-54","Chinook",6,"",1,4,2,5,12,"Low",28
+221,"Upper Bulkley River","","CK45","","Bulkley River, Stream, Spring","CK-55","Chinook",6,"",0,0,0,0,0,"High",4
+222,"Middle Skeena-large lakes","","CK46","MSK-LKS","Middle Skeena Ð Lakes, Stream, Summer","CK-53","Chinook",6,"",3,5,5,5,18,"High",17
+224,"Skeena Estuary-CK","","CK40","SKEst","Skeena Estuary, Stream, Summer","CK-45","Chinook",6,"",0,0,0,0,0,"Moderate",4
+227,"Lakelse-CK","","CK42","LSK","Lower Skeena, Stream, Summer","CK-51","Chinook",6,"",0,0,0,0,0,"Low",5
+229,"Zymoetz","","CK42","LSK","Lower Skeena, Stream, Summer","CK-80","Chinook",6,"",0,0,0,0,0,"None",6
+241,"Sicintine","","","","","CK-81","Chinook",6,"",0,0,0,0,0,"None",1
+301,"Okanagan","OK","CK69","OK+ORWA/Ocean/Fall","Okanagan River, Ocean, Fall","CK-1","Chinook",NA,"Endangered",NA,NA,NA,NA,NA,"None",1
+302,"CK002-Boundary Bay_FA_0.3","BB","CK1","BB+GStr/Ocean/Fall","Southern Mainland Boundary Bay, Ocean, Fall population","CK-2","Chinook",5,"Threatened",0,0,0,0,0,"High",3
+303,"CK003-Lower Fraser River_FA_0.3","LFR-fall","CK2","LFR+GStr/Ocean/Fall","Lower Fraser, Ocean, Fall population (Harrison)","CK-3","Chinook",4,"Threatened",4,5,5,0,14,"Moderate",1
+304,"CK004-Lower Fraser River_SP_1.3","LFR-spring","CK3","LFR+GStr/Stream/Spring","Lower Fraser, Stream, Spring population (Birkenhead)","CK-4","Chinook",5,"Special Concern",2,1,5,0,8,"Low",2
+305,"CK005-Lower Fraser River-Upper Pitt_SU_1.3","LFR-UPITT","CK4","LFR+GStr/Stream/Summer(Upper Pitt)","Lower Fraser, Stream, Summer (Upper Pitt) population","CK-5","Chinook",5,"Endangered",0,0,0,0,0,"Low",1
+306,"CK006-Lower Fraser River_SU_1.3","LFR-summer","CK5","LFR+GStr/Stream/Summer","Lower Fraser, Stream, Summer (Lillooet) population","CK-6","Chinook",5,"Threatened",0,0,0,0,0,"Low",9
+307,"CK007-Maria Slough_SU_0.3","Maria","CK6","LFR+GStr/Ocean/Summer","Lower Fraser, Ocean, Summer (Maria Slough) population","CK-7","Chinook",4,"Endangered",0,0,0,0,0,"High",1
+308,"CK008-Middle Fraser-Fraser Canyon_SP_1.3","NAHAT","CK7","FRCanyGStr/Stream/Spring","Middle Fraser, Stream, Spring (FR Canyon) population","CK-8","Chinook",5,"Endangered",0,0,0,0,0,"None",2
+309,"CK009-Middle Fraser River-Portage_FA_1.3","Portage","CK8","MFR+GStr/Stream/Fall","Middle Fraser, Stream, Fall (Portage) population","CK-9","Chinook",5,"Endangered",0,0,0,0,0,"None",1
+310,"CK010-Middle Fraser River_SP_1.3","MFR-spring","CK9","MFR+GStr/Stream/Spring","Middle Fraser, Stream, Spring (MFR+GStr) population","CK-10","Chinook",5,"Threatened",2,0,5,0,7,"Moderate",25
+311,"CK011-Middle Fraser River_SU_1.3","MFR-summer","CK10","MFR+GStr/Stream/Summer","Middle Fraser, Stream, Summer population","CK-11","Chinook",5,"Threatened",3,1,4,0,8,"Moderate",18
+312,"CK012-Upper Fraser River_SP_1.3","UFR-spring","CK11","UFR/Stream/Spring","Upper Fraser, Stream, Spring population","CK-12","Chinook",5,"Endangered",2,0,5,0,7,"Low",43
+313,"CK013-South Thompson_SU_0.3","STh-0.3","CK12","STh+GStr/Ocean/Summer","South Thompson, Ocean, Summer population","CK-13","Chinook",4,"Not at risk",2,1,5,0,8,"None",10
+314,"CK014-South Thompson_SU_1.3","STh-1.3","CK13","STh+GStr/Stream/Summer","South Thompson, Stream, Summer 1.3 population","CK-14","Chinook",5,"Endangered",3,5,5,0,13,"Moderate",4
+315,"CK015-Shuswap River_SU_0.3","STh-SHUR","CK12","STh+GStr/Ocean/Summer","South Thompson, Ocean, Summer population","CK-15","Chinook",4,"Not at risk",4,5,5,0,14,"Moderate",4
+316,"CK016-South Thompson-Bessette Creek_SU_1.2","STh-BESS","CK14","STh+GStr/Stream/Summer/(Bessette)","South Thompson, Stream, Summer 1.2 (Bessette) population","CK-16","Chinook",4,"Endangered",3,0,5,0,8,"None",4
+317,"CK017-Lower Thompson_SP_1.2","LTh","CK15","LTh+GStr/Stream/Spring","Lower Thompson, Stream, Spring population","CK-17","Chinook",4,"Endangered",3,5,5,0,13,"Moderate",9
+318,"CK018-North Thompson_SP_1.3","NTh-spr","CK16","NTh+GStr/Stream/Spring","North Thompson, Stream, Spring population","CK-18","Chinook",5,"Endangered",3,1,5,0,9,"Low",7
+319,"CK019-North Thompson_SU_1.3","NTh-sum","CK17","NTh+Gstr/Stream/Summer","North Thompson, Stream, Summer population","CK-19","Chinook",5,"Endangered",2,3,5,0,10,"Low",7
+320,"CK020-Southern Mainland-Georgia Strait_FA_0.x","SC-GStr","CK18","SC+GStr/Ocean/Fall","South Coast - Georgia Strait, Ocean, Fall population","CK-20","Chinook",4,"Data Deficient",0,0,0,0,0,"High",39
+321,"CK021-East Vancouver Island-Goldstream_FA_0.x","Goldstr","CK21","EVI+GStr/Ocean/Fall","East Vancouver Island, Ocean, Fall population","CK-21","Chinook",3,"Special Concern",0,5,0,0,5,"High",2
+322,"CK022-East Vancouver Island-Cowichan and Koksilah_FA_0.x","CWCH-KOK","CK21","EVI+GStr/Ocean/Fall","East Vancouver Island, Ocean, Fall population","CK-22","Chinook",3,"Special Concern",5,5,5,0,15,"High",7
+323,"CK023-East Vancouver Island-Nanaimo_SP_1.x","NanR-spr","CK19","EVI+GStr/Stream/Spring","East Vancouver Island, Stream, Spring population","CK-23","Chinook",4,"Endangered",0,0,0,0,0,"None",1
+324,"CK025-East Vancouver Island-Nanaimo and Chemainus_FA_0.x","EVI-fall","CK21","EVI+GStr/Ocean/Fall","East Vancouver Island, Ocean, Fall population","CK-25","Chinook",3,"Special Concern",3,5,5,0,13,"High",6
+325,"CK027-East Vancouver Island-Qualicum and Puntledge_FA_0.x","QP-fall","CK21","EVI+GStr/Ocean/Fall","East Vancouver Island, Ocean, Fall population","CK-27","Chinook",4,"Special Concern",3,5,5,0,13,"High",16
+326,"CK028-Southern Mainland-Southern Fjords_FA_0.x","SC+SFj","CK22","SC+SFj/Ocean/Fall","South Coast - Southern Fjords, Ocean, Fall population","CK-28","Chinook",4,"Data Deficient",3,0,2,0,5,"High",27
+327,"CK029-East Vancouver Island-North_FA_0.x","NEVI","CK23","EVI+SFj/Ocean/Fall","East Vancouver Island - North, Ocean, Fall (EVI + SFj) population","CK-29","Chinook",4,"Not at risk",4,5,5,0,14,"High",19
+NA,"CK030-Port San Juan ","PSJ","CK24","WVI/Ocean/Fall (South)","West Vancouver Island, Ocean, Fall (South) population","CK-30","Chinook",NA,"",NA,NA,NA,NA,NA,NA,NA
+328,"CK031-West Vancouver Island-South_FA_0.x","SWVI","CK24","WVI/Ocean/Fall (South)","West Vancouver Island, Ocean, Fall (South) population","CK-31","Chinook",4,"Threatened",3,0,4,0,7,"High",70
+329,"CK032-West Vancouver Island-Nootka and Kyuquot_FA_0.x","NoKy","CK25","WVI/Ocean/Fall (Nootka & Kyuquot)","West Vancouver Island, Ocean, Fall (Nootka & Kyuquot) population","CK-32","Chinook",4,"Threatened",3,0,5,0,8,"High",57
+330,"CK033-West Vancouver Island-North_FA_0.x","NWVI","CK26","WVI+WHG/Ocean/Fall","West Vancouver Island - North, Ocean, Fall (WVI + WQCI) population","CK-33","Chinook",4,"Data Deficient",3,0,2,0,5,"High",19
+331,"CK034-Homathko_SU_x.x","HOMATH","CK27","HK+SFj/Ocean/Summer","Southern Mainland Ocean Summer","CK-34","Chinook",5,"Data Deficient",0,0,0,0,0,"None",2
+332,"CK035-Klinaklini_SU_1.3","KLINA","CK28","HK+SFj/Stream/Summer","Southern Mainland Stream Summer","CK-35","Chinook",5,"Data Deficient",0,0,0,0,0,"None",2
+333,"CK082-Upper Adams River_SU_x.x","UAdams-summer","CK29","STh+GStr/Stream/Summer","Upper Adams, Stream, Summer","CK-82","Chinook",5,"",0,0,0,0,0,"None",1
+334,"CK083-East Vancouver Island-Georgia Strait_SU_0.3","EVIGStr-sum","CK20","EVI+GStr/Ocean/Summer","East Vancouver Island, Ocean, Summer population","CK-83","Chinook",4,"Endangered",4,5,5,0,14,"High",2
+401,"Portland Sound-Observatory Inlet-Lower Nass","","CK49","LNR-P","Lower Nass River, Stream, Summer","CK-57","Chinook",5,"",1,2,2,5,10,"Low",16
+402,"Upper Nass","","CK50","UNR","Upper Nass River, Stream, Summer","CK-58","Chinook",5,"",2,5,5,5,17,"None",17
+509,"Docee","","CK32","SMITH","Smith Inlet, Ocean, Summer","CK-36","Chinook",4,"",0,0,0,0,0,"None",1
+510,"Rivers Inlet","","CK33","RIVERS","Rivers Inlet, Stream, Summer","CK-37","Chinook",5,"",1,3,1,3,8,"Low",14
+511,"Wannock","","CK34","WANN","Wannock","CK-38","Chinook",5,"",1,3,2,3,9,"Moderate",1
+512,"Bella Coola-Bentinck","","CK35","BCR-BENT","Bella Coola-Bentinck, Ocean, Summer","CK-39","Chinook",5,"",1,5,2,5,13,"High",9
+513,"Dean River","","CK36","DEAN","Dean River, Stream, Summer","CK-40","Chinook",5,"",1,5,1,3,10,"None",1
+514,"NCC-late timing","","CK37","NCC Late","North & Central Coast Late,
+Ocean/Stream, Summer","CK-41","Chinook",5,"",0,0,0,0,0,"None",16
+515,"NCC-early timing","","CK38","NCC early","North & Central Coast Early, Ocean, Spring","CK-42","Chinook",5,"",0,1,3,3,7,"Moderate",46
+805,"Haida Gwaii-North","","CK30","HGN","Haida Gwaii-North Ocean/Stream, Summer","CK-43","Chinook",6,"",0,0,0,0,0,"Moderate",2
+806,"Haida Gwaii-East","","CK31","HGE","Haida Gwaii-East Ocean, Fall","CK-44","Chinook",6,"",0,0,0,0,0,"None",6
+NA,"","","CK39","HecLow","HecLow, Ocean/Stream, Summer","","",NA,"",NA,NA,NA,NA,NA,NA,NA
+211,"Lower Skeena-CM","","","","","CM-27","Chum",4,"",1,4,2,3,10,"Low",41
+214,"Middle Skeena-CM","","","","","CM-28","Chum",NA,"",2,3,2,3,10,"None",18
+220,"Skeena Estuary-CM","","","","","CM-26","Chum",NA,"",0,2,1,3,6,"Moderate",28
+242,"Upper Skeena","","","","",NA,"Chum",6,"",0,0,0,0,0,"None",NA
+404,"Portland Inlet","","","","","CM-30","Chum",4,"",1,5,1,3,10,"Low",19
+405,"Lower Nass","","","","","CM-31","Chum",4,"",0,0,4,3,7,"None",20
+406,"Portland Canal-Observatory","","","","","CM-32","Chum",4,"",0,5,4,3,12,"Low",17
+500,"Smith Inlet","","","","","CM-12","Chum",4,"",1,5,3,2,11,"None",11
+501,"Rivers Inlet","","","","","CM-13","Chum",4,"",1,2,2,2,7,"None",17
+502,"Wannock","","","","","CM-14","Chum",4,"",0,0,0,0,0,"Low",1
+503,"Spiller-Fitz-Hugh-Burke","","","","","CM-15","Chum",4,"",1,3,3,2,9,"Moderate",69
+504,"Bella Colla-Dean Rivers","","","","","CM-16","Chum",4,"",1,5,4,2,12,"Moderate",23
+505,"Bella Coola River-Late","","","","","CM-17","Chum",4,"",0,0,0,0,0,"Moderate",9
+506,"Hecate Lowlands","","","","","CM-18","Chum",4,"",1,3,3,2,9,"Moderate",147
+507,"Mussel-Kynock","","","","","CM-19","Chum",4,"",1,5,4,2,12,"None",14
+508,"Douglas-Gardner","","","","","CM-20","Chum",4,"",2,2,5,2,11,"Moderate",65
+701,"Lower Fraser","","","","","CM-2","Chum",4,"",3,0,2,0,5,"Moderate",104
+800,"North Haida Gwaii-Stanley Creek","","","","","CM-25","Chum",5,"",1,5,0,2,8,"None",1
+801,"East HG","","","","","CM-21","Chum",5,"",1,2,4,2,9,"Low",95
+802,"North Haida Gwaii","","","","","CM-24","Chum",5,"",1,2,2,2,7,"None",12
+803,"West Haida Gwaii","","","","","CM-23","Chum",5,"",1,2,3,2,8,"Low",62
+804,"Skidegate","","","","","CM-22","Chum",5,"",1,3,4,2,10,"Moderate",41
+900,"Southern Coastal Streams","","","","","CM-8","Chum",4,"",3,0,1,0,4,"Low",58
+901,"Bute Inlet","","","","","CM-7","Chum",4,"",0,0,0,0,0,"Moderate",7
+902,"Loughborough","","","","","CM-6","Chum",4,"",2,1,3,0,6,"Low",40
+903,"Northeast Vancouver Island","","","","","CM-5","Chum",4,"",1,1,4,0,6,"Moderate",21
+904,"Georgia Strait","","","","","CM-4","Chum",4,"",3,5,4,0,12,"Moderate",160
+905,"Howe Sound-Burrand Inlet","","","","","CM-3","Chum",4,"",0,0,0,0,0,"Moderate",65
+977,"Northwest Vancouver Island","","","","","CM-11","Chum",4,"",2,1,3,3,9,"Moderate",63
+978,"Southwest & West  Vancouver Island","","","","","CM-10","Chum",4,"",3,0,4,3,10,"Moderate",188
+979,"Upper Knight","","","","","CM-9","Chum",4,"",0,0,0,0,0,"None",6
+906,"Boundary Bay","BB","CO01","BB","Boundary Bay","CO-1","Coho",3,"",0,0,0,0,0,"High",4
+750,"Lower Fraser","LFR","CO02","LFR","Lower Fraser ","CO-47","Coho",3,"",0,0,0,0,0,"Moderate",114
+704,"Lillooet","LILL","CO03","LILL","Lillooet ","CO-4","Coho",3,"",0,0,0,0,0,"Moderate",16
+705,"Fraser Canyon","FRCany","CO04","FRCany","Fraser Canyon","CO-5","Coho",3,"Threatened",3,0,5,0,8,"Moderate",10
+749,"Interior Fraser","MFR","CO05","MFR","Middle Fraser","CO-48","Coho",3,"Threatened",3,0,4,0,7,"None",23
+707,"Lower Thompson","LTHOM","CO06","LTHOM","Lower Thompson","CO-7","Coho",3,"Threatened",5,0,5,0,10,"Moderate",9
+708,"South Thompson","STHOM","CO07","STHOM","South Thompson","CO-8","Coho",3,"Threatened",3,0,4,0,7,"Moderate",46
+709,"North Thompson","NTHOM","CO08","NTHOM","North Thompson","CO-9","Coho",3,"Threatened",3,0,5,0,8,"Moderate",37
+908,"Georgia Strait Mainland","SC+GStr","CO09","SC+GStr","Georgia Strait Mainland","CO-11","Coho",3,"",3,0,2,0,5,"Moderate",57
+907,"Howe Sound-Burrard Inlet","Howe-Burrard","CO10","Howe-Burrard","Howe Sound-Burrard Inlet","CO-10","Coho",3,"",0,0,0,0,0,"Moderate",69
+910,"East Vancouver Island-Georgia Strait","EVI+GStr","CO11","EVI+GStr","East Vancouver Island-Georgia Strait","CO-13","Coho",3,"",3,0,2,0,5,"Moderate",108
+909,"Southern Coastal Streams-Queen Charlotte Strait-Johnstone Strait-Southern Fjords","SC+SFj","CO12","SC+SFj","South Coastal Streams-QCStr-JStr-SFjords","CO-12","Coho",3,"",3,0,1,0,4,"Moderate",117
+916,"Homathko-Klinaklini Rivers","HK","CO13","HK+SFj","Homathko-Klinaklini","CO-19","Coho",3,"",0,0,0,0,0,"None",4
+911,"East Vancouver Island-Johnstone Strait-Southern Fjords","EVI+SFj","CO14","EVI+SFj","E Vancouver Is – Johnstone Strait-SFjords","CO-14","Coho",3,"",3,0,5,0,8,"Moderate",16
+914,"West Vancouver Island","WVI","CO15","WVI","West Vancouver Island","CO-17","Coho",3,"",3,0,3,0,6,"Moderate",126
+915,"Clayoquot","CLAY","CO15","WVI","West Vancouver Island","CO-18","Coho",3,"",3,0,3,0,6,"Moderate",46
+913,"Juan de Fuca-Pachena","JdF","CO16","JdF","Juan de Fuca-Pachena","CO-16","Coho",3,"",3,0,3,0,6,"Moderate",26
+912,"Nahwitti Lowland","Nahwitti","CO17","NWVI","Northwest Vancouver Island","CO-15","Coho",3,"",4,0,5,0,9,"Moderate",76
+808,"HG-WEST","WQCI","CO18","WHG","Haida Gwaii - West","CO-24","Coho",3,"",1,1,2,3,7,"Low",66
+809,"HG-GRAHAM ISLAND LOWLANDS","NQCI","CO19","NHG","Haida Gwaii - North","CO-25","Coho",3,"",1,1,3,3,8,"Moderate",28
+807,"HG-EAST","EQCI","CO20","EHG","Haida Gwaii - East ","CO-23","Coho",3,"",1,1,3,3,8,"Moderate",110
+516,"Smith Inlet","Smith","CO21","RSI","Rivers-Smith Inlet","CO-20","Coho",3,"",1,5,1,3,10,"None",13
+517,"Rivers Inlet","Rivers","CO21","RSI","Rivers-Smith Inlet","CO-21","Coho",3,"",0,0,0,0,0,"Moderate",24
+518,"Bella Coola-Dean Rivers","BCD","CO22","BCD","Bella Coola - Dean Rivers","CO-22","Coho",3,"",1,5,4,1,11,"Moderate",32
+520,"Hecate Strait Mainland","HecLow+HStr","CO23","HecLow","Hecate Strait Mainland","CO-27","Coho",3,"",1,3,1,1,6,"Moderate",185
+519,"Mussel-Kynoch","MusKyn","CO24","NCS","Northern Coastal Streams","CO-26","Coho",3,"",1,3,2,1,7,"None",14
+521,"Brim-Wahoo","BRIM","CO24","NCS","Northern Coastal Streams","CO-28","Coho",3,"",0,5,5,1,11,"None",NA
+522,"Douglas Channel-Kitimat Arm","DOUG","CO24","NCS","Northern Coastal Streams","CO-29","Coho",3,"",0,2,4,1,7,"Moderate",33
+523,"N Coastal Streams","NCS","CO24","NCS","Northern Coastal Streams","CO-30","Coho",3,"",1,5,4,1,11,"Low",62
+225,"Skeena Estuary-CO","NSKEst","CO25","NSKEst","Skeena Estuary","CO-31","Coho",3,"",0,0,0,0,0,"Moderate",30
+202,"Lower Skeena-CO","LSKNA","CO26","LSK","Lower Skeena","CO-32","Coho",3,"",1,3,2,3,9,"Moderate",93
+215,"Middle Skeena-CO","MSKNA","CO27","MSK","Middle Skeena","CO-33","Coho",3,"",1,2,2,3,8,"Moderate",90
+231,"Upper Skeena-CO","USKNA","CO28","USK","Upper Skeena","CO-34","Coho",3,"",4,4,3,3,14,"None",19
+408,"Lower Nass","LNASS","CO29","LNR-P","Lower Nass - Portland Canal ","CO-35","Coho",3,"",1,1,4,3,9,"Low",23
+410,"Portland Sound-Observatory Inlet-Portland Canal","PORT","CO29","LNR-P","Lower Nass - Portland Canal ","CO-37","Coho",3,"",1,1,2,3,7,"Low",33
+409,"Upper Nass","UNASS","CO30","UNR","Upper Nass","CO-36","Coho",3,"",2,2,4,3,11,"None",13
+NA,"Unuk River","UNUK","CO31","Unuk","Unuk","CO-38","Coho",3,"",NA,NA,NA,NA,NA,NA,NA
+NA,"Lower Stikine","LStk","CO32","LStk","Lower Stikine","CO-39","Coho",3,"",NA,NA,NA,NA,NA,NA,8
+NA,"Whiting River","Whiting","CO33","Whiting","Whiting River","CO-40","Coho",3,"",NA,NA,NA,NA,NA,NA,NA
+NA,"Taku","Taku","CO34","Taku","Taku","CO-41","Coho",3,"",NA,NA,NA,NA,NA,NA,8
+NA,"Taku","Taku","CO34","Taku","Taku","CO-42","Coho",3,"",NA,NA,NA,NA,NA,NA,NA
+NA,"Taku","Taku","CO34","Taku","Taku","CO-43","Coho",3,"",NA,NA,NA,NA,NA,NA,NA
+NA,"Lynn Canal","LYNN","CO35","LYNN","Chilkat","CO-44","Coho",3,"",NA,NA,NA,NA,NA,NA,NA
+NA,"Alsek","Alsek","CO36","Alsek","Alsek","CO-45","Coho",3,"",NA,NA,NA,NA,NA,NA,1
+NA,"Porcupine River","PORC","CO37","Yukon","Porcupine","CO-46","Coho",3,"",NA,NA,NA,NA,NA,NA,NA
+209,"Lower Skeena (odd)","","","","","PKO-15","Pink",2,"",1,3,2,3,9,"None",58
+213,"Middle & Upper Skeena (odd)","","","","","PKO-16","Pink",2,"",1,3,2,3,9,"None",65
+218,"Middle-Upper Skeena (even)","","","","","PKE-08","Pink",2,"",0,4,2,3,9,"None",NA
+219,"Nass-Skeena Estuary (even)","","","","","PKE-07","Pink",2,"",0,4,3,3,10,"Low",NA
+223,"Nass-Skeena Estuary (odd)","","","","","PKO-14","Pink",2,"",1,2,3,3,9,"Low",37
+240,"Lower Skeena (even)","","","","",NA,"Pink",2,"",0,0,0,0,0,NA,NA
+412,"Upper Nass","","","","",NA,"Pink",NA,"",0,0,0,0,0,"None",NA
+414,"Nass-Portland-Observatory","","","","","PKO-17","Pink",2,"",1,4,2,3,10,"None",60
+415,"Upper Nass","","","","",NA,"Pink",NA,"",0,0,0,0,0,"None",NA
+608,"Hecate Lowlands","","","","","PKE-05","Pink",2,"",0,4,3,2,9,"None",NA
+609,"Hecate Strait-Fjords","","","","","PKE-06","Pink",2,"",0,4,4,2,10,"None",NA
+610,"Homathko-Klinaklini-Rivers-Smith-Bella Coola Dean","","","","","PKO-08","Pink",2,"",0,2,1,2,5,"Low",NA
+611,"Hecate Strait-Lowlands","","","","","PKO-12","Pink",2,"",1,3,3,2,9,"None",182
+612,"Hecate Strait-Fjords","","","","","PKO-13","Pink",2,"",1,4,3,2,10,"None",105
+710,"Fraser River","","","","","PKO-1","Pink",2,"",5,5,5,5,20,"Moderate",96
+810,"North Haida Gwaii","","","","","PKE-09","Pink",2,"",0,3,1,2,6,"None",NA
+811,"East Haida Gwaii","","","","","PKE-10","Pink",2,"",0,2,1,2,5,"Low",100
+812,"West Haida Gwaii","","","","","PKE-11","Pink",2,"",0,2,1,2,5,"None",66
+813,"East Haida Gwaii","","","","","PKO-09","Pink",2,"",0,1,1,2,4,"Low",NA
+814,"North Haida Gwaii","","","","","PKO-10","Pink",2,"",0,0,0,2,2,"None",13
+815,"West Haida Gwaii","","","","","PKO-11","Pink",2,"",0,1,0,2,3,"None",39
+917,"Georgia Strait","","","","","PKE-1","Pink",2,"",4,4,4,3,15,"Moderate",68
+918,"West Vancouver Island","","","","","PKE-2","Pink",2,"",0,0,0,0,0,"Low",85
+919,"Northwest Vancouver Island","","","","","PKE-3","Pink",2,"",0,0,0,0,0,"Low",35
+920,"Southern Fjords","","","","","PKE-4","Pink",2,"",3,2,4,3,12,"Moderate",102
+921,"East Howe Sound-Burrard Inlet","","","","","PKO-2","Pink",2,"",0,0,0,3,3,"Moderate",13
+922,"Georgia Strait","","","","","PKO-3","Pink",2,"",3,3,5,3,14,"Moderate",78
+923,"East Vancouver Island-Johnstone Strait","","","","","PKO-4","Pink",2,"",3,4,5,3,15,"Moderate",12
+924,"Nahwitti","","","","","PKO-5","Pink",2,"",5,2,3,3,13,"Moderate",24
+925,"West Vancouver Island","","","","","PKO-6","Pink",2,"",0,0,0,0,0,"None",67
+926,"Southern Fjords","","","","","PKO-7","Pink",2,"",3,1,2,3,9,"None",48
+171,"Alastair","","","","","SEL-20-01","Sockeye-Lake",6,"",1,4,5,5,15,"None",4
+172,"Aldrich","","","","",NA,"Sockeye-Lake",5,"",NA,NA,NA,NA,NA,NA,NA
+173,"Dennis","","","","",NA,"Sockeye-Lake",5,"",NA,NA,NA,NA,NA,NA,NA
+174,"Ecstall/Lower","","","","","SEL-20-04","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+175,"Johnston","","","","","SEL-20-05","Sockeye-Lake",5,"",0,0,0,0,0,"None",2
+176,"Kitsumkalum","","","","","SEL-20-06","Sockeye-Lake",5,"",1,2,2,5,10,"None",8
+177,"Lakelse","","","","","SEL-20-07","Sockeye-Lake",5,"",1,5,3,5,14,"High",10
+178,"Mcdonell","","","","","SEL-20-08","Sockeye-Lake",5,"",2,5,4,5,16,"None",1
+179,"Atna","","","","",NA,"Sockeye-Lake",5,"",NA,NA,NA,NA,NA,NA,NA
+180,"Babine","","","","","SEL-21-02-EW","Sockeye-Lake",5,"",2,5,5,5,17,"None",NA
+181,"Bulkley","","","","","SEL-21-03","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+182,"Club Lake","","","","",NA,"Sockeye-Lake",5,"",NA,NA,NA,NA,NA,NA,NA
+183,"Gitanyow","","","","","SEL-21-05","Sockeye-Lake",5,"",3,5,5,5,18,"None",2
+184,"Maxan","","","","",NA,"Sockeye-Lake",5,"",NA,NA,NA,NA,NA,NA,NA
+185,"Morice","","","","","SEL-21-07","Sockeye-Lake",6,"",3,4,5,5,17,"None",4
+186,"Nilkitkwa","","","","","SEL-21-02-LW","Sockeye-Lake",5,"",3,5,5,5,18,"None",NA
+187,"Stephens","","","","","SEL-21-09","Sockeye-Lake",5,"",2,4,5,5,16,"None",9
+188,"Swan","","","","","SEL-21-10","Sockeye-Lake",5,"",0,2,3,5,10,"None",NA
+189,"Tahlo/Morrison","","","","","SEL-21-02-MW","Sockeye-Lake",5,"",0,4,5,5,14,"None",NA
+190,"Asitika","","","","","SEL-22-01","Sockeye-Lake",5,"",0,5,4,5,14,"None",1
+191,"Azuklotz","","","","","SEL-22-02","Sockeye-Lake",5,"",2,5,2,5,14,"None",1
+192,"Bear","","","","","SEL-22-03","Sockeye-Lake",5,"",1,4,1,5,11,"None",3
+193,"Damshilgwit","","","","","SEL-22-04","Sockeye-Lake",5,"",5,5,5,5,20,"None",1
+194,"Johanson","","","","","SEL-22-05","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+195,"Kluatantan","","","","","SEL-22-06","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+196,"Kluayaz","","","","","SEL-22-07","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+197,"Motase","","","","","SEL-22-08","Sockeye-Lake",5,"",2,5,1,5,13,"None",1
+198,"Sicintine","","","","","SEL-22-09","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+199,"Slamgeesh","","","","","SEL-22-10","Sockeye-Lake",5,"",0,0,0,0,0,"None",2
+200,"Spawning","","","","","SEL-22-11","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+201,"Sustut","","","","","SEL-22-12","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+203,"Babine (enhanced)","","","","","SEL-21-02-F","Sockeye-Lake",5,"",5,5,5,5,20,"High",NA
+204,"Babine-Pinkut","","","","",NA,"Sockeye-Lake",5,"",NA,NA,NA,NA,NA,NA,NA
+230,"Footsore/Hodder","","","","","SEL-21-12","Sockeye-Lake",5,"",0,0,0,0,0,"None",3
+243,"Onerka","","","","",NA,"Sockeye-Lake",5,"",NA,NA,NA,NA,NA,NA,NA
+416,"Prudhomme","","","","","SEL-19-49","Sockeye-Lake",5,"",0,0,0,0,0,NA,3
+417,"Shawatlan","","","","","SEL-19-54","Sockeye-Lake",5,"",0,0,0,0,0,NA,1
+418,"Clements","","","","",NA,"Sockeye-Lake",NA,"",0,0,0,0,0,"None",NA
+419,"Leverson","","","","",NA,"Sockeye-Lake",NA,"",0,0,0,0,0,"None",NA
+420,"Bowser","","","","",NA,"Sockeye-Lake",NA,"",0,0,0,0,0,"None",NA
+421,"Damdochax","","","","","SEL-24-02","Sockeye-Lake",5,"",4,5,4,5,18,"None",1
+422,"Fred Wright","","","","","SEL-24-03","Sockeye-Lake",5,"",3,5,5,5,18,"None",1
+423,"Kwinageese","","","","",NA,"Sockeye-Lake",NA,"",0,0,0,0,0,"None",NA
+424,"Meziadin","","","","","SEL-24-05","Sockeye-Lake",5,"",3,5,5,5,18,"None",1
+425,"Oweegee","","","","",NA,"Sockeye-Lake",NA,"",0,0,0,0,0,"None",NA
+524,"Long","","","","","SEL-15-01","Sockeye-Lake",5,"",1,5,2,2,10,"Low",3
+525,"Owikeno","","","","","SEL-15-02","Sockeye-Lake",5,"",1,3,4,2,10,"Low",9
+526,"Owikeno-Late","","","","","SEL-15-03","Sockeye-Lake",5,"",0,0,0,0,0,NA,2
+527,"Wannock[Owikeno]","","","","","SEL-15-04","Sockeye-Lake",5,"",0,0,0,0,0,"Low",1
+528,"South Atnarko Lakes","","","","","SX_528","Sockeye-Lake",5,"",1,5,5,2,13,"High",NA
+529,"Backland","","","","","SEL-18-01","Sockeye-Lake",5,"",0,5,4,2,11,"None",1
+530,"Soda Creek","","","","","SEL-18-10","Sockeye-Lake",5,"",0,0,0,0,0,"None",NA
+531,"Whalen","","","","","SEL-18-11","Sockeye-Lake",5,"",0,0,0,0,0,NA,1
+532,"Canoona","","","","","SEL-18-02","Sockeye-Lake",5,"",1,5,3,2,11,"None",1
+533,"Dome ","","","","","SEL-18-03","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+534,"Evelyn","","","","","SEL-18-04","Sockeye-Lake",5,"",3,5,5,2,15,"None",1
+535,"Kainet Creek","","","","","SEL-18-05","Sockeye-Lake",5,"",1,5,5,2,13,"None",1
+536,"Kimsquit","","","","","SEL-18-06","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+537,"Kitkiata","","","","","SEL-18-07","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+538,"Kitlope","","","","","SEL-18-08","Sockeye-Lake",5,"",0,5,5,2,12,"None",1
+539,"Pine River","","","","","SEL-18-09","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+540,"Banks","","","","","SEL-19-01","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+541,"Bloomfield","","","","","SEL-19-02","Sockeye-Lake",5,"",0,5,2,2,9,"None",1
+542,"Bolton Creek","","","","","SEL-19-03","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+543,"Bonilla","","","","","SEL-19-04","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+544,"Borrowman Creek","","","","","SEL-19-05","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+545,"Busey Creek","","","","","SEL-19-06","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+546,"Cartwright Creek","","","","","SEL-19-07","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+547,"Chic Chic ","","","","","SEL-19-08","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+548,"Citeyats","","","","","SEL-19-09","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+549,"Fannie Cove","","","","","SEL-19-10","Sockeye-Lake",5,"",0,0,0,0,0,"None",2
+550,"Curtis Inlet","","","","","SEL-19-11","Sockeye-Lake",5,"",1,5,3,2,11,"Moderate",1
+551,"Dallain Creek","","","","","SEL-19-12","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+552,"Deer","","","","","SEL-19-13","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+553,"Devon","","","","","SEL-19-14","Sockeye-Lake",5,"",1,5,5,2,13,"None",1
+554,"Douglas Creek","","","","","SEL-19-15","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+555,"Elizabeth","","","","","SEL-19-16","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+556,"Elsie/Hoy","","","","","SEL-19-17","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+557,"End Hill Creek","","","","","SEL-19-18","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+558,"Evinrude Inlet","","","","","SEL-19-19","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+559,"Freeda","","","","","SEL-19-20","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+560,"Hartley Bay","","","","","SEL-19-21","Sockeye-Lake",5,"",3,5,5,2,15,"None",1
+561,"Hevenor Inlet","","","","","SEL-19-22","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+562,"Higgins Lagoon","","","","","SEL-19-23","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+563,"Kadjusdis River","","","","","SEL-19-24","Sockeye-Lake",5,"",0,5,2,2,9,"Low",1
+564,"Kdelmashan Creek","","","","","SEL-19-25","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+565,"Keecha","","","","","SEL-19-26","Sockeye-Lake",5,"",1,5,3,2,11,"None",1
+566,"Kent Inlet Lagoon Creek","","","","","SEL-19-27","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+567,"Kenzuwash Creeks","","","","","SEL-19-28","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+568,"Keswar Creek","","","","","SEL-19-29","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+569,"Kildidt Creek","","","","","SEL-19-30","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+570,"Kildidt Lagoon Creek","","","","","SEL-19-31","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+571,"Kisameet","","","","","SEL-19-32","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+572,"Koeye","","","","","SEL-19-33","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+573,"Kooryet","","","","","SEL-19-34","Sockeye-Lake",5,"",0,5,4,2,11,"None",1
+574,"Kunsoot River","","","","","SEL-19-35","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+575,"Kwakwa Creek","","","","","SEL-19-36","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+576,"Lewis Creek","","","","","SEL-19-37","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+577,"Limestone Creek","","","","","SEL-19-38","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+578,"Lowe/Simpson/Weir","","","","","SEL-19-39","Sockeye-Lake",5,"",0,5,4,2,11,"None",1
+579,"Mary Cove Creek","","","","","SEL-19-40","Sockeye-Lake",5,"",0,5,1,2,8,"Moderate",1
+580,"Mcdonald Creek","","","","","SEL-19-41","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+581,"Mcloughlin","","","","","SEL-19-42","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+582,"Mikado","","","","","SEL-19-43","Sockeye-Lake",5,"",0,5,3,2,10,"None",1
+583,"Monckton Inlet Creek","","","","","SEL-19-44","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+584,"Namu","","","","","SEL-19-45","Sockeye-Lake",5,"",2,5,3,2,12,"None",1
+585,"Port John","","","","","SEL-19-46","Sockeye-Lake",5,"",2,5,5,2,14,"None",1
+586,"Powles Creek","","","","","SEL-19-47","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+587,"Price Creek","","","","","SEL-19-48","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+588,"Roderick","","","","","SEL-19-50","Sockeye-Lake",5,"",1,5,4,2,12,"High",1
+589,"Ryan Creek","","","","","SEL-19-51","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+590,"Salter","","","","","SEL-19-52","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+591,"Scoular/Kilpatrick","","","","","SEL-19-53","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+592,"Sheneeza Inlet","","","","","SEL-19-55","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+593,"Ship Point Creek","","","","","SEL-19-56","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+594,"Spencer Creek","","","","","SEL-19-57","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+595,"Stannard Creek","","","","","SEL-19-58","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+596,"Talamoosa Creek","","","","","SEL-19-59","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+597,"Tankeeah River","","","","","SEL-19-60","Sockeye-Lake",5,"",1,5,2,2,10,"High",1
+598,"Treneman Creek","","","","","SEL-19-61","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+599,"Tsimtack/Moore/Roger","","","","","SEL-19-62","Sockeye-Lake",5,"",2,5,5,2,14,"None",1
+600,"Tuno Creek East","","","","","SEL-19-63","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+601,"Tuno Creek West","","","","","SEL-19-64","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+602,"Tyler Creek","","","","","SEL-19-65","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+603,"Wale Creek","","","","","SEL-19-66","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+604,"Watt Bay","","","","","SEL-19-67","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+605,"West Creek","","","","","SEL-19-68","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+606,"Yaaklele Lagoon","","","","","SEL-19-69","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+607,"Yeo","","","","","SEL-19-70","Sockeye-Lake",5,"",0,5,3,2,10,"None",1
+614,"Northern Coastal Fjords","","","","","SER-16","Sockeye-Lake",4,"",0,0,0,0,0,"None",94
+711,"Chilliwack_Early Summer","","SE5","","Chilliwack-ES population","SEL-03-01","Sockeye-Lake",4,"Not at risk",3,5,5,0,13,"None",3
+712,"Cultus_Late","","SE6","","Cultus-L population","SEL-03-02","Sockeye-Lake",4,"Endangered",5,5,5,5,20,"High",1
+713,"Harrison-downstream migrating_Late","","SE9","","Harrison (D/S)-L population","SEL-03-03","Sockeye-Lake",4,"Special Concern",3,5,5,0,13,"None",11
+714,"Harrison-upstream migrating_Late","","SE10","","Harrison (U/S)-L population","SEL-03-04","Sockeye-Lake",4,"Endangered",3,5,5,5,18,"None",4
+715,"Pitt_Early Summer","","SE15","","Pitt-ES population","SEL-03-05","Sockeye-Lake",4,"Not at risk",3,5,5,5,18,"High",8
+716,"Lillooet/Harrison_Late","","SE12","","Lillooet-Harrison-L population","SEL-04-01","Sockeye-Lake",4,"Special Concern",4,5,5,5,19,"None",12
+718,"Nahatlatch_Early Summer","","SE13","","Nahatlatch-ES population","SEL-05-02","Sockeye-Lake",4,"Special Concern",2,5,5,0,12,"None",2
+719,"Anderson/Seton_Early Summer","","SE1","","Anderson-Seton-ES population","SEL-06-01","Sockeye-Lake",4,"Not at risk",4,5,5,5,19,"High",6
+720,"Chilko_Early Summer","","","","Chilko-ES population / Chilko-S population","SEL-06-02","Sockeye-Lake",4,"Not at risk",0,0,0,0,0,"None",1
+721,"Chilko_Summer","","","","Chilko-ES population / Chilko-S population","SEL-06-03","Sockeye-Lake",4,"Not at risk",4,5,5,5,19,"None",3
+725,"Francois/Fraser_Summer","","SE7","","Francois-Fraser-S population","SEL-06-07","Sockeye-Lake",4,"Special Concern",4,5,5,5,19,"Low",5
+727,"Nadina/Francois_Early Summer","","SE8","","Nadina-Francois-ES population","SEL-06-20","Sockeye-Lake",4,"Not at risk",4,5,5,5,19,"None",2
+728,"Quesnel_Summer","","SE16","","Quesnel-S population","SEL-06-10","Sockeye-Lake",4,"Endangered",3,5,5,5,18,"Moderate",94
+729,"Seton_Late","","SE17","","Seton-L population","SEL-06-11","Sockeye-Lake",4,"Endangered",0,0,0,5,5,"None",1
+731,"Takla/Trembleur/Stuart_Summer","","SE21","","Takla-Trembleur-Stuart-S population","SEL-06-13","Sockeye-Lake",4,"Endangered",3,5,4,5,17,"None",11
+732,"Takla/Trembleur_Early Stuart","","SE20","","Takla-Trembleur-EStu population","SEL-06-14","Sockeye-Lake",4,"Endangered",3,5,5,5,18,"None",44
+734,"Taseko_Early Summer","","SE22","","Taseko-ES population","SEL-06-16","Sockeye-Lake",4,"Endangered",2,5,5,0,12,"None",6
+735,"Bowron_Early Summer","","SE2","","Bowron-ES population","SEL-07-01","Sockeye-Lake",4,"Endangered",2,5,5,5,17,"None",4
+738,"Shuswap_Early Summer","","SE19","","Shuswap-ES population","SEL-09-02","Sockeye-Lake",4,"Not at risk",0,0,0,5,5,"Low",24
+739,"Shuswap_Late","","SE18","","Shuswap Complex-L population","SEL-09-03","Sockeye-Lake",4,"Not at risk",2,5,5,5,17,"None",71
+740,"Kamloops_Early Summer","","SE11","","Kamloops-ES population","SEL-10-01","Sockeye-Lake",4,"Special Concern",2,5,5,5,17,"None",10
+751,"Adams and Momich Lakes_Early Summer","","","","Adams ES","SEL-09-xx","Sockeye-Lake",4,"Threatened",0,0,0,0,0,"None",5
+751,"Adams and Momich Lakes_Early Summer","","","","Momich-ES","SEL-09-xx","Sockeye-Lake",4,"Threatened",0,0,0,0,0,"None",5
+752,"North Barriere_Early Summer","","SE14","","North Barriere-ES population","SEL-10-03","Sockeye-Lake",4,"Threatened",3,5,5,5,18,"None",2
+819,"Ain/Skundale/Ian","","","","","SEL-17-01","Sockeye-Lake",NA,"",0,0,0,0,0,"None",1
+820,"Awun","","","","","SEL-17-02","Sockeye-Lake",5,"",2,5,5,2,14,"None",1
+821,"Fairfax","","","","","SEL-17-03","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+822,"Jalun","","","","","SEL-17-04","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+823,"MARIAN","","","","","SEL-17-05","Sockeye-Lake",5,"",2,5,5,2,14,"None",1
+824,"Mathers","","","","","SEL-17-06","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+825,"Mercer","","","","","SEL-17-07","Sockeye-Lake",5,"",2,5,5,2,14,"None",1
+826,"Skidegate","","","","","SEL-17-08","Sockeye-Lake",5,"",5,5,5,2,17,"None",1
+827,"Yakoun","","","","","SEL-17-09","Sockeye-Lake",5,"",2,5,5,2,14,"None",1
+927,"Fulmore","","","","","SEL-11-01","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+928,"Heydon","","","","","SEL-11-02","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+929,"Kakweiken","","","","","SEL-11-03","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+930,"Loose","","","","","SEL-11-04","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+931,"Mackenzie","","","","","SEL-11-05","Sockeye-Lake",5,"",2,5,1,0,8,"None",1
+932,"Phillips","","","","","SEL-11-06","Sockeye-Lake",5,"",3,5,5,0,13,"None",2
+933,"Sakinaw","","","","Sakinaw population","SEL-11-07","Sockeye-Lake",5,"Endangered",5,5,5,0,15,"High",1
+935,"Tzoonie","","","","","SEL-11-09","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+936,"Village Bay","","","","","SEL-11-10","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+937,"Ida/Bonanza","","","","","SEL-12-01","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+938,"Nahwitti","","","","","SEL-12-02","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+939,"Nimpkish","","","","","SEL-12-03","Sockeye-Lake",5,"",4,5,5,0,14,"Low",2
+941,"Quatse","","","","","SEL-12-05","Sockeye-Lake",4,"",0,0,0,0,0,"None",1
+942,"Schoen","","","","","SEL-12-06","Sockeye-Lake",5,"",0,0,0,0,0,"None",NA
+943,"Shushartie","","","","","SEL-12-07","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+944,"Woss","","","","","SEL-12-08","Sockeye-Lake",5,"",0,0,0,0,0,"None",NA
+945,"Alice","","","","","SEL-13-01","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+946,"Canoe Creek","","","","","SEL-13-02","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+947,"Cecilia","","","","","SEL-13-03","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+948,"Cheewat","","","","","SEL-13-04","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+949,"Clayoquot","","","","","SEL-13-05","Sockeye-Lake",5,"",0,0,0,0,0,"None",2
+950,"Deserted","","","","","SEL-13-06","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+951,"Fairy","","","","","SEL-13-07","Sockeye-Lake",5,"",0,0,0,0,0,"Low",3
+952,"Great Central","","","","","SEL-13-08","Sockeye-Lake",5,"",0,0,0,3,3,"None",NA
+953,"Henderson","","","","","SEL-13-09","Sockeye-Lake",5,"",5,5,2,0,12,"None",1
+954,"Hesquiat","","","","","SEL-13-10","Sockeye-Lake",5,"",0,0,1,0,1,"None",1
+955,"Hobiton","","","","","SEL-13-11","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+956,"Jansen","","","","","SEL-13-12","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+957,"Kanim","","","","","SEL-13-13","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+958,"Kennedy","","","","","SEL-13-14","Sockeye-Lake",5,"",0,0,0,0,0,"None",6
+959,"Maggie","","","","","SEL-13-15","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+960,"Megin","","","","","SEL-13-16","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+961,"Muchalat","","","","","SEL-13-17","Sockeye-Lake",5,"",0,0,0,0,0,"None",3
+962,"Muriel","","","","","SEL-13-18","Sockeye-Lake",5,"",0,0,0,0,0,"Low",3
+963,"Nitinat","","","","","SEL-13-19","Sockeye-Lake",5,"",0,0,0,0,0,"None",2
+964,"O'Connell","","","","","SEL-13-20","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+966,"Park River","","","","","SEL-13-22","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+967,"Power","","","","","SEL-13-23","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+969,"Sproat","","","","","SEL-13-25","Sockeye-Lake",5,"",0,0,0,3,3,"None",1
+970,"William/Brink","","","","","SEL-13-26","Sockeye-Lake",5,"",0,0,0,0,0,"None",1
+976,"Vernon","","","","","SEL-12-09","Sockeye-Lake",5,"",0,0,0,0,0,"None",NA
+216,"Skeena River-high interior","","SER41","USK","Upper Skeena River","SER-19","Sockeye-River",5,"",1,5,3,5,14,"None",1
+226,"Skeena River","","SER39","LSK","Lower Skeena River","SER-18","Sockeye-River",5,"",0,0,0,0,0,"None",22
+226,"Skeena River","","SER40","MSK","Middle Skeena River","SER-18","Sockeye-River",5,"",0,0,0,0,0,"None",22
+426,"Lower Nass-Portland","","SER42","LNR-P","Lower Nass-Portland","SER-20","Sockeye-River",4,"",1,4,5,5,15,"None",17
+427,"Upper Nass River","","SER43","UNR","Upper Nass River","SER-21","Sockeye-River",4,"",0,0,0,0,0,"None",3
+613,"Rivers-Smith Inlets","","SER35","RSI","Rivers-Smith Inlets","SER-12","Sockeye-River",4,"",0,0,0,0,0,"None",10
+615,"Northern Coastal","","SER38","HecLow","Hecate Lowlands","SER-17","Sockeye-River",4,"",0,0,0,0,0,"None",44
+742,"Widgeon","","SER23","","Widgeon (River-Type) population","SER-02","Sockeye-River",4,"Threatened",0,0,0,0,0,"None",2
+745,"Harrison River","","SER24","","Harrison (River-Type) population","SER-03","Sockeye-River",4,"Not at risk",4,5,5,5,19,"None",1
+816,"East Haida Gwaii","","SER34","EHG","East Haida Gwaii","SER-13","Sockeye-River",NA,"",0,0,0,0,0,"None",14
+817,"North Haida Gwaii","","SER","","","SER-14","Sockeye-River",NA,"",0,0,0,0,0,"None",25
+818,"West Haida Gwaii","","","","","SER-15","Sockeye-River",NA,"",0,0,0,0,0,"None",2
+971,"Southern Fjords","","SER27","SC-SFj","South Coast-Southern Fjords","SER-009","Sockeye-River",5,"",0,0,0,0,0,"None",NA
+971,"Southern Fjords","","SER29","HK","Hamothko-Klinaklini-Southern Fjords","SER-009","Sockeye-River",5,"",0,0,0,0,0,"None",NA
+972,"West Vancouver Island","","SER30","WVI","West Vancouver Is","SER-010","Sockeye-River",5,"",0,0,0,0,0,"Low",NA
+973,"East Vancouver Island and Georgia Strait","","SER25","SC-GStr","South Coast-Georgia Strait","SER-08","Sockeye-River",5,"",0,0,0,0,0,"None",48
+973,"East Vancouver Island and Georgia Strait","","SER26","EVI-GStr","East Vancouver Island-Georgia Strait","SER-08","Sockeye-River",5,"",0,0,0,0,0,"None",48
+973,"East Vancouver Island and Georgia Strait","","SER28","EVI-SFj","East Vancouver Island-Southern Fjords","SER-08","Sockeye-River",5,"",0,0,0,0,0,"None",48
+974,"NW Vancouver Island","","SER31","NWVI","Northwest Vancouver Is","SER-011","Sockeye-River",5,"",0,0,0,0,0,"None",NA
+NA,"Northern Transboundary Fjords ","","SER44","LStk","Stikine River","SER-022","Sockeye-River",NA,"",NA,NA,NA,NA,NA,NA,NA
+NA,"Northern Transboundary Fjords ","","SER45","TAKU","Taku River","SER-022","Sockeye-River",NA,"",NA,NA,NA,NA,NA,NA,NA
+NA,"Northern Transboundary Fjords ","","SER46","Whiting","Whiting River","SER-022","Sockeye-River",NA,"",NA,NA,NA,NA,NA,NA,NA
+NA,"Northern Transboundary Fjords ","","SER47","UNUK","Unuk River ","SER-022","Sockeye-River",NA,"",NA,NA,NA,NA,NA,NA,NA
+NA,"Chilkat River","","SER48","CHILKAT","Chilkat River","SER-023","Sockeye-River",NA,"",NA,NA,NA,NA,NA,NA,NA
+NA,"Alsek River ","","SER49","ALSEK","Alsek River ","","Sockeye-River",NA,"",NA,NA,NA,NA,NA,NA,NA

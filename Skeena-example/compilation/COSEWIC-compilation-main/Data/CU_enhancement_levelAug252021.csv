@@ -1,0 +1,366 @@
+﻿cuid,regionid,regionname,cuname,sppqualifiedid,cu_enh_rank
+171,1,Skeena,Alastair,1,None
+174,1,Skeena,Ecstall/Lower,1,None
+175,1,Skeena,Johnston,1,None
+176,1,Skeena,Kitsumkalum,1,None
+177,1,Skeena,Lakelse,1,High
+178,1,Skeena,Mcdonell/Dennis/Aldrich,1,None
+180,1,Skeena,Babine/Onerka,1,None
+181,1,Skeena,Bulkley/Maxan,1,None
+183,1,Skeena,Gitanyow (Kitwanga/Kitwancool),1,None
+185,1,Skeena,Morice/Atna,1,None
+186,1,Skeena,Nilkitkwa,1,None
+187,1,Skeena,Stephens,1,None
+188,1,Skeena,Swan/Club,1,None
+189,1,Skeena,Tahlo/Morrison,1,None
+190,1,Skeena,Asitika,1,None
+191,1,Skeena,Azuklotz,1,None
+192,1,Skeena,Bear,1,None
+193,1,Skeena,Damshilgwit,1,None
+194,1,Skeena,Johanson,1,None
+195,1,Skeena,Kluatantan,1,None
+196,1,Skeena,Kluayaz,1,None
+197,1,Skeena,Motase,1,None
+198,1,Skeena,Sicintine,1,None
+199,1,Skeena,Slamgeesh,1,None
+200,1,Skeena,Spawning,1,None
+201,1,Skeena,Sustut,1,None
+202,1,Skeena,Lower Skeena,6,Moderate
+203,1,Skeena,Babine (enhanced),1,High
+205,1,Skeena,Ecstall,5,None
+206,1,Skeena,Kalum-Early,5,Low
+207,1,Skeena,Kalum-Late,5,High
+209,1,Skeena,Lower Skeena River (odd),3,None
+210,1,Skeena,Lower Skeena,5,Low
+211,1,Skeena,Lower Skeena,7,Low
+212,1,Skeena,Upper Skeena,5,None
+213,1,Skeena,Middle-Upper Skeena (odd),3,None
+214,1,Skeena,Middle Skeena,7,None
+215,1,Skeena,Middle Skeena,6,Moderate
+216,1,Skeena,Skeena River-High Interior (river-type),2,None
+217,1,Skeena,Middle Skeena-Mainstem Tributaries,5,Low
+218,1,Skeena,Middle-Upper Skeena (even),4,None
+219,1,Skeena,Nass-Skeena Estuary (even),4,Low
+220,1,Skeena,Skeena Estuary,7,Moderate
+221,1,Skeena,Upper Bulkley River,5,High
+222,1,Skeena,Middle Skeena-Large Lakes,5,High
+223,1,Skeena,Nass-Skeena Estuary (odd),3,Low
+224,1,Skeena,Skeena Estuary,5,Moderate
+225,1,Skeena,Skeena Estuary,6,Moderate
+226,1,Skeena,Skeena River (river-type),2,None
+227,1,Skeena,Lakelse,5,Low
+229,1,Skeena,Zymoetz,5,None
+230,1,Skeena,Footsore/Hodder,1,None
+231,1,Skeena,Upper Skeena,6,None
+241,1,Skeena,Sicintine,5,None
+242,1,Skeena,Upper Skeena,7,None
+301,7,Columbia,Okanagan,5,None
+302,4,Fraser,Boundary Bay (Fall 0.3),5,High
+303,4,Fraser,Lower Fraser River (Fall 0.3),5,Moderate
+304,4,Fraser,Lower Fraser River (Spring 1.3),5,Low
+305,4,Fraser,Lower Fraser River-Upper Pitt (Summer 1.3),5,Low
+306,4,Fraser,Lower Fraser River (Summer 1.3),5,Low
+307,4,Fraser,Lower Fraser River-Maria Slough (Summer 0.3),5,High
+308,4,Fraser,Fraser Canyon-Nahatlatch (Spring 1.3),5,None
+309,4,Fraser,Middle Fraser River-Portage (Fall 1.3),5,None
+310,4,Fraser,Middle Fraser River (Spring 1.3),5,Moderate
+311,4,Fraser,Middle Fraser River (Summer 1.3),5,Moderate
+312,4,Fraser,Upper Fraser River (Spring 1.3),5,Low
+313,4,Fraser,South Thompson River (Summer 0.3),5,None
+314,4,Fraser,South Thompson River (Summer 1.3),5,Moderate
+315,4,Fraser,Shuswap River (Summer 0.3),5,Moderate
+316,4,Fraser,South Thompson River-Bessette Creek (Summer1.2),5,None
+317,4,Fraser,Lower Thompson River (Spring 1.2),5,Moderate
+318,4,Fraser,North Thompson River (Spring 1.3),5,Low
+319,4,Fraser,North Thompson River (Summer 1.3),5,Low
+320,5,Vancouver Island & Mainland Inlets,Southern Mainland-Georgia Strait (Fall 0.x),5,High
+321,5,Vancouver Island & Mainland Inlets,East Vancouver Island-Goldstream (Fall 0.x),5,High
+322,5,Vancouver Island & Mainland Inlets,East Vancouver Island-Cowichan and Koksilah (Fall 0.x),5,High
+323,5,Vancouver Island & Mainland Inlets,East Vancouver Island-Nanaimo (Spring 1.x),5,None
+324,5,Vancouver Island & Mainland Inlets,East Vancouver Island-Nanaimo and Chemainus (Fall 0.x),5,High
+325,5,Vancouver Island & Mainland Inlets,East Vancouver Island-Qualicum and Puntledge (Fall 0.x),5,High
+326,5,Vancouver Island & Mainland Inlets,Southern Mainland-Southern Fjords (Fall 0.x),5,High
+327,5,Vancouver Island & Mainland Inlets,East Vancouver Island-North (Fall 0.x),5,High
+328,5,Vancouver Island & Mainland Inlets,West Vancouver Island-South (Fall 0.x),5,High
+329,5,Vancouver Island & Mainland Inlets,West Vancouver Island-Nootka and Kyuquot (Fall 0.x),5,High
+330,5,Vancouver Island & Mainland Inlets,West Vancouver Island-North (Fall 0.x),5,High
+331,5,Vancouver Island & Mainland Inlets,Homathko (Summer x.x),5,None
+332,5,Vancouver Island & Mainland Inlets,Klinaklini (Summer 1.3),5,None
+333,4,Fraser,South Thompson-Adams River Upper,5,None
+334,5,Vancouver Island & Mainland Inlets,East Vancouver Island-Georgia Strait (Summer 0.3),5,High
+401,2,Nass,Portland Sound-Observatory Inlet-Lower Nass,5,Low
+402,2,Nass,Upper Nass,5,None
+404,2,Nass,Portland Inlet,7,Low
+405,2,Nass,Lower Nass,7,None
+406,2,Nass,Portland Canal-Observatory,7,Low
+408,2,Nass,Lower Nass,6,Low
+409,2,Nass,Upper Nass,6,None
+410,2,Nass,Portland Sound-Observatory Inlet-Portland Canal,6,Low
+412,2,Nass,Upper Nass (even),4,None
+414,2,Nass,Nass-Portland-Observatory (odd),3,None
+415,2,Nass,Upper Nass (odd),3,None
+418,2,Nass,Clements,1,None
+419,2,Nass,Leverson,1,None
+420,2,Nass,Bowser,1,None
+421,2,Nass,Damdochax,1,None
+422,2,Nass,Fred Wright,1,None
+423,2,Nass,Kwinageese,1,None
+424,2,Nass,Meziadin,1,None
+425,2,Nass,Oweegee,1,None
+426,2,Nass,Lower Nass-Portland (river-type),2,None
+427,2,Nass,Upper Nass River (river-type),2,None
+500,3,Central Coast,Smith Inlet,7,None
+501,3,Central Coast,Rivers Inlet,7,None
+502,3,Central Coast,Wannock,7,Low
+503,3,Central Coast,Spiller-Fitz-Hugh-Burke,7,Moderate
+504,3,Central Coast,Bella Coola-Dean Rivers,7,Moderate
+505,3,Central Coast,Bella Coola River-Late,7,Moderate
+506,3,Central Coast,Hecate Lowlands,7,Moderate
+507,3,Central Coast,Mussel-Kynoch,7,None
+508,3,Central Coast,Douglas-Gardner,7,Moderate
+509,3,Central Coast,Docee,5,None
+510,3,Central Coast,Rivers Inlet,5,Low
+511,3,Central Coast,Wannock,5,Moderate
+512,3,Central Coast,Bella Coola-Bentinck,5,High
+513,3,Central Coast,Dean River,5,None
+514,3,Central Coast,North & Central Coast-Late,5,None
+515,3,Central Coast,North & Central Coast-Early,5,Moderate
+516,3,Central Coast,Smith Inlet,6,None
+517,3,Central Coast,Rivers Inlet,6,Moderate
+518,3,Central Coast,Bella Coola-Dean Rivers,6,Moderate
+519,3,Central Coast,Mussel-Kynoch,6,None
+520,3,Central Coast,Hecate Strait Mainland,6,Moderate
+521,3,Central Coast,Brim-Wahoo,6,None
+522,3,Central Coast,Douglas Channel-Kitimat Arm,6,Moderate
+523,3,Central Coast,Northern Coastal Streams,6,Low
+524,3,Central Coast,Long,1,Low
+525,3,Central Coast,Owikeno,1,Low
+527,3,Central Coast,Wannock (Owikeno),1,Low
+528,3,Central Coast,South Atnarko Lakes,1,High
+529,3,Central Coast,Backland,1,None
+530,3,Central Coast,Soda Creek,1,None
+532,3,Central Coast,Canoona,1,None
+533,3,Central Coast,Dome,1,None
+534,3,Central Coast,Evelyn,1,None
+535,3,Central Coast,Kainet Creek,1,None
+536,3,Central Coast,Kimsquit,1,None
+537,3,Central Coast,Kitkiata,1,None
+538,3,Central Coast,Kitlope,1,None
+539,3,Central Coast,Pine River,1,None
+540,3,Central Coast,Banks,1,None
+541,3,Central Coast,Bloomfield,1,None
+542,3,Central Coast,Bolton Creek,1,None
+543,3,Central Coast,Bonilla,1,None
+544,3,Central Coast,Borrowman Creek,1,None
+545,3,Central Coast,Busey Creek,1,None
+546,3,Central Coast,Cartwright Creek,1,None
+547,3,Central Coast,Chic Chic,1,None
+548,3,Central Coast,Citeyats,1,None
+549,3,Central Coast,Fannie Cove,1,None
+550,3,Central Coast,Curtis Inlet,1,Moderate
+551,3,Central Coast,Dallain Creek,1,None
+552,3,Central Coast,Deer,1,None
+553,3,Central Coast,Devon,1,None
+554,3,Central Coast,Douglas Creek,1,None
+555,3,Central Coast,Elizabeth,1,None
+556,3,Central Coast,Elsie/Hoy,1,None
+557,3,Central Coast,End Hill Creek,1,None
+558,3,Central Coast,Evinrude Inlet,1,None
+559,3,Central Coast,Freeda,1,None
+560,3,Central Coast,Hartley Bay,1,None
+561,3,Central Coast,Hevenor Inlet,1,None
+562,3,Central Coast,Higgins Lagoon,1,None
+563,3,Central Coast,Kadjusdis River,1,Low
+564,3,Central Coast,Kdelmashan Creek,1,None
+565,3,Central Coast,Keecha,1,None
+566,3,Central Coast,Kent Inlet Lagoon Creek,1,None
+567,3,Central Coast,Kenzuwash Creeks,1,None
+568,3,Central Coast,Keswar Creek,1,None
+569,3,Central Coast,Kildidt Creek,1,None
+570,3,Central Coast,Kildidt Lagoon Creek,1,None
+571,3,Central Coast,Kisameet,1,None
+572,3,Central Coast,Koeye,1,None
+573,3,Central Coast,Kooryet,1,None
+574,3,Central Coast,Kunsoot River,1,None
+575,3,Central Coast,Kwakwa Creek,1,None
+576,3,Central Coast,Lewis Creek,1,None
+577,3,Central Coast,Limestone Creek,1,None
+578,3,Central Coast,Lowe/Simpson/Weir,1,None
+579,3,Central Coast,Mary Cove Creek,1,Moderate
+580,3,Central Coast,Mcdonald Creek,1,None
+581,3,Central Coast,Mcloughlin,1,None
+582,3,Central Coast,Mikado,1,None
+583,3,Central Coast,Monckton Inlet Creek,1,None
+584,3,Central Coast,Namu,1,None
+585,3,Central Coast,Port John,1,None
+586,3,Central Coast,Powles Creek,1,None
+587,3,Central Coast,Price Creek,1,None
+588,3,Central Coast,Roderick,1,High
+589,3,Central Coast,Ryan Creek,1,None
+590,3,Central Coast,Salter,1,None
+591,3,Central Coast,Scoular/Kilpatrick,1,None
+592,3,Central Coast,Sheneeza Inlet,1,None
+593,3,Central Coast,Ship Point Creek,1,None
+594,3,Central Coast,Spencer Creek,1,None
+595,3,Central Coast,Stannard Creek,1,None
+596,3,Central Coast,Talamoosa Creek,1,None
+597,3,Central Coast,Tankeeah River,1,High
+598,3,Central Coast,Treneman Creek,1,None
+599,3,Central Coast,Tsimtack/Moore/Roger,1,None
+600,3,Central Coast,Tuno Creek East,1,None
+601,3,Central Coast,Tuno Creek West,1,None
+602,3,Central Coast,Tyler Creek,1,None
+603,3,Central Coast,Wale Creek,1,None
+604,3,Central Coast,Watt Bay,1,None
+605,3,Central Coast,West Creek,1,None
+606,3,Central Coast,Yaaklele Lagoon,1,None
+607,3,Central Coast,Yeo,1,None
+608,3,Central Coast,Hecate Lowlands (even),4,None
+609,3,Central Coast,Hecate Strait-Fjords (even),4,None
+610,3,Central Coast,Homathko-Klinaklini-Smith-Rivers-Bella Coola-Dean (odd),3,Low
+611,3,Central Coast,Hecate Strait-Lowlands (odd),3,None
+612,3,Central Coast,Hecate Strait-Fjords (odd),3,None
+613,3,Central Coast,Rivers-Smith Inlets (river-type),2,None
+614,3,Central Coast,Northern Coastal Fjords (river-type),2,None
+615,3,Central Coast,Northern Coastal Streams (river-type),2,None
+701,4,Fraser,Lower Fraser,7,Moderate
+704,4,Fraser,Lillooet,6,Moderate
+705,4,Fraser,Fraser Canyon,6,Moderate
+707,4,Fraser,Lower Thompson,6,Moderate
+708,4,Fraser,South Thompson,6,Moderate
+709,4,Fraser,North Thompson,6,Moderate
+710,4,Fraser,Fraser River (odd),3,Moderate
+711,4,Fraser,Chilliwack-Early Summer,1,None
+712,4,Fraser,Cultus-Late,1,High
+713,4,Fraser,Harrison-Downstream Migrating-Late,1,None
+714,4,Fraser,Harrison-Upstream Migrating-Late,1,None
+715,4,Fraser,Pitt-Early Summer,1,High
+716,4,Fraser,Lillooet-Harrison-Late,1,None
+718,4,Fraser,Nahatlatch-Early Summer,1,None
+719,4,Fraser,Anderson-Seton-Early Summer,1,High
+720,4,Fraser,Chilko-Early Summer,1,None
+721,4,Fraser,Chilko-Summer,1,None
+725,4,Fraser,Francois-Fraser-Summer,1,Low
+727,4,Fraser,Nadina-Francois-Early Summer,1,None
+728,4,Fraser,Quesnel-Summer,1,Moderate
+729,4,Fraser,Seton-Late,1,None
+731,4,Fraser,Takla-Trembleur-Stuart-Summer,1,None
+732,4,Fraser,Takla-Trembleur-Early Stuart,1,None
+734,4,Fraser,Taseko-Early Summer,1,None
+735,4,Fraser,Bowron-Early Summer,1,None
+738,4,Fraser,Shuswap-Early Summer,1,Low
+739,4,Fraser,Shuswap-Late,1,None
+740,4,Fraser,Kamloops-Early Summer,1,None
+742,4,Fraser,Widgeon (river-type),2,None
+745,4,Fraser,Harrison River (river-type),2,None
+749,4,Fraser,Interior Fraser,6,None
+750,4,Fraser,Lower Fraser,6,Moderate
+751,4,Fraser,Adams & Momich Lakes-Early Summer,1,None
+752,4,Fraser,North Barriere-Early Summer,1,None
+753,4,Fraser,Fraser-Early Summer,1,None
+754,4,Fraser,Cariboo-Summer,1,None
+755,4,Fraser,Indian/Kruger-Early Summer,1,None
+900,5,Vancouver Island & Mainland Inlets,Southern Coastal Streams,7,Low
+901,5,Vancouver Island & Mainland Inlets,Bute Inlet,7,Moderate
+902,5,Vancouver Island & Mainland Inlets,Loughborough,7,Low
+903,5,Vancouver Island & Mainland Inlets,Northeast Vancouver Island,7,Moderate
+904,5,Vancouver Island & Mainland Inlets,Georgia Strait,7,Moderate
+905,5,Vancouver Island & Mainland Inlets,Howe Sound-Burrand Inlet,7,Moderate
+906,4,Fraser,Boundary Bay,6,High
+907,5,Vancouver Island & Mainland Inlets,Howe Sound-Burrard Inlet,6,Moderate
+908,5,Vancouver Island & Mainland Inlets,Georgia Strait Mainland,6,Moderate
+909,5,Vancouver Island & Mainland Inlets,Southern Coastal Streams-Queen Charlotte Strait-Johnstone Strait-Southern Fjords,6,Moderate
+910,5,Vancouver Island & Mainland Inlets,East Vancouver Island-Georgia Strait,6,Moderate
+911,5,Vancouver Island & Mainland Inlets,East Vancouver Island-Johnstone Strait-Southern Fjords,6,Moderate
+912,5,Vancouver Island & Mainland Inlets,Nahwitti Lowland,6,Moderate
+913,5,Vancouver Island & Mainland Inlets,Juan de Fuca-Pachena,6,Moderate
+914,5,Vancouver Island & Mainland Inlets,West Vancouver Island,6,Moderate
+915,5,Vancouver Island & Mainland Inlets,Clayoquot,6,Moderate
+916,5,Vancouver Island & Mainland Inlets,Homathko-Klinaklini Rivers,6,None
+917,5,Vancouver Island & Mainland Inlets,Georgia Strait (even),4,Moderate
+918,5,Vancouver Island & Mainland Inlets,West Vancouver Island (even),4,Low
+919,5,Vancouver Island & Mainland Inlets,Northwest Vancouver Island (even),4,Low
+920,5,Vancouver Island & Mainland Inlets,Southern Fjords (even),4,Moderate
+921,5,Vancouver Island & Mainland Inlets,East Howe Sound-Burrard Inlet (odd),3,Moderate
+922,5,Vancouver Island & Mainland Inlets,Georgia Strait (odd),3,Moderate
+923,5,Vancouver Island & Mainland Inlets,East Vancouver Island-Johnstone Strait (odd),3,Moderate
+924,5,Vancouver Island & Mainland Inlets,Nahwitti (odd),3,Moderate
+925,5,Vancouver Island & Mainland Inlets,West Vancouver Island (odd),3,None
+926,5,Vancouver Island & Mainland Inlets,Southern Fjords (odd),3,None
+927,5,Vancouver Island & Mainland Inlets,Fulmore,1,None
+928,5,Vancouver Island & Mainland Inlets,Heydon,1,None
+929,5,Vancouver Island & Mainland Inlets,Kakweiken,1,None
+930,5,Vancouver Island & Mainland Inlets,Loose,1,None
+931,5,Vancouver Island & Mainland Inlets,Mackenzie,1,None
+932,5,Vancouver Island & Mainland Inlets,Phillips,1,None
+933,5,Vancouver Island & Mainland Inlets,Sakinaw,1,High
+935,5,Vancouver Island & Mainland Inlets,Tzoonie,1,None
+936,5,Vancouver Island & Mainland Inlets,Village Bay,1,None
+937,5,Vancouver Island & Mainland Inlets,Ida-Bonanza,1,None
+938,5,Vancouver Island & Mainland Inlets,Nahwitti,1,None
+939,5,Vancouver Island & Mainland Inlets,Nimpkish,1,Low
+941,5,Vancouver Island & Mainland Inlets,Quatse,1,None
+942,5,Vancouver Island & Mainland Inlets,Schoen,1,None
+943,5,Vancouver Island & Mainland Inlets,Shushartie,1,None
+944,5,Vancouver Island & Mainland Inlets,Woss,1,None
+945,5,Vancouver Island & Mainland Inlets,Alice,1,None
+946,5,Vancouver Island & Mainland Inlets,Canoe Creek,1,None
+947,5,Vancouver Island & Mainland Inlets,Cecilia,1,None
+948,5,Vancouver Island & Mainland Inlets,Cheewat,1,None
+949,5,Vancouver Island & Mainland Inlets,Clayoquot,1,None
+950,5,Vancouver Island & Mainland Inlets,Deserted,1,None
+951,5,Vancouver Island & Mainland Inlets,Fairy,1,Low
+952,5,Vancouver Island & Mainland Inlets,Great Central,1,None
+953,5,Vancouver Island & Mainland Inlets,Henderson,1,None
+954,5,Vancouver Island & Mainland Inlets,Hesquiat,1,None
+955,5,Vancouver Island & Mainland Inlets,Hobiton,1,None
+956,5,Vancouver Island & Mainland Inlets,Jansen,1,None
+957,5,Vancouver Island & Mainland Inlets,Kanim,1,None
+958,5,Vancouver Island & Mainland Inlets,Kennedy,1,None
+959,5,Vancouver Island & Mainland Inlets,Maggie,1,None
+960,5,Vancouver Island & Mainland Inlets,Megin,1,None
+961,5,Vancouver Island & Mainland Inlets,Muchalat,1,None
+962,5,Vancouver Island & Mainland Inlets,Muriel,1,Low
+963,5,Vancouver Island & Mainland Inlets,Nitinat,1,None
+964,5,Vancouver Island & Mainland Inlets,O'Connell,1,None
+966,5,Vancouver Island & Mainland Inlets,Park River,1,None
+967,5,Vancouver Island & Mainland Inlets,Power,1,None
+969,5,Vancouver Island & Mainland Inlets,Sproat,1,None
+970,5,Vancouver Island & Mainland Inlets,William-Brink,1,None
+971,5,Vancouver Island & Mainland Inlets,Southern Fjords (river-type),2,None
+972,5,Vancouver Island & Mainland Inlets,West Vancouver Island (river-type),2,Low
+973,5,Vancouver Island & Mainland Inlets,East Vancouver Island & Georgia Strait (river-type),2,None
+974,5,Vancouver Island & Mainland Inlets,NW Vancouver Island (river-type),2,None
+976,5,Vancouver Island & Mainland Inlets,Vernon,1,None
+977,5,Vancouver Island & Mainland Inlets,Northwest Vancouver Island,7,Moderate
+978,5,Vancouver Island & Mainland Inlets,Southwest & West Vancouver Island,7,Moderate
+979,5,Vancouver Island & Mainland Inlets,Upper Knight,7,None
+1300,7,Columbia,Osoyoos,1,None
+800,,Haida Gwaii,North Haida Gwaii-Stanley Creek,,None
+801,,Haida Gwaii,East HG,,Low
+802,,Haida Gwaii,North Haida Gwaii,,None
+803,,Haida Gwaii,West Haida Gwaii,,Low
+804,,Haida Gwaii,Skidegate,,Moderate
+805,,Haida Gwaii,Haida Gwaii-North,,Moderate
+806,,Haida Gwaii,Haida Gwaii-East,,None
+807,,Haida Gwaii,HG-EAST,,Moderate
+808,,Haida Gwaii,HG-WEST,,Low
+809,,Haida Gwaii,HG-GRAHAM ISLAND LOWLANDS,,Moderate
+810,,Haida Gwaii,North Haida Gwaii,,None
+811,,Haida Gwaii,East Haida Gwaii,,Low
+812,,Haida Gwaii,West Haida Gwaii,,None
+813,,Haida Gwaii,East Haida Gwaii,,Low
+814,,Haida Gwaii,North Haida Gwaii,,None
+815,,Haida Gwaii,West Haida Gwaii,,None
+816,,Haida Gwaii,East Haida Gwaii,,None
+817,,Haida Gwaii,North Haida Gwaii,,None
+818,,Haida Gwaii,West Haida Gwaii,,None
+819,,Haida Gwaii,Ain/Skundale/Ian,,None
+820,,Haida Gwaii,Awun,,None
+821,,Haida Gwaii,Fairfax,,None
+822,,Haida Gwaii,Jalun,,None
+823,,Haida Gwaii,MARIAN,,None
+824,,Haida Gwaii,Mathers,,None
+825,,Haida Gwaii,Mercer,,None
+826,,Haida Gwaii,Skidegate,,None
+827,,Haida Gwaii,Yakoun,,None
