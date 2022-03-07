@@ -30,7 +30,7 @@ total_Babine_spw <- SkeenaNassSX %>%
   filter(CU_Name == "Babine-Early-Wild")
 SkeenaNassSX_Babine$TE <- total_Babine_spw$total_TE
 
-SkeenaNassSX <- rbind(SkeenaNassSX,SkeenaNassSX_Babine) %>% #don't like to overwrite stuff
+SkeenaNassSX <- rbind(SkeenaNassSX,SkeenaNassSX_Babine) %>%
   mutate(du_cu = paste(DU, CU_Name), 
          LnSpw=log(TE))
 
