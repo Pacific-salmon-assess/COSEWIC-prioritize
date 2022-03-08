@@ -1,0 +1,163 @@
+---
+title: "Rapid assessment of Pacific Salmon spawner abundnace to aide with COSEWIC prioritizaiton"
+author: "Dylan Glaser"
+date: "3/8/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Background
+
+The purpose of this document is to import recent data on pacific salmon spawner abundances 
+and their designateable and conservation units (i.e. DUs and CUs). We plot abundances and 
+examine trends, define what it means to be data deficient, then explore various metrics to 
+prioritize populations for reassessment. 
+
+```{r pkgs, warning = FALSE, message = FALSE}
+library("tidyverse")
+```
+
+## Load and wrangle data
+
+We want to load the most recent data from a [GitHub repo](https://github.com/hertzPSF/COSEWIC-compilation) managed by Eric Hertz at the Pacific Salmon Foundation (PSF). We download the repo, pull 
+data we want from it, and give it a quick tidy. 
+```{r, warning = FALSE, message = FALSE}
+download.file(url = "https://github.com/hertzPSF/COSEWIC-compilation/archive/master.zip",
+              destfile = "compilation/hertzPSF-compilation.zip")
+
+unzip(zipfile = "compilation/hertzPSF-compilation.zip", exdir = "compilation")
+
+erics_output <- list.files("compilation/COSEWIC-compilation-main/output")
+
+raw_sp_data <- read.csv(paste0("compilation/COSEWIC-compilation-main/Output/",
+                           erics_output[grep("CU_Spawner_Abund", erics_output)]), 
+                        header = TRUE) %>%
+         mutate(logSp = log(Spawner.Abundance))
+
+cu_metadata <- read.csv(paste0("compilation/COSEWIC-compilation-main/Output/",
+                               erics_output[grep("CU_Metadata", erics_output)]), 
+                        header = TRUE, na.strings = c("", "NA")) %>%
+  filter(!is.na(gen_length)) %>%
+  rename(CUID = cuid)
+
+#join, dump pops with NA DUs, and create a du_cu key
+sp_data <- left_join(raw_sp_data, select(cu_metadata, CUID, du_number, gen_length), 
+                     by = "CUID") %>%
+  drop_na(du_number, Spawner.Abundance) %>%
+  mutate(du_cu = paste(du_number, CUID)) %>%
+  relocate(du_cu, 1) %>%
+  arrange(du_cu, Year)
+```
+
+### Get last 3 generations
+
+We need to use the metadata to get generation times for each population, then use that
+to calculate a time span that includes the last 3 generations, as per IUCN guidelines. 
+
+```{r, warning = FALSE, message = FALSE}
+final_survey_yr <- sp_data %>% #helper object
+  drop_na(Spawner.Abundance) %>%
+  group_by(du_cu) %>%
+  summarise(last_year = max(Year))
+
+last3_gens <- left_join(sp_data, final_survey_yr, by = "du_cu") %>%
+  group_by(du_cu) %>%
+  mutate(three_gens = gen_length*3) %>%
+  filter(Year>= (last_year - three_gens), Year <= last_year)
+```
+
+```{r, echo = FALSE}
+rm(raw_sp_data, erics_output, final_survey_yr) #remove some helper objects
+```
+
+## Plot abundances
+Now we want to plot abundances. We'll make 2 plots for each species and unit: raw spawner 
+abundance and ln-transformed spawner abundance with a linear regression passing through
+all data points (black) and the last 3 generations (red). **Note that that the axes on 
+figures vary**, some populations have much more monitoring effort and abundance may vary by
+orders of magnitude. 
+
+```{r, warning = FALSE, message = FALSE}
+max_facets <- 20 #how many facets per plot?
+save_plots <- FALSE #toggle if you want to save plots 
+
+for(i in unique(sp_data$Species)){
+  sp_data_species <- filter(sp_data, Species == i)
+  for(j in unique(sp_data_species$Region)){
+    sub_data <- filter(sp_data_species, Region == j) 
+    sub_last3 <- filter(last3_gens, Species == i, Region == j)
+    
+    if(length(unique(sub_data$du_cu)) > max_facets){
+    
+      pages <- ceiling(length(unique(sub_data$du_cu))/max_facets)
+    
+    for(k in 1:pages){
+      sub_data_2 <- filter(sub_data, du_cu %in% 
+                               unique(sub_data$du_cu)[((k-1)*max_facets)+1:(max_facets*k)])
+      
+      sub_last3_2 <- filter(sub_last3, du_cu %in% 
+                                unique(sub_last3$du_cu)[((k-1)*max_facets)+1:(max_facets*k)])
+      
+      p <- ggplot(data = sub_data_2, aes(x= Year, y= Spawner.Abundance/1000)) +
+        geom_line(color = "grey") +
+        geom_point() +
+        facet_wrap(~du_cu, scales = "free_y") +
+        labs(x= "Year", y = "spawners (thousands)", 
+             title = paste0(j, " ", i, " spawner abundance ", "(", k, " of ", pages, ")")) +
+        theme_bw() +
+        theme(strip.background = element_blank())
+      print(p)
+      
+      p_log <- ggplot(data = sub_data_2, aes(x= Year, y= logSp)) +
+        geom_line(color = "grey") +
+        geom_point() +
+        stat_smooth(method="lm", formula = y~x, color = "black", lty= "dashed", 
+                    se = FALSE) +
+        stat_smooth(data = sub_last3_2, formula = y~x, method = "lm", color = "red", 
+                    se = FALSE, na.rm = TRUE) +
+        facet_wrap(~du_cu, scales = "free_y") +
+        labs(x= "Year", y = "ln(spawners)", 
+             title = paste0("ln ", j, " ", i, " spawner abundance ", "(", k, " of ", pages, ")")) +
+        theme_bw() +
+        theme(strip.background = element_blank())
+      print(p_log)
+      
+      if(save_plots){
+        ggsave(paste0("output/plots/",j, "_", i, "sp_abundance_", "_", k, ".png"), plot = p)
+        ggsave(paste0("output/plots/", j, "_", i, "ln_sp_lm_", "_", k, ".png"), plot = p_log)
+      }
+    }
+  }else{
+    p <- ggplot(data = sub_data, aes(x= Year, y= Spawner.Abundance/1000)) +
+      geom_line(color = "grey") +
+      geom_point() +
+      facet_wrap(~du_cu, scales = "free_y") +
+      labs(x= "Year", y = "spawners (thousands)", title = paste(j, i, "spawner abundance")) +
+      theme_bw() +
+      theme(strip.background = element_blank())
+    print(p)
+    
+    p_log <- ggplot(data = sub_data, aes(x= Year, y= logSp)) +
+      geom_line(color = "grey") +
+      geom_point() +
+      stat_smooth(formula = y~x, method="lm", color = "black", lty= "dashed", se = FALSE) +
+      stat_smooth(data = sub_last3, formula = y~x, method = "lm", color = "red", 
+                  se = FALSE, na.rm = TRUE) +
+      facet_wrap(~du_cu, scales = "free_y") +
+      labs(x= "Year", y = "ln(spawners)", 
+           title = paste(j, i, "ln(spawner abundance)")) +
+      theme_bw() +
+      theme(strip.background = element_blank())
+    print(p_log)
+    
+    if(save_plots){
+      ggsave(paste0("output/plots/", j, "_", i, "_sp_abundance_", ".png"), plot = p)
+      ggsave(paste0("output/plots/", j, i, "_ln_sp_lm_", ".png"), plot = p_log)
+   }
+  }
+ }
+}
+```
