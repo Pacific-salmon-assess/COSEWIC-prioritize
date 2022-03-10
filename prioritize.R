@@ -59,8 +59,7 @@ for(i in unique(sp_data$Species)){
     na.omit(Spawner.Abundance)
   
   #for j in region...
-  sub_last3 <- filter(last3_gens, Species == i)
-  
+C  
   if(length(unique(sub_data$du_cu)) > max_facets){
     pages <- ceiling(length(unique(sub_data$du_cu))/max_facets)
     
