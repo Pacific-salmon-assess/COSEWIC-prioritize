@@ -259,7 +259,7 @@ for(i in unique(sp_data$du_cu)){
 
 stan_summary <- relocate(stan_summary, var, .before = mean)
 
-#nest with species and region 
+#nest with species and region, AND do it for last 3 gens.  
 for(i in unique(slope_posterior$du_cu)){
   sub_data <- filter(slope_posterior, du_cu == i)
   median <- filter(stan_summary, du_cu == i, var == "slope")$median #pluck median
