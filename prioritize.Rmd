@@ -1,7 +1,7 @@
 ---
 title: "Rapid assessment of Pacific Salmon spawner abundnace to aide with COSEWIC prioritizaiton"
 author: "Dylan Glaser"
-date: "3/8/2022"
+date: "3/11/2022"
 output: html_document
 ---
 ```{r setup, include=FALSE}
@@ -56,17 +56,19 @@ rm(raw_sp_data, erics_output, cu_metadata) #remove some helper objects
 ```
 ## Plot spawner abundance
 Now we want to plot abundances. We'll make 2 plots for each species and unit: raw spawner abundance and ln-transformed spawner abundance with a linear regression passing through all data points (black) and the last 3 generations (red). **Note that that the axes on figures vary**, some populations have much more monitoring effort and abundance may vary by orders of magnitude.  
-This code is cumbersome in order to make it robust, so we've omitted it from the output, but it's worth noting you can choose to save plots or adjust facets.
+This code is cumbersome in order to make it robust, so we've omitted it from the output, but it's worth noting you can choose to save plots or adjust facets.  
+**need to make facets all the same size**
 ```{r}
 max_facets <- 20 #how many facets (i.e. panes) per plot?
 save_plots <- FALSE
 ```
 
-```{r, echo = FALSE, message = FALSE}
+```{r, echo = FALSE, message = FALSE, warning = FALSE}
 for(i in unique(sp_data$Species)){
   sp_data_species <- filter(sp_data, Species == i)
   for(j in unique(sp_data_species$Region)){
-    sub_data <- filter(sp_data_species, Region == j) 
+    sub_data <- filter(sp_data_species, Region == j) %>%
+      complete(Year, Species, Region, du_cu) #explicitly include NA so line draws right
     sub_last3 <- filter(last3_gens, Species == i, Region == j)
     
     if(length(unique(sub_data$du_cu)) > max_facets){
@@ -99,7 +101,8 @@ for(i in unique(sp_data$Species)){
                     se = FALSE, na.rm = TRUE) +
         facet_wrap(~du_cu, scales = "free_y") +
         labs(x= "Year", y = "ln(spawners)", 
-             title = paste0("ln ", j, " ", i, " spawner abundance ", "(", k, " of ", pages, ")")) +
+             title = paste0("ln ", j, " ", i, " spawner abundance ", 
+                            "(", k, " of ", pages, ")")) +
         theme_bw() +
         theme(strip.background = element_blank(), axis.text.x = element_text(angle = 45))
       print(p_log)
@@ -134,7 +137,7 @@ for(i in unique(sp_data$Species)){
     
     if(save_plots){
       ggsave(paste0("output/plots/", j, "_", i, "_sp_abundance_", ".png"), plot = p)
-      ggsave(paste0("output/plots/", j, i, "_ln_sp_lm_", ".png"), plot = p_log)
+      ggsave(paste0("output/plots/", j, "_", i, "_ln_sp_lm_", ".png"), plot = p_log)
    }
   }
  }
@@ -176,7 +179,7 @@ deficient_historical <- sp_data %>%
 
 sp_data_filtered <- filter(sp_data, !(du_cu %in% deficient_historical))
 ```
-
+*we could add to this by making it specific to gen_length* (e.g. 3 missing data points from a short lived pop may have more of an impact on our inference than 3 NAs in longer lived pops...)
 ## Population decline
 
 ### Basic linear models 
@@ -184,7 +187,6 @@ Now we'll run basic linear models on ln(spawner abundances) for the whole time s
 for the last 3 generations. We need to add some if statements in this loop to account for
 which du_cus made it through the data filters above.   
 **I'm open to clever suggestions to avoid the if else statements!**
-
 ```{r, warning = FALSE, message = FALSE}
 summary_table <- NULL
 
@@ -221,20 +223,20 @@ head(summary_table)
 rm(list = ls()[grep("sub|model|def|slope", ls())]) #yeet garbage
 ```
 ### Estimates with the MetricsCOSEWIC package
-First some housekeeping. You can use devtools to download the [MetricsCOSEWIC package](https://github.com/SOLV-Code/MetricsCOSEWIC) from GitHub. We'll wrangle the data into the format this package wants as well. We'll feed it all the data, not the data deficient stuff we filtered out earlier.  
-*Still need to make sure I did this right. The README says the first argument to calcPercChangeMCMC() is a "vector with numeric values" so I'll assume thats spawner abundance with NAs omitted?*
-
-```{r, warning = FALSE, message = FALSE}
+First some housekeeping. You can use devtools to download the [MetricsCOSEWIC package](https://github.com/SOLV-Code/MetricsCOSEWIC) from GitHub. We'll wrangle the data into the format this package wants as well. We'll feed it the filtered last 3 generations.   
+*Still need to make sure I did this right. The README says the first argument to calcPercChangeMCMC() is a "vector with numeric values" so I'll assume thats spawner abundance with NAs omitted?*  
+**Need to sum the % of draws in each threshold and bind in summary table**
+```{r, warning = FALSE, message = FALSE, results = "hide"}
 library(MetricsCOSEWIC)
 
 slope_posterior <- NULL
 stan_summary <- NULL
 
-for(i in unique(sp_data$du_cu)){
-  sub_data <- filter(sp_data, du_cu == i)
+for(i in unique(last3_gens_filtered$du_cu)){
+  sub_data <- filter(last3_gens_filtered, du_cu == i)
   
   stan_mod <- calcPercChangeMCMC(sub_data$Spawner.Abundance, method = "rstanarm",
-                           out.type = "long")
+                           out.type = "long") #how TF do I shut this up
   
   summary <- data.frame(stan_mod$summary) %>%
     slice(1:3) %>%
@@ -252,24 +254,56 @@ for(i in unique(sp_data$du_cu)){
 
   stan_summary <- bind_rows(summary, stan_summary)
 
-  slope_posterior <- bind_rows(data.frame(draws = stan_mod$samples$slope, du_cu =i), 
-                               slope_posterior)
-  
+  slope_posterior <- bind_rows(data.frame(du_cu =i, region = unique(sub_data$Region),
+                                          species = unique(sub_data$Species),
+                                          draws = stan_mod$samples$slope), slope_posterior)
 }
 
 stan_summary <- relocate(stan_summary, var, .before = mean)
 
-#nest with species and region, AND do it for last 3 gens.  
-for(i in unique(slope_posterior$du_cu)){
-  sub_data <- filter(slope_posterior, du_cu == i)
-  median <- filter(stan_summary, du_cu == i, var == "slope")$median #pluck median
-  p <- ggplot(data = sub_data, aes(draws)) +
-    geom_density(fill = "gray") + #make this sexier using density 
-    geom_vline(xintercept = median, color="red") +
-    theme_minimal() +
-    labs(title = paste(i, "slope posterior"), x = "MCMC draws" )
-  
-print(p)
-  }
 ```
-
+#### Plot slope posterior distributions
+We'll plot the slope (i.e. decline) posteriors and show the median and various COSEWIC thresholds for population decline based on [category A2](https://www.canada.ca/en/environment-climate-change/services/species-risk-act-accord-funding/listing-process/quantitative-criteria-guidelines-status-table-2.html), where 50 and 30 percent reductions correspond to endangered and threatened status, respectively.
+**Should I center these on 0 or something?**  
+**need to fix ugly plots**
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+for(i in unique(slope_posterior$species)){
+  post_species <- filter(slope_posterior, species == i)
+  for(j in unique(post_species$region)){
+    sub_data <- filter(post_species, region == j)
+    if(length(unique(sub_data$du_cu)) > max_facets){
+      pages <- ceiling(length(unique(sub_data$du_cu))/max_facets)
+    for(k in 1:pages){
+      sub_data_2 <- filter(sub_data, du_cu %in% 
+                               unique(sub_data$du_cu)[((k-1)*max_facets)+1:(max_facets*k)])
+      p <- ggplot(data = sub_data, aes(draws)) +
+        geom_density(fill = "gray") + 
+        #geom_vline(aes(xintercept = median(draws)), color="black") +
+        geom_vline(xintercept = -30, color="orange") +
+        geom_vline(xintercept = -50, color="red") +
+        theme_classic() +
+        facet_wrap(~du_cu, scales = "free") +
+        labs(title = paste(j, i, "slope posterior", "(", k, " of ", pages, ")"), 
+         x = "MCMC draws")
+  print(p)
+  if(save_plots){
+    ggsave(paste0("output/plots/",j, "_", i, "_posterior_", "_", k, ".png"), plot = p)
+      }
+    }
+  }else{
+      p <- ggplot(data = sub_data, aes(draws)) +
+        geom_density(fill = "gray") + 
+        #geom_vline(aes(xintercept = median(draws)), color="black") +
+        geom_vline(xintercept = -30, color="orange") +
+        geom_vline(xintercept = -50, color="red") +
+        theme_classic() +
+        facet_wrap(~du_cu, scales = "free") +
+        labs(title = paste(j, i, "slope posterior"), x = "MCMC draws")
+      print(p)
+      if(save_plots){
+      ggsave(paste0("output/plots/", j, "_", i, "_posterior_", ".png"), plot = p)
+   }
+  }
+ }
+}
+```
