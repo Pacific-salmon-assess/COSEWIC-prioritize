@@ -222,9 +222,16 @@ head(summary_table)
 ```{r, echo = FALSE}
 rm(list = ls()[grep("sub|model|def|slope", ls())]) #yeet garbage
 ```
+
+###State space estimates 
+Messing around with Dan!
+```{r}
+
+```
+
 ### Estimates with the MetricsCOSEWIC package
 First some housekeeping. You can use devtools to download the [MetricsCOSEWIC package](https://github.com/SOLV-Code/MetricsCOSEWIC) from GitHub. We'll wrangle the data into the format this package wants as well. We'll feed it the filtered last 3 generations.   
-*Still need to make sure I did this right. The README says the first argument to calcPercChangeMCMC() is a "vector with numeric values" so I'll assume thats spawner abundance with NAs omitted?*  
+*Still need to make sure I did this right. The README says the first argument to calcPercChangeMCMC() is a "vector with numeric values" so I'll assume that is spawner abundance with NAs omitted?*  
 **Need to sum the % of draws in each threshold and bind in summary table**
 ```{r, warning = FALSE, message = FALSE, results = "hide"}
 library(MetricsCOSEWIC)
@@ -264,9 +271,14 @@ stan_summary <- relocate(stan_summary, var, .before = mean)
 ```
 #### Plot slope posterior distributions
 We'll plot the slope (i.e. decline) posteriors and show the median and various COSEWIC thresholds for population decline based on [category A2](https://www.canada.ca/en/environment-climate-change/services/species-risk-act-accord-funding/listing-process/quantitative-criteria-guidelines-status-table-2.html), where 50 and 30 percent reductions correspond to endangered and threatened status, respectively.
-**Should I center these on 0 or something?**  
 **need to fix ugly plots**
 ```{r, echo = FALSE, warning = FALSE, message = FALSE}
+#helper function to center limits
+symmetric_limits <- function(x){
+    max <- max(abs(x))
+    c(-max, max)
+}
+
 for(i in unique(slope_posterior$species)){
   post_species <- filter(slope_posterior, species == i)
   for(j in unique(post_species$region)){
@@ -278,14 +290,16 @@ for(i in unique(slope_posterior$species)){
                                unique(sub_data$du_cu)[((k-1)*max_facets)+1:(max_facets*k)])
       p <- ggplot(data = sub_data, aes(draws)) +
         geom_density(fill = "gray") + 
-        #geom_vline(aes(xintercept = median(draws)), color="black") +
+        scale_x_continuous(limits = symmetric_limits) +
         geom_vline(xintercept = -30, color="orange") +
         geom_vline(xintercept = -50, color="red") +
         theme_classic() +
         facet_wrap(~du_cu, scales = "free") +
         labs(title = paste(j, i, "slope posterior", "(", k, " of ", pages, ")"), 
-         x = "MCMC draws")
-  print(p)
+         x = "MCMC draws") +
+        theme(axis.text.y=element_blank(), axis.ticks.y=element_blank())
+  
+      print(p)
   if(save_plots){
     ggsave(paste0("output/plots/",j, "_", i, "_posterior_", "_", k, ".png"), plot = p)
       }
@@ -293,12 +307,14 @@ for(i in unique(slope_posterior$species)){
   }else{
       p <- ggplot(data = sub_data, aes(draws)) +
         geom_density(fill = "gray") + 
-        #geom_vline(aes(xintercept = median(draws)), color="black") +
+        scale_x_continuous(limits = symmetric_limits) +
         geom_vline(xintercept = -30, color="orange") +
         geom_vline(xintercept = -50, color="red") +
         theme_classic() +
         facet_wrap(~du_cu, scales = "free") +
-        labs(title = paste(j, i, "slope posterior"), x = "MCMC draws")
+        labs(title = paste(j, i, "slope posterior"), x = "MCMC draws") +
+        theme(axis.text.y=element_blank(), axis.ticks.y=element_blank())
+      
       print(p)
       if(save_plots){
       ggsave(paste0("output/plots/", j, "_", i, "_posterior_", ".png"), plot = p)
