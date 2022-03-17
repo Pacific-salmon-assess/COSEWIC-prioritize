@@ -1,397 +1,470 @@
-cuid,cuname,cu_acronym,du_number,du_acronym,DU_name,trtc_cu,FULL_CU_IN,spp,gen_length,COSEWIC_status,ca_check_012022,
-205,Ecstall,,CK41,ECST,"Ecstall, Ocean, Summer",CN_46,CK-46,Chinook,6,,,
-206,Kalum-early timing,,CK43,KALUM-E,"Kalum Ð Early Timing, Stream, Spring",CN_49,CK-49,Chinook,6,,,
-207,Kalum-late timing,,CK44,KALUM-L,"Kalum Ð Late Timing, Stream, Summer",CN_50,CK-50,Chinook,6,,,
-210,Lower Skeena-CK,,CK42,LSK,"Lower Skeena, Stream, Summer",CN_48,CK-48,Chinook,6,,,
-212,Upper Skeena-CK,,CK48,USK,"Upper Skeena River, Stream, Spring",NA,CK-56,Chinook,6,,,
-217,Middle Skeena-mainstem tributaries,,CK47,MSK-M/S,"Middle Skeena-M/S Tributary, Stream, Summer",CN_54,CK-54,Chinook,6,,,
-221,Upper Bulkley River,,CK45,,"Bulkley River, Stream, Spring",CN_55,CK-55,Chinook,6,,,
-222,Middle Skeena-large lakes,,CK46,MSK-LKS,"Middle Skeena Ð Lakes, Stream, Summer",CN_53,CK-53,Chinook,6,,,
-224,Skeena Estuary-CK,,CK40,SKEst,"Skeena Estuary, Stream, Summer",NA,CK-45,Chinook,6,,,
-227,Lakelse-CK,,CK42,LSK,"Lower Skeena, Stream, Summer",NA,CK-51,Chinook,6,,,
-229,Zymoetz,,CK42,LSK,"Lower Skeena, Stream, Summer",NA,CK-80,Chinook,6,,,
-241,Sicintine,,,,,NA,CK-81,Chinook,6,,,
-301,Okanagan,OK,CK69,OK+ORWA/Ocean/Fall,"Okanagan River, Ocean, Fall",CK-001,CK-1,Chinook,,Endangered,y,
-302,CK002-Boundary Bay_FA_0.3,BB,CK1,BB+GStr/Ocean/Fall,"Southern Mainland Boundary Bay, Ocean, Fall population",CK-002,CK-2,Chinook,5,Threatened,y,
-303,CK003-Lower Fraser River_FA_0.3,LFR-fall,CK2,LFR+GStr/Ocean/Fall,"Lower Fraser, Ocean, Fall population (Harrison)",CK-003,CK-3,Chinook,4,Threatened,y,
-304,CK004-Lower Fraser River_SP_1.3,LFR-spring,CK3,LFR+GStr/Stream/Spring,"Lower Fraser, Stream, Spring population (Birkenhead)",CK-004,CK-4,Chinook,5,Special Concern,y,
-305,CK005-Lower Fraser River-Upper Pitt_SU_1.3,LFR-UPITT,CK4,LFR+GStr/Stream/Summer(Upper Pitt),"Lower Fraser, Stream, Summer (Upper Pitt) population",CK-005,CK-5,Chinook,5,Endangered,y,
-306,CK006-Lower Fraser River_SU_1.3,LFR-summer,CK5,LFR+GStr/Stream/Summer,"Lower Fraser, Stream, Summer (Lillooet) population",CK-006,CK-6,Chinook,5,Threatened,y,
-307,CK007-Maria Slough_SU_0.3,Maria,CK6,LFR+GStr/Ocean/Summer,"Lower Fraser, Ocean, Summer (Maria Slough) population",CK-007,CK-7,Chinook,4,Endangered,y,
-308,CK008-Middle Fraser-Fraser Canyon_SP_1.3,NAHAT,CK7,FRCanyGStr/Stream/Spring,"Middle Fraser, Stream, Spring (FR Canyon) population",CK-008,CK-8,Chinook,5,Endangered,y,
-309,CK009-Middle Fraser River-Portage_FA_1.3,Portage,CK8,MFR+GStr/Stream/Fall,"Middle Fraser, Stream, Fall (Portage) population",CK-009,CK-9,Chinook,5,Endangered,y,
-310,CK010-Middle Fraser River_SP_1.3,MFR-spring,CK9,MFR+GStr/Stream/Spring,"Middle Fraser, Stream, Spring (MFR+GStr) population",CK-010,CK-10,Chinook,5,Threatened,y,
-311,CK011-Middle Fraser River_SU_1.3,MFR-summer,CK10,MFR+GStr/Stream/Summer,"Middle Fraser, Stream, Summer population",CK-011,CK-11,Chinook,5,Threatened,y,
-312,CK012-Upper Fraser River_SP_1.3,UFR-spring,CK11,UFR/Stream/Spring,"Upper Fraser, Stream, Spring population",CK-012,CK-12,Chinook,5,Endangered,y,
-313,CK013-South Thompson_SU_0.3,STh-0.3,CK12,STh+GStr/Ocean/Summer,"South Thompson, Ocean, Summer population",CK-013,CK-13,Chinook,4,Not at risk,y,
-314,CK014-South Thompson_SU_1.3,STh-1.3,CK13,STh+GStr/Stream/Summer,"South Thompson, Stream, Summer 1.3 population",CK-014,CK-14,Chinook,5,Endangered,y,
-315,CK015-Shuswap River_SU_0.3,STh-SHUR,CK12,STh+GStr/Ocean/Summer,"South Thompson, Ocean, Summer population",CK-015,CK-15,Chinook,4,Not at risk,y,
-316,CK016-South Thompson-Bessette Creek_SU_1.2,STh-BESS,CK14,STh+GStr/Stream/Summer/(Bessette),"South Thompson, Stream, Summer 1.2 (Bessette) population",CK-016,CK-16,Chinook,4,Endangered,y,
-317,CK017-Lower Thompson_SP_1.2,LTh,CK15,LTh+GStr/Stream/Spring,"Lower Thompson, Stream, Spring population",CK-017,CK-17,Chinook,4,Endangered,y,
-318,CK018-North Thompson_SP_1.3,NTh-spr,CK16,NTh+GStr/Stream/Spring,"North Thompson, Stream, Spring population",CK-018,CK-18,Chinook,5,Endangered,y,
-319,CK019-North Thompson_SU_1.3,NTh-sum,CK17,NTh+Gstr/Stream/Summer,"North Thompson, Stream, Summer population",CK-019,CK-19,Chinook,5,Endangered,y,
-320,CK020-Southern Mainland-Georgia Strait_FA_0.x,SC-GStr,CK18,SC+GStr/Ocean/Fall,"South Coast - Georgia Strait, Ocean, Fall population",CK-020,CK-20,Chinook,4,Data Deficient,y,
-321,CK021-East Vancouver Island-Goldstream_FA_0.x,Goldstr,CK21,EVI+GStr/Ocean/Fall,"East Vancouver Island, Ocean, Fall population",CK-021,CK-21,Chinook,3,Special Concern,y,
-322,CK022-East Vancouver Island-Cowichan and Koksilah_FA_0.x,CWCH-KOK,CK21,EVI+GStr/Ocean/Fall,"East Vancouver Island, Ocean, Fall population",CK-022,CK-22,Chinook,3,Special Concern,y,
-323,CK023-East Vancouver Island-Nanaimo_SP_1.x,NanR-spr,CK19,EVI+GStr/Stream/Spring,"East Vancouver Island, Stream, Spring population",CK-023,CK-23,Chinook,4,Endangered,y,
-324,CK025-East Vancouver Island-Nanaimo and Chemainus_FA_0.x,EVI-fall,CK21,EVI+GStr/Ocean/Fall,"East Vancouver Island, Ocean, Fall population",CK-025,CK-25,Chinook,3,Special Concern,y,
-325,CK027-East Vancouver Island-Qualicum and Puntledge_FA_0.x,QP-fall,CK21,EVI+GStr/Ocean/Fall,"East Vancouver Island, Ocean, Fall population",CK-027,CK-27,Chinook,4,Special Concern,y,
-326,CK028-Southern Mainland-Southern Fjords_FA_0.x,SC+SFj,CK22,SC+SFj/Ocean/Fall,"South Coast - Southern Fjords, Ocean, Fall population",CK-028,CK-28,Chinook,4,Data Deficient,y,
-327,CK029-East Vancouver Island-North_FA_0.x,NEVI,CK23,EVI+SFj/Ocean/Fall,"East Vancouver Island - North, Ocean, Fall (EVI + SFj) population",CK-029,CK-29,Chinook,4,Not at risk,y,
-,CK030-Port San Juan ,PSJ,CK24,WVI/Ocean/Fall (South),"West Vancouver Island, Ocean, Fall (South) population",CK-030,CK-30,Chinook,,,y,
-328,CK031-West Vancouver Island-South_FA_0.x,SWVI,CK24,WVI/Ocean/Fall (South),"West Vancouver Island, Ocean, Fall (South) population",CK-031,CK-31,Chinook,4,Threatened,y,
-329,CK032-West Vancouver Island-Nootka and Kyuquot_FA_0.x,NoKy,CK25,WVI/Ocean/Fall (Nootka & Kyuquot),"West Vancouver Island, Ocean, Fall (Nootka & Kyuquot) population",CK-032,CK-32,Chinook,4,Threatened,y,
-330,CK033-West Vancouver Island-North_FA_0.x,NWVI,CK26,WVI+WHG/Ocean/Fall,"West Vancouver Island - North, Ocean, Fall (WVI + WQCI) population",CK-033,CK-33,Chinook,4,Data Deficient,y,
-331,CK034-Homathko_SU_x.x,HOMATH,CK27,HK+SFj/Ocean/Summer,Southern Mainland Ocean Summer,CK-034,CK-34,Chinook,5,Data Deficient,y,
-332,CK035-Klinaklini_SU_1.3,KLINA,CK28,HK+SFj/Stream/Summer,Southern Mainland Stream Summer,CK-035,CK-35,Chinook,5,Data Deficient,y,
-333,CK082-Upper Adams River_SU_x.x,UAdams-summer,CK29,STh+GStr/Stream/Summer,"Upper Adams, Stream, Summer",CK-082,CK-82,Chinook,5,,y,
-334,CK083-East Vancouver Island-Georgia Strait_SU_0.3,EVIGStr-sum,CK20,EVI+GStr/Ocean/Summer,"East Vancouver Island, Ocean, Summer population",CK-083,CK-83,Chinook,4,Endangered,y,
-401,Portland Sound-Observatory Inlet-Lower Nass,,CK49,LNR-P,"Lower Nass River, Stream, Summer",CN_57,CK-57,Chinook,5,,,
-402,Upper Nass,,CK50,UNR,"Upper Nass River, Stream, Summer",CN_58,CK-58,Chinook,5,,,
-509,Docee,,CK32,SMITH,"Smith Inlet, Ocean, Summer",CN_36,CK-36,Chinook,4,,,
-510,Rivers Inlet,,CK33,RIVERS,"Rivers Inlet, Stream, Summer",CN_37,CK-37,Chinook,5,,,
-511,Wannock,,CK34,WANN,Wannock,CN_38,CK-38,Chinook,5,,,
-512,Bella Coola-Bentinck,,CK35,BCR-BENT,"Bella Coola-Bentinck, Ocean, Summer",CN_39,CK-39,Chinook,5,,,
-513,Dean River,,CK36,DEAN,"Dean River, Stream, Summer",CN_40,CK-40,Chinook,5,,,
-514,NCC-late timing,,CK37,NCC Late,"North & Central Coast Late,
-Ocean/Stream, Summer",CN_41,CK-41,Chinook,5,,,
-515,NCC-early timing,,CK38,NCC early,"North & Central Coast Early, Ocean, Spring",CN_42,CK-42,Chinook,5,,,
-805,Haida Gwaii-North,,CK30,HGN,"Haida Gwaii-North Ocean/Stream, Summer",CN_43,CK-43,Chinook,6,,,
-806,Haida Gwaii-East,,CK31,HGE,"Haida Gwaii-East Ocean, Fall",CN_44,CK-44,Chinook,6,,,
-,,,CK39,HecLow,"HecLow, Ocean/Stream, Summer",,,,,,,
-211,Lower Skeena-CM,,,,,CM_27,CM-27,Chum,4,,,
-214,Middle Skeena-CM,,,,,CM_28,CM-28,Chum,NA,,,
-220,Skeena Estuary-CM,,,,,CM_26,CM-26,Chum,NA,,,
-242,Upper Skeena,,,,,NA,NA,Chum,6,,,
-404,Portland Inlet,,,,,CM_30,CM-30,Chum,4,,,
-405,Lower Nass,,,,,CM_31,CM-31,Chum,4,,,
-406,Portland Canal-Observatory,,,,,CM_32,CM-32,Chum,4,,,
-500,Smith Inlet,,,,,CM_12,CM-12,Chum,4,,,
-501,Rivers Inlet,,,,,CM_13,CM-13,Chum,4,,,
-502,Wannock,,,,,CM_14,CM-14,Chum,4,,,
-503,Spiller-Fitz-Hugh-Burke,,,,,CM_15,CM-15,Chum,4,,,
-504,Bella Colla-Dean Rivers,,,,,CM_16,CM-16,Chum,4,,,
-505,Bella Coola River-Late,,,,,CM_17,CM-17,Chum,4,,,
-506,Hecate Lowlands,,,,,CM_18,CM-18,Chum,4,,,
-507,Mussel-Kynock,,,,,CM_19,CM-19,Chum,4,,,
-508,Douglas-Gardner,,,,,CM_20,CM-20,Chum,4,,,
-701,Lower Fraser,,,,,CM-002,CM-2,Chum,4,,,
-800,North Haida Gwaii-Stanley Creek,,,,,CM_25,CM-25,Chum,5,,,
-801,East HG,,,,,CM_21,CM-21,Chum,5,,,
-802,North Haida Gwaii,,,,,CM_24,CM-24,Chum,5,,,
-803,West Haida Gwaii,,,,,CM_23,CM-23,Chum,5,,,
-804,Skidegate,,,,,CM_22,CM-22,Chum,5,,,
-900,Southern Coastal Streams,,,,,CM-008,CM-8,Chum,4,,,
-901,Bute Inlet,,,,,CM-007,CM-7,Chum,4,,,
-902,Loughborough,,,,,CM-006,CM-6,Chum,4,,,
-903,Northeast Vancouver Island,,,,,CM-005,CM-5,Chum,4,,,
-904,Georgia Strait,,,,,CM-004,CM-4,Chum,4,,,
-905,Howe Sound-Burrand Inlet,,,,,CM-003,CM-3,Chum,4,,,
-977,Northwest Vancouver Island,,,,,CM-011,CM-11,Chum,4,,,
-978,Southwest & West  Vancouver Island,,,,,CM-010,CM-10,Chum,4,,,
-979,Upper Knight,,,,,CM-009,CM-9,Chum,4,,,
-906,Boundary Bay,BB,CO01,BB,Boundary Bay,CO-001,CO-1,Coho,3,,y,
-750,Lower Fraser,LFR,CO02,LFR,Lower Fraser ,CO-047,CO-47,Coho,3,,y,
-704,Lillooet,LILL,CO03,LILL,Lillooet ,CO-004,CO-4,Coho,3,,y,
-705,Fraser Canyon,FRCany,CO04,FRCany,Fraser Canyon,CO-005,CO-5,Coho,3,Threatened,y,
-749,Interior Fraser,MFR,CO05,MFR,Middle Fraser,CO-048,CO-48,Coho,3,Threatened,y,
-707,Lower Thompson,LTHOM,CO06,LTHOM,Lower Thompson,CO-007,CO-7,Coho,3,Threatened,y,
-708,South Thompson,STHOM,CO07,STHOM,South Thompson,CO-008,CO-8,Coho,3,Threatened,y,
-709,North Thompson,NTHOM,CO08,NTHOM,North Thompson,CO-009,CO-9,Coho,3,Threatened,y,
-908,Georgia Strait Mainland,SC+GStr,CO09,SC+GStr,Georgia Strait Mainland,CO-011,CO-11,Coho,3,,y,
-907,Howe Sound-Burrard Inlet,Howe-Burrard,CO10,Howe-Burrard,Howe Sound-Burrard Inlet,CO-010,CO-10,Coho,3,,y,
-910,East Vancouver Island-Georgia Strait,EVI+GStr,CO11,EVI+GStr,East Vancouver Island-Georgia Strait,CO-013,CO-13,Coho,3,,y,
-909,Southern Coastal Streams-Queen Charlotte Strait-Johnstone Strait-Southern Fjords,SC+SFj,CO12,SC+SFj,South Coastal Streams-QCStr-JStr-SFjords,CO-012,CO-12,Coho,3,,y,
-916,Homathko-Klinaklini Rivers,HK,CO13,HK+SFj,Homathko-Klinaklini,CO-019,CO-19,Coho,3,,y,
-911,East Vancouver Island-Johnstone Strait-Southern Fjords,EVI+SFj,CO14,EVI+SFj,E Vancouver Is – Johnstone Strait-SFjords,CO-014,CO-14,Coho,3,,y,
-914,West Vancouver Island,WVI,CO15,WVI,West Vancouver Island,CO-017,CO-17,Coho,3,,y,
-915,Clayoquot,CLAY,CO15,WVI,West Vancouver Island,CO-018,CO-18,Coho,3,,y,
-913,Juan de Fuca-Pachena,JdF,CO16,JdF,Juan de Fuca-Pachena,CO-016,CO-16,Coho,3,,y,
-912,Nahwitti Lowland,Nahwitti,CO17,NWVI,Northwest Vancouver Island,CO-015,CO-15,Coho,3,,y,"alt CU name ""Northwest Vancouver Island"""
-808,HG-WEST,WQCI,CO18,WHG,Haida Gwaii - West,CO_24,CO-24,Coho,3,,y,"alt. CU name ""Queen Charlottes | Hecate Strait - Q.C. Sound"""
-809,HG-GRAHAM ISLAND LOWLANDS,NQCI,CO19,NHG,Haida Gwaii - North,CO_25,CO-25,Coho,3,,y,"alt. CU name ""QCI - Graham Is Lowlands"""
-807,HG-EAST,EQCI,CO20,EHG,Haida Gwaii - East ,CO_23,CO-23,Coho,3,,y,"alt. CU name ""Queen Charlotte Islands | Outer Graham Island"""
-516,Smith Inlet,Smith,CO21,RSI,Rivers-Smith Inlet,CO_20,CO-20,Coho,3,,y,
-517,Rivers Inlet,Rivers,CO21,RSI,Rivers-Smith Inlet,CO_21,CO-21,Coho,3,,y,
-518,Bella Coola-Dean Rivers,BCD,CO22,BCD,Bella Coola - Dean Rivers,CO_22,CO-22,Coho,3,,y,
-520,Hecate Strait Mainland,HecLow+HStr,CO23,HecLow,Hecate Strait Mainland,CO_27,CO-27,Coho,3,,y,
-519,Mussel-Kynoch,MusKyn,CO24,NCS,Northern Coastal Streams,CO_26,CO-26,Coho,3,,y,
-521,Brim-Wahoo,BRIM,CO24,NCS,Northern Coastal Streams,CO_28,CO-28,Coho,3,,y,
-522,Douglas Channel-Kitimat Arm,DOUG,CO24,NCS,Northern Coastal Streams,CO_29,CO-29,Coho,3,,y,
-523,N Coastal Streams,NCS,CO24,NCS,Northern Coastal Streams,CO_30,CO-30,Coho,3,,y,
-225,Skeena Estuary-CO,NSKEst,CO25,NSKEst,Skeena Estuary,CO_31,CO-31,Coho,3,,y,
-202,Lower Skeena-CO,LSKNA,CO26,LSK,Lower Skeena,CO_32,CO-32,Coho,3,,y,
-215,Middle Skeena-CO,MSKNA,CO27,MSK,Middle Skeena,CO_33,CO-33,Coho,3,,y,
-231,Upper Skeena-CO,USKNA,CO28,USK,Upper Skeena,CO_34,CO-34,Coho,3,,y,
-408,Lower Nass,LNASS,CO29,LNR-P,Lower Nass - Portland Canal ,CO_35,CO-35,Coho,3,,y,
-410,Portland Sound-Observatory Inlet-Portland Canal,PORT,CO29,LNR-P,Lower Nass - Portland Canal ,CO_37,CO-37,Coho,3,,y,
-409,Upper Nass,UNASS,CO30,UNR,Upper Nass,CO_36,CO-36,Coho,3,,y,
-,Unuk River,UNUK,CO31,Unuk,Unuk,CO_38,CO-38,Coho,3,,y,
-,Lower Stikine,LStk,CO32,LStk,Lower Stikine,CO_39,CO-39,Coho,3,,y,
-,Whiting River,Whiting,CO33,Whiting,Whiting River,CO_40,CO-40,Coho,3,,y,
-,Taku,Taku,CO34,Taku,Taku,CO_41,CO-41,Coho,3,,y,
-,Taku,Taku,CO34,Taku,Taku,CO_42,CO-42,Coho,3,,y,
-,Taku,Taku,CO34,Taku,Taku,CO_43,CO-43,Coho,3,,y,
-,Lynn Canal,LYNN,CO35,LYNN,Chilkat,CO_44,CO-44,Coho,3,,y,
-,Alsek,Alsek,CO36,Alsek,Alsek,CO_45,CO-45,Coho,3,,y,
-,Porcupine River,PORC,CO37,Yukon,Porcupine,CO_46,CO-46,Coho,3,,y,
-209,Lower Skeena (odd),,,,,PKo_15,PKO-15,Pink,2,,,
-213,Middle & Upper Skeena (odd),,,,,PKo_16,PKO-16,Pink,2,,,
-218,Middle-Upper Skeena (even),,,,,PKe_8,PKE-08,Pink,2,,,
-219,Nass-Skeena Estuary (even),,,,,PKe_7,PKE-07,Pink,2,,,
-223,Nass-Skeena Estuary (odd),,,,,PKo_14,PKO-14,Pink,2,,,
-240,Lower Skeena (even),,,,,NA,NA,Pink,2,,,
-412,Upper Nass,,,,,NA,NA,Pink,,,,
-414,Nass-Portland-Observatory,,,,,PKo_17,PKO-17,Pink,2,,,
-415,Upper Nass,,,,,NA,NA,Pink,,,,
-608,Hecate Lowlands,,,,,PKe_5,PKE-05,Pink,2,,,
-609,Hecate Strait-Fjords,,,,,PKe_6,PKE-06,Pink,2,,,
-610,Homathko-Klinaklini-Rivers-Smith-Bella Coola Dean,,,,,PKo_8,PKO-08,Pink,2,,,
-611,Hecate Strait-Lowlands,,,,,PKo_12,PKO-12,Pink,2,,,
-612,Hecate Strait-Fjords,,,,,PKo_13,PKO-13,Pink,2,,,
-710,Fraser River,,,,,PKO-001,PKO-1,Pink,2,,,
-810,North Haida Gwaii,,,,,PKe_9,PKE-09,Pink,2,,,
-811,East Haida Gwaii,,,,,PKe_10,PKE-10,Pink,2,,,
-812,West Haida Gwaii,,,,,PKe_11,PKE-11,Pink,2,,,
-813,East Haida Gwaii,,,,,PKo_9,PKO-09,Pink,2,,,
-814,North Haida Gwaii,,,,,PKo_10,PKO-10,Pink,2,,,
-815,West Haida Gwaii,,,,,PKo_11,PKO-11,Pink,2,,,
-917,Georgia Strait,,,,,PKE-001,PKE-1,Pink,2,,,
-918,West Vancouver Island,,,,,PKE-002,PKE-2,Pink,2,,,
-919,Northwest Vancouver Island,,,,,PKE-003,PKE-3,Pink,2,,,
-920,Southern Fjords,,,,,PKE-004,PKE-4,Pink,2,,,
-921,East Howe Sound-Burrard Inlet,,,,,PKO-002,PKO-2,Pink,2,,,
-922,Georgia Strait,,,,,PKO-003,PKO-3,Pink,2,,,
-923,East Vancouver Island-Johnstone Strait,,,,,PKO-004,PKO-4,Pink,2,,,
-924,Nahwitti,,,,,PKO-005,PKO-5,Pink,2,,,
-925,West Vancouver Island,,,,,PKO-006,PKO-6,Pink,2,,,
-926,Southern Fjords,,,,,PKO-007,PKO-7,Pink,2,,,
-171,Alastair,,,,,SX_L-20-01,SEL-20-01,Sockeye-Lake,6,,,
-172,Aldrich,,,,,NA,NA,Sockeye-Lake,5,,,
-173,Dennis,,,,,NA,NA,Sockeye-Lake,5,,,
-174,Ecstall/Lower,,,,,NA,SEL-20-04,Sockeye-Lake,5,,,
-175,Johnston,,,,,SX_L-20-05,SEL-20-05,Sockeye-Lake,5,,,
-176,Kitsumkalum,,,,,SX_L-20-06,SEL-20-06,Sockeye-Lake,5,,,
-177,Lakelse,,,,,SX_L-20-07,SEL-20-07,Sockeye-Lake,5,,,
-178,Mcdonell,,,,,SX_L-20-08,SEL-20-08,Sockeye-Lake,5,,,
-179,Atna,,,,,NA,NA,Sockeye-Lake,5,,,
-180,Babine,,,,,SX_L-21-02-EW,SEL-21-02-EW,Sockeye-Lake,5,,,
-181,Bulkley,,,,,NA,SEL-21-03,Sockeye-Lake,5,,,
-182,Club Lake,,,,,NA,NA,Sockeye-Lake,5,,,
-183,Gitanyow,,,,,SX_L-21-05,SEL-21-05,Sockeye-Lake,5,,,
-184,Maxan,,,,,NA,NA,Sockeye-Lake,5,,,
-185,Morice,,,,,SX_L-21-07,SEL-21-07,Sockeye-Lake,6,,,
-186,Nilkitkwa,,,,,SX_L-21-02-LW,SEL-21-02-LW,Sockeye-Lake,5,,,
-187,Stephens,,,,,SX_L-21-09,SEL-21-09,Sockeye-Lake,5,,,
-188,Swan,,,,,SX_L-21-10,SEL-21-10,Sockeye-Lake,5,,,
-189,Tahlo/Morrison,,,,,SX_L-21-02-MW,SEL-21-02-MW,Sockeye-Lake,5,,,
-190,Asitika,,,,,SX_L-22-01,SEL-22-01,Sockeye-Lake,5,,,
-191,Azuklotz,,,,,SX_L-22-02,SEL-22-02,Sockeye-Lake,5,,,
-192,Bear,,,,,SX_L-22-03,SEL-22-03,Sockeye-Lake,5,,,
-193,Damshilgwit,,,,,SX_L-22-04,SEL-22-04,Sockeye-Lake,5,,,
-194,Johanson,,,,,NA,SEL-22-05,Sockeye-Lake,5,,,
-195,Kluatantan,,,,,NA,SEL-22-06,Sockeye-Lake,5,,,
-196,Kluayaz,,,,,NA,SEL-22-07,Sockeye-Lake,5,,,
-197,Motase,,,,,SX_L-22-08,SEL-22-08,Sockeye-Lake,5,,,
-198,Sicintine,,,,,NA,SEL-22-09,Sockeye-Lake,5,,,
-199,Slamgeesh,,,,,NA,SEL-22-10,Sockeye-Lake,5,,,
-200,Spawning,,,,,NA,SEL-22-11,Sockeye-Lake,5,,,
-201,Sustut,,,,,NA,SEL-22-12,Sockeye-Lake,5,,,
-203,Babine (enhanced),,,,,SX_L-21-02-F,SEL-21-02-F,Sockeye-Lake,5,,,
-204,Babine-Pinkut,,,,,NA,NA,Sockeye-Lake,5,,,
-230,Footsore/Hodder,,,,,NA,SEL-21-12,Sockeye-Lake,5,,,
-243,Onerka,,,,,NA,NA,Sockeye-Lake,5,,,
-416,Prudhomme,,,,,SX_L-19-49,SEL-19-49,Sockeye-Lake,5,,,
-417,Shawatlan,,,,,SX_L-19-54,SEL-19-54,Sockeye-Lake,5,,,
-418,Clements,,,,,NA,NA,Sockeye-Lake,,,,
-419,Leverson,,,,,NA,NA,Sockeye-Lake,,,,
-420,Bowser,,,,,NA,NA,Sockeye-Lake,,,,
-421,Damdochax,,,,,SX_L-24-02,SEL-24-02,Sockeye-Lake,5,,,
-422,Fred Wright,,,,,SX_L-24-03,SEL-24-03,Sockeye-Lake,5,,,
-423,Kwinageese,,,,,NA,NA,Sockeye-Lake,,,,
-424,Meziadin,,,,,SX_L-24-05,SEL-24-05,Sockeye-Lake,5,,,
-425,Oweegee,,,,,NA,NA,Sockeye-Lake,,,,
-524,Long,,,,,SX_L-15-01,SEL-15-01,Sockeye-Lake,5,,,
-525,Owikeno,,,,,SX_L-15-02,SEL-15-02,Sockeye-Lake,5,,,
-526,Owikeno-Late,,,,,SX_L-15-03,SEL-15-03,Sockeye-Lake,5,,,
-527,Wannock[Owikeno],,,,,L-15-04,SEL-15-04,Sockeye-Lake,5,,,
-528,South Atnarko Lakes,,,,,SX_528,SX_528,Sockeye-Lake,5,,,
-529,Backland,,,,,SX_L-18-01,SEL-18-01,Sockeye-Lake,5,,,
-530,Soda Creek,,,,,SX_L-18-10,SEL-18-10,Sockeye-Lake,5,,,
-531,Whalen,,,,,SX_L-18-11,SEL-18-11,Sockeye-Lake,5,,,
-532,Canoona,,,,,SX_L-18-02,SEL-18-02,Sockeye-Lake,5,,,
-533,Dome ,,,,,SX_L-18-03,SEL-18-03,Sockeye-Lake,5,,,
-534,Evelyn,,,,,SX_L-18-04,SEL-18-04,Sockeye-Lake,5,,,
-535,Kainet Creek,,,,,SX_L-18-05,SEL-18-05,Sockeye-Lake,5,,,
-536,Kimsquit,,,,,SX_L-18-06,SEL-18-06,Sockeye-Lake,5,,,
-537,Kitkiata,,,,,SX_L-18-07,SEL-18-07,Sockeye-Lake,5,,,
-538,Kitlope,,,,,SX_L-18-08,SEL-18-08,Sockeye-Lake,5,,,
-539,Pine River,,,,,SX_L-18-09,SEL-18-09,Sockeye-Lake,5,,,
-540,Banks,,,,,SX_L-19-01,SEL-19-01,Sockeye-Lake,5,,,
-541,Bloomfield,,,,,SX_L-19-02,SEL-19-02,Sockeye-Lake,5,,,
-542,Bolton Creek,,,,,SX_L-19-03,SEL-19-03,Sockeye-Lake,5,,,
-543,Bonilla,,,,,SX_L-19-04,SEL-19-04,Sockeye-Lake,5,,,
-544,Borrowman Creek,,,,,SX_L-19-05,SEL-19-05,Sockeye-Lake,5,,,
-545,Busey Creek,,,,,SX_L-19-06,SEL-19-06,Sockeye-Lake,5,,,
-546,Cartwright Creek,,,,,SX_L-19-07,SEL-19-07,Sockeye-Lake,5,,,
-547,Chic Chic ,,,,,SX_L-19-08,SEL-19-08,Sockeye-Lake,5,,,
-548,Citeyats,,,,,SX_L-19-09,SEL-19-09,Sockeye-Lake,5,,,
-549,Fannie Cove,,,,,SX_L-19-10,SEL-19-10,Sockeye-Lake,5,,,
-550,Curtis Inlet,,,,,SX_L-19-11,SEL-19-11,Sockeye-Lake,5,,,
-551,Dallain Creek,,,,,SX_L-19-12,SEL-19-12,Sockeye-Lake,5,,,
-552,Deer,,,,,SX_L-19-13,SEL-19-13,Sockeye-Lake,5,,,
-553,Devon,,,,,SX_L-19-14,SEL-19-14,Sockeye-Lake,5,,,
-554,Douglas Creek,,,,,SX_L-19-15,SEL-19-15,Sockeye-Lake,5,,,
-555,Elizabeth,,,,,SX_L-19-16,SEL-19-16,Sockeye-Lake,5,,,
-556,Elsie/Hoy,,,,,SX_L-19-17,SEL-19-17,Sockeye-Lake,5,,,
-557,End Hill Creek,,,,,SX_L-19-18,SEL-19-18,Sockeye-Lake,5,,,
-558,Evinrude Inlet,,,,,SX_L-19-19,SEL-19-19,Sockeye-Lake,5,,,
-559,Freeda,,,,,SX_L-19-20,SEL-19-20,Sockeye-Lake,5,,,
-560,Hartley Bay,,,,,SX_L-19-21,SEL-19-21,Sockeye-Lake,5,,,
-561,Hevenor Inlet,,,,,SX_L-19-22,SEL-19-22,Sockeye-Lake,5,,,
-562,Higgins Lagoon,,,,,SX_L-19-23,SEL-19-23,Sockeye-Lake,5,,,
-563,Kadjusdis River,,,,,SX_L-19-24,SEL-19-24,Sockeye-Lake,5,,,
-564,Kdelmashan Creek,,,,,SX_L-19-25,SEL-19-25,Sockeye-Lake,5,,,
-565,Keecha,,,,,SX_L-19-26,SEL-19-26,Sockeye-Lake,5,,,
-566,Kent Inlet Lagoon Creek,,,,,SX_L-19-27,SEL-19-27,Sockeye-Lake,5,,,
-567,Kenzuwash Creeks,,,,,SX_L-19-28,SEL-19-28,Sockeye-Lake,5,,,
-568,Keswar Creek,,,,,SX_L-19-29,SEL-19-29,Sockeye-Lake,5,,,
-569,Kildidt Creek,,,,,SX_L-19-30,SEL-19-30,Sockeye-Lake,5,,,
-570,Kildidt Lagoon Creek,,,,,SX_L-19-31,SEL-19-31,Sockeye-Lake,5,,,
-571,Kisameet,,,,,SX_L-19-32,SEL-19-32,Sockeye-Lake,5,,,
-572,Koeye,,,,,SX_L-19-33,SEL-19-33,Sockeye-Lake,5,,,
-573,Kooryet,,,,,SX_L-19-34,SEL-19-34,Sockeye-Lake,5,,,
-574,Kunsoot River,,,,,SX_L-19-35,SEL-19-35,Sockeye-Lake,5,,,
-575,Kwakwa Creek,,,,,SX_L-19-36,SEL-19-36,Sockeye-Lake,5,,,
-576,Lewis Creek,,,,,SX_L-19-37,SEL-19-37,Sockeye-Lake,5,,,
-577,Limestone Creek,,,,,SX_L-19-38,SEL-19-38,Sockeye-Lake,5,,,
-578,Lowe/Simpson/Weir,,,,,SX_L-19-39,SEL-19-39,Sockeye-Lake,5,,,
-579,Mary Cove Creek,,,,,SX_L-19-40,SEL-19-40,Sockeye-Lake,5,,,
-580,Mcdonald Creek,,,,,SX_L-19-41,SEL-19-41,Sockeye-Lake,5,,,
-581,Mcloughlin,,,,,SX_L-19-42,SEL-19-42,Sockeye-Lake,5,,,
-582,Mikado,,,,,SX_L-19-43,SEL-19-43,Sockeye-Lake,5,,,
-583,Monckton Inlet Creek,,,,,SX_L-19-44,SEL-19-44,Sockeye-Lake,5,,,
-584,Namu,,,,,SX_L-19-45,SEL-19-45,Sockeye-Lake,5,,,
-585,Port John,,,,,SX_L-19-46,SEL-19-46,Sockeye-Lake,5,,,
-586,Powles Creek,,,,,SX_L-19-47,SEL-19-47,Sockeye-Lake,5,,,
-587,Price Creek,,,,,SX_L-19-48,SEL-19-48,Sockeye-Lake,5,,,
-588,Roderick,,,,,SX_L-19-50,SEL-19-50,Sockeye-Lake,5,,,
-589,Ryan Creek,,,,,SX_L-19-51,SEL-19-51,Sockeye-Lake,5,,,
-590,Salter,,,,,SX_L-19-52,SEL-19-52,Sockeye-Lake,5,,,
-591,Scoular/Kilpatrick,,,,,SX_L-19-53,SEL-19-53,Sockeye-Lake,5,,,
-592,Sheneeza Inlet,,,,,SX_L-19-55,SEL-19-55,Sockeye-Lake,5,,,
-593,Ship Point Creek,,,,,SX_L-19-56,SEL-19-56,Sockeye-Lake,5,,,
-594,Spencer Creek,,,,,SX_L-19-57,SEL-19-57,Sockeye-Lake,5,,,
-595,Stannard Creek,,,,,SX_L-19-58,SEL-19-58,Sockeye-Lake,5,,,
-596,Talamoosa Creek,,,,,SX_L-19-59,SEL-19-59,Sockeye-Lake,5,,,
-597,Tankeeah River,,,,,SX_L-19-60,SEL-19-60,Sockeye-Lake,5,,,
-598,Treneman Creek,,,,,SX_L-19-61,SEL-19-61,Sockeye-Lake,5,,,
-599,Tsimtack/Moore/Roger,,,,,SX_L-19-62,SEL-19-62,Sockeye-Lake,5,,,
-600,Tuno Creek East,,,,,SX_L-19-63,SEL-19-63,Sockeye-Lake,5,,,
-601,Tuno Creek West,,,,,SX_L-19-64,SEL-19-64,Sockeye-Lake,5,,,
-602,Tyler Creek,,,,,SX_L-19-65,SEL-19-65,Sockeye-Lake,5,,,
-603,Wale Creek,,,,,SX_L-19-66,SEL-19-66,Sockeye-Lake,5,,,
-604,Watt Bay,,,,,SX_L-19-67,SEL-19-67,Sockeye-Lake,5,,,
-605,West Creek,,,,,SX_L-19-68,SEL-19-68,Sockeye-Lake,5,,,
-606,Yaaklele Lagoon,,,,,SX_L-19-69,SEL-19-69,Sockeye-Lake,5,,,
-607,Yeo,,,,,SX_L-19-70,SEL-19-70,Sockeye-Lake,5,,,
-614,Northern Coastal Fjords,,,,,SX_R16,SER-16,Sockeye-Lake,4,,,
-711,Chilliwack_Early Summer,,SE5,,Chilliwack-ES population,SEL-03-001,SEL-03-01,Sockeye-Lake,4,Not at risk,,
-712,Cultus_Late,,SE6,,Cultus-L population,SEL-03-002,SEL-03-02,Sockeye-Lake,4,Endangered,,
-713,Harrison-downstream migrating_Late,,SE9,,Harrison (D/S)-L population,SEL-03-003,SEL-03-03,Sockeye-Lake,4,Special Concern,,
-714,Harrison-upstream migrating_Late,,SE10,,Harrison (U/S)-L population,SEL-03-004,SEL-03-04,Sockeye-Lake,4,Endangered,,
-715,Pitt_Early Summer,,SE15,,Pitt-ES population,SEL-03-005,SEL-03-05,Sockeye-Lake,4,Not at risk,,
-716,Lillooet/Harrison_Late,,SE12,,Lillooet-Harrison-L population,SEL-04-001,SEL-04-01,Sockeye-Lake,4,Special Concern,,
-718,Nahatlatch_Early Summer,,SE13,,Nahatlatch-ES population,SEL-05-002,SEL-05-02,Sockeye-Lake,4,Special Concern,,
-719,Anderson/Seton_Early Summer,,SE1,,Anderson-Seton-ES population,SEL-06-001,SEL-06-01,Sockeye-Lake,4,Not at risk,,
-720,Chilko_Early Summer,,,,Chilko-ES population / Chilko-S population,SEL-06-002,SEL-06-02,Sockeye-Lake,4,Not at risk,,
-721,Chilko_Summer,,,,Chilko-ES population / Chilko-S population,SEL-06-003,SEL-06-03,Sockeye-Lake,4,Not at risk,,
-725,Francois/Fraser_Summer,,SE7,,Francois-Fraser-S population,SEL-06-007,SEL-06-07,Sockeye-Lake,4,Special Concern,,
-727,Nadina/Francois_Early Summer,,SE8,,Nadina-Francois-ES population,SEL-06-020,SEL-06-20,Sockeye-Lake,4,Not at risk,,
-728,Quesnel_Summer,,SE16,,Quesnel-S population,SEL-06-010,SEL-06-10,Sockeye-Lake,4,Endangered,,
-729,Seton_Late,,SE17,,Seton-L population,SEL-06-011,SEL-06-11,Sockeye-Lake,4,Endangered,,
-731,Takla/Trembleur/Stuart_Summer,,SE21,,Takla-Trembleur-Stuart-S population,SEL-06-013,SEL-06-13,Sockeye-Lake,4,Endangered,,
-732,Takla/Trembleur_Early Stuart,,SE20,,Takla-Trembleur-EStu population,SEL-06-014,SEL-06-14,Sockeye-Lake,4,Endangered,,
-734,Taseko_Early Summer,,SE22,,Taseko-ES population,SEL-06-016,SEL-06-16,Sockeye-Lake,4,Endangered,,
-735,Bowron_Early Summer,,SE2,,Bowron-ES population,SEL-07-001,SEL-07-01,Sockeye-Lake,4,Endangered,,
-738,Shuswap_Early Summer,,SE19,,Shuswap-ES population,SEL-09-002,SEL-09-02,Sockeye-Lake,4,Not at risk,,
-739,Shuswap_Late,,SE18,,Shuswap Complex-L population,SEL-09-003,SEL-09-03,Sockeye-Lake,4,Not at risk,,
-740,Kamloops_Early Summer,,SE11,,Kamloops-ES population,SEL-10-001,SEL-10-01,Sockeye-Lake,4,Special Concern,,
-751,Adams and Momich Lakes_Early Summer,,,,Adams ES,SEL-09-912,SEL-09-xx,Sockeye-Lake,4,Threatened,,
-751,Adams and Momich Lakes_Early Summer,,,,Momich-ES,SEL-09-912,SEL-09-xx,Sockeye-Lake,4,Threatened,,
-752,North Barriere_Early Summer,,SE14,,North Barriere-ES population,SEL-10-003,SEL-10-03,Sockeye-Lake,4,Threatened,,
-819,Ain/Skundale/Ian,,,,,NA,SEL-17-01,Sockeye-Lake,NA,,,
-820,Awun,,,,,SX_L-17-02,SEL-17-02,Sockeye-Lake,5,,,
-821,Fairfax,,,,,NA,SEL-17-03,Sockeye-Lake,5,,,
-822,Jalun,,,,,NA,SEL-17-04,Sockeye-Lake,5,,,
-823,MARIAN,,,,,SX_L-17-05,SEL-17-05,Sockeye-Lake,5,,,
-824,Mathers,,,,,SX_L-17-06,SEL-17-06,Sockeye-Lake,5,,,
-825,Mercer,,,,,SX_L-17-07,SEL-17-07,Sockeye-Lake,5,,,
-826,Skidegate,,,,,SX_L-17-08,SEL-17-08,Sockeye-Lake,5,,,
-827,Yakoun,,,,,SX_L-17-09,SEL-17-09,Sockeye-Lake,5,,,
-927,Fulmore,,,,,SEL-11-001,SEL-11-01,Sockeye-Lake,5,,,
-928,Heydon,,,,,SEL-11-002,SEL-11-02,Sockeye-Lake,5,,,
-929,Kakweiken,,,,,SEL-11-003,SEL-11-03,Sockeye-Lake,5,,,
-930,Loose,,,,,SEL-11-004,SEL-11-04,Sockeye-Lake,5,,,
-931,Mackenzie,,,,,SEL-11-005,SEL-11-05,Sockeye-Lake,5,,,
-932,Phillips,,,,,SEL-11-006,SEL-11-06,Sockeye-Lake,5,,,
-933,Sakinaw,,,,Sakinaw population,SEL-11-007,SEL-11-07,Sockeye-Lake,5,Endangered,,
-935,Tzoonie,,,,,SEL-11-009,SEL-11-09,Sockeye-Lake,5,,,
-936,Village Bay,,,,,SEL-11-010,SEL-11-10,Sockeye-Lake,5,,,
-937,Ida/Bonanza,,,,,SEL-12-001,SEL-12-01,Sockeye-Lake,5,,,
-938,Nahwitti,,,,,SEL-12-002,SEL-12-02,Sockeye-Lake,5,,,
-939,Nimpkish,,,,,SEL-12-003,SEL-12-03,Sockeye-Lake,5,,,
-941,Quatse,,,,,SEL-12-005,SEL-12-05,Sockeye-Lake,4,,,
-942,Schoen,,,,,SEL-12-006,SEL-12-06,Sockeye-Lake,5,,,
-943,Shushartie,,,,,SEL-12-007,SEL-12-07,Sockeye-Lake,5,,,
-944,Woss,,,,,SEL-12-008,SEL-12-08,Sockeye-Lake,5,,,
-945,Alice,,,,,SEL-13-001,SEL-13-01,Sockeye-Lake,5,,,
-946,Canoe Creek,,,,,SEL-13-002,SEL-13-02,Sockeye-Lake,5,,,
-947,Cecilia,,,,,SEL-13-003,SEL-13-03,Sockeye-Lake,5,,,
-948,Cheewat,,,,,SEL-13-004,SEL-13-04,Sockeye-Lake,5,,,
-949,Clayoquot,,,,,SEL-13-005,SEL-13-05,Sockeye-Lake,5,,,
-950,Deserted,,,,,SEL-13-006,SEL-13-06,Sockeye-Lake,5,,,
-951,Fairy,,,,,SEL-13-007,SEL-13-07,Sockeye-Lake,5,,,
-952,Great Central,,,,,SEL-13-008,SEL-13-08,Sockeye-Lake,5,,,
-953,Henderson,,,,,SEL-13-009,SEL-13-09,Sockeye-Lake,5,,,
-954,Hesquiat,,,,,SEL-13-010,SEL-13-10,Sockeye-Lake,5,,,
-955,Hobiton,,,,,SEL-13-011,SEL-13-11,Sockeye-Lake,5,,,
-956,Jansen,,,,,SEL-13-012,SEL-13-12,Sockeye-Lake,5,,,
-957,Kanim,,,,,SEL-13-013,SEL-13-13,Sockeye-Lake,5,,,
-958,Kennedy,,,,,SEL-13-014,SEL-13-14,Sockeye-Lake,5,,,
-959,Maggie,,,,,SEL-13-015,SEL-13-15,Sockeye-Lake,5,,,
-960,Megin,,,,,SEL-13-016,SEL-13-16,Sockeye-Lake,5,,,
-961,Muchalat,,,,,SEL-13-017,SEL-13-17,Sockeye-Lake,5,,,
-962,Muriel,,,,,SEL-13-018,SEL-13-18,Sockeye-Lake,5,,,
-963,Nitinat,,,,,SEL-13-019,SEL-13-19,Sockeye-Lake,5,,,
-964,O'Connell,,,,,SEL-13-020,SEL-13-20,Sockeye-Lake,5,,,
-966,Park River,,,,,SEL-13-022,SEL-13-22,Sockeye-Lake,5,,,
-967,Power,,,,,SEL-13-023,SEL-13-23,Sockeye-Lake,5,,,
-969,Sproat,,,,,SEL-13-025,SEL-13-25,Sockeye-Lake,5,,,
-970,William/Brink,,,,,SEL-13-026,SEL-13-26,Sockeye-Lake,5,,,
-976,Vernon,,,,,SEL-12-009,SEL-12-09,Sockeye-Lake,5,,,
-216,Skeena River-high interior,,SER41,USK,Upper Skeena River,SX_R19,SER-19,Sockeye-River,5,,y,
-226,Skeena River,,SER39,LSK,Lower Skeena River,NA,SER-18,Sockeye-River,5,,y,
-226,Skeena River,,SER40,MSK,Middle Skeena River,NA,SER-18,Sockeye-River,5,,y,
-426,Lower Nass-Portland,,SER42,LNR-P,Lower Nass-Portland,SX_R20,SER-20,Sockeye-River,4,,y,
-427,Upper Nass River,,SER43,UNR,Upper Nass River,SX_R21,SER-21,Sockeye-River,4,,y,
-613,Rivers-Smith Inlets,,SER35,RSI,Rivers-Smith Inlets,SX_R12,SER-12,Sockeye-River,4,,y,
-615,Northern Coastal,,SER38,HecLow,Hecate Lowlands,SX_R17,SER-17,Sockeye-River,4,,y,
-742,Widgeon,,SER23,,Widgeon (River-Type) population,SER-002,SER-02,Sockeye-River,4,Threatened,y,
-745,Harrison River,,SER24,,Harrison (River-Type) population,SER-003,SER-03,Sockeye-River,4,Not at risk,y,
-816,East Haida Gwaii,,SER34,EHG,East Haida Gwaii,NA,SER-13,Sockeye-River,NA,,y,
-817,North Haida Gwaii,,SER,,,NA,SER-14,Sockeye-River,NA,,,"Seems like the names is switched with SER-15, should be West Haida Gwaii?"
-818,West Haida Gwaii,,,,,NA,SER-15,Sockeye-River,NA,,,"Seems like the names is switched with SER-14, should be North Haida Gwaii? "
-971,Southern Fjords,,SER27,SC-SFj,South Coast-Southern Fjords,SER-009,SER-009,Sockeye-River,5,,y,
-971,Southern Fjords,,SER29,HK,Hamothko-Klinaklini-Southern Fjords,SER-009,SER-009,Sockeye-River,5,,y,
-972,West Vancouver Island,,SER30,WVI,West Vancouver Is,SER-010,SER-010,Sockeye-River,5,,y,
-973,East Vancouver Island and Georgia Strait,,SER25,SC-GStr,South Coast-Georgia Strait,SER-008,SER-08,Sockeye-River,5,,y,
-973,East Vancouver Island and Georgia Strait,,SER26,EVI-GStr,East Vancouver Island-Georgia Strait,SER-008,SER-08,Sockeye-River,5,,y,
-973,East Vancouver Island and Georgia Strait,,SER28,EVI-SFj,East Vancouver Island-Southern Fjords,SER-008,SER-08,Sockeye-River,5,,y,
-974,NW Vancouver Island,,SER31,NWVI,Northwest Vancouver Is,SER-011,SER-011,Sockeye-River,5,,y,
-,Northern Transboundary Fjords ,,SER44,LStk,Stikine River,SER-022,SER-022,Sockeye-River,,,y,
-,Northern Transboundary Fjords ,,SER45,TAKU,Taku River,SER-022,SER-022,Sockeye-River,,,y,
-,Northern Transboundary Fjords ,,SER46,Whiting,Whiting River,SER-022,SER-022,Sockeye-River,,,y,
-,Northern Transboundary Fjords ,,SER47,UNUK,Unuk River ,SER-022,SER-022,Sockeye-River,,,y,
-,Chilkat River,,SER48,CHILKAT,Chilkat River,SER-023,SER-023,Sockeye-River,,,y,
-,Alsek River ,,SER49,ALSEK,Alsek River ,SER-024,,Sockeye-River,,,y,
+cuid,cuname,cu_acronym,du_number,DU_name,du_acronym,trtc_cu,FULL_CU_IN,spp,gen_length,COSEWIC_status,last_assessed,ca_check_012022
+171,Alastair,ALASTAIR,SE149,Alastair,ALASTAIR,SX_L-20-01,SEL-20-01,Sockeye-Lake,6,,NA,y
+172,Aldrich,ALDRICH,SE150,Aldrich,ALDRICH,NA,NA,Sockeye-Lake,5,,NA,2021 SE DU report has CU index as L-20-2
+173,Dennis,DENNIS,SE151,Dennis,DENNIS,NA,NA,Sockeye-Lake,5,,NA,2021 SE DU report has CU index as L-20-3
+174,Ecstall/Lower,ECSTALL/LOWER,SE152,Ecstall/Lower,ECSTALL/LOWER,NA,SEL-20-04,Sockeye-Lake,5,,NA,y
+175,Johnston,JOHNSTON,SE153,Johnston,JOHNSTON,SX_L-20-05,SEL-20-05,Sockeye-Lake,5,,NA,y
+176,Kitsumkalum,,SE154,Kitsumkalum,KALUM,SX_L-20-06,SEL-20-06,Sockeye-Lake,5,,NA,No reference in 2015 or 2021 COSEWIC SE DU reports
+177,Lakelse,LAKELSE,SE155,Lakelse,LAKELSE,SX_L-20-07,SEL-20-07,Sockeye-Lake,5,,NA,y
+178,Mcdonell,MCDONELL,SE156,Mcdonell,MCDONELL,SX_L-20-08,SEL-20-08,Sockeye-Lake,5,,NA,y
+179,Atna,ATNA,SE157,Atna,ATNA,NA,NA,Sockeye-Lake,5,,NA,2021 SE DU report has CU index as L-21-1
+180,Babine,BABINE,SE158,Babine,BABINE,SX_L-21-02-EW,SEL-21-02-EW,Sockeye-Lake,5,,NA,y
+181,Bulkley,BULKLEY,SE159,Bulkley,BULKLEY,NA,SEL-21-03,Sockeye-Lake,5,,NA,y
+182,Club Lake,,,,,NA,NA,Sockeye-Lake,5,,NA,No reference to corresponding DU in 2015 or 2021 COSEWIC SE DU reports; Skeena region; displayed on PSE as Swan/Club
+183,Gitanyow,,SE160,Kitwancool,KITWANCOOL,SX_L-21-05,SEL-21-05,Sockeye-Lake,5,,NA,y
+184,Maxan,MAXAN,SE161,Maxan,MAXAN,NA,NA,Sockeye-Lake,5,,NA,2021 SE DU report has CU index as L-21-6
+185,Morice,MORICE,SE162,Morice,MORICE,SX_L-21-07,SEL-21-07,Sockeye-Lake,6,,NA,y
+186,Nilkitkwa,,,,,SX_L-21-02-LW,SEL-21-02-LW,Sockeye-Lake,5,,NA,No reference to corresponding DU in 2015 or 2021 COSEWIC SE DU reports; Skeena region; Data on PSE 
+187,Stephens,STEPHENS,SE163,Stephens,STEPHENS,SX_L-21-09,SEL-21-09,Sockeye-Lake,5,,NA,y
+188,Swan,,,,,SX_L-21-10,SEL-21-10,Sockeye-Lake,5,,NA,No reference to corresponding DU in 2015 or 2021 COSEWIC SE DU reports; Skeena region; displayed on PSE as Swan/Club
+189,Tahlo/Morrison,,SE164,Tahlo/Morrison,TAHLO/MORRISON,SX_L-21-02-MW,SEL-21-02-MW,Sockeye-Lake,5,,NA,"Name matches but CU index from 2021 SE DU Report doesn't match the one here, there CU index = L-21-11"
+190,Asitika,ASITIKA,SE166,Asitika,ASITIKA,SX_L-22-01,SEL-22-01,Sockeye-Lake,5,,NA,y
+191,Azuklotz,AZUKLOTZ,SE167,Azuklotz,AZUKLOTZ,SX_L-22-02,SEL-22-02,Sockeye-Lake,5,,NA,y
+192,Bear,BEAR,SE168,Bear,BEAR,SX_L-22-03,SEL-22-03,Sockeye-Lake,5,,NA,y
+193,Damshilgwit,DAMSHILGWIT,SE169,Damshilgwit,DAMSHILGWIT,SX_L-22-04,SEL-22-04,Sockeye-Lake,5,,NA,y
+194,Johanson,JOHANSON,SE170,Johanson,JOHANSON,NA,SEL-22-05,Sockeye-Lake,5,,NA,y
+195,Kluatantan,KLUATANTAN,SE171,Kluatantan,KLUATANTAN,NA,SEL-22-06,Sockeye-Lake,5,,NA,y
+196,Kluayaz,KLUAYAZ,SE172,Kluayaz,KLUAYAZ,NA,SEL-22-07,Sockeye-Lake,5,,NA,y
+197,Motase,MOTASE,SE173,Motase,MOTASE,SX_L-22-08,SEL-22-08,Sockeye-Lake,5,,NA,y
+198,Sicintine,SICINTINE,SE174,Sicintine,SICINTINE,NA,SEL-22-09,Sockeye-Lake,5,,NA,y
+199,Slamgeesh,SLAMGEESH,SE175,Slamgeesh,SLAMGEESH,NA,SEL-22-10,Sockeye-Lake,5,,NA,y
+200,Spawning,SPAWNING,SE176,Spawning,SPAWNING,NA,SEL-22-11,Sockeye-Lake,5,,NA,y
+201,Sustut,SUSTUT,SE177,Sustut,SUSTUT,NA,SEL-22-12,Sockeye-Lake,5,,NA,y
+202,Lower Skeena-CO,LSKNA,CO26,Lower Skeena,LSK,CO_32,CO-32,Coho,3,,NA,y
+203,Babine (enhanced),,SE158,Babine,BABINE,SX_L-21-02-F,SEL-21-02-F,Sockeye-Lake,5,,NA,y
+204,Babine-Pinkut,,,,,NA,NA,Sockeye-Lake,5,,NA,No reference to corresponding DU in 2015 or 2021 COSEWIC SE DU reports; Not displayed on PSE under this name 
+205,Ecstall,,CK41,"Ecstall, Ocean, Summer",ECST,CN_46,CK-46,Chinook,6,,NA,
+206,Kalum-early timing,,CK43,"Kalum Ð Early Timing, Stream, Spring",KALUM-E,CN_49,CK-49,Chinook,6,,NA,
+207,Kalum-late timing,,CK44,"Kalum Ð Late Timing, Stream, Summer",KALUM-L,CN_50,CK-50,Chinook,6,,NA,
+209,Lower Skeena (odd),,PO24,Lower Skeena,,PKo_15,PKO-15,Pink,2,,NA,y
+210,Lower Skeena-CK,,CK42,"Lower Skeena, Stream, Summer",LSK,CN_48,CK-48,Chinook,6,,NA,
+211,Lower Skeena-CM,,CM26,Lower Skeena,,CM_27,CM-27,Chum,4,,NA,y
+212,Upper Skeena-CK,,CK48,"Upper Skeena River, Stream, Spring",USK,NA,CK-56,Chinook,6,,NA,
+213,Middle & Upper Skeena (odd),,PO25,Middle Skeena,,PKo_16,PKO-16,Pink,2,,NA,y
+213,Middle & Upper Skeena (odd),,PO26,Upper Skeena,,PKo_16,PKO-16,Pink,2,,NA,y
+214,Middle Skeena-CM,,CM27,Middle Skeena,,CM_28,CM-28,Chum,NA,,NA,y
+215,Middle Skeena-CO,MSKNA,CO27,Middle Skeena,MSK,CO_33,CO-33,Coho,3,,NA,y
+216,Skeena River-high interior,,SE041,Upper Skeena River,USK,SX_R19,SER-19,Sockeye-River,5,,NA,y
+217,Middle Skeena-mainstem tributaries,,CK47,"Middle Skeena-M/S Tributary, Stream, Summer",MSK-M/S,CN_54,CK-54,Chinook,6,,NA,
+218,Middle-Upper Skeena (even),,PE17,Middle Skeena,,PKe_8,PKE-08,Pink,2,,NA,y
+218,Middle-Upper Skeena (even),,PE18,Upper Skeena ,,PKe_8,PKE-08,Pink,2,,NA,y
+219,Nass-Skeena Estuary (even),,PE15,Skeena Estuary,,PKe_7,PKE-07,Pink,2,,NA,y
+219,Nass-Skeena Estuary (even),,PE16,Lower Skeena,,PKe_7,PKE-07,Pink,2,,NA,y
+219,Nass-Skeena Estuary (even),,PE19,Lower Nass - Portland Canal ,,PKe_7,PKE-07,Pink,2,,NA,y
+220,Skeena Estuary-CM,,CM25,Skeena Estuary,,CM_26,CM-26,Chum,NA,,NA,y
+221,Upper Bulkley River,,CK45,"Bulkley River, Stream, Spring",,CN_55,CK-55,Chinook,6,,NA,
+222,Middle Skeena-large lakes,,CK46,"Middle Skeena Ð Lakes, Stream, Summer",MSK-LKS,CN_53,CK-53,Chinook,6,,NA,
+223,Nass-Skeena Estuary (odd),,PO23,Skeena Estuary,,PKo_14,PKO-14,Pink,2,,NA,y
+224,Skeena Estuary-CK,,CK40,"Skeena Estuary, Stream, Summer",SKEst,NA,CK-45,Chinook,6,,NA,
+225,Skeena Estuary-CO,NSKEst,CO25,Skeena Estuary,NSKEst,CO_31,CO-31,Coho,3,,NA,y
+226,Skeena River,,SE039,Lower Skeena River,LSK,NA,SER-18,Sockeye-River,5,,NA,y
+226,Skeena River,,SE040,Middle Skeena River,MSK,NA,SER-18,Sockeye-River,5,,NA,y
+227,Lakelse-CK,,CK42,"Lower Skeena, Stream, Summer",LSK,NA,CK-51,Chinook,6,,NA,
+229,Zymoetz,,CK42,"Lower Skeena, Stream, Summer",LSK,NA,CK-80,Chinook,6,,NA,
+230,Footsore/Hodder,FOOTSORE/HODDER,SE165,Footsore/Hodder,FOOTSORE/HODDER,NA,SEL-21-12,Sockeye-Lake,5,,NA,y
+231,Upper Skeena-CO,USKNA,CO28,Upper Skeena,USK,CO_34,CO-34,Coho,3,,NA,y
+240,Lower Skeena (even),,,,,NA,NA,Pink,2,,NA,"Check? No CU index but name matches ""Lower Skeena"" even pink DU"
+241,Sicintine,,CK48,"Upper Skeena River, Stream, Spring",,NA,CK-81,Chinook,6,,NA,
+243,Onerka,ONERKA,T47,Onerka,ONERKA,NA,NA,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+301,Okanagan,OK,CK69,"Okanagan River, Ocean, Fall",OK+ORWA/Ocean/Fall,CK-001,CK-1,Chinook,,Endangered,2017,y
+302,CK002-Boundary Bay_FA_0.3,BB,CK1,"Southern Mainland Boundary Bay, Ocean, Fall population",BB+GStr/Ocean/Fall,CK-002,CK-2,Chinook,5,Threatened,2020,y
+303,CK003-Lower Fraser River_FA_0.3,LFR-fall,CK2,"Lower Fraser, Ocean, Fall population (Harrison)",LFR+GStr/Ocean/Fall,CK-003,CK-3,Chinook,4,Threatened,2018,y
+304,CK004-Lower Fraser River_SP_1.3,LFR-spring,CK3,"Lower Fraser, Stream, Spring population (Birkenhead)",LFR+GStr/Stream/Spring,CK-004,CK-4,Chinook,5,Special Concern,2018,y
+305,CK005-Lower Fraser River-Upper Pitt_SU_1.3,LFR-UPITT,CK4,"Lower Fraser, Stream, Summer (Upper Pitt) population",LFR+GStr/Stream/Summer(Upper Pitt),CK-005,CK-5,Chinook,5,Endangered,2018,y
+306,CK006-Lower Fraser River_SU_1.3,LFR-summer,CK5,"Lower Fraser, Stream, Summer (Lillooet) population",LFR+GStr/Stream/Summer,CK-006,CK-6,Chinook,5,Threatened,2018,y
+307,CK007-Maria Slough_SU_0.3,Maria,CK6,"Lower Fraser, Ocean, Summer (Maria Slough) population",LFR+GStr/Ocean/Summer,CK-007,CK-7,Chinook,4,Endangered,2020,y
+308,CK008-Middle Fraser-Fraser Canyon_SP_1.3,NAHAT,CK7,"Middle Fraser, Stream, Spring (FR Canyon) population",FRCanyGStr/Stream/Spring,CK-008,CK-8,Chinook,5,Endangered,2018,y
+309,CK009-Middle Fraser River-Portage_FA_1.3,Portage,CK8,"Middle Fraser, Stream, Fall (Portage) population",MFR+GStr/Stream/Fall,CK-009,CK-9,Chinook,5,Endangered,2018,y
+310,CK010-Middle Fraser River_SP_1.3,MFR-spring,CK9,"Middle Fraser, Stream, Spring (MFR+GStr) population",MFR+GStr/Stream/Spring,CK-010,CK-10,Chinook,5,Threatened,2018,y
+311,CK011-Middle Fraser River_SU_1.3,MFR-summer,CK10,"Middle Fraser, Stream, Summer population",MFR+GStr/Stream/Summer,CK-011,CK-11,Chinook,5,Threatened,2018,y
+312,CK012-Upper Fraser River_SP_1.3,UFR-spring,CK11,"Upper Fraser, Stream, Spring population",UFR/Stream/Spring,CK-012,CK-12,Chinook,5,Endangered,2018,y
+313,CK013-South Thompson_SU_0.3,STh-0.3,CK12,"South Thompson, Ocean, Summer population",STh+GStr/Ocean/Summer,CK-013,CK-13,Chinook,4,Not at risk,2018,y
+314,CK014-South Thompson_SU_1.3,STh-1.3,CK13,"South Thompson, Stream, Summer 1.3 population",STh+GStr/Stream/Summer,CK-014,CK-14,Chinook,5,Endangered,2020,y
+315,CK015-Shuswap River_SU_0.3,STh-SHUR,CK12,"South Thompson, Ocean, Summer population",STh+GStr/Ocean/Summer,CK-015,CK-15,Chinook,4,Not at risk,2018,y
+316,CK016-South Thompson-Bessette Creek_SU_1.2,STh-BESS,CK14,"South Thompson, Stream, Summer 1.2 (Bessette) population",STh+GStr/Stream/Summer/(Bessette),CK-016,CK-16,Chinook,4,Endangered,2018,y
+317,CK017-Lower Thompson_SP_1.2,LTh,CK15,"Lower Thompson, Stream, Spring population",LTh+GStr/Stream/Spring,CK-017,CK-17,Chinook,4,Endangered,2020,y
+318,CK018-North Thompson_SP_1.3,NTh-spr,CK16,"North Thompson, Stream, Spring population",NTh+GStr/Stream/Spring,CK-018,CK-18,Chinook,5,Endangered,2018,y
+319,CK019-North Thompson_SU_1.3,NTh-sum,CK17,"North Thompson, Stream, Summer population",NTh+Gstr/Stream/Summer,CK-019,CK-19,Chinook,5,Endangered,2018,y
+320,CK020-Southern Mainland-Georgia Strait_FA_0.x,SC-GStr,CK18,"South Coast - Georgia Strait, Ocean, Fall population",SC+GStr/Ocean/Fall,CK-020,CK-20,Chinook,4,Data Deficient,2020,y
+321,CK021-East Vancouver Island-Goldstream_FA_0.x,Goldstr,CK21,"East Vancouver Island, Ocean, Fall population",EVI+GStr/Ocean/Fall,CK-021,CK-21,Chinook,3,Special Concern,2020,y
+322,CK022-East Vancouver Island-Cowichan and Koksilah_FA_0.x,CWCH-KOK,CK21,"East Vancouver Island, Ocean, Fall population",EVI+GStr/Ocean/Fall,CK-022,CK-22,Chinook,3,Special Concern,2020,y
+323,CK023-East Vancouver Island-Nanaimo_SP_1.x,NanR-spr,CK19,"East Vancouver Island, Stream, Spring population",EVI+GStr/Stream/Spring,CK-023,CK-23,Chinook,4,Endangered,2018,y
+324,CK025-East Vancouver Island-Nanaimo and Chemainus_FA_0.x,EVI-fall,CK21,"East Vancouver Island, Ocean, Fall population",EVI+GStr/Ocean/Fall,CK-025,CK-25,Chinook,3,Special Concern,2020,y
+325,CK027-East Vancouver Island-Qualicum and Puntledge_FA_0.x,QP-fall,CK21,"East Vancouver Island, Ocean, Fall population",EVI+GStr/Ocean/Fall,CK-027,CK-27,Chinook,4,Special Concern,2020,y
+326,CK028-Southern Mainland-Southern Fjords_FA_0.x,SC+SFj,CK22,"South Coast - Southern Fjords, Ocean, Fall population",SC+SFj/Ocean/Fall,CK-028,CK-28,Chinook,4,Data Deficient,2020,y
+327,CK029-East Vancouver Island-North_FA_0.x,NEVI,CK23,"East Vancouver Island - North, Ocean, Fall (EVI + SFj) population",EVI+SFj/Ocean/Fall,CK-029,CK-29,Chinook,4,Not at risk,2020,y
+328,CK031-West Vancouver Island-South_FA_0.x,SWVI,CK24,"West Vancouver Island, Ocean, Fall (South) population",WVI/Ocean/Fall (South),CK-031,CK-31,Chinook,4,Threatened,2020,y
+329,CK032-West Vancouver Island-Nootka and Kyuquot_FA_0.x,NoKy,CK25,"West Vancouver Island, Ocean, Fall (Nootka & Kyuquot) population",WVI/Ocean/Fall (Nootka & Kyuquot),CK-032,CK-32,Chinook,4,Threatened,2020,y
+330,CK033-West Vancouver Island-North_FA_0.x,NWVI,CK26,"West Vancouver Island - North, Ocean, Fall (WVI + WQCI) population",WVI+WHG/Ocean/Fall,CK-033,CK-33,Chinook,4,Data Deficient,2020,y
+331,CK034-Homathko_SU_x.x,HOMATH,CK27,Southern Mainland Ocean Summer,HK+SFj/Ocean/Summer,CK-034,CK-34,Chinook,5,Data Deficient,2018,y
+332,CK035-Klinaklini_SU_1.3,KLINA,CK28,Southern Mainland Stream Summer,HK+SFj/Stream/Summer,CK-035,CK-35,Chinook,5,Data Deficient,2018,y
+333,CK082-Upper Adams River_SU_x.x,UAdams-summer,CK29,"Upper Adams, Stream, Summer",STh+GStr/Stream/Summer,CK-082,CK-82,Chinook,5,,NA,y
+334,CK083-East Vancouver Island-Georgia Strait_SU_0.3,EVIGStr-sum,CK20,"East Vancouver Island, Ocean, Summer population",EVI+GStr/Ocean/Summer,CK-083,CK-83,Chinook,4,Endangered,2020,y
+401,Portland Sound-Observatory Inlet-Lower Nass,,CK49,"Lower Nass River, Stream, Summer",LNR-P,CN_57,CK-57,Chinook,5,,NA,y
+402,Upper Nass,,CK50,"Upper Nass River, Stream, Summer",UNR,CN_58,CK-58,Chinook,5,,NA,y
+404,Portland Inlet,,CM28,Portland Canal,,CM_30,CM-30,Chum,4,,NA,y
+405,Lower Nass,,CM29,Lower Nass River,,CM_31,CM-31,Chum,4,,NA,y
+406,Portland Canal-Observatory,,CM30,Portland Canal - Observatory Inlet ,,CM_32,CM-32,Chum,4,,NA,y
+408,Lower Nass,LNASS,CO29,Lower Nass - Portland Canal ,LNR-P,CO_35,CO-35,Coho,3,,NA,y
+409,Upper Nass,UNASS,CO30,Upper Nass,UNR,CO_36,CO-36,Coho,3,,NA,y
+410,Portland Sound-Observatory Inlet-Portland Canal,PORT,CO29,Lower Nass - Portland Canal ,LNR-P,CO_37,CO-37,Coho,3,,NA,y
+412,Upper Nass,,,,,NA,NA,Pink,,,NA,"Check? No CU index but name matches ""Upper Nass"" odd and even pink Dus"
+414,Nass-Portland-Observatory,,PO27,Lower Nass - Portland Canal,,PKo_17,PKO-17,Pink,2,,NA,y
+415,Upper Nass,,,,,NA,NA,Pink,,,NA,"Check? No CU index but name matches ""Upper Nass"" odd and even pink Dus"
+416,Prudhomme,PRUDHOMME,SE137,Prudhomme,PRUDHOMME,SX_L-19-49,SEL-19-49,Sockeye-Lake,5,,NA,y
+417,Shawatlan,SHAWATLAN,SE141,Shawatlan,SHAWATLAN,SX_L-19-54,SEL-19-54,Sockeye-Lake,5,,NA,y
+418,Clements,CLEMENTS ,T48,Clements,CLEMENTS ,NA,NA,Sockeye-Lake,,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+419,Leverson,,T49,Split Mountain/Leverson,SPLIT_MTN/LEVERSON,NA,NA,Sockeye-Lake,,,NA,Not sure this is the right match; no CU index to compare; partial name match
+420,Bowser,BOWSER,SE178,Bowser,BOWSER,NA,NA,Sockeye-Lake,,,NA,2021 SE DU report has CU index = L-24-1
+421,Damdochax,DAMDOCHAX,SE179,Damdochax/Wiminasik,DAMDOCHAX,SX_L-24-02,SEL-24-02,Sockeye-Lake,5,,NA,y
+422,Fred Wright,FWRIGHT,SE180,Fred Wright,FWRIGHT,SX_L-24-03,SEL-24-03,Sockeye-Lake,5,,NA,y
+423,Kwinageese,KWINAGEESE,SE181,Kwinageese,KWINAGEESE,NA,NA,Sockeye-Lake,,,NA,2021 SE DU report has CU index = L-24-4
+424,Meziadin,MEZIADIN,SE182,Meziadin,MEZIADIN,SX_L-24-05,SEL-24-05,Sockeye-Lake,5,,NA,y
+425,Oweegee,OWEEGEE,SE183,Oweegee,OWEEGEE,NA,NA,Sockeye-Lake,,,NA,2021 SE DU report has CU index = L-24-6
+426,Lower Nass-Portland,,SE042,Lower Nass-Portland,LNR-P,SX_R20,SER-20,Sockeye-River,4,,NA,y
+427,Upper Nass River,,SE043,Upper Nass River,UNR,SX_R21,SER-21,Sockeye-River,4,,NA,y
+500,Smith Inlet,,CM17,Smith Inlet,,CM_12,CM-12,Chum,4,,NA,y
+501,Rivers Inlet,,CM16,Rivers Inlet,,CM_13,CM-13,Chum,4,,NA,y
+502,Wannock,,CM18,Wannock River,,CM_14,CM-14,Chum,4,,NA,y
+503,Spiller-Fitz-Hugh-Burke,,CM22,Spiller-Fitzhugh-Burke,,CM_15,CM-15,Chum,4,,NA,y
+504,Bella Colla-Dean Rivers,,CM19,Bella Coola - Dean Rivers,,CM_16,CM-16,Chum,4,,NA,y
+505,Bella Coola River-Late,,CM20,Bella Coola River - Late,,CM_17,CM-17,Chum,4,,NA,y
+506,Hecate Lowlands,,CM21,Hecate Strait Mainland,,CM_18,CM-18,Chum,4,,NA,y
+507,Mussel-Kynock,,CM23,Mussel-Kynoch,,CM_19,CM-19,Chum,4,,NA,y
+508,Douglas-Gardner,,CM24,Northern Coastal Streams,,CM_20,CM-20,Chum,4,,NA,y
+509,Docee,,CK32,"Smith Inlet, Ocean, Summer",SMITH,CN_36,CK-36,Chinook,4,,NA,y
+510,Rivers Inlet,,CK33,"Rivers Inlet, Stream, Summer",RIVERS,CN_37,CK-37,Chinook,5,,NA,y
+511,Wannock,,CK34,Wannock,WANN,CN_38,CK-38,Chinook,5,,NA,y
+512,Bella Coola-Bentinck,,CK35,"Bella Coola-Bentinck, Ocean, Summer",BCR-BENT,CN_39,CK-39,Chinook,5,,NA,y
+513,Dean River,,CK36,"Dean River, Stream, Summer",DEAN,CN_40,CK-40,Chinook,5,,NA,y
+514,NCC-late timing,,CK37,"North & Central Coast Late,
+Ocean/Stream, Summer",NCC Late,CN_41,CK-41,Chinook,5,,NA,y
+515,NCC-early timing,,CK38,"North & Central Coast Early, Ocean, Spring",NCC early,CN_42,CK-42,Chinook,5,,NA,y
+516,Smith Inlet,Smith,CO21,Rivers-Smith Inlet,RSI,CO_20,CO-20,Coho,3,,NA,y
+517,Rivers Inlet,Rivers,CO21,Rivers-Smith Inlet,RSI,CO_21,CO-21,Coho,3,,NA,y
+518,Bella Coola-Dean Rivers,BCD,CO22,Bella Coola - Dean Rivers,BCD,CO_22,CO-22,Coho,3,,NA,y
+519,Mussel-Kynoch,MusKyn,CO24,Northern Coastal Streams,NCS,CO_26,CO-26,Coho,3,,NA,y
+520,Hecate Strait Mainland,HecLow+HStr,CO23,Hecate Strait Mainland,HecLow,CO_27,CO-27,Coho,3,,NA,y
+521,Brim-Wahoo,BRIM,CO24,Northern Coastal Streams,NCS,CO_28,CO-28,Coho,3,,NA,y
+522,Douglas Channel-Kitimat Arm,DOUG,CO24,Northern Coastal Streams,NCS,CO_29,CO-29,Coho,3,,NA,y
+523,N Coastal Streams,NCS,CO24,Northern Coastal Streams,NCS,CO_30,CO-30,Coho,3,,NA,y
+524,Long,LONG,SE100,Long,LONG,SX_L-15-01,SEL-15-01,Sockeye-Lake,5,,NA,y
+525,Owikeno,OWIKENO,SE101,Owikeno,OWIKENO,SX_L-15-02,SEL-15-02,Sockeye-Lake,5,,NA,y
+526,Owikeno-Late,OWIKENO-L,T06,Owikeno,OWIKENO-L,SX_L-15-03,SEL-15-03,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+527,Wannock[Owikeno],WANNOCK,SE102,Wannock,WANNOCK,L-15-04,SEL-15-04,Sockeye-Lake,5,,NA,y
+528,South Atnarko Lakes,,SE103,S Atnarko,S_ATNARKO,SX_528,SX_528,Sockeye-Lake,5,,NA,2021 SE DU report has CU index = L-16-01
+529,Backland,BACKLAND,T10,Backland,BACKLAND,SX_L-18-01,SEL-18-01,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+530,Soda Creek,,,,,SX_L-18-10,SEL-18-10,Sockeye-Lake,5,,NA,No reference to corresponding DU in 2015 or 2021 COSEWIC SE DU reports; Central Coast region on PSE 
+531,Whalen,WHALEN,T12,Whalen,WHALEN,SX_L-18-11,SEL-18-11,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+532,Canoona,CANOONA,SE104,Canoona,CANOONA,SX_L-18-02,SEL-18-02,Sockeye-Lake,5,,NA,y
+533,Dome ,DOME,T11,Dome ,DOME,SX_L-18-03,SEL-18-03,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+534,Evelyn,EVELYN,SE105,Evelyn,EVELYN,SX_L-18-04,SEL-18-04,Sockeye-Lake,5,,NA,y
+535,Kainet Creek,KAINET,SE106,Kainet,KAINET,SX_L-18-05,SEL-18-05,Sockeye-Lake,5,,NA,y
+536,Kimsquit,KIMSQUIT,SE107,Kimsquit,KIMSQUIT,SX_L-18-06,SEL-18-06,Sockeye-Lake,5,,NA,y
+537,Kitkiata,,SE108,Kitkatla,KITKATLA,SX_L-18-07,SEL-18-07,Sockeye-Lake,5,,NA,"Discrepancy in name - 2021 SE DU report calls ""Kitkatla""; Cu index matches "
+538,Kitlope,KITLOPE,SE109,Kitlope,KITLOPE,SX_L-18-08,SEL-18-08,Sockeye-Lake,5,,NA,y
+539,Pine River,PINE,SE110,Pine,PINE,SX_L-18-09,SEL-18-09,Sockeye-Lake,5,,NA,y
+540,Banks,BANKS,SE111,Banks,BANKS,SX_L-19-01,SEL-19-01,Sockeye-Lake,5,,NA,y
+541,Bloomfield,BLOOMFIELD,SE112,Bloomfield,BLOOMFIELD,SX_L-19-02,SEL-19-02,Sockeye-Lake,5,,NA,y
+542,Bolton Creek,BOLTON,SE113,Bolton,BOLTON,SX_L-19-03,SEL-19-03,Sockeye-Lake,5,,NA,y
+543,Bonilla,BONILLA,SE114,Bonilla,BONILLA,SX_L-19-04,SEL-19-04,Sockeye-Lake,5,,NA,y
+544,Borrowman Creek,BORROWMAN,T13,Borrowman ,BORROWMAN,SX_L-19-05,SEL-19-05,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+545,Busey Creek,BUSEY,T14,Busey,BUSEY,SX_L-19-06,SEL-19-06,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+546,Cartwright Creek,CARTWRIGHT,T15,Cartwright Creek,CARTWRIGHT,SX_L-19-07,SEL-19-07,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+547,Chic Chic ,CHIC CHIC,T16,Chic Chic ,CHIC CHIC,SX_L-19-08,SEL-19-08,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+548,Citeyats,,SE115,Tuwartz,TUWARTZ,SX_L-19-09,SEL-19-09,Sockeye-Lake,5,,NA,"Discrepancy in name - 2021 SE DU report calls ""Tuwartz"", CU index matches"
+549,Fannie Cove,FANNIE,SE116,Fannie,FANNIE,SX_L-19-10,SEL-19-10,Sockeye-Lake,5,,NA,y
+550,Curtis Inlet,CURTIS,SE117,Curtis,CURTIS,SX_L-19-11,SEL-19-11,Sockeye-Lake,5,,NA,y
+551,Dallain Creek,DALLAIN,T17,Dallain,DALLAIN,SX_L-19-12,SEL-19-12,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+552,Deer,DEER,T18,Deer,DEER,SX_L-19-13,SEL-19-13,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+553,Devon,DEVON,SE118,Devon,DEVON,SX_L-19-14,SEL-19-14,Sockeye-Lake,5,,NA,y
+554,Douglas Creek,DOUGLAS,T19,Douglas ,DOUGLAS,SX_L-19-15,SEL-19-15,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+555,Elizabeth,ELIZABETH,T20,Elizabeth,ELIZABETH,SX_L-19-16,SEL-19-16,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+556,Elsie/Hoy,ELSIE/HOY,SE119,Elsie/Hoy,ELSIE/HOY,SX_L-19-17,SEL-19-17,Sockeye-Lake,5,,NA,y
+557,End Hill Creek,END HILL,SE120,End Hill,END HILL,SX_L-19-18,SEL-19-18,Sockeye-Lake,5,,NA,y
+558,Evinrude Inlet,EVINRUDE,T21,Evinrude ,EVINRUDE,SX_L-19-19,SEL-19-19,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+559,Freeda,,SE121,Freeda/Brodie,FREEDA/BRODIE,SX_L-19-20,SEL-19-20,Sockeye-Lake,5,,NA,y
+560,Hartley Bay,HARTLEY,T22,Hartley Bay,HARTLEY,SX_L-19-21,SEL-19-21,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+561,Hevenor Inlet,HEVENOR,T23,Hevenor Inlet,HEVENOR,SX_L-19-22,SEL-19-22,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+562,Higgins Lagoon,HIGGINS,SE122,Higgins Lagoon,HIGGINS,SX_L-19-23,SEL-19-23,Sockeye-Lake,5,,NA,y
+563,Kadjusdis River,KADJUSDIS,T24,Kadjusdis,KADJUSDIS,SX_L-19-24,SEL-19-24,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+564,Kdelmashan Creek,KDELMASHAN,SE123,Kdelmashan,KDELMASHAN,SX_L-19-25,SEL-19-25,Sockeye-Lake,5,,NA,y
+565,Keecha,,SE124,Keesha,KEESHA,SX_L-19-26,SEL-19-26,Sockeye-Lake,5,,NA,"Discrepancy in name - 2021 SE DU report calls ""Keesha"", CU index matches"
+566,Kent Inlet Lagoon Creek,KENT,SE125,Kent Inlet,KENT,SX_L-19-27,SEL-19-27,Sockeye-Lake,5,,NA,y
+567,Kenzuwash Creeks,KENZUWASH,T25,Kenzuwash,KENZUWASH,SX_L-19-28,SEL-19-28,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+568,Keswar Creek,KESWAR,T26,Keswar,KESWAR,SX_L-19-29,SEL-19-29,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+569,Kildidt Creek,KILDIDT,T27,Kildidt,KILDIDT,SX_L-19-30,SEL-19-30,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+570,Kildidt Lagoon Creek,KILDIDT LAGOON,SE126,Kildidt Lagoon Creek,KILDIDT LAGOON,SX_L-19-31,SEL-19-31,Sockeye-Lake,5,,NA,y
+571,Kisameet,KISAMEET,SE127,Kisameet,KISAMEET,SX_L-19-32,SEL-19-32,Sockeye-Lake,5,,NA,y
+572,Koeye,KOEYE,SE128,Koeye,KOEYE,SX_L-19-33,SEL-19-33,Sockeye-Lake,5,,NA,y
+573,Kooryet,KOORYET,SE129,Kooryet,KOORYET,SX_L-19-34,SEL-19-34,Sockeye-Lake,5,,NA,y
+574,Kunsoot River,KUNSOOT,T28,Kunsoot,KUNSOOT,SX_L-19-35,SEL-19-35,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+575,Kwakwa Creek,KWAKWA,SE130,Kwakwa,KWAKWA,SX_L-19-36,SEL-19-36,Sockeye-Lake,5,,NA,y
+576,Lewis Creek,LEWIS,T29,Lewis,LEWIS,SX_L-19-37,SEL-19-37,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+577,Limestone Creek,LIMESTONE,SE131,Limestone,LIMESTONE,SX_L-19-38,SEL-19-38,Sockeye-Lake,5,,NA,y
+578,Lowe/Simpson/Weir,,T30,Lowe/Simpson/Weare,LOWE/SIMPSON/WEARE,SX_L-19-39,SEL-19-39,Sockeye-Lake,5,,NA,"Discrepancy in name - 2021 SE DU report calls ""Lowe/Simpson/Weare"", CU index matches; Marked as Tentative in 2021 COSEWIC SE DU report "
+579,Mary Cove Creek,MARY COVE,SE132,Mary Cove,MARY COVE,SX_L-19-40,SEL-19-40,Sockeye-Lake,5,,NA,y
+580,Mcdonald Creek,MCDONALD,T31,Mcdonald,MCDONALD,SX_L-19-41,SEL-19-41,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+581,Mcloughlin,MCLOUGHLIN,T32,Mcloughlin,MCLOUGHLIN,SX_L-19-42,SEL-19-42,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+582,Mikado,MIKADO,SE133,Mikado,MIKADO,SX_L-19-43,SEL-19-43,Sockeye-Lake,5,,NA,y
+583,Monckton Inlet Creek,MONCKTON,T33,Monckton Inlet,MONCKTON,SX_L-19-44,SEL-19-44,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+584,Namu,NAMU,SE134,Namu,NAMU,SX_L-19-45,SEL-19-45,Sockeye-Lake,5,,NA,y
+585,Port John,PORT JOHN,SE135,Port John,PORT JOHN,SX_L-19-46,SEL-19-46,Sockeye-Lake,5,,NA,y
+586,Powles Creek,POWLES,SE136,Powles,POWLES,SX_L-19-47,SEL-19-47,Sockeye-Lake,5,,NA,y
+587,Price Creek,PRICE,T34,Price,PRICE,SX_L-19-48,SEL-19-48,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+588,Roderick,RODERICK,T35,Roderick,RODERICK,SX_L-19-50,SEL-19-50,Sockeye-Lake,5,,NA,y
+589,Ryan Creek,RYAN,SE138,Ryan,RYAN,SX_L-19-51,SEL-19-51,Sockeye-Lake,5,,NA,y
+590,Salter,SALTER,SE139,Salter,SALTER,SX_L-19-52,SEL-19-52,Sockeye-Lake,5,,NA,y
+591,Scoular/Kilpatrick,SCOULER/KILPATRICK,SE140,Scoular/Kilpatrick,SCOULER/KILPATRICK,SX_L-19-53,SEL-19-53,Sockeye-Lake,5,,NA,y
+592,Sheneeza Inlet,SHENEEZA,T36,Sheneeza,SHENEEZA,SX_L-19-55,SEL-19-55,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+593,Ship Point Creek,SHIP_PNT,T37,Ship Point,SHIP_PNT,SX_L-19-56,SEL-19-56,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+594,Spencer Creek,SPENCER,SE142,Spencer,SPENCER,SX_L-19-57,SEL-19-57,Sockeye-Lake,5,,NA,y
+595,Stannard Creek,STANNARD,T37,Stannard,STANNARD,SX_L-19-58,SEL-19-58,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+596,Talamoosa Creek,TALAMOOSA,SE143,Talamoosa,TALAMOOSA,SX_L-19-59,SEL-19-59,Sockeye-Lake,5,,NA,y
+597,Tankeeah River,TANKEEAH,SE144,Tankeeah,TANKEEAH,SX_L-19-60,SEL-19-60,Sockeye-Lake,5,,NA,y
+598,Treneman Creek,TRENEMAN,T39,Treneman,TRENEMAN,SX_L-19-61,SEL-19-61,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+599,Tsimtack/Moore/Roger,TSIMTACK,SE145,Tsimtack,TSIMTACK,SX_L-19-62,SEL-19-62,Sockeye-Lake,5,,NA,y
+600,Tuno Creek East,TUNO_EAST,T40,Tuno East,TUNO_EAST,SX_L-19-63,SEL-19-63,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+601,Tuno Creek West,TUNO_WEST,SE146,Tuno West,TUNO_WEST,SX_L-19-64,SEL-19-64,Sockeye-Lake,5,,NA,y
+602,Tyler Creek,TYLER,T41,Tyler,TYLER,SX_L-19-65,SEL-19-65,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+603,Wale Creek,WALE,SE147,Wale,WALE,SX_L-19-66,SEL-19-66,Sockeye-Lake,5,,NA,y
+604,Watt Bay,WATT,T42,Watt,WATT,SX_L-19-67,SEL-19-67,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+605,West Creek,WEST_CRK,T43,West Creek,WEST_CRK,SX_L-19-68,SEL-19-68,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+606,Yaaklele Lagoon,YAAKLELE,T44,Yaaklele,YAAKLELE,SX_L-19-69,SEL-19-69,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+607,Yeo,YEO,SE148,Yeo,YEO,SX_L-19-70,SEL-19-70,Sockeye-Lake,5,,NA,y
+608,Hecate Lowlands,,PE11,Rivers - Smith Inlets,,PKe_5,PKE-05,Pink,2,,NA,y
+608,Hecate Lowlands,,PE13,Hecate Strait Mainland ,,PKe_5,PKE-05,Pink,2,,NA,y
+609,Hecate Strait-Fjords,,PE12,Bella Coola - Dean Rivers,,PKe_6,PKE-06,Pink,2,,NA,y
+609,Hecate Strait-Fjords,,PE14,Northern Coastal Streams ,,PKe_6,PKE-06,Pink,2,,NA,y
+610,Homathko-Klinaklini-Rivers-Smith-Bella Coola Dean,,PO12,Homathko - Klinaklini,,PKo_8,PKO-08,Pink,2,,NA,y
+610,Homathko-Klinaklini-Rivers-Smith-Bella Coola Dean,,PO19,Rivers-Smith Inlets,,PKo_8,PKO-08,Pink,2,,NA,y
+610,Homathko-Klinaklini-Rivers-Smith-Bella Coola Dean,,PO20,Bella Coola - Dean Rivers ,,PKo_8,PKO-08,Pink,2,,NA,y
+611,Hecate Strait-Lowlands,,PO21,Hecate Strait Mainland ,,PKo_12,PKO-12,Pink,2,,NA,y
+612,Hecate Strait-Fjords,,PO22,Northern Coastal Streams ,,PKo_13,PKO-13,Pink,2,,NA,y
+613,Rivers-Smith Inlets,,SE035,Rivers-Smith Inlets,RSI,SX_R12,SER-12,Sockeye-River,4,,NA,y
+614,Northern Coastal Fjords,,SE036,Bella Coola-Dean Rivers,BCD,SX_R16,SER-16,Sockeye-Lake,4,,NA,y
+614,Northern Coastal Fjords,,SE037,Northern Coastal Streams,NC,SX_R16,SER-16,Sockeye-Lake,4,,NA,y
+615,Northern Coastal,,SE038,Hecate Lowlands,HecLow,SX_R17,SER-17,Sockeye-River,4,,NA,y
+701,Lower Fraser,,CM01,Lower Fraser,,CM-002,CM-2,Chum,4,,NA,y
+704,Lillooet,LILL,CO03,Lillooet ,LILL,CO-004,CO-4,Coho,3,,NA,y
+705,Fraser Canyon,FRCany,CO04,Fraser Canyon,FRCany,CO-005,CO-5,Coho,3,Threatened,2016,y
+707,Lower Thompson,LTHOM,CO06,Lower Thompson,LTHOM,CO-007,CO-7,Coho,3,Threatened,2016,y
+708,South Thompson,STHOM,CO07,South Thompson,STHOM,CO-008,CO-8,Coho,3,Threatened,2016,y
+709,North Thompson,NTHOM,CO08,North Thompson,NTHOM,CO-009,CO-9,Coho,3,Threatened,2016,y
+710,Fraser River,,PO01,Lower Fraser,,PKO-001,PKO-1,Pink,2,,NA,y
+710,Fraser River,,PO02,Lillooet,,PKO-001,PKO-1,Pink,2,,NA,y
+710,Fraser River,,PO03,Fraser Canyon,,PKO-001,PKO-1,Pink,2,,NA,y
+710,Fraser River,,PO04,Middle Fraser,,PKO-001,PKO-1,Pink,2,,NA,y
+710,Fraser River,,PO05,Upper Fraser,,PKO-001,PKO-1,Pink,2,,NA,y
+710,Fraser River,,PO06,Lower Thompson,,PKO-001,PKO-1,Pink,2,,NA,y
+710,Fraser River,,PO07,South Thompson,,PKO-001,PKO-1,Pink,2,,NA,y
+710,Fraser River,,PO08,North Thompson ,,PKO-001,PKO-1,Pink,2,,NA,y
+711,Chilliwack_Early Summer,,SE005,Chilliwack-ES population,,SEL-03-001,SEL-03-01,Sockeye-Lake,4,Not at risk,2017,
+712,Cultus_Late,,SE006,Cultus-L population,,SEL-03-002,SEL-03-02,Sockeye-Lake,4,Endangered,2017,
+713,Harrison-downstream migrating_Late,,SE009,Harrison (D/S)-L population,,SEL-03-003,SEL-03-03,Sockeye-Lake,4,Special Concern,2017,
+714,Harrison-upstream migrating_Late,,SE010,Harrison (U/S)-L population,,SEL-03-004,SEL-03-04,Sockeye-Lake,4,Endangered,2017,
+715,Pitt_Early Summer,,SE015,Pitt-ES population,,SEL-03-005,SEL-03-05,Sockeye-Lake,4,Not at risk,2017,
+716,Lillooet/Harrison_Late,,SE012,Lillooet-Harrison-L population,,SEL-04-001,SEL-04-01,Sockeye-Lake,4,Special Concern,2017,
+718,Nahatlatch_Early Summer,,SE013,Nahatlatch-ES population,,SEL-05-002,SEL-05-02,Sockeye-Lake,4,Special Concern,2017,
+719,Anderson/Seton_Early Summer,,SE001,Anderson-Seton-ES population,,SEL-06-001,SEL-06-01,Sockeye-Lake,4,Not at risk,2021,
+720,Chilko_Early Summer,,SE003,Chilko-ES population / Chilko-S population,,SEL-06-002,SEL-06-02,Sockeye-Lake,4,Not at risk,2017,
+721,Chilko_Summer,,SE004,Chilko-ES population / Chilko-S population,,SEL-06-003,SEL-06-03,Sockeye-Lake,4,Not at risk,2017,
+725,Francois/Fraser_Summer,,SE007,Francois-Fraser-S population,,SEL-06-007,SEL-06-07,Sockeye-Lake,4,Special Concern,2017,
+727,Nadina/Francois_Early Summer,,SE008,Nadina-Francois-ES population,,SEL-06-020,SEL-06-20,Sockeye-Lake,4,Not at risk,2017,
+728,Quesnel_Summer,,SE016,Quesnel-S population,,SEL-06-010,SEL-06-10,Sockeye-Lake,4,Endangered,2017,
+729,Seton_Late,,SE017,Seton-L population,,SEL-06-011,SEL-06-11,Sockeye-Lake,4,Endangered,2017,
+731,Takla/Trembleur/Stuart_Summer,,SE021,Takla-Trembleur-Stuart-S population,,SEL-06-013,SEL-06-13,Sockeye-Lake,4,Endangered,2017,
+732,Takla/Trembleur_Early Stuart,,SE020,Takla-Trembleur-EStu population,,SEL-06-014,SEL-06-14,Sockeye-Lake,4,Endangered,2017,
+734,Taseko_Early Summer,,SE022,Taseko-ES population,,SEL-06-016,SEL-06-16,Sockeye-Lake,4,Endangered,2017,
+735,Bowron_Early Summer,,SE002,Bowron-ES population,,SEL-07-001,SEL-07-01,Sockeye-Lake,4,Endangered,2017,
+738,Shuswap_Early Summer,,SE019,Shuswap-ES population,,SEL-09-002,SEL-09-02,Sockeye-Lake,4,Not at risk,2017,
+739,Shuswap_Late,,SE018,Shuswap Complex-L population,,SEL-09-003,SEL-09-03,Sockeye-Lake,4,Not at risk,2017,
+740,Kamloops_Early Summer,,SE011,Kamloops-ES population,,SEL-10-001,SEL-10-01,Sockeye-Lake,4,Special Concern,2017,
+742,Widgeon,,SE023,Widgeon (River-Type) population,,SER-002,SER-02,Sockeye-River,4,Threatened,2017,y
+745,Harrison River,,SE024,Harrison (River-Type) population,,SER-003,SER-03,Sockeye-River,4,Not at risk,2017,y
+749,Interior Fraser,MFR,CO05,Middle Fraser,MFR,CO-048,CO-48,Coho,3,Threatened,2016,y
+750,Lower Fraser,LFR,CO02,Lower Fraser ,LFR,CO-047,CO-47,Coho,3,,NA,y
+751,Adams and Momich Lakes_Early Summer,,,Adams ES,,SEL-09-912,SEL-09-xx,Sockeye-Lake,4,Extinct,2021,Assessed as extinct 2021; Removed from numbering in 2021 COSEWIC SE DU Report because populations are thought to be eliminated; DU numbers repurposed 
+751,Adams and Momich Lakes_Early Summer,,,Momich-ES,,SEL-09-912,SEL-09-xx,Sockeye-Lake,4,Endangered,2021,Removed from numbering in 2021 COSEWIC SE DU Report because populations are thought to be eliminated; DU numbers repurposed 
+752,North Barriere_Early Summer,,SE014,North Barriere-ES population,,SEL-10-003,SEL-10-03,Sockeye-Lake,4,Extinct,2021,
+800,North Haida Gwaii-Stanley Creek,,CM14,Stanley Creek,,CM_25,CM-25,Chum,5,,NA,y
+801,East HG,,CM15,Haida Gwaii - East ,,CM_21,CM-21,Chum,5,,NA,y
+802,North Haida Gwaii,,CM13,Haida Gwaii - Noth ,,CM_24,CM-24,Chum,5,,NA,y
+803,West Haida Gwaii,,CM12,Haida Gwaii - West,,CM_23,CM-23,Chum,5,,NA,y
+804,Skidegate,,CM15,Haida Gwaii - East ,,CM_22,CM-22,Chum,5,,NA,y
+804,Skidegate,,CM12,Haida Gwaii - West,,CM_22,CM-22,Chum,5,,NA,y
+805,Haida Gwaii-North,,CK30,"Haida Gwaii-North Ocean/Stream, Summer",HGN,CN_43,CK-43,Chinook,6,,NA,y
+806,Haida Gwaii-East,,CK31,"Haida Gwaii-East Ocean, Fall",HGE,CN_44,CK-44,Chinook,6,,NA,y
+807,HG-EAST,EQCI,CO20,Haida Gwaii - East ,EHG,CO_23,CO-23,Coho,3,,NA,"alt. CU name ""Queen Charlotte Islands | Outer Graham Island"""
+808,HG-WEST,WQCI,CO18,Haida Gwaii - West,WHG,CO_24,CO-24,Coho,3,,NA,"alt. CU name ""Queen Charlottes | Hecate Strait - Q.C. Sound"""
+809,HG-GRAHAM ISLAND LOWLANDS,NQCI,CO19,Haida Gwaii - North,NHG,CO_25,CO-25,Coho,3,,NA,"alt. CU name ""QCI - Graham Is Lowlands"""
+810,North Haida Gwaii,,PE09,Haida Gwaii - North,,PKe_9,PKE-09,Pink,2,,NA,y
+811,East Haida Gwaii,,PE10,Haida Gwaii - East ,,PKe_10,PKE-10,Pink,2,,NA,y
+812,West Haida Gwaii,,PE08,Haida Gwaii - West ,,PKe_11,PKE-11,Pink,2,,NA,y
+813,East Haida Gwaii,,PO18,Haida Gwaii - East ,,PKo_9,PKO-09,Pink,2,,NA,y
+814,North Haida Gwaii,,PO17,Haida Gwaii - North,,PKo_10,PKO-10,Pink,2,,NA,y
+815,West Haida Gwaii,,PO16,Haida Gwaii - West ,,PKo_11,PKO-11,Pink,2,,NA,y
+816,East Haida Gwaii,,SE034,East Haida Gwaii,EHG,NA,SER-13,Sockeye-River,NA,,NA,y
+817,North Haida Gwaii,,SE033,North Haida Gwaii,NHG,,,Sockeye-River,,,NA,"Seems like the names is switched with SER-15, should be West Haida Gwaii? "
+818,West Haida Gwaii,,SE032,West Haida Gwaii,WHG,,,Sockeye-River,,,NA,"Seems like the names is switched with SER-14, should be North Haida Gwaii? "
+819,Ain/Skundale/Ian,SKUNDALE,SE093,Ain/Skundale/Ian,SKUNDALE,NA,SEL-17-01,Sockeye-Lake,NA,,NA,y
+820,Awun,AWUN,SE094,Awun,AWUN,SX_L-17-02,SEL-17-02,Sockeye-Lake,5,,NA,y
+821,Fairfax,FAIRFAX,SE092,Fairfax,FAIRFAX,NA,SEL-17-03,Sockeye-Lake,5,,NA,y
+822,Jalun,JALUN,SE095,Jalun,JALUN,NA,SEL-17-04,Sockeye-Lake,5,,NA,y
+823,MARIAN,MARIAN,T07,Marian,MARIAN,SX_L-17-05,SEL-17-05,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+824,Mathers,MATHERS,SE098,Mathers,MATHERS,SX_L-17-06,SEL-17-06,Sockeye-Lake,5,,NA,y
+825,Mercer,MERCER,SE091,Mercer,MERCER,SX_L-17-07,SEL-17-07,Sockeye-Lake,5,,NA,y
+826,Skidegate,SKIDEGATE,SE099,Skidegate,SKIDEGATE,SX_L-17-08,SEL-17-08,Sockeye-Lake,5,,NA,y
+827,Yakoun,YAKOUN,SE096,Yakoun,YAKOUN,SX_L-17-09,SEL-17-09,Sockeye-Lake,5,,NA,y
+828,Marie,MARIE,SE097,Marie,MARIE,,SEL-17-10,Sockeye-Lake,,,NA,"NOT PREVIOUSLY IN SHEET, NO PSE CU ID; GEN LENGTH"
+900,Southern Coastal Streams,,CM05,South Coastal Streams - Queen Charlotte Strait - Johntsone Strait - Southern Fjords,,CM-008,CM-8,Chum,4,,NA,y
+901,Bute Inlet,,CM07,Bute Inlet,,CM-007,CM-7,Chum,4,,NA,y
+902,Loughborough,,CM06,Loughborough Inlet,,CM-006,CM-6,Chum,4,,NA,y
+903,Northeast Vancouver Island,,CM09,E Vancouver Is - Johnstone Strait - Southern Fjords,,CM-005,CM-5,Chum,4,,NA,y
+904,Georgia Strait,,CM02,Georgia Strait Mainland,,CM-004,CM-4,Chum,4,,NA,y
+904,Georgia Strait,,CM04,E Vancouver Is - Georgia Strait,,CM-004,CM-4,Chum,4,,NA,y
+904,Georgia Strait,,CM10,West Vancouver Island ,,CM-004,CM-4,Chum,4,,NA,y
+905,Howe Sound-Burrand Inlet,,CM03,Howe Sound-Burrand Inlet,,CM-003,CM-3,Chum,4,,NA,y
+906,Boundary Bay,BB,CO01,Boundary Bay,BB,CO-001,CO-1,Coho,3,,NA,y
+907,Howe Sound-Burrard Inlet,Howe-Burrard,CO10,Howe Sound-Burrard Inlet,Howe-Burrard,CO-010,CO-10,Coho,3,,NA,y
+908,Georgia Strait Mainland,SC+GStr,CO09,Georgia Strait Mainland,SC+GStr,CO-011,CO-11,Coho,3,,NA,y
+909,Southern Coastal Streams-Queen Charlotte Strait-Johnstone Strait-Southern Fjords,SC+SFj,CO12,South Coastal Streams-QCStr-JStr-SFjords,SC+SFj,CO-012,CO-12,Coho,3,,NA,y
+910,East Vancouver Island-Georgia Strait,EVI+GStr,CO11,East Vancouver Island-Georgia Strait,EVI+GStr,CO-013,CO-13,Coho,3,,NA,y
+911,East Vancouver Island-Johnstone Strait-Southern Fjords,EVI+SFj,CO14,E Vancouver Is – Johnstone Strait-SFjords,EVI+SFj,CO-014,CO-14,Coho,3,,NA,y
+912,Nahwitti Lowland,Nahwitti,CO17,Northwest Vancouver Island,NWVI,CO-015,CO-15,Coho,3,,NA,"alt CU name ""Northwest Vancouver Island"""
+913,Juan de Fuca-Pachena,JdF,CO16,Juan de Fuca-Pachena,JdF,CO-016,CO-16,Coho,3,,NA,y
+914,West Vancouver Island,WVI,CO15,West Vancouver Island,WVI,CO-017,CO-17,Coho,3,,NA,y
+915,Clayoquot,CLAY,CO15,West Vancouver Island,WVI,CO-018,CO-18,Coho,3,,NA,y
+916,Homathko-Klinaklini Rivers,HK,CO13,Homathko-Klinaklini,HK+SFj,CO-019,CO-19,Coho,3,,NA,y
+917,Georgia Strait,,PE01,Georgia Strait Mainland,,PKE-001,PKE-1,Pink,2,,NA,y
+917,Georgia Strait,,PE02,E Vancouver Is - Georgia Strait,,PKE-001,PKE-1,Pink,2,,NA,y
+918,West Vancouver Island,,PE06,West Vancouver Island ,,PKE-002,PKE-2,Pink,2,,NA,y
+919,Northwest Vancouver Island,,PE07,Northwest Vancouver Island,,PKE-003,PKE-3,Pink,2,,NA,y
+920,Southern Fjords,,PE03,South Coastal Streams - Queen Charlotte Strait - Johnstone Strait - Southern Fjords,,PKE-004,PKE-4,Pink,2,,NA,y
+920,Southern Fjords,,PE04,Homathko - Klinaklini,,PKE-004,PKE-4,Pink,2,,NA,y
+920,Southern Fjords,,PE05,E Vancouver Is - Johnstone Strait - Southern Fjords ,,PKE-004,PKE-4,Pink,2,,NA,y
+921,East Howe Sound-Burrard Inlet,,,,,PKO-002,PKO-2,Pink,2,,NA,No corresponding DU in provisional info from 2022 DU report
+922,Georgia Strait,,PO09,Georgia Strait Mainland,,PKO-003,PKO-3,Pink,2,,NA,y
+923,East Vancouver Island-Johnstone Strait,,PO10,E Vancouver Is - Georgia Strait ,,PKO-004,PKO-4,Pink,2,,NA,y
+924,Nahwitti,,PO15,Northwest Vancouver Island ,,PKO-005,PKO-5,Pink,2,,NA,y
+925,West Vancouver Island,,PO14,West Vancouver Island ,,PKO-006,PKO-6,Pink,2,,NA,y
+926,Southern Fjords,,PO11,South Coastal Streams - Queen Charlotte Strait - Johntsone Strait - Southern Fjords,,PKO-007,PKO-7,Pink,2,,NA,y
+927,Fulmore,FULMORE,SE053,Fulmore,FULMORE,SEL-11-001,SEL-11-01,Sockeye-Lake,5,,NA,y
+928,Heydon,HEYDON,SE054,Heydon,HEYDON,SEL-11-002,SEL-11-02,Sockeye-Lake,5,,NA,y
+929,Kakweiken,KAWEIKEN,SE055,Kakweiken,KAWEIKEN,SEL-11-003,SEL-11-03,Sockeye-Lake,5,,NA,y
+930,Loose,LOOSE,SE056,Loose,LOOSE,SEL-11-004,SEL-11-04,Sockeye-Lake,5,,NA,y
+931,Mackenzie,MACKENZIE,SE057,Mackenzie,MACKENZIE,SEL-11-005,SEL-11-05,Sockeye-Lake,5,,NA,y
+932,Phillips,PHILLIPS,SE058,Phillips,PHILLIPS,SEL-11-006,SEL-11-06,Sockeye-Lake,5,,NA,y
+933,Sakinaw,SAKINAW,SE051,Sakinaw ,SAKINAW,SEL-11-007,SEL-11-07,Sockeye-Lake,5,Endangered,2016,y
+935,Tzoonie,TZOONIE,SE052,Tzoonie,TZOONIE,SEL-11-009,SEL-11-09,Sockeye-Lake,5,,NA,y
+936,Village Bay,VILLAGE,T01,Village Bay,VILLAGE,SEL-11-010,SEL-11-10,Sockeye-Lake,5,,NA,Marked as Tentative in 2021 COSEWIC SE DU report 
+937,Ida/Bonanza,IDA/BONANZA,SE059,Ida/Bonanza,IDA/BONANZA,SEL-12-001,SEL-12-01,Sockeye-Lake,5,,NA,y
+938,Nahwitti,NAHWITTI,SE060,Nahwitti,NAHWITTI,SEL-12-002,SEL-12-02,Sockeye-Lake,5,,NA,y
+939,Nimpkish,NIMPKISH,SE061,Nimpkish,NIMPKISH,SEL-12-003,SEL-12-03,Sockeye-Lake,5,,NA,y
+941,Quatse,QUATSE,SE062,Quatse,QUATSE,SEL-12-005,SEL-12-05,Sockeye-Lake,4,,NA,y
+942,Schoen,SCHOEN,SE063,Schoen,SCHOEN,SEL-12-006,SEL-12-06,Sockeye-Lake,5,,NA,y
+943,Shushartie,SHUSHARTIE,SE064,Shushartie,SHUSHARTIE,SEL-12-007,SEL-12-07,Sockeye-Lake,5,,NA,y
+944,Woss,WOSS,SE065,Woss,WOSS,SEL-12-008,SEL-12-08,Sockeye-Lake,5,,NA,y
+945,Alice,ALICE,SE087,Alice,ALICE,SEL-13-001,SEL-13-01,Sockeye-Lake,5,,NA,y
+946,Canoe Creek,CANOE,SE088,Canoe Creek,CANOE,SEL-13-002,SEL-13-02,Sockeye-Lake,5,,NA,y
+947,Cecilia,CECILIA,SE067,Cecilia,CECILIA,SEL-13-003,SEL-13-03,Sockeye-Lake,5,,NA,y
+948,Cheewat,CHEEWAT,SE068,Cheewat,CHEEWAT,SEL-13-004,SEL-13-04,Sockeye-Lake,5,,NA,y
+949,Clayoquot,CLAYQUOT,SE069,Clayoquot,CLAYQUOT,SEL-13-005,SEL-13-05,Sockeye-Lake,5,,NA,y
+950,Deserted,DESERTED,SE070,Deserted,DESERTED,SEL-13-006,SEL-13-06,Sockeye-Lake,5,,NA,y
+951,Fairy,FAIRY,SE071,Fairy,FAIRY,SEL-13-007,SEL-13-07,Sockeye-Lake,5,,NA,y
+952,Great Central,GCL,SE072,Great Central,GCL,SEL-13-008,SEL-13-08,Sockeye-Lake,5,,NA,y
+953,Henderson,HENDERSON,SE073,Henderson,HENDERSON,SEL-13-009,SEL-13-09,Sockeye-Lake,5,,NA,y
+954,Hesquiat,HESQUIAT,SE074,Hesquiat,HESQUIAT,SEL-13-010,SEL-13-10,Sockeye-Lake,5,,NA,y
+955,Hobiton,HOBITON,SE075,Hobiton,HOBITON,SEL-13-011,SEL-13-11,Sockeye-Lake,5,,NA,y
+956,Jansen,JANSEN,SE076,Jansen,JANSEN,SEL-13-012,SEL-13-12,Sockeye-Lake,5,,NA,y
+957,Kanim,KANIM,SE077,Kanim,KANIM,SEL-13-013,SEL-13-13,Sockeye-Lake,5,,NA,y
+958,Kennedy,KENNEDEY,SE078,Kennedy,KENNEDEY,SEL-13-014,SEL-13-14,Sockeye-Lake,5,,NA,y
+959,Maggie,MAGGIE,SE079,Maggie,MAGGIE,SEL-13-015,SEL-13-15,Sockeye-Lake,5,,NA,y
+960,Megin,MEGIN,SE080,Megin,MEGIN,SEL-13-016,SEL-13-16,Sockeye-Lake,5,,NA,y
+961,Muchalat,MUCHALAT,SE081,Muchalat,MUCHALAT,SEL-13-017,SEL-13-17,Sockeye-Lake,5,,NA,y
+962,Muriel,MURIEL ,SE082,Muriel,MURIEL ,SEL-13-018,SEL-13-18,Sockeye-Lake,5,,NA,y
+963,Nitinat,NITINAT,SE083,Nitinat,NITINAT,SEL-13-019,SEL-13-19,Sockeye-Lake,5,,NA,y
+964,O'Connell,O'CONNELL,SE089,O'Connell,O'CONNELL,SEL-13-020,SEL-13-20,Sockeye-Lake,5,,NA,y
+966,Park River,PARK,SE084,Park River,PARK,SEL-13-022,SEL-13-22,Sockeye-Lake,5,,NA,y
+967,Power,POWER,SE085,Power,POWER,SEL-13-023,SEL-13-23,Sockeye-Lake,5,,NA,y
+969,Sproat,SPROAT,SE086,Sproat,SPROAT,SEL-13-025,SEL-13-25,Sockeye-Lake,5,,NA,y
+970,William/Brink,WILLIAM/BRINK,SE090,William/Brink,WILLIAM/BRINK,SEL-13-026,SEL-13-26,Sockeye-Lake,5,,NA,y
+971,Southern Fjords,,SE027,South Coast-Southern Fjords,SC-SFj,SER-009,SER-009,Sockeye-River,5,,NA,y
+971,Southern Fjords,,SE029,Hamothko-Klinaklini-Southern Fjords,HK,SER-009,SER-009,Sockeye-River,5,,NA,y
+972,West Vancouver Island,,SE030,West Vancouver Is,WVI,SER-010,SER-010,Sockeye-River,5,,NA,y
+973,East Vancouver Island and Georgia Strait,,SE025,South Coast-Georgia Strait,SC-GStr,SER-008,SER-08,Sockeye-River,5,,NA,y
+973,East Vancouver Island and Georgia Strait,,SE026,East Vancouver Island-Georgia Strait,EVI-GStr,SER-008,SER-08,Sockeye-River,5,,NA,y
+973,East Vancouver Island and Georgia Strait,,SE028,East Vancouver Island-Southern Fjords,EVI-SFj,SER-008,SER-08,Sockeye-River,5,,NA,y
+974,NW Vancouver Island,,SE031,Northwest Vancouver Is,NWVI,SER-011,SER-011,Sockeye-River,5,,NA,y
+976,Vernon,VERNON,SE066,Vernon,VERNON,SEL-12-009,SEL-12-09,Sockeye-Lake,5,,NA,y
+977,Northwest Vancouver Island,,CM11,Northwest Vancouver Island,,CM-011,CM-11,Chum,4,,NA,y
+978,Southwest & West  Vancouver Island,,CM10,West Vancouver Island ,,CM-010,CM-10,Chum,4,,NA,y
+979,Upper Knight,,CM08,Upper Knight Inlet,,CM-009,CM-9,Chum,4,,NA,y
+1100,Teslin,TESLIN,CM38,Yukon - Teslin Headwaters,,CM-038,CM-38,Chum,,,NA,y
+1101,Lower Liard ,LIARD,CM45,Lower Liard,,CM-039,CM-39,Chum,,,NA,y (Vesta: PSE Region is Mackenzie)
+1211,Peel River,PEEL,CM44,Peel River,,CM-040,CM-40,Chum,,,NA,y (Vesta: PSE Region is Mackenzie)
+1213,Middle Yukon,MYR,CM39,Mid-Yukon River and Tributaries ,,CM-042,CM-42,Chum,,,NA,y
+1214,N Yukon River,NYR,CM42,N Yukon River and Tributaries ,,CM-043,CM-43,Chum,,,NA,y
+1215,White,White,CM41,White River and Tributaries ,,CM-044,CM-44,Chum,,,NA,y (Vesta: these may be revised in latest CU update)
+1216,Donjek Kluane,Donjek,CM41,White River and Tributaries ,,CM-045,CM-45,Chum,,,NA,y (Vesta: these may be revised in latest CU update)
+1217,Porcupine River,Porcu,CM43,Porcupine ,,CM-046,CM-46,Chum,,,NA,y
+1218,Stewart,STEW,CM40,Pelly - Stewart ,,CM-048,CM-48,Chum,,,NA,y (Vesta: these may be revised in latest CU update)
+1219,Porcupine River,PORC,CO37,Porcupine,Yukon,CO_46,CO-46,Coho,3,,NA,y
+other,CK030-Port San Juan ,PSJ,CK24,"West Vancouver Island, Ocean, Fall (South) population",WVI/Ocean/Fall (South),CK-030,CK-30,Chinook,,Threatened,2020,y
+other,Glendale,GLENDALE,T03,Glendale,GLENDALE,,SEL-11-12,Sockeye-Lake,,,NA,"Marked as Tentative in 2021 COSEWIC SE DU report; NOT PREVIOUSLY IN SHEET, NO PSE CU ID; GEN LENGTH"
+other,Gudal,GUDAL,T09,Gudal,GUDAL,,SEL-17-12,Sockeye-Lake,,,NA,"Marked as Tentative in 2021 COSEWIC SE DU report; NOT PREVIOUSLY IN SHEET, NO PSE CU ID; GEN LENGTH"
+other,Lois,LOIS,T04,Lois,LOIS,,SEL-11-13,Sockeye-Lake,,,NA,"Marked as Tentative in 2021 COSEWIC SE DU report; NOT PREVIOUSLY IN SHEET, NO PSE CU ID; GEN LENGTH"
+other,Mayer,MAYER,T08,Mayer,MAYER,,SEL-17-11,Sockeye-Lake,,,NA,"Marked as Tentative in 2021 COSEWIC SE DU report; NOT PREVIOUSLY IN SHEET, NO PSE CU ID; GEN LENGTH"
+other,,,CK39,"HecLow, Ocean/Stream, Summer",HecLow,,,Chinook,,,NA,y
+other,Owossitsa,OWOSSITS,T5,Owossitsa,OWOSSITS,,SEL-13-21,Sockeye-Lake,,,NA,"Marked as Tentative in 2021 COSEWIC SE DU report; NOT PREVIOUSLY IN SHEET, NO PSE CU ID; GEN LENGTH"
+other,Pack,PACK,T02,Pack,PACK,,SEL-11-11,Sockeye-Lake,,,NA,"Marked as Tentative in 2021 COSEWIC SE DU report; NOT PREVIOUSLY IN SHEET, NO PSE CU ID; GEN LENGTH"
+other,South Bonnila,S_BONNILA,T46,South Bonnila,S_BONNILA,,SEL-19-73,Sockeye-Lake,,,NA,"Marked as Tentative in 2021 COSEWIC SE DU report; NOT PREVIOUSLY IN SHEET, NO PSE CU ID; GEN LENGTH"
+other,Split Mountain/Leverson,SPLIT_MTN/LEVERSON,T49,Split Mountain/Leverson,SPLIT_MTN/LEVERSON,,SEL-23-02,Sockeye-Lake,,,NA,"Marked as Tentative in 2021 COSEWIC SE DU report; NOT PREVIOUSLY IN SHEET, NO PSE CU ID; GEN LENGTH"
+other,Sylvia Creek,SYLVIA,T45,Sylvia,SYLVIA,,SEL-19-72,Sockeye-Lake,,,NA,"Marked as Tentative in 2021 COSEWIC SE DU report; NOT PREVIOUSLY IN SHEET, NO PSE CU ID; GEN LENGTH"
+other,,,PO28,Upper Nass,,Pko_18,PKO-18,Pink,,,NA,"Check? No CU index but name matches ""Upper Nass"" odd pink DU "
+other,,,PE20,Upper Nass,,Pke_12,PKE-12,Pink,,,NA,"Check? No CU index but name matches ""Upper Nass"" even pink DU "
+other,,,PO13,E Vancouver Is - Johnstone Strait - Southern Fjords,,,,Pink,,,NA,No corresponding CU in provisional info from 2022 DU report
+,Alsek,Alsek,CO36,Alsek,Alsek,CO_45,CO-45,Coho,3,,NA,y
+,Blanchard-BC,BLANCHARD,SE193,Blanchard-BC,BLANCHARD,,SEL-30-01,Sockeye-Lake,,,NA,Transboundary
+,Border,BORDER,SE184,Border,BORDER,,SEL-25-01,Sockeye-Lake,,,NA,Transboundary
+,Christina,CHRISTINA,SE185,Christina,CHRISTINA,,SEL-26-01,Sockeye-Lake,,,NA,Transboundary
+,Chutine,CHUTINE,SE187,Chutine,CHUTINE,,SEL-26-03,Sockeye-Lake,,,NA,Transboundary
+,King Salmon,KING SALMON,SE192,King Salmon,KING SALMON,,SEL-28-05,Sockeye-Lake,,,NA,Transboundary
+,Klukshu-Yukon,KLUKSHU,SE194,Klukshu-Yukon,KLUKSHU,,SEL-30-02,Sockeye-Lake,,,NA,Transboundary
+,Kuthai,KUTHAI,SE189,Kuthai,KUTHAI,,SEL-28-01,Sockeye-Lake,,,NA,Transboundary
+,Lower Stikine,LStk,CO32,Lower Stikine,LStk,CO_39,CO-39,Coho,3,,NA,y
+,Little Trapper,LTRAPPER,SE190,Little Trapper,LTRAPPER,,SEL-28-02,Sockeye-Lake,,,NA,Transboundary
+,Lynn Canal,LYNN,CO35,Chilkat,LYNN,CO_44,CO-44,Coho,3,,NA,y
+,Neskatahin-Yukon,NESKATAHIN,SE195,Neskatahin-Yukon,NESKATAHIN,,SEL-30-03,Sockeye-Lake,,,NA,Transboundary
+,Tahltan,TAHLTAN,SE186,Tahltan,TAHLTAN,,SEL-26-02,Sockeye-Lake,,,NA,Transboundary
+,Taku,Taku,CO34,Taku,Taku,CO_41,CO-41,Coho,3,,NA,y
+,Taku,Taku,CO34,Taku,Taku,CO_42,CO-42,Coho,3,,NA,y
+,Taku,Taku,CO34,Taku,Taku,CO_43,CO-43,Coho,3,,NA,y
+,Tatsamenie,TATSAMENIE,SE191,Tatsamenie,TATSAMENIE,,SEL-28-03,Sockeye-Lake,,,NA,Transboundary
+,Unuk River,UNUK,CO31,Unuk,Unuk,CO_38,CO-38,Coho,3,,NA,y
+,Whiting,WHITING,SE188,Whiting,WHITING,,SEL-27-01,Sockeye-Lake,,,NA,Transboundary
+,Whiting River,Whiting,CO33,Whiting River,Whiting,CO_40,CO-40,Coho,3,,NA,y
+,,,CM37,Alsek,,,,Chum,,,NA,No corresponding CU in provisional info from 2022 DU report
+,,,PO34,Alsek,,,,Pink,,,NA,No corresponding CU in provisional info from 2022 DU report
+,,,PE26,Alsek,,,,Pink,,,NA,No corresponding CU in provisional info from 2022 DU report
+,Alsek River ,,SE049,Alsek River ,ALSEK,SER-024,SER-024,Sockeye-River,,,NA,y
+,,,CM36,Chilkat,,CM-037,CM-37,Chum,,,NA,y
+,,,PO33,Chilkat,,PKO-019,PKO-19,Pink,,,NA,y
+,,,PE25,Chilkat,,PKE-013,PKE-13,Pink,,,NA,y
+,Chilkat River,,SE048,Chilkat River,CHILKAT,SER-023,SER-023,Sockeye-River,,,NA,y
+,,,PO30,Lower Stikine,,PKO-019,PKO-19,Pink,,,NA,y
+,,,PE22,Lower Stikine,,PKE-013,PKE-13,Pink,,,NA,y
+,,,CM33,Lower Stikine ,,CM-034,CM-34,Chum,,,NA,y
+,Northern Transboundary Fjords ,,SE044,Stikine River,LStk,SER-022,SER-022,Sockeye-River,,,NA,y
+,,,CM35,Taku,,CM-036,CM-36,Chum,,,NA,y
+,,,PO32,Taku,,PKO-019,PKO-19,Pink,,,NA,y
+,,,PE24,Taku,,PKE-013,PKE-13,Pink,,,NA,y
+,Northern Transboundary Fjords ,,SE045,Taku River,TAKU,SER-022,SER-022,Sockeye-River,,,NA,y
+,,,CM32,Unuk,,CM-033,CM-33,Chum,,,NA,y
+,,,PO29,Unuk,,PKO-019,PKO-19,Pink,,,NA,y
+,,,PE21,Unuk,,PKE-013,PKE-13,Pink,,,NA,y
+,Northern Transboundary Fjords ,,SE047,Unuk River ,UNUK,SER-022,SER-022,Sockeye-River,,,NA,y
+,,,CM34,Whitiing,,CM-035,CM-35,Chum,,,NA,y
+,,,PO31,Whitiing,,PKO-019,PKO-19,Pink,,,NA,y
+,,,PE23,Whitiing,,PKE-013,PKE-13,Pink,,,NA,y
+,Northern Transboundary Fjords ,,SE046,Whiting River,Whiting,SER-022,SER-022,Sockeye-River,,,NA,y

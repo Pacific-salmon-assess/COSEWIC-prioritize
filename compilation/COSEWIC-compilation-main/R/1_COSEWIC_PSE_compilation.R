@@ -9,7 +9,7 @@ cc_file <- read.csv("data/dataset_1part1.Dec072020_CC.csv", header = T)
 fraser_file <- read.csv("data/dataset_1part1.Jul282020_Fraser.csv", header = T)
 vimi_file <- read.csv("data/dataset_1part1.Jul282021_VIMI.csv", header = T)
 nass_file <- read.csv("data/dataset_1part1.Dec092020_Nass.csv", header = T)
-skeena_file <- read.csv("data/dataset_1part1.Dec092020_Skeena.csv", header = T)
+skeena_file <- read.csv("data/dataset_1part1.Mar162022_Skeena.csv", header = T)
 hg_file <- read.csv("data/dataset_1part1.Oct252021_HG.csv", header = T)
 columbia_file <- read.csv("data/dataset_1part1.NOV272019_Columbia.csv", header = T) %>%
   #commas in these counts were messing things up
