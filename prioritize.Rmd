@@ -5,16 +5,20 @@ date: "3/11/2022"
 output: html_document
 ---
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, 
+                      warning = FALSE, 
+                      message = FALSE, 
+                      fig.path = "output/plots/")
 ```
 ## Background
 The purpose of this document is to import recent data on pacific salmon spawner abundances, and their designateable and conservation units (i.e. DUs and CUs). We plot abundances and examine trends, define what it means to be data deficient, then explore various metrics to  prioritize populations for reassessment. 
-```{r pkgs, warning = FALSE, message = FALSE}
+```{r pkgs, echo=FALSE}
 library("tidyverse")
+library("ggh4x") #hacks for making facets the same size 
 ```
 ### Load and wrangle data
 We want to load the most recent data from a [GitHub repo](https://github.com/hertzPSF/COSEWIC-compilation) managed by Eric Hertz at the Pacific Salmon Foundation (PSF). We download the repo, import data we want from it, and tidy it up. 
-```{r, warning = FALSE, message = FALSE}
+```{r}
 download.file(url = "https://github.com/hertzPSF/COSEWIC-compilation/archive/master.zip",
               destfile = "compilation/hertzPSF-compilation.zip")
 
@@ -44,7 +48,7 @@ sp_data <- left_join(raw_sp_data, select(cu_metadata, CUID, du_number, gen_lengt
 #### Get the last 3 generations of spawner abundances
 We need to use the metadata to get generation times for each population, then use that to calculate a time span that includes the last 3 generations, as per IUCN guidelines. 
 
-```{r, warning = FALSE, message = FALSE}
+```{r}
 last3_gens <- sp_data %>%
   group_by(du_cu) %>%
   mutate(three_gens = gen_length*3) %>%
@@ -55,15 +59,16 @@ last3_gens <- sp_data %>%
 rm(raw_sp_data, erics_output, cu_metadata) #remove some helper objects
 ```
 ## Plot spawner abundance
-Now we want to plot abundances. We'll make 2 plots for each species and unit: raw spawner abundance and ln-transformed spawner abundance with a linear regression passing through all data points (black) and the last 3 generations (red). **Note that that the axes on figures vary**, some populations have much more monitoring effort and abundance may vary by orders of magnitude.  
-This code is cumbersome in order to make it robust, so we've omitted it from the output, but it's worth noting you can choose to save plots or adjust facets.  
-**need to make facets all the same size**
+Now we want to plot abundances. We'll make 2 plots for each species and region: raw spawner abundance and ln-transformed spawner abundance with a linear regression passing through all data points (black) and the last 3 generations (red). **Note that that the y axis varies for ease of viewing**.    
+This code is cumbersome in order to make it robust, so we've omitted it from the knit, but it's worth noting you can choose to save plots or adjust facets.  
 ```{r}
 max_facets <- 20 #how many facets (i.e. panes) per plot?
+rows <- 4 #how many rows/cols? note needs to be multiple of facets. 
+cols <- 5
 save_plots <- FALSE
 ```
 
-```{r, echo = FALSE, message = FALSE, warning = FALSE}
+```{r, echo = FALSE}
 for(i in unique(sp_data$Species)){
   sp_data_species <- filter(sp_data, Species == i)
   for(j in unique(sp_data_species$Region)){
@@ -71,9 +76,11 @@ for(i in unique(sp_data$Species)){
       complete(Year, Species, Region, du_cu) #explicitly include NA so line draws right
     sub_last3 <- filter(last3_gens, Species == i, Region == j)
     
-    if(length(unique(sub_data$du_cu)) > max_facets){
+    n_pops <- length(unique(sub_data$du_cu))
     
-      pages <- ceiling(length(unique(sub_data$du_cu))/max_facets)
+    if( n_pops > max_facets){
+    
+      pages <- ceiling(n_pops/max_facets)
     
     for(k in 1:pages){
       sub_data_2 <- filter(sub_data, du_cu %in% 
@@ -85,7 +92,8 @@ for(i in unique(sp_data$Species)){
       p <- ggplot(data = sub_data_2, aes(x= Year, y= Spawner.Abundance/1000)) +
         geom_line(color = "grey") +
         geom_point() +
-        facet_wrap(~du_cu, scales = "free_y") +
+        ggh4x::facet_wrap2(vars(du_cu), nrow = rows, ncol = cols, trim_blank = FALSE, 
+                           scales = "free_y") +
         labs(x= "Year", y = "spawners (thousands)", 
              title = paste0(j, " ", i, " spawner abundance ", "(", k, " of ", pages, ")")) +
         theme_bw() +
@@ -99,7 +107,9 @@ for(i in unique(sp_data$Species)){
                     se = FALSE) +
         stat_smooth(data = sub_last3_2, formula = y~x, method = "lm", color = "red", 
                     se = FALSE, na.rm = TRUE) +
-        facet_wrap(~du_cu, scales = "free_y") +
+        ggh4x::facet_wrap2(vars(du_cu), nrow = rows, ncol = cols, trim_blank = FALSE, 
+                           scales = "free_y") +
+
         labs(x= "Year", y = "ln(spawners)", 
              title = paste0("ln ", j, " ", i, " spawner abundance ", 
                             "(", k, " of ", pages, ")")) +
@@ -116,7 +126,8 @@ for(i in unique(sp_data$Species)){
     p <- ggplot(data = sub_data, aes(x= Year, y= Spawner.Abundance/1000)) +
       geom_line(color = "grey") +
       geom_point() +
-      facet_wrap(~du_cu, scales = "free_y") +
+      ggh4x::facet_wrap2(vars(du_cu), nrow = rows, ncol = cols, trim_blank = FALSE, 
+                         scales = "free_y") +
       labs(x= "Year", y = "spawners (thousands)", title = paste(j, i, "spawner abundance")) +
       theme_bw() +
       theme(strip.background = element_blank(), axis.text.x = element_text(angle = 45))
@@ -128,7 +139,8 @@ for(i in unique(sp_data$Species)){
       stat_smooth(formula = y~x, method="lm", color = "black", lty= "dashed", se = FALSE) +
       stat_smooth(data = sub_last3, formula = y~x, method = "lm", color = "red", 
                   se = FALSE, na.rm = TRUE) +
-      facet_wrap(~du_cu, scales = "free_y") +
+      ggh4x::facet_wrap2(vars(du_cu), nrow = rows, ncol = cols, trim_blank = FALSE, 
+                         scales = "free_y") +
       labs(x= "Year", y = "ln(spawners)", 
            title = paste(j, i, "ln(spawner abundance)")) +
       theme_bw() +
@@ -151,7 +163,7 @@ rm(p, p_log, sp_data_species, sub_data, sub_data_2, sub_last3, sub_last3_2)
 #### Which populations are data deficient?
 Earlier we dropped years where spawner abundance wasn't recorded, but now we want to account for missing data. We'll define a threshold of acceptable data coverage then check the get a list of DUs that don't meet this threshold and filter them out of data that will be used in the lms.  
 First we'll do this for the recent data.
-```{r, warning = FALSE, message = FALSE}
+```{r}
 deficient_recent_perc <- 0.7
 
 deficient_recent <- last3_gens %>%
@@ -166,7 +178,7 @@ last3_gens_filtered <- filter(last3_gens, !(du_cu %in% deficient_recent))
 ```
 Then we'll use similar logic but account for the whole time series using a more forgiving 
 cutoff and the first year of sampling. 
-```{r, warning = FALSE, message = FALSE}
+```{r}
 deficient_historical_perc <- 0.6
 
 deficient_historical <- sp_data %>%
@@ -187,7 +199,7 @@ Now we'll run basic linear models on ln(spawner abundances) for the whole time s
 for the last 3 generations. We need to add some if statements in this loop to account for
 which du_cus made it through the data filters above.   
 **I'm open to clever suggestions to avoid the if else statements!**
-```{r, warning = FALSE, message = FALSE}
+```{r}
 summary_table <- NULL
 
 for(i in unique(sp_data_filtered$du_cu)){
@@ -223,21 +235,17 @@ head(summary_table)
 rm(list = ls()[grep("sub|model|def|slope", ls())]) #yeet garbage
 ```
 
-###State space estimates 
-Messing around with Dan!
-```{r}
-
-```
-
 ### Estimates with the MetricsCOSEWIC package
 First some housekeeping. You can use devtools to download the [MetricsCOSEWIC package](https://github.com/SOLV-Code/MetricsCOSEWIC) from GitHub. We'll wrangle the data into the format this package wants as well. We'll feed it the filtered last 3 generations.   
 *Still need to make sure I did this right. The README says the first argument to calcPercChangeMCMC() is a "vector with numeric values" so I'll assume that is spawner abundance with NAs omitted?*  
-**Need to sum the % of draws in each threshold and bind in summary table**
-```{r, warning = FALSE, message = FALSE, results = "hide"}
+**Need to sum the % of draws in each threshold and bind in summary table, and need to change to JAGS as Carrie's reccomendation**
+```{r, results = "hide"}
 library(MetricsCOSEWIC)
 
 slope_posterior <- NULL
 stan_summary <- NULL
+
+last3_gens_filtered <- filter(last3_gens_filtered, du_cu == "CK1 302")
 
 for(i in unique(last3_gens_filtered$du_cu)){
   sub_data <- filter(last3_gens_filtered, du_cu == i)
@@ -270,9 +278,10 @@ stan_summary <- relocate(stan_summary, var, .before = mean)
 
 ```
 #### Plot slope posterior distributions
-We'll plot the slope (i.e. decline) posteriors and show the median and various COSEWIC thresholds for population decline based on [category A2](https://www.canada.ca/en/environment-climate-change/services/species-risk-act-accord-funding/listing-process/quantitative-criteria-guidelines-status-table-2.html), where 50 and 30 percent reductions correspond to endangered and threatened status, respectively.
+We'll plot the slope (i.e. decline) posteriors and show the median and various COSEWIC thresholds for population decline based on [category A2](https://www.canada.ca/en/environment-climate-change/services/species-risk-act-accord-funding/listing-process/quantitative-criteria-guidelines-status-table-2.html), where 50 and 30 percent reductions correspond to endangered and threatened status, respectively.  
+But we'll use 30, 50, and 70 % reductions as thresholds for least concern, threatened, and endangered for now. 
 **need to fix ugly plots**
-```{r, echo = FALSE, warning = FALSE, message = FALSE}
+```{r, echo = FALSE}
 #helper function to center limits
 symmetric_limits <- function(x){
     max <- max(abs(x))
