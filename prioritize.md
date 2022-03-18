@@ -222,8 +222,28 @@ perc_category <- slope_posterior %>%
             least_concern = round(sum((-30)>draw & draw>(-50))/n()*100, 2), 
             threatened = round(sum(draw<(-50) & draw>(-70))/n()*100, 2), 
             endangered = round(sum(draw<(-70))/n()*100, 2))
+head(perc_category)
 ```
+
+    ## # A tibble: 6 x 7
+    ## # Groups:   species, region [1]
+    ##   species region du_cu    not_at_risk least_concern threatened endangered
+    ##   <chr>   <chr>  <chr>          <dbl>         <dbl>      <dbl>      <dbl>
+    ## 1 Chinook CC     CK32 509        87.0          9.17       2.43       1.37
+    ## 2 Chinook CC     CK33 510         0            0.2        1.23      98.6 
+    ## 3 Chinook CC     CK34 511        76.4          4          3.57      16   
+    ## 4 Chinook CC     CK35 512        83.2          0.63       0.8       15.4 
+    ## 5 Chinook CC     CK36 513        32.7         10         10.6       46.6 
+    ## 6 Chinook CC     CK37 514        13.9          4.87       4.9       76.4
 
 ### Plot slope posterior distributions
 
+These distributions show the probability (i.e. each markov chain monte
+carlo draw) that the slope of the last 3 generations, which is like the
+red line in the figures above. The distribution is plotted over the
+decline categories specified above. It’s essentially a visualization of
+the perc_category dataframe.  
+The amount of the distribution in the green region means the population
+is experiencing less than 30% declines, the red region says the
+population is declining by 70% or more, and yellow is intermediate.
 ![](output/plots/slope%20posteriors-1.png)<!-- -->![](output/plots/slope%20posteriors-2.png)<!-- -->![](output/plots/slope%20posteriors-3.png)<!-- -->![](output/plots/slope%20posteriors-4.png)<!-- -->![](output/plots/slope%20posteriors-5.png)<!-- -->![](output/plots/slope%20posteriors-6.png)<!-- -->![](output/plots/slope%20posteriors-7.png)<!-- -->![](output/plots/slope%20posteriors-8.png)<!-- -->![](output/plots/slope%20posteriors-9.png)<!-- -->![](output/plots/slope%20posteriors-10.png)<!-- -->![](output/plots/slope%20posteriors-11.png)<!-- -->![](output/plots/slope%20posteriors-12.png)<!-- -->![](output/plots/slope%20posteriors-13.png)<!-- -->![](output/plots/slope%20posteriors-14.png)<!-- -->![](output/plots/slope%20posteriors-15.png)<!-- -->

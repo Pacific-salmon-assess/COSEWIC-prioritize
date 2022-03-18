@@ -253,8 +253,11 @@ perc_category <- slope_posterior %>%
             least_concern = round(sum((-30)>draw & draw>(-50))/n()*100, 2), 
             threatened = round(sum(draw<(-50) & draw>(-70))/n()*100, 2), 
             endangered = round(sum(draw<(-70))/n()*100, 2))
+head(perc_category)
 ```
-### Plot slope posterior distributions
+### Plot slope posterior distributions  
+These distributions show the probability (i.e. each markov chain monte carlo draw) that the slope of the last 3 generations, which is like the red line in the figures above. The distribution is plotted over the decline categories specified above. It's essentially a visualization of the perc_category dataframe.  
+The amount of the distribution in the green region means the population is experiencing less than 30% declines, the red region says the population is declining by 70% or more, and yellow is intermediate.
 ```{r slope posteriors, echo = FALSE}
 #helper function to center limits
 symmetric_limits <- function(x){
