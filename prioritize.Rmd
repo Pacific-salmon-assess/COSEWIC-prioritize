@@ -1,47 +1,43 @@
 ---
 title: "Rapid assessment of Pacific Salmon spawner abundnace to aide with COSEWIC prioritizaiton"
-author: "Dylan Glaser"
-date: "3/11/2022"
-output: html_document
+author: "Dylan Glaser (DFO)"
+output: rmarkdown::github_document
 ---
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, 
-                      warning = FALSE, 
-                      message = FALSE, 
-                      fig.path = "output/plots/")
+knitr::opts_chunk$set(echo=TRUE, warning=FALSE, message=FALSE, fig.path="output/plots/")
 ```
 ## Background
-The purpose of this document is to import recent data on pacific salmon spawner abundances, and their designateable and conservation units (i.e. DUs and CUs). We plot abundances and examine trends, define what it means to be data deficient, then explore various metrics to  prioritize populations for reassessment. 
+The purpose of this document is to import recent data on pacific salmon spawner abundances, and their designateable and conservation units (i.e. DUs and CUs). We plot abundances and examine trends, then explore various metrics to  prioritize populations for assessment. 
 ```{r pkgs, echo=FALSE}
 library("tidyverse")
 library("ggh4x") #hacks for making facets the same size 
 ```
 ### Load and wrangle data
 We want to load the most recent data from a [GitHub repo](https://github.com/hertzPSF/COSEWIC-compilation) managed by Eric Hertz at the Pacific Salmon Foundation (PSF). We download the repo, import data we want from it, and tidy it up. 
-```{r}
-download.file(url = "https://github.com/hertzPSF/COSEWIC-compilation/archive/master.zip",
-              destfile = "compilation/hertzPSF-compilation.zip")
+```{r read in data}
+download.file(url="https://github.com/hertzPSF/COSEWIC-compilation/archive/master.zip",
+              destfile="compilation/hertzPSF-compilation.zip")
 
-unzip(zipfile = "compilation/hertzPSF-compilation.zip", exdir = "compilation")
+unzip(zipfile="compilation/hertzPSF-compilation.zip", exdir="compilation")
 
 erics_output <- list.files("compilation/COSEWIC-compilation-main/output")
 
 raw_sp_data <- read.csv(paste0("compilation/COSEWIC-compilation-main/Output/",
                            erics_output[grep("CU_Spawner_Abund", erics_output)]), 
-                        header = TRUE) %>%
-         mutate(logSp = log(Spawner.Abundance))
+                        header=TRUE) %>%
+         mutate(logSp=log(Spawner.Abundance))
 
 cu_metadata <- read.csv(paste0("compilation/COSEWIC-compilation-main/Output/",
                                erics_output[grep("CU_Metadata", erics_output)]), 
-                        header = TRUE, na.strings = c("", "NA")) %>%
+                        header=TRUE, na.strings=c("", "NA")) %>%
   filter(!is.na(gen_length)) %>%
-  rename(CUID = cuid)
+  rename(CUID=cuid)
 
 #join, dump pops with NA DUs, and create a du_cu key
 sp_data <- left_join(raw_sp_data, select(cu_metadata, CUID, du_number, gen_length), 
-                     by = "CUID") %>%
+                     by="CUID") %>%
   drop_na(du_number, Spawner.Abundance) %>%
-  mutate(du_cu = paste(du_number, CUID)) %>%
+  mutate(du_cu=paste(du_number, CUID)) %>%
   relocate(du_cu, 1) %>%
   arrange(du_cu, Year)
 ```
@@ -59,29 +55,24 @@ last3_gens <- sp_data %>%
 rm(raw_sp_data, erics_output, cu_metadata) #remove some helper objects
 ```
 ## Plot spawner abundance
-Now we want to plot abundances. We'll make 2 plots for each species and region: raw spawner abundance and ln-transformed spawner abundance with a linear regression passing through all data points (black) and the last 3 generations (red). **Note that that the y axis varies for ease of viewing**.    
-This code is cumbersome in order to make it robust, so we've omitted it from the knit, but it's worth noting you can choose to save plots or adjust facets.  
-```{r}
+We'll make 2 plots for each species and region: raw spawner abundance and ln-transformed spawner abundance with a linear regression passing through all data points (black) and the last 3 generations (red). **Note that that the y axis varies for ease of viewing**.    
+This code is cumbersome in order to make it robust, so we've omitted it from the knit, but it's worth noting you can adjust facets, and these options cascade into the posterior plots as well.  
+```{r options}
 max_facets <- 20 #how many facets (i.e. panes) per plot?
 rows <- 4 #how many rows/cols? note needs to be multiple of facets. 
 cols <- 5
-save_plots <- FALSE
 ```
 
-```{r, echo = FALSE}
+```{r abundance plots, echo = FALSE}
 for(i in unique(sp_data$Species)){
-  sp_data_species <- filter(sp_data, Species == i)
+  sp_data_species <- filter(sp_data, Species==i)
   for(j in unique(sp_data_species$Region)){
-    sub_data <- filter(sp_data_species, Region == j) %>%
+    sub_data <- filter(sp_data_species, Region==j) %>%
       complete(Year, Species, Region, du_cu) #explicitly include NA so line draws right
-    sub_last3 <- filter(last3_gens, Species == i, Region == j)
-    
+    sub_last3 <- filter(last3_gens, Species==i, Region==j)
     n_pops <- length(unique(sub_data$du_cu))
-    
-    if( n_pops > max_facets){
-    
+    if( n_pops>max_facets){
       pages <- ceiling(n_pops/max_facets)
-    
     for(k in 1:pages){
       sub_data_2 <- filter(sub_data, du_cu %in% 
                                unique(sub_data$du_cu)[((k-1)*max_facets)+1:(max_facets*k)])
@@ -89,68 +80,54 @@ for(i in unique(sp_data$Species)){
       sub_last3_2 <- filter(sub_last3, du_cu %in% 
                                 unique(sub_last3$du_cu)[((k-1)*max_facets)+1:(max_facets*k)])
       
-      p <- ggplot(data = sub_data_2, aes(x= Year, y= Spawner.Abundance/1000)) +
-        geom_line(color = "grey") +
+      p <- ggplot(data = sub_data_2, aes(x=Year, y=Spawner.Abundance/1000)) +
+        geom_line(color="grey") +
         geom_point() +
-        ggh4x::facet_wrap2(vars(du_cu), nrow = rows, ncol = cols, trim_blank = FALSE, 
-                           scales = "free_y") +
-        labs(x= "Year", y = "spawners (thousands)", 
-             title = paste0(j, " ", i, " spawner abundance ", "(", k, " of ", pages, ")")) +
+        ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE,
+                           scales="free_y") +
+        labs(x="Year", y="spawners (thousands)", 
+             title = paste0(j," ",i," spawner abundance ","(",k," of ",pages,")")) +
         theme_bw() +
-        theme(strip.background = element_blank(), axis.text.x = element_text(angle = 45))
+        theme(strip.background=element_blank(), axis.text.x=element_text(angle = 45))
       print(p)
       
-      p_log <- ggplot(data = sub_data_2, aes(x= Year, y= logSp)) +
-        geom_line(color = "grey") +
+      p_log <- ggplot(data=sub_data_2, aes(x=Year, y=logSp)) +
+        geom_line(color="grey") +
         geom_point() +
-        stat_smooth(method="lm", formula = y~x, color = "black", lty= "dashed", 
-                    se = FALSE) +
-        stat_smooth(data = sub_last3_2, formula = y~x, method = "lm", color = "red", 
-                    se = FALSE, na.rm = TRUE) +
-        ggh4x::facet_wrap2(vars(du_cu), nrow = rows, ncol = cols, trim_blank = FALSE, 
-                           scales = "free_y") +
-
-        labs(x= "Year", y = "ln(spawners)", 
-             title = paste0("ln ", j, " ", i, " spawner abundance ", 
-                            "(", k, " of ", pages, ")")) +
+        stat_smooth(method="lm", formula=y~x, color="black", lty="dashed", se=FALSE) +
+        stat_smooth(data = sub_last3_2, formula=y~x, method="lm", color="red", se=FALSE, 
+                    na.rm=TRUE) +
+        ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE,
+                           scales="free_y") +
+        labs(x="Year", y="ln(spawners)", 
+             title=paste0("ln ",j," ",i," spawner abundance ","(",k," of ",pages,")")) +
         theme_bw() +
-        theme(strip.background = element_blank(), axis.text.x = element_text(angle = 45))
+        theme(strip.background=element_blank(), axis.text.x=element_text(angle=45))
       print(p_log)
-      
-      if(save_plots){
-        ggsave(paste0("output/plots/",j, "_", i, "sp_abundance_", "_", k, ".png"), plot = p)
-        ggsave(paste0("output/plots/", j, "_", i, "ln_sp_lm_", "_", k, ".png"), plot = p_log)
-      }
     }
   }else{
-    p <- ggplot(data = sub_data, aes(x= Year, y= Spawner.Abundance/1000)) +
-      geom_line(color = "grey") +
+    p <- ggplot(data=sub_data, aes(x=Year, y=Spawner.Abundance/1000)) +
+      geom_line(color="grey") +
       geom_point() +
-      ggh4x::facet_wrap2(vars(du_cu), nrow = rows, ncol = cols, trim_blank = FALSE, 
-                         scales = "free_y") +
-      labs(x= "Year", y = "spawners (thousands)", title = paste(j, i, "spawner abundance")) +
+      ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE, 
+                         scales="free_y") +
+      labs(x="Year", y="spawners (thousands)", title=paste(j, i, "spawner abundance")) +
       theme_bw() +
-      theme(strip.background = element_blank(), axis.text.x = element_text(angle = 45))
+      theme(strip.background=element_blank(), axis.text.x=element_text(angle = 45))
     print(p)
     
-    p_log <- ggplot(data = sub_data, aes(x= Year, y= logSp)) +
-      geom_line(color = "grey") +
+    p_log <- ggplot(data=sub_data, aes(x=Year, y=logSp)) +
+      geom_line(color="grey") +
       geom_point() +
-      stat_smooth(formula = y~x, method="lm", color = "black", lty= "dashed", se = FALSE) +
-      stat_smooth(data = sub_last3, formula = y~x, method = "lm", color = "red", 
-                  se = FALSE, na.rm = TRUE) +
-      ggh4x::facet_wrap2(vars(du_cu), nrow = rows, ncol = cols, trim_blank = FALSE, 
-                         scales = "free_y") +
-      labs(x= "Year", y = "ln(spawners)", 
-           title = paste(j, i, "ln(spawner abundance)")) +
+      stat_smooth(formula=y~x, method="lm", color="black", lty="dashed", se=FALSE) +
+      stat_smooth(data=sub_last3, formula=y~x, method="lm", color="red", se=FALSE, 
+                  na.rm=TRUE) +
+      ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE, 
+                         scales="free_y") +
+      labs(x="Year", y="ln(spawners)", title=paste(j, i, "ln(spawner abundance)")) +
       theme_bw() +
-      theme(strip.background = element_blank(), axis.text.x = element_text(angle = 45))
+      theme(strip.background=element_blank(), axis.text.x=element_text(angle = 45))
     print(p_log)
-    
-    if(save_plots){
-      ggsave(paste0("output/plots/", j, "_", i, "_sp_abundance_", ".png"), plot = p)
-      ggsave(paste0("output/plots/", j, "_", i, "_ln_sp_lm_", ".png"), plot = p_log)
-   }
   }
  }
 }
@@ -161,7 +138,7 @@ rm(p, p_log, sp_data_species, sub_data, sub_data_2, sub_last3, sub_last3_2)
 ```
 ## Linear models of population decline
 #### Which populations are data deficient?
-Earlier we dropped years where spawner abundance wasn't recorded, but now we want to account for missing data. We'll define a threshold of acceptable data coverage then check the get a list of DUs that don't meet this threshold and filter them out of data that will be used in the lms.  
+Define a threshold of acceptable data coverage then check the get a list of DUs that don't meet this threshold and filter them out of data that will be used in the lms.  
 First we'll do this for the recent data.
 ```{r}
 deficient_recent_perc <- 0.7
@@ -193,37 +170,34 @@ sp_data_filtered <- filter(sp_data, !(du_cu %in% deficient_historical))
 ```
 *we could add to this by making it specific to gen_length* (e.g. 3 missing data points from a short lived pop may have more of an impact on our inference than 3 NAs in longer lived pops...)
 ## Population decline
-
 ### Basic linear models 
 Now we'll run basic linear models on ln(spawner abundances) for the whole time series and
 for the last 3 generations. We need to add some if statements in this loop to account for
 which du_cus made it through the data filters above.   
-**I'm open to clever suggestions to avoid the if else statements!**
+**I'm open to clever suggestions to avoid these if else statements!**
 ```{r}
 summary_table <- NULL
 
 for(i in unique(sp_data_filtered$du_cu)){
-  sub_raw <- filter(sp_data, du_cu == i)
-  sub_data <- filter(sp_data_filtered, du_cu == i)
-  sub_last3 <- filter(last3_gens_filtered, du_cu == i)
-  
-  if(nrow(sub_data) == 0){
+  sub_raw <- filter(sp_data, du_cu==i)
+  sub_data <- filter(sp_data_filtered, du_cu==i)
+  sub_last3 <- filter(last3_gens_filtered, du_cu==i)
+  if(nrow(sub_data)==0){
     slope_all <- NA
   } else{
-    if(nrow(sub_last3) == 0){
+    if(nrow(sub_last3)==0){
       slope_recent <- NA
     } else{
-      model_all <- lm(sub_data$logSp ~ sub_data$Year)
+      model_all <- lm(sub_data$logSp~sub_data$Year)
+      model_recent <- lm(sub_last3$logSp~sub_last3$Year)
       slope_all <- round(as.numeric((exp(model_all$coefficients[2]*15)-1)*100))
-
-      model_recent <- lm(sub_last3$logSp ~ sub_last3$Year)
       slope_recent <- round(as.numeric((exp(model_recent$coefficients[2]*15)-1)*100))
     }
   }
   recent_abundance <- last(sub_raw$Spawner.Abundance)
   last_year_monitored <- last(sub_raw$Year)
   
-  output <- data.frame(du_cu = i, slope_recent, slope_all, recent_abundance, last_year_monitored)
+  output <- data.frame(du_cu=i, slope_recent, slope_all, recent_abundance, last_year_monitored)
   
   summary_table <- bind_rows(output, summary_table)
 }
@@ -232,30 +206,25 @@ head(summary_table)
 ```
 
 ```{r, echo = FALSE}
-rm(list = ls()[grep("sub|model|def|slope", ls())]) #yeet garbage
+rm(list=ls()[grep("sub|model|def|slope", ls())]) #yeet garbage
 ```
 
 ### Estimates with the MetricsCOSEWIC package
-First some housekeeping. You can use devtools to download the [MetricsCOSEWIC package](https://github.com/SOLV-Code/MetricsCOSEWIC) from GitHub. We'll wrangle the data into the format this package wants as well. We'll feed it the filtered last 3 generations.   
+First some housekeeping. You can use devtools to download the [MetricsCOSEWIC package](https://github.com/SOLV-Code/MetricsCOSEWIC) from GitHub. We'll wrangle the data into the format this package wants as well. We'll feed it the filtered last 3 generations. 
+**note these are preliminary, and the MetricsCOSEWIC package is still in development**
 *Still need to make sure I did this right. The README says the first argument to calcPercChangeMCMC() is a "vector with numeric values" so I'll assume that is spawner abundance with NAs omitted?*  
-**Need to sum the % of draws in each threshold and bind in summary table, and need to change to JAGS as Carrie's reccomendation**
-```{r, results = "hide"}
+```{r Bayesian lms, results = "hide"}
 library(MetricsCOSEWIC)
-
 slope_posterior <- NULL
 stan_summary <- NULL
 
-last3_gens_filtered <- filter(last3_gens_filtered, du_cu == "CK1 302")
-
 for(i in unique(last3_gens_filtered$du_cu)){
   sub_data <- filter(last3_gens_filtered, du_cu == i)
-  
-  stan_mod <- calcPercChangeMCMC(sub_data$Spawner.Abundance, method = "rstanarm",
-                           out.type = "long") #how TF do I shut this up
+  stan_mod <- calcPercChangeMCMC(sub_data$Spawner.Abundance, method="jags", out.type="long") 
   
   summary <- data.frame(stan_mod$summary) %>%
     slice(1:3) %>%
-    select(mean, se_mean, X2.5., X50., X97.5., n_eff, Rhat) %>%
+    select(mean, sd, X2.5., X50., X97.5., n.eff, Rhat) %>%
     rename(perc_2.5 = X2.5., 
            perc_97.5 = X97.5.,
            median = X50.) %>%
@@ -271,17 +240,22 @@ for(i in unique(last3_gens_filtered$du_cu)){
 
   slope_posterior <- bind_rows(data.frame(du_cu =i, region = unique(sub_data$Region),
                                           species = unique(sub_data$Species),
-                                          draws = stan_mod$samples$slope), slope_posterior)
+                                          draw = stan_mod$samples$slope), slope_posterior)
 }
 
 stan_summary <- relocate(stan_summary, var, .before = mean)
-
 ```
-#### Plot slope posterior distributions
-We'll plot the slope (i.e. decline) posteriors and show the median and various COSEWIC thresholds for population decline based on [category A2](https://www.canada.ca/en/environment-climate-change/services/species-risk-act-accord-funding/listing-process/quantitative-criteria-guidelines-status-table-2.html), where 50 and 30 percent reductions correspond to endangered and threatened status, respectively.  
-But we'll use 30, 50, and 70 % reductions as thresholds for least concern, threatened, and endangered for now. 
-**need to fix ugly plots**
-```{r, echo = FALSE}
+We'll also create an object that summarizes how many draws are in each category. This will be a go-to summary table for COSEWIC thresholds for population decline based on [category A2](https://www.canada.ca/en/environment-climate-change/services/species-risk-act-accord-funding/listing-process/quantitative-criteria-guidelines-status-table-2.html), where 50 and 30 percent reductions correspond to endangered and threatened status, respectively; we'll use 30, 50, and 70 % reductions as thresholds for least concern, threatened, and endangered for now.  
+```{r}
+perc_category <- slope_posterior %>%
+  group_by(species, region, du_cu) %>%
+  summarise(not_at_risk = round(sum(draw>(-30))/n()*100, 2),
+            least_concern = round(sum((-30)>draw & draw>(-50))/n()*100, 2), 
+            threatened = round(sum(draw<(-50) & draw>(-70))/n()*100, 2), 
+            endangered = round(sum(draw<(-70))/n()*100, 2))
+```
+### Plot slope posterior distributions
+```{r slope posteriors, echo = FALSE}
 #helper function to center limits
 symmetric_limits <- function(x){
     max <- max(abs(x))
@@ -297,37 +271,35 @@ for(i in unique(slope_posterior$species)){
     for(k in 1:pages){
       sub_data_2 <- filter(sub_data, du_cu %in% 
                                unique(sub_data$du_cu)[((k-1)*max_facets)+1:(max_facets*k)])
-      p <- ggplot(data = sub_data, aes(draws)) +
+      p <- ggplot(data = sub_data_2, aes(draw)) +
         geom_density(fill = "gray") + 
         scale_x_continuous(limits = symmetric_limits) +
-        geom_vline(xintercept = -30, color="orange") +
-        geom_vline(xintercept = -50, color="red") +
+        geom_rect(aes(xmin=-30, xmax=Inf, ymin=0, ymax= Inf), fill="green", alpha=0.002) +
+        geom_rect(aes(xmin=-50 , xmax=-30, ymax=Inf, ymin=-Inf), fill="yellow", alpha=0.002) +
+        geom_rect(aes(xmin=-70, xmax=-50, ymax=Inf, ymin=-Inf), fill="orange", alpha=0.002) +
+        geom_rect(aes(xmin=-Inf, xmax=-70, ymax=Inf, ymin=-Inf), fill="red", alpha=0.002) +
         theme_classic() +
-        facet_wrap(~du_cu, scales = "free") +
+        ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE, 
+                           scales="free") +
         labs(title = paste(j, i, "slope posterior", "(", k, " of ", pages, ")"), 
          x = "MCMC draws") +
-        theme(axis.text.y=element_blank(), axis.ticks.y=element_blank())
-  
+        guides(x = "none", y = "none")
       print(p)
-  if(save_plots){
-    ggsave(paste0("output/plots/",j, "_", i, "_posterior_", "_", k, ".png"), plot = p)
-      }
     }
   }else{
-      p <- ggplot(data = sub_data, aes(draws)) +
+      p <- ggplot(data = sub_data, aes(draw)) +
         geom_density(fill = "gray") + 
         scale_x_continuous(limits = symmetric_limits) +
-        geom_vline(xintercept = -30, color="orange") +
-        geom_vline(xintercept = -50, color="red") +
+        geom_rect(aes(xmin=-30, xmax=Inf, ymin=0, ymax= Inf), fill="green", alpha=0.002) +
+        geom_rect(aes(xmin=-50 , xmax=-30, ymax=Inf, ymin=-Inf), fill="yellow", alpha=0.002) +
+        geom_rect(aes(xmin=-70, xmax=-50, ymax=Inf, ymin=-Inf), fill="orange", alpha=0.002) +
+        geom_rect(aes(xmin=-Inf, xmax=-70, ymax=Inf, ymin=-Inf), fill="red", alpha=0.002) +
         theme_classic() +
-        facet_wrap(~du_cu, scales = "free") +
+        ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE, 
+                           scales="free") +
         labs(title = paste(j, i, "slope posterior"), x = "MCMC draws") +
-        theme(axis.text.y=element_blank(), axis.ticks.y=element_blank())
-      
+        guides(x = "none", y = "none")
       print(p)
-      if(save_plots){
-      ggsave(paste0("output/plots/", j, "_", i, "_posterior_", ".png"), plot = p)
-   }
   }
  }
 }
