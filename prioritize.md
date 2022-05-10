@@ -62,17 +62,12 @@ last3_gens <- sp_data %>%
 
 We’ll make 2 plots for each species and region: raw spawner abundance
 and ln-transformed spawner abundance with a linear regression passing
-through all data points (black) and the last 3 generations (red). **Note
-that that the y axis varies for ease of viewing**.  
+through all data points (black dashed line) and the last 3 generations
+(red). **Note that that the y axis varies for ease of viewing**.  
 This code is cumbersome in order to make it robust, so we’ve omitted it
-from the knit, but it’s worth noting you can adjust facets, and these
-options cascade into the posterior plots as well.
-
-``` r
-max_facets <- 20 #how many facets (i.e. panes) per plot?
-rows <- 4 #how many rows/cols? note needs to be multiple of facets. 
-cols <- 5
-```
+from this document. See the [.Rmd
+document](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize/blob/main/prioritize.Rmd)
+for details.
 
 ![](output/plots/abundance%20plots-1.png)<!-- -->![](output/plots/abundance%20plots-2.png)<!-- -->![](output/plots/abundance%20plots-3.png)<!-- -->![](output/plots/abundance%20plots-4.png)<!-- -->![](output/plots/abundance%20plots-5.png)<!-- -->![](output/plots/abundance%20plots-6.png)<!-- -->![](output/plots/abundance%20plots-7.png)<!-- -->![](output/plots/abundance%20plots-8.png)<!-- -->![](output/plots/abundance%20plots-9.png)<!-- -->![](output/plots/abundance%20plots-10.png)<!-- -->![](output/plots/abundance%20plots-11.png)<!-- -->![](output/plots/abundance%20plots-12.png)<!-- -->![](output/plots/abundance%20plots-13.png)<!-- -->![](output/plots/abundance%20plots-14.png)<!-- -->![](output/plots/abundance%20plots-15.png)<!-- -->![](output/plots/abundance%20plots-16.png)<!-- -->![](output/plots/abundance%20plots-17.png)<!-- -->![](output/plots/abundance%20plots-18.png)<!-- -->![](output/plots/abundance%20plots-19.png)<!-- -->![](output/plots/abundance%20plots-20.png)<!-- -->![](output/plots/abundance%20plots-21.png)<!-- -->![](output/plots/abundance%20plots-22.png)<!-- -->![](output/plots/abundance%20plots-23.png)<!-- -->![](output/plots/abundance%20plots-24.png)<!-- -->![](output/plots/abundance%20plots-25.png)<!-- -->![](output/plots/abundance%20plots-26.png)<!-- -->![](output/plots/abundance%20plots-27.png)<!-- -->![](output/plots/abundance%20plots-28.png)<!-- -->![](output/plots/abundance%20plots-29.png)<!-- -->![](output/plots/abundance%20plots-30.png)<!-- -->
 
@@ -80,9 +75,9 @@ cols <- 5
 
 #### Which populations are data deficient?
 
-Define a threshold of acceptable data coverage then check the get a list
-of DUs that don’t meet this threshold and filter them out of data that
-will be used in the lms.  
+Define a threshold of acceptable data coverage then get a list of DUs
+that don’t meet this threshold and filter them out of data that will be
+used in the population decline models.  
 First we’ll do this for the recent data.
 
 ``` r
@@ -116,14 +111,14 @@ deficient_historical <- sp_data %>%
 sp_data_filtered <- filter(sp_data, !(du_cu %in% deficient_historical))
 ```
 
-*we could add to this by making it specific to gen_length* (e.g. 3
-missing data points from a short lived pop may have more of an impact on
-our inference than 3 NAs in longer lived pops…) ## Population decline
-### Basic linear models Now we’ll run basic linear models on ln(spawner
-abundances) for the whole time series and for the last 3 generations. We
-need to add some if statements in this loop to account for which du_cus
-made it through the data filters above.  
-**I’m open to clever suggestions to avoid these if else statements!**
+## Population decline
+
+### Basic linear models
+
+Now we’ll run basic linear models on ln(spawner abundances) for the
+whole time series and for the last 3 generations. We need to add some if
+statements in this loop to account for which du_cus made it through the
+data filters above.
 
 ``` r
 summary_table <- NULL
@@ -140,8 +135,8 @@ for(i in unique(sp_data_filtered$du_cu)){
     } else{
       model_all <- lm(sub_data$logSp~sub_data$Year)
       model_recent <- lm(sub_last3$logSp~sub_last3$Year)
-      slope_all <- round(as.numeric((exp(model_all$coefficients[2]*15)-1)*100))
-      slope_recent <- round(as.numeric((exp(model_recent$coefficients[2]*15)-1)*100))
+      slope_all <- round(as.numeric((exp(model_all$coefficients[2]*nrow(sub_data))-1)*100))
+      slope_recent <- round(as.numeric((exp(model_recent$coefficients[2]*nrow(sub_last3))-1)*100))
     }
   }
   recent_abundance <- last(sub_raw$Spawner.Abundance)
@@ -156,20 +151,21 @@ head(summary_table)
 ```
 
     ##       du_cu slope_recent slope_all recent_abundance last_year_monitored
-    ## 1 SER42 426          613       146            14563                2017
-    ## 2 SER41 216           99       133               91                2017
-    ## 3 SER24 745          -19        54            49364                2017
-    ## 4 SER23 742          114       -28              472                2016
-    ## 5   SE9 713          -46       123             6650                2016
-    ## 6   SE8 727          332       111             2128                2017
+    ## 1 SER42 426          382       507            14563                2017
+    ## 2 SER41 216           73       120               91                2017
+    ## 3 SER24 745          -16       603            49364                2017
+    ## 4 SER23 742           74       -76              472                2016
+    ## 5   SE9 713          -39      2946             6650                2016
+    ## 6   SE8 727          223       841             2128                2017
 
-### Estimates with the MetricsCOSEWIC package
+### Bayesian estimates with the MetricsCOSEWIC package
 
 First some housekeeping. You can use devtools to download the
 [MetricsCOSEWIC package](https://github.com/SOLV-Code/MetricsCOSEWIC)
 from GitHub. We’ll wrangle the data into the format this package wants
-as well. We’ll feed it the filtered last 3 generations. **note these are
-preliminary, and the MetricsCOSEWIC package is still in development**
+as well. We’ll feed it the filtered last 3 generations.  
+**note these are preliminary as the MetricsCOSEWIC package is still in
+development**  
 *Still need to make sure I did this right. The README says the first
 argument to calcPercChangeMCMC() is a “vector with numeric values” so
 I’ll assume that is spawner abundance with NAs omitted?*
@@ -177,13 +173,13 @@ I’ll assume that is spawner abundance with NAs omitted?*
 ``` r
 library(MetricsCOSEWIC)
 slope_posterior <- NULL
-stan_summary <- NULL
+jags_summary <- NULL
 
 for(i in unique(last3_gens_filtered$du_cu)){
   sub_data <- filter(last3_gens_filtered, du_cu == i)
-  stan_mod <- calcPercChangeMCMC(sub_data$Spawner.Abundance, method="jags", out.type="long") 
+  jags_mod <- calcPercChangeMCMC(sub_data$Spawner.Abundance, method="jags", out.type="long") 
   
-  summary <- data.frame(stan_mod$summary) %>%
+  summary <- data.frame(jags_mod$summary) %>%
     slice(1:3) %>%
     select(mean, sd, X2.5., X50., X97.5., n.eff, Rhat) %>%
     rename(perc_2.5 = X2.5., 
@@ -197,14 +193,14 @@ for(i in unique(last3_gens_filtered$du_cu)){
   rownames(summary) <- NULL #rownames to columns - probably a better way
   summary$var <- c("intercept", "slope", "sigma")
 
-  stan_summary <- bind_rows(summary, stan_summary)
+  jags_summary <- bind_rows(summary, jags_summary)
 
   slope_posterior <- bind_rows(data.frame(du_cu =i, region = unique(sub_data$Region),
                                           species = unique(sub_data$Species),
-                                          draw = stan_mod$samples$slope), slope_posterior)
+                                          draw = jags_mod$samples$slope), slope_posterior)
 }
 
-stan_summary <- relocate(stan_summary, var, .before = mean)
+jags_summary <- relocate(jags_summary, var, .before = mean)
 ```
 
 We’ll also create an object that summarizes how many draws are in each
@@ -212,8 +208,9 @@ category. This will be a go-to summary table for COSEWIC thresholds for
 population decline based on [category
 A2](https://www.canada.ca/en/environment-climate-change/services/species-risk-act-accord-funding/listing-process/quantitative-criteria-guidelines-status-table-2.html),
 where 50 and 30 percent reductions correspond to endangered and
-threatened status, respectively; we’ll use 30, 50, and 70 % reductions
-as thresholds for least concern, threatened, and endangered for now.
+threatened status, respectively. we’ll use 30, 50, and 70 % reductions
+as thresholds for least concern, threatened, and endangered for now.  
+**these categories could be revisited**
 
 ``` r
 perc_category <- slope_posterior %>%
@@ -229,21 +226,24 @@ head(perc_category)
     ## # Groups:   species, region [1]
     ##   species region du_cu    not_at_risk least_concern threatened endangered
     ##   <chr>   <chr>  <chr>          <dbl>         <dbl>      <dbl>      <dbl>
-    ## 1 Chinook CC     CK32 509        87.0          9.17       2.43       1.37
-    ## 2 Chinook CC     CK33 510         0            0.2        1.23      98.6 
-    ## 3 Chinook CC     CK34 511        76.4          4          3.57      16   
-    ## 4 Chinook CC     CK35 512        83.2          0.63       0.8       15.4 
-    ## 5 Chinook CC     CK36 513        32.7         10         10.6       46.6 
-    ## 6 Chinook CC     CK37 514        13.9          4.87       4.9       76.4
+    ## 1 Chinook CC     CK32 509       87.8           8.73       2.13       1.37
+    ## 2 Chinook CC     CK33 510        0.07          0.2        1.4       98.3 
+    ## 3 Chinook CC     CK34 511       75.7           4.93       3.6       15.8 
+    ## 4 Chinook CC     CK35 512       84.2           0.77       0.5       14.6 
+    ## 5 Chinook CC     CK36 513       31.9          10         10.9       47.2 
+    ## 6 Chinook CC     CK37 514       13.8           4.33       5.17      76.7
+
+And we can arrange this table to see which populations are in the
+roughest shape.
 
 ### Plot slope posterior distributions
 
 These distributions show the probability (i.e. each markov chain monte
-carlo draw) that the slope of the last 3 generations, which is like the
-red line in the figures above. The distribution is plotted over the
-decline categories specified above. It’s essentially a visualization of
-the perc_category dataframe.  
+carlo draw) that the slope of the last 3 generations is in of the
+categories listed above. The distribution is plotted over the decline
+categories specified above. It’s essentially a visualization of the
+perc_category dataframe.  
 The amount of the distribution in the green region means the population
 is experiencing less than 30% declines, the red region says the
-population is declining by 70% or more, and yellow is intermediate.
+population is declining by 70% or more, and yellow is intermediate.  
 ![](output/plots/slope%20posteriors-1.png)<!-- -->![](output/plots/slope%20posteriors-2.png)<!-- -->![](output/plots/slope%20posteriors-3.png)<!-- -->![](output/plots/slope%20posteriors-4.png)<!-- -->![](output/plots/slope%20posteriors-5.png)<!-- -->![](output/plots/slope%20posteriors-6.png)<!-- -->![](output/plots/slope%20posteriors-7.png)<!-- -->![](output/plots/slope%20posteriors-8.png)<!-- -->![](output/plots/slope%20posteriors-9.png)<!-- -->![](output/plots/slope%20posteriors-10.png)<!-- -->![](output/plots/slope%20posteriors-11.png)<!-- -->![](output/plots/slope%20posteriors-12.png)<!-- -->![](output/plots/slope%20posteriors-13.png)<!-- -->![](output/plots/slope%20posteriors-14.png)<!-- -->![](output/plots/slope%20posteriors-15.png)<!-- -->
