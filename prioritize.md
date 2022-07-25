@@ -1,5 +1,5 @@
-Rapid assessment of Pacific Salmon spawner abundnace to aide with
-COSEWIC prioritizaiton
+Rapid assessment of Pacific Salmon spawner abundance to aide with
+COSEWIC prioritization
 ================
 Dylan Glaser (DFO)
 

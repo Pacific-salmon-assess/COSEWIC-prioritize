@@ -1,5 +1,5 @@
 ---
-title: "Rapid assessment of Pacific Salmon spawner abundnace to aide with COSEWIC prioritizaiton"
+title: "Rapid assessment of Pacific Salmon spawner abundance to aide with COSEWIC prioritizaiton"
 author: "Dylan Glaser (DFO)"
 output: rmarkdown::github_document
 ---
