@@ -91,9 +91,17 @@ prob_desg <- summary_table %>%
     per_change_all  > -29 ~ "Not at risk",
     per_change_all < -29 & per_change_all > -49 ~ "Special concern",
     per_change_all < -49 & per_change_all > -69 ~ "Threatened",
-    per_change_all < -69 ~ "Endangered"))
+    per_change_all < -69 ~ "Endangered")) %>%
+  mutate(region_full = case_when(
+    region == "Yukon" ~ "Yukon",
+    region == "Nass" ~ "Nass",
+    region == "Skeena" ~ "Skeena",
+    region == "HG" ~ "Haida Gwaii",
+    region == "CC" ~ "Central Coast",
+    region == "VIMI" ~ "Van. Isl. Main. Inl.",
+    region == "Fraser" ~ "Fraser" ))
 
-master_desg <- left_join(cu_metadata, select(prob_desg, region, du_number, per_change_recent, per_change_all, recent_abundance, last_year_monitored, prob_designation_recent,prob_designation_all), 
+master_desg <- left_join(cu_metadata, select(prob_desg, region_full, du_number, per_change_recent, per_change_all, recent_abundance, last_year_monitored, prob_designation_recent,prob_designation_all), 
                      by="du_number") 
 
 master_desg$COSEWIC_status <- master_desg$COSEWIC_status %>%
@@ -113,7 +121,7 @@ not_assessed$prob_designation_all <- not_assessed$prob_designation_all %>%
 
 designations <- rbind(assessed,not_assessed)%>%
   mutate(species = spp) %>%
-  select(region, du_number,species, gen_length, COSEWIC_status,per_change_recent, per_change_all, recent_abundance, last_year_monitored, prob_designation_recent, prob_designation_all)%>%
+  select(region_full, du_number,species, gen_length, COSEWIC_status,per_change_recent, per_change_all, recent_abundance, last_year_monitored, prob_designation_recent, prob_designation_all)%>%
   arrange(du_number)%>%
   distinct(du_number,.keep_all = TRUE)
 
@@ -123,25 +131,28 @@ unassessed <- designations %>%
 
 # plot based on recent trend----
 count_bins <- unassessed%>%
-  group_by(species, region)%>%
+  group_by(species, region_full)%>%
   summarize(du_count=n())
 
 
 count_bins_status <- unassessed%>%
-  group_by(species, region,prob_designation_recent)%>%
+  group_by(species, region_full, prob_designation_recent)%>%
   summarize(du_count=n())
 
 count_bins_status$prob_designation_recent <- factor(count_bins_status$prob_designation_recent, levels = rev(c("Endangered","Threatened", "Special concern", "Not at risk")))
+count_bins_status$region_full <- factor(count_bins_status$region_full, levels = c("Yukon", "Nass","Skeena", "Haida Gwaii", "Central Coast", "Van. Isl. Main. Inl.", "Fraser"))
 
+# hard code Fraser pinks which have 8 DUs but only one CU
+count_bins_status[37,4] <- 1
 ggplot(count_bins_status, aes(x = species, y = du_count)) + 
   geom_col(aes(fill=prob_designation_recent)) +
-  facet_wrap(~region, scales="free_y") +
-  theme(axis.text.x = element_text(angle=45, hjust=1)) +
+  facet_wrap(~region_full, scales="free_y", ncol=4) +
+  theme(axis.text.x = element_text(angle=45, hjust=1), legend.position = "top") +
   scale_fill_manual(values = c("dark green", "yellow", "orange","red")) +
   xlab("Species") +
   ylab("Number of DUs") +
   labs(fill = "Probable designation")
-ggsave("./output/plots/brendan-sandox-plots/status-plot-recent.jpeg",height=6,width=8)
+ggsave("./output/plots/brendan-sandox-plots/status-plot-recent.jpeg",height=5,width=8)
 
 # plot based on long-term trend----
 count_bins <- unassessed%>%
