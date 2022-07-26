@@ -144,6 +144,7 @@ count_bins_status$region_full <- factor(count_bins_status$region_full, levels = 
 
 # hard code Fraser pinks which have 8 DUs but only one CU
 count_bins_status[37,4] <- 1
+
 ggplot(count_bins_status, aes(x = species, y = du_count)) + 
   geom_col(aes(fill=prob_designation_recent)) +
   facet_wrap(~region_full, scales="free_y", ncol=4) +
@@ -152,28 +153,32 @@ ggplot(count_bins_status, aes(x = species, y = du_count)) +
   xlab("Species") +
   ylab("Number of DUs") +
   labs(fill = "Probable designation")
-ggsave("./output/plots/brendan-sandox-plots/status-plot-recent.jpeg",height=5,width=8)
+ggsave("./output/brendan-sandox-plots/status-plot-recent.jpeg",height=5,width=8)
 
 # plot based on long-term trend----
 count_bins <- unassessed%>%
-  group_by(species, region)%>%
+  group_by(species, region_full)%>%
   summarize(du_count=n())
 
 count_bins_status <- unassessed%>%
-  group_by(species, region,prob_designation_all)%>%
+  group_by(species, region_full,prob_designation_all)%>%
   summarize(du_count=n())
 
 count_bins_status$prob_designation_all <- factor(count_bins_status$prob_designation_all, levels = rev(c("Endangered","Threatened", "Special concern", "Not at risk")))
+count_bins_status$region_full <- factor(count_bins_status$region_full, levels = c("Yukon", "Nass","Skeena", "Haida Gwaii", "Central Coast", "Van. Isl. Main. Inl.", "Fraser"))
+
+# hard code Fraser pinks which have 8 DUs but only one CU
+count_bins_status[24,4] <- 1
 
 ggplot(count_bins_status, aes(x = species, y = du_count)) + 
   geom_col(aes(fill=prob_designation_all)) +
-  facet_wrap(~region, scales="free_y") +
-  theme(axis.text.x = element_text(angle=45, hjust=1)) +
+  facet_wrap(~region_full, scales="free_y", ncol=4) +
+  theme(axis.text.x = element_text(angle=45, hjust=1), legend.position = "top") +
   scale_fill_manual(values = c("dark green", "yellow", "orange","red")) +
   xlab("Species") +
   ylab("Number of DUs") +
   labs(fill = "Probable designation")
-ggsave("./output/plots/brendan-sandox-plots/status-plot-all.jpeg",height=6,width=8)
+ggsave("./output/brendan-sandox-plots/status-plot-all.jpeg",height=5,width=8)
 
 
 
