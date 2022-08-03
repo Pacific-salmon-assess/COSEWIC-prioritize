@@ -49,11 +49,11 @@ knitr::opts_chunk$set(dpi=300)
 options(scipen=1, digits=4)
 
 # read in data ----
-raw_sp_data <- read.csv("./data/CU_Spawner_Abund_20220802.csv", 
+raw_sp_data <- read.csv("./data/CU_Spawner_Abund_20220725.csv", 
                         header=TRUE) %>%
   mutate(logSp=log(Spawner.Abundance))
 
-cu_metadata <- read.csv("./data/CU_Metadata_20220802.csv",  
+cu_metadata <- read.csv("./data/CU_Metadata_20220725.csv",  
                         header=TRUE, na.strings=c("", "NA")) %>%
   filter(!is.na(gen_length)) %>%
   rename(CUID=cuid)
