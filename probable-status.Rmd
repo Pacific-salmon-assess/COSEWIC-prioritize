@@ -175,6 +175,7 @@ unassessed <- designations %>%
   filter(COSEWIC_status == "Not assessed",
          prob_designation_recent != "Data defficient")
 
+write.csv(designations, "./output/master-prob-status/master_status.csv")
 ```
 
 # Probable status 
