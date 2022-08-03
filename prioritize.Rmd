@@ -22,13 +22,11 @@ unzip(zipfile="compilation/hertzPSF-compilation.zip", exdir="compilation")
 
 erics_output <- list.files("compilation/COSEWIC-compilation-main/output")
 
-raw_sp_data <- read.csv(paste0("compilation/COSEWIC-compilation-main/Output/",
-                           erics_output[grep("CU_Spawner_Abund", erics_output)]), 
+raw_sp_data <- read.csv("compilation/COSEWIC-compilation-main/Output/CU_Spawner_Abund_20220802.csv",
                         header=TRUE) %>%
          mutate(logSp=log(Spawner.Abundance))
 
-cu_metadata <- read.csv(paste0("compilation/COSEWIC-compilation-main/Output/",
-                               erics_output[grep("CU_Metadata", erics_output)]), 
+cu_metadata <- read.csv("compilation/COSEWIC-compilation-main/Output/CU_Metadata_20220802.csv",
                         header=TRUE, na.strings=c("", "NA")) %>%
   filter(!is.na(gen_length)) %>%
   rename(CUID=cuid)
@@ -169,9 +167,8 @@ sp_data_filtered <- filter(sp_data, !(du_cu %in% deficient_historical))
 ```
 ## Population decline  
 ### Basic linear models  
-Now we'll run basic linear models on ln(spawner abundances) for the whole time series and
-for the last 3 generations. We need to add some if statements in this loop to account for
-which du_cus made it through the data filters above.   
+Now we'll run basic linear models on ln(spawner abundance) for the whole time series and
+for the last 3 generations. We add some if statements to account for which du_cus made it through data filters above.   
 ```{r}
 summary_table <- NULL
 
@@ -208,7 +205,7 @@ rm(list=ls()[grep("sub|model|def|slope", ls())]) #yeet garbage
 
 ### Bayesian estimates with the MetricsCOSEWIC package
 First some housekeeping. You can use devtools to download the [MetricsCOSEWIC package](https://github.com/SOLV-Code/MetricsCOSEWIC) from GitHub. We'll wrangle the data into the format this package wants as well. We'll feed it the filtered last 3 generations.   
-**note these are preliminary as the MetricsCOSEWIC package is still in development**  
+**note the MetricsCOSEWIC package is still in development**  
 *Still need to make sure I did this right. The README says the first argument to calcPercChangeMCMC() is a "vector with numeric values" so I'll assume that is spawner abundance with NAs omitted?*  
 ```{r Bayesian lms, results = "hide"}
 library(MetricsCOSEWIC)
