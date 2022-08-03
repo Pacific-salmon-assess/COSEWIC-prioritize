@@ -93,13 +93,10 @@ prob_desg <- summary_table %>%
     per_change_all < -49 & per_change_all > -69 ~ "Threatened",
     per_change_all < -69 ~ "Endangered")) %>%
   mutate(region_full = case_when(
-    region == "Yukon" ~ "Yukon",
-    region == "Nass" ~ "Nass",
-    region == "Skeena" ~ "Skeena",
     region == "HG" ~ "Haida Gwaii",
     region == "CC" ~ "Central Coast",
     region == "VIMI" ~ "Van. Isl. Main. Inl.",
-    region == "Fraser" ~ "Fraser" ))
+    TRUE ~ region))
 
 master_desg <- left_join(cu_metadata, select(prob_desg, region_full, du_number, per_change_recent, per_change_all, recent_abundance, last_year_monitored, prob_designation_recent,prob_designation_all), 
                      by="du_number") 
