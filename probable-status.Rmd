@@ -42,7 +42,9 @@ This document summarizes Pacific salmon Designatable Unit (DU) rates of change i
 ```{r setup, include=FALSE}
 # libraries and global settings ----
 library(tidyverse)
-library(kableExtra)
+library(kableExtra) #perhaps redundant after we incorporate DT?
+library(DT)
+
 
 knitr::opts_chunk$set(echo = FALSE, message=FALSE, cache=FALSE, include=TRUE)
 knitr::opts_chunk$set(dpi=300)
@@ -203,12 +205,10 @@ ggplot(count_bins_status, aes(x = species, y = du_count)) +
 
 # Summary table
 
-## Summary table all DUs
-
-**Table 1**. blah, blah, blah....
-
-```{r, warning=FALSE}
-kable(designations,
-      align = "crr") %>%
-  kable_styling(bootstrap_options = c("striped", "hover"))
+## Summary table all DUs  
+```{r, warning = FALSE}
+datatable(designations, rownames = FALSE, 
+          caption = 'Table 1: blah, blah, blah',
+          filter = 'top', 
+          options = list(pageLength = 20))
 ```
