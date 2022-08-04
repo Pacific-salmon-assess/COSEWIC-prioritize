@@ -41,7 +41,7 @@ This document summarizes Pacific salmon Designatable Unit (DU) rates of change i
 
 ```{r setup, include=FALSE}
 # libraries and global settings ----
-library("tidyverse")
+library(tidyverse)
 library(kableExtra)
 
 knitr::opts_chunk$set(echo = FALSE, message=FALSE, cache=FALSE, include=TRUE)
@@ -139,31 +139,25 @@ prob_desg <- summary_table %>%
     per_change_all < -49 & per_change_all > -69 ~ "Threatened",
     per_change_all < -69 ~ "Endangered")) %>%
   mutate(region_full = case_when(
-    region == "Yukon" ~ "Yukon",
-    region == "Nass" ~ "Nass",
-    region == "Skeena" ~ "Skeena",
     region == "HG" ~ "Haida Gwaii",
     region == "CC" ~ "Central Coast",
     region == "VIMI" ~ "Van. Isl. Main. Inl.",
-    region == "Fraser" ~ "Fraser" ))
+    TRUE ~ region))
 
 master_desg <- left_join(cu_metadata, select(prob_desg, region_full, du_number, per_change_recent, per_change_all, recent_abundance, last_year_monitored, prob_designation_recent,prob_designation_all), 
-                     by="du_number") 
+                     by="du_number") %>%
+  mutate(COSEWIC_status = ifelse(is.na(COSEWIC_status), "Not assessed", COSEWIC_status))
 
 # wrangle assessed and un-assessed status'
-master_desg$COSEWIC_status <- master_desg$COSEWIC_status %>%
-  replace_na("Not assessed")
 assessed <- master_desg %>%
   filter(COSEWIC_status != "Not assessed")
 
 not_assessed <- master_desg %>%
-  filter(COSEWIC_status == "Not assessed") 
-
-not_assessed$prob_designation_recent <- not_assessed$prob_designation_recent %>%
-  replace_na("Data defficient")
-
-not_assessed$prob_designation_all <- not_assessed$prob_designation_all %>%
-  replace_na("Data defficient")
+  filter(COSEWIC_status == "Not assessed") %>%
+  mutate(prob_designation_recent = ifelse(is.na(prob_designation_recent), "Data defficient", 
+                                          prob_designation_recent),
+         prob_designation_all = ifelse(is.na(prob_designation_all), "Data defficient", 
+                                          prob_designation_all))
 
 designations <- rbind(assessed,not_assessed)%>%
   mutate(species = spp) %>%
@@ -182,17 +176,15 @@ write.csv(designations, "./output/master-prob-status/master_status.csv")
 ## Unassessed probable status
 ```{r summary-status-recent, echo=FALSE, fig.align = "center", out.width = '90%'}
 # summarize probable status by spp and region ----
-count_bins <- unassessed%>%
-  group_by(species, region_full)%>%
+count_bins <- unassessed %>%
+  group_by(species, region_full) %>%
   summarize(du_count=n())
 
-count_bins_status <- unassessed%>%
-  group_by(species, region_full, prob_designation_recent)%>%
-  summarize(du_count=n())
-
-count_bins_status$prob_designation_recent <- factor(count_bins_status$prob_designation_recent, levels = rev(c("Endangered","Threatened", "Special concern", "Not at risk")))
-
-count_bins_status$region_full <- factor(count_bins_status$region_full, levels = c("Yukon", "Nass","Skeena", "Haida Gwaii", "Central Coast", "Van. Isl. Main. Inl.", "Fraser"))
+count_bins_status <- unassessed %>%
+  group_by(species, region_full, prob_designation_recent) %>%
+  summarize(du_count=n()) %>%
+  mutate(prob_designation_recent = factor(prob_designation_recent, levels = rev(c("Endangered","Threatened", "Special concern", "Not at risk"))), 
+         region_full = factor(region_full, levels = c("Yukon", "Nass","Skeena", "Haida Gwaii", "Central Coast", "Van. Isl. Main. Inl.", "Fraser")))
 
 count_bins_status[37,4] <- 1 # hard code Fraser pinks which have 8 DUs but only one CU
 
@@ -220,4 +212,3 @@ kable(designations,
       align = "crr") %>%
   kable_styling(bootstrap_options = c("striped", "hover"))
 ```
-
