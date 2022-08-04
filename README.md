@@ -6,7 +6,7 @@ Repository sources and wrangles data on Pacific salmon spawner abundance (mature
 
 ## Repository strucutre
 - `probable-status.Rmd`: Sources data, wrangles it, calculates rates of change by DU, summarizes probabale status and associated DU level metadata. Renders html document.
-- `data`: DU metadata and associated timeseries of mature individuals. Sourced from [here](https://github.com/hertzPSF/COSEWIC-compilation), origional data sources detailed in [Data sources](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize/blob/main/README.md#data-sources).
+- `data`: DU metadata and associated timeseries of mature individuals. Sourced from [here](https://github.com/hertzPSF/COSEWIC-compilation), origional data sources detailed in [data sources](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize/blob/main/README.md#data-sources).
 - `output`: All outputs including master .csv of percent change in mature individuals and probable DU status designations, stand alone plots of mature individuals over time by species and region.
 
 If you just want to explore a summary of probable designations based on currently available data then download the `probable-status.html` file. The master table of probable (or COSEWIC assessed) status, rates of change, etc., all by DU can be found here: `./output/master-prob-status/master-status.csv`.
