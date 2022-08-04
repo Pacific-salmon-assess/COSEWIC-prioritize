@@ -6,3 +6,9 @@ Work in progress repository developed for the marine fishes subcommittee of the 
 - `probable-status.Rmd`: Sources data, wrangles it, calculates rates of change by DU, summarizes probabale status and associated DU level metadata. Renders html document.
 - `data`: DU-CU metadata and associated timeseries of mature individuals. Sourced from [here](https://github.com/hertzPSF/COSEWIC-compilation), origional data sources detailed in table below.
 - `outputs`: All outputs including master .csv of percent change in mature individuals and probable DU status designations, stand alone plots of mature individuals over time by species and region.
+
+## Data sources
+| Region (species) | Source |
+| --- | --- |
+| Yukon (Chinook) | [Connors et al. In press.](https://github.com/brendanmichaelconnors/yukon-chinook-diversity) |
+| Skeena/Nass (sockeye) | [Pestal et al. In press]() |
