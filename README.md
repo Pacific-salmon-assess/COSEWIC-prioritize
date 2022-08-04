@@ -10,5 +10,5 @@ Work in progress repository developed for the marine fishes subcommittee of the 
 ## Data sources
 | Region (species) | Source |
 | --- | --- |
-| Yukon (Chinook) | [Connors et al. In press.](https://github.com/brendanmichaelconnors/yukon-chinook-diversity) |
-| Skeena/Nass (sockeye) | [Pestal et al. In press]() |
+| Yukon (Chinook) | Connors B.M., Siegle M.R., Harding J., Rossi S., Staton B., Jones M., Bradford M., Browne R., Bechtol B., Doherty B. and S. Cox. Chinook salmon diversity contributes to fishery stability and trade‐offs with mixed‐stock harvest. In press. Ecological Applications.[link](https://github.com/brendanmichaelconnors/yukon-chinook-diversity) |
+| Skeena/Nass (sockeye) | Pestal, GP, C Carr-Harris, S Cox-Rogers, K English, R Alexander and the Skeena Nass Sockeye Technical Working Group. 2022. 2021 Review of Spawner and Recruit Data for Sockeye Salmon (Oncorhynchus nerka) from the Skeena and Nass Basins, British Columbia. Can. 20 Tech. Rep. Fish. Aquat. Sci.[link]() |
