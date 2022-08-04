@@ -18,4 +18,8 @@ Repository sources and wrangles data on Pacific salmon spawner abundance (mature
 
 ## Prioritization decison nodes
 Early ideas on key decision nodes in prioritization process. 
-- *Have DUs been formally defined by COSEWIC?* Chinook, sockeye, and coho salmon DUs have been defined (reports available [here](https://www.cosewic.ca/index.php/en-ca/reports/special-reports.html)), formal pink and chum DU identification is in progress.  
+- **Have DUs been formally defined by COSEWIC?** Chinook, sockeye, and coho salmon DUs have been defined (reports available [here](https://www.cosewic.ca/index.php/en-ca/reports/special-reports.html)), formal pink and chum DU identification is in progress. If **yes** then proceed.   
+- **Is information on mature individuals over time available at the DU scale?** If **yes* then proceed.
+- **Has DU been previously assessed by COSEWIC?** If **yes** then consider a re-assessment, otherwise proceed.
+- **What is the DUs probable designation based on percentage change in mature individuals over past three generations?** If **threatened** or **endangered** then proceed.
+- **Are there spatial considerations?** Are there commonalities in threats, designations, and/or data landscape at a regional scale that suggest a group of DUs should be bundled together?  
