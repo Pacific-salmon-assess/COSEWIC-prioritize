@@ -10,6 +10,7 @@ Repository sources and wrangles data on Pacific salmon spawner abundance (mature
 - `outputs`: All outputs including master .csv of percent change in mature individuals and probable DU status designations, stand alone plots of mature individuals over time by species and region.
 
 ## Data sources
+Data on mature individuals, DU-CU mapping, and associated metadata are sourced from a [repository](https://github.com/hertzPSF/COSEWIC-compilation) with the data in the [Pacific Salmon Explorer](https://www.salmonexplorer.ca/) and other published sources (e.g., Yukon Chinook). Origional sources of these data are detailed below. 
 | **Region (species)** | **Source** |
 | --- | --- |
 | Yukon (Chinook) | Connors BM, Siegle MR, Harding J, Rossi S, Staton B, Jones M, Bradford M, Browne R, Bechtol B, Doherty B and S Cox. Chinook salmon diversity contributes to fishery stability and trade‐offs with mixed‐stock harvest. In press. Ecological Applications. [[link](https://github.com/brendanmichaelconnors/yukon-chinook-diversity)] |
