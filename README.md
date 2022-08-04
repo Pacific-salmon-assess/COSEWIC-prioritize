@@ -1,10 +1,8 @@
 # COSEWIC-prioritize
 
-Code to:
-- source and wrangle data on Pacific salmon spawner abundance (mature individuals) over time from various sources (add table)
-- calculate rates of change in mature individuals over time and and estimate % change over specified time period to support prioritization of Designatable Units for status assessments by COSEWIC
+Work in progress repository developed for the marine fishes subcommittee of the Committee on the Status of Endangered Wildlife in Canada ([COSEWIC](https://www.cosewic.ca/index.php/en-ca/)) to support prioritization of Pacific salmon Designatable Units (DUs) for status assessments. This repository specifically sources and wrangles data on Pacific salmon spawner abundance (mature individuals) over time from various sources (see table below), calculate rates of change in individuals over time, estimates percent change over the most recent three generations and summarizes this information in an html summary document. 
 
 ## Repository strucutre
 - `probable-status.Rmd`: Sources data, wrangles it, calculates rates of change by DU, summarizes probabale status and associated DU level metadata. Renders html document.
-- `data`: DU-CU metadata and associated timeseries of mature individuals. Sourced from [ere](https://github.com/hertzPSF/COSEWIC-compilation), origional data sources detailed in table below.
+- `data`: DU-CU metadata and associated timeseries of mature individuals. Sourced from [here](https://github.com/hertzPSF/COSEWIC-compilation), origional data sources detailed in table below.
 - `outputs`: All outputs including master .csv of percent change in mature individuals and probable DU status designations, stand alone plots of mature individuals over time by species and region.
