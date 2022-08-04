@@ -18,7 +18,7 @@ Data on mature individuals, DU-CU mapping, and associated metadata are sourced f
 | etc. | etc. |
 
 ## Prioritization decison nodes
-Early ideas on key decision nodes in prioritization process. 
+Initial thoughts on key decision nodes in prioritization process. 
 - **Have DUs been formally defined by COSEWIC?** Chinook, sockeye, and coho salmon DUs have been defined (reports available [here](https://www.cosewic.ca/index.php/en-ca/reports/special-reports.html)), formal pink and chum DU identification is in progress. If **yes** then proceed.   
 - **Is information on mature individuals over time available at the DU scale?** If **yes** then proceed.
 - **Has DU been previously assessed by COSEWIC?** If **yes** then consider a re-assessment, otherwise proceed.
