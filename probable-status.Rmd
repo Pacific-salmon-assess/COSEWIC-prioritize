@@ -49,7 +49,7 @@ Initial thoughts on potential decision nodes in the prioritization process.
 
 #. **Has DU been previously assessed by COSEWIC?** If **yes** then consider a re-assessment, otherwise proceed.
 
-#. **What is the DUs probable designation based on percentage change in mature individuals over past three generations?** If **threatened** or **endangered** then proceed.
+#. **What is the DUs probable designation based on percentage change in mature individuals over past three generations?** If **special concern**,  **threatened** or **endangered** then proceed.
 
 #. **Are there spatial considerations?** Are there commonalities in threats, designations, and/or data landscape at a regional scale that suggest a group of DUs should be bundled together?  
 
@@ -176,7 +176,7 @@ not_assessed <- master_desg %>%
 
 designations <- rbind(assessed,not_assessed)%>%
   mutate(species = spp) %>%
-  select(region_full, du_number,species, gen_length, COSEWIC_status,per_change_recent, per_change_all, recent_abundance, last_year_monitored, prob_designation_recent, prob_designation_all)%>%
+  select(region_full, du_number,species, gen_length, COSEWIC_status,per_change_recent, per_change_all, recent_abundance, last_year_monitored, prob_designation_recent)%>%
   arrange(du_number)%>%
   distinct(du_number,.keep_all = TRUE)
 
@@ -187,8 +187,8 @@ unassessed <- designations %>%
 write.csv(designations, "./output/master-prob-status/master_status.csv")
 ```
 
-# Probable status 
-## Unassessed probable status
+# Probable status summary 
+## Unassessed DUs
 ```{r summary-status-recent, echo=FALSE, fig.align = "center", out.width = '90%'}
 # summarize probable status by spp and region ----
 count_bins <- unassessed %>%
@@ -220,8 +220,10 @@ ggplot(count_bins_status, aes(x = species, y = du_count)) +
 
 ## Summary table all DUs  
 ```{r, warning = FALSE}
+colnames(designations) <- c("Region", "DU", "Species", "Generation length", "COSEWIC status", "% Change (recent)", "% Change (all)", "Recent abundance", "Last year", "Probable status")
+
 datatable(designations, rownames = FALSE, 
-          caption = 'Table 1: blah, blah, blah',
+          caption = 'Table 1: Estimates of percent change in mature individual (spawner) abundance over most recent three generations (based on just last three generations or all years of observations) for Pacific Salmon DUs in the Pacific region. Also shown are the region, average generation length, COSEWIC status if previously assessed, mature individual abundance over most recent generation, the last year with data and probable COSEWIC designation based on percent change based on just the last three generations of observations.',
           filter = 'top', 
           options = list(pageLength = 20))
 ```
