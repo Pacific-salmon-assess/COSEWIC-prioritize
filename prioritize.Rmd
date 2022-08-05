@@ -56,7 +56,7 @@ rm(raw_sp_data, erics_output, cu_metadata) #remove some helper objects
 We'll make 2 plots for each species and region: raw spawner abundance and ln-transformed spawner abundance with a linear regression passing through all data points (black dashed line) and the last 3 generations (red). **Note that that the y axis varies for ease of viewing**.    
 This code is cumbersome in order to make it robust, so we've omitted it from this document. See the [.Rmd document](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize/blob/main/prioritize.Rmd) for details.   
 
-```{r abundance plots, echo = FALSE}
+```{r abundance plots, echo = FALSE, warning = FALSE}
 max_facets <- 20 #how many facets (i.e. panes) per plot?
 rows <- 4 #how many rows/cols? note needs to be multiple of facets. 
 cols <- 5

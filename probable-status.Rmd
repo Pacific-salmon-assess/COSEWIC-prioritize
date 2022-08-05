@@ -56,7 +56,6 @@ Initial thoughts on potential decision nodes in the prioritization process.
 ```{r setup, include=FALSE}
 # libraries and global settings ----
 library(tidyverse)
-library(kableExtra) #perhaps redundant after we incorporate DT?
 library(DT)
 
 knitr::opts_chunk$set(echo = FALSE, message=FALSE, cache=FALSE, include=TRUE)
@@ -185,6 +184,8 @@ unassessed <- designations %>%
          prob_designation_recent != "Data defficient")
 
 write.csv(designations, "./output/master-prob-status/master_status.csv")
+
+NA_regions <- filter(designations, is.na(region_full))
 ```
 
 # Probable status summary 
@@ -237,6 +238,184 @@ datatable(designations, rownames = FALSE,
 ```
 
 # Abundance plots  
-```{r, warning = FALSE}
+```{r, echo = FALSE, warning = FALSE}
+#A TRY COPYING THINGS I KNOW BETTER!!
+
+raw_sp_data <- raw_sp_data %>%
+  mutate(logSp=log(Spawner.Abundance))
+
+
+sp_data <- left_join(raw_sp_data, select(cu_metadata, CUID, du_number, gen_length), 
+                     by="CUID") %>%
+  drop_na(du_number, Spawner.Abundance) %>%
+  mutate(du_cu=paste(du_number, CUID)) %>%
+  relocate(du_cu, 1) %>%
+  arrange(du_cu, Year)
+
+last3_gens <- sp_data %>%
+  group_by(du_cu) %>%
+  mutate(three_gens = gen_length*3) %>%
+  filter(Year > (last(Year) - three_gens), Year <= last(Year))
+
+max_facets <- 20 #how many facets (i.e. panes) per plot?
+rows <- 4 #how many rows/cols? note needs to be multiple of facets. 
+cols <- 5
+
+for(i in unique(sp_data$Region)){
+  sp_data_region <- filter(sp_data, Region==i)
+  
+  #HERE IS WHERE I WOULD WANT TO NEST A REGION HEADER IF I COULD!
+  
+  for(j in unique(sp_data_region$Species)){
+    sub_data <- filter(sp_data_region, Species==j) %>%
+      complete(Year, Species, Region, du_cu) #explicitly include NA so line draws right
+    
+    #AND HERE I'D NEST A SPECIES HEADER!
+    
+    sub_last3 <- filter(last3_gens, Region==i, Species==j)
+    n_pops <- length(unique(sub_data$du_cu))
+    if( n_pops>max_facets){
+      pages <- ceiling(n_pops/max_facets)
+    for(k in 1:pages){
+      sub_data_2 <- filter(sub_data, du_cu %in% 
+                               unique(sub_data$du_cu)[((k-1)*max_facets)+1:(max_facets*k)])
+      
+      sub_last3_2 <- filter(sub_last3, du_cu %in% 
+                                unique(sub_last3$du_cu)[((k-1)*max_facets)+1:(max_facets*k)])
+      
+      p <- ggplot(data = sub_data_2, aes(x=Year, y=Spawner.Abundance/1000)) +
+        geom_line(color="grey") +
+        geom_point() +
+        ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE,
+                           scales="free_y") +
+        labs(x="Year", y="spawners (thousands)", 
+             title = paste0(i," ",j," spawner abundance ","(",k," of ",pages,")")) +
+        theme_bw() +
+        theme(strip.background=element_blank(), axis.text.x=element_text(angle = 45))
+      print(p)
+      
+      p_log <- ggplot(data=sub_data_2, aes(x=Year, y=logSp)) +
+        geom_line(color="grey") +
+        geom_point() +
+        stat_smooth(method="lm", formula=y~x, color="black", lty="dashed", se=FALSE) +
+        stat_smooth(data = sub_last3_2, formula=y~x, method="lm", color="red", se=FALSE, 
+                    na.rm=TRUE) +
+        ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE,
+                           scales="free_y") +
+        labs(x="Year", y="ln(spawners)", 
+             title=paste0("ln ",i," ",j," spawner abundance ","(",k," of ",pages,")")) +
+        theme_bw() +
+        theme(strip.background=element_blank(), axis.text.x=element_text(angle=45))
+      print(p_log)
+    }
+  }else{
+    p <- ggplot(data=sub_data, aes(x=Year, y=Spawner.Abundance/1000)) +
+      geom_line(color="grey") +
+      geom_point() +
+      ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE, 
+                         scales="free_y") +
+      labs(x="Year", y="spawners (thousands)", title=paste(i, j, "spawner abundance")) +
+      theme_bw() +
+      theme(strip.background=element_blank(), axis.text.x=element_text(angle = 45))
+    print(p)
+    
+    p_log <- ggplot(data=sub_data, aes(x=Year, y=logSp)) +
+      geom_line(color="grey") +
+      geom_point() +
+      stat_smooth(formula=y~x, method="lm", color="black", lty="dashed", se=FALSE) +
+      stat_smooth(data=sub_last3, formula=y~x, method="lm", color="red", se=FALSE, 
+                  na.rm=TRUE) +
+      ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE, 
+                         scales="free_y") +
+      labs(x="Year", y="ln(spawners)", title=paste(i, j, "ln(spawner abundance)")) +
+      theme_bw() +
+      theme(strip.background=element_blank(), axis.text.x=element_text(angle = 45))
+    print(p_log)
+  }
+ }
+}
+```
+
+```{r abundance plots, echo = FALSE}
+#WAS TRYING TO USE EARLIER OBJECTS BUT HITTING A WALL! 
+
+#turn it off for now - might revisit?
+if(FALSE){
+  max_facets <- 20 #how many facets (i.e. panes) per plot?
+rows <- 4 #how many rows/cols? note needs to be multiple of facets. 
+cols <- 5
+
+sp_data <- sp_data %>%
+  ungroup() %>%
+  mutate(log_mat_ind = log(mat_ind))
+
+for(i in unique(sp_data$Species)){
+  sp_data_species <- filter(sp_data, Species==i)
+  for(j in unique(sp_data_species$Region)){
+    sub_data <- filter(sp_data_species, Region==j) %>%
+      complete(Year, Species, Region, du_number) #explicitly include NA so line draws right
+    sub_last3 <- filter(last3_gens, Species==i, Region==j)
+    n_pops <- length(unique(sub_data$du_number))
+    if(n_pops>max_facets){
+      pages <- ceiling(n_pops/max_facets)
+    for(k in 1:pages){
+      sub_data_2 <- filter(sub_data, du_number %in% 
+                               unique(sub_data$du_number)[((k-1)*max_facets)+1:(max_facets*k)])
+      
+      sub_last3_2 <- filter(sub_last3, du_number %in% 
+                                unique(sub_last3$du_number)[((k-1)*max_facets)+1:(max_facets*k)])
+      
+      p <- ggplot(data = sub_data_2, aes(x=Year, y=mat_ind/1000)) +
+        geom_line(color="grey") +
+        geom_point() +
+        ggh4x::facet_wrap2(vars(du_number), nrow=rows, ncol=cols, trim_blank=FALSE,
+                           scales="free_y") +
+        labs(x="Year", y="spawners (thousands)", 
+             title = paste0(j," ",i," spawner abundance ","(",k," of ",pages,")")) +
+        theme_bw() +
+        theme(strip.background=element_blank(), axis.text.x=element_text(angle = 45))
+      print(p)
+      
+      p_log <- ggplot(data=sub_data_2, aes(x=Year, y=log_mat_ind)) +
+        geom_line(color="grey") +
+        geom_point() +
+        stat_smooth(method="lm", formula=y~x, color="black", lty="dashed", se=FALSE) +
+        stat_smooth(data = sub_last3_2, formula=y~x, method="lm", color="red", se=FALSE, 
+                    na.rm=TRUE) +
+        ggh4x::facet_wrap2(vars(du_number), nrow=rows, ncol=cols, trim_blank=FALSE,
+                           scales="free_y") +
+        labs(x="Year", y="ln(spawners)", 
+             title=paste0("ln ",j," ",i," spawner abundance ","(",k," of ",pages,")")) +
+        theme_bw() +
+        theme(strip.background=element_blank(), axis.text.x=element_text(angle=45))
+      print(p_log)
+    }
+  }else{
+    p <- ggplot(data=sub_data, aes(x=Year, y=mat_ind/1000)) +
+      geom_line(color="grey") +
+      geom_point() +
+      ggh4x::facet_wrap2(vars(du_number), nrow=rows, ncol=cols, trim_blank=FALSE, 
+                         scales="free_y") +
+      labs(x="Year", y="spawners (thousands)", title=paste(j, i, "spawner abundance")) +
+      theme_bw() +
+      theme(strip.background=element_blank(), axis.text.x=element_text(angle = 45))
+    print(p)
+    
+    p_log <- ggplot(data=sub_data, aes(x=Year, y=log_mat_ind)) +
+      geom_line(color="grey") +
+      geom_point() +
+      stat_smooth(formula=y~x, method="lm", color="black", lty="dashed", se=FALSE) +
+      stat_smooth(data=sub_last3, formula=y~x, method="lm", color="red", se=FALSE, 
+                  na.rm=TRUE) +
+      ggh4x::facet_wrap2(vars(du_number), nrow=rows, ncol=cols, trim_blank=FALSE, 
+                         scales="free_y") +
+      labs(x="Year", y="ln(spawners)", title=paste(j, i, "ln(spawner abundance)")) +
+      theme_bw() +
+      theme(strip.background=element_blank(), axis.text.x=element_text(angle = 45))
+    print(p_log)
+  }
+ }
+}
+}
 
 ```
