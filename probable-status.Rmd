@@ -238,9 +238,7 @@ datatable(designations, rownames = FALSE,
 ```
 
 # Abundance plots  
-```{r, echo = FALSE, warning = FALSE}
-#A TRY COPYING THINGS I KNOW BETTER!!
-
+```{r, echo = FALSE, warning = FALSE, results= 'asis'}
 raw_sp_data <- raw_sp_data %>%
   mutate(logSp=log(Spawner.Abundance))
 
@@ -250,7 +248,11 @@ sp_data <- left_join(raw_sp_data, select(cu_metadata, CUID, du_number, gen_lengt
   drop_na(du_number, Spawner.Abundance) %>%
   mutate(du_cu=paste(du_number, CUID)) %>%
   relocate(du_cu, 1) %>%
-  arrange(du_cu, Year)
+  arrange(du_cu, Year) %>%
+  mutate(Region = case_when(Region == "HG" ~ "Haida Gwaii",
+                                 Region == "CC" ~ "Central Coast",
+                                 Region == "VIMI" ~ "Van. Isl. Main. Inl.", 
+                                 TRUE ~ Region))
 
 last3_gens <- sp_data %>%
   group_by(du_cu) %>%
@@ -264,13 +266,15 @@ cols <- 5
 for(i in unique(sp_data$Region)){
   sp_data_region <- filter(sp_data, Region==i)
   
-  #HERE IS WHERE I WOULD WANT TO NEST A REGION HEADER IF I COULD!
-  
+   cat('\n')  
+   cat("## ", i, "\n") #nested region header
+   
   for(j in unique(sp_data_region$Species)){
     sub_data <- filter(sp_data_region, Species==j) %>%
       complete(Year, Species, Region, du_cu) #explicitly include NA so line draws right
     
-    #AND HERE I'D NEST A SPECIES HEADER!
+    cat('\n')  
+    cat("### ", j, "\n") #nested species within region header
     
     sub_last3 <- filter(last3_gens, Region==i, Species==j)
     n_pops <- length(unique(sub_data$du_cu))
@@ -332,8 +336,17 @@ for(i in unique(sp_data$Region)){
       theme(strip.background=element_blank(), axis.text.x=element_text(angle = 45))
     print(p_log)
   }
- }
+        cat('\n')  
+
+  }
+      cat('\n') 
+
 }
+
+region_sp_check <- sp_data %>%
+  distinct(Region, Species, du_cu) %>%
+  group_by(Region, Species) %>%
+  summarise(n = n())
 ```
 
 ```{r abundance plots, echo = FALSE}
