@@ -30,12 +30,4 @@ Data on mature individuals, DU-CU mapping, and associated metadata are sourced f
 |Columbia River (sockeye)|Fisheries and Oceans unpublished data. Contact: Athena Ogden|
 |Columbia River (Chinook)|Matylewich M, Oatman M, Parken C, Riddell B, Tweit B, Wright H, Baldwin C, Garrison T, Lothrop R, and E McGrath. 2019. A Summary of Okanagan Chinook Information Requested by the Pacific Salmon Commission. Pacific Salmon Comm. Tech. Rep. No. 42: 89 p. [[link](https://www.psc.org/publications/technical-reports/technical-report-series/)]|
 
-
-
-## Prioritization decison nodes
-Initial thoughts on key decision nodes in prioritization process. 
-- **Have DUs been formally defined by COSEWIC?** Chinook, sockeye, and coho salmon DUs have been defined (reports available [here](https://www.cosewic.ca/index.php/en-ca/reports/special-reports.html)), formal pink and chum DU identification is in progress. If **yes** then proceed.   
-- **Is information on mature individuals over time available at the DU scale?** If **yes** then proceed.
-- **Has DU been previously assessed by COSEWIC?** If **yes** then consider a re-assessment, otherwise proceed.
-- **What is the DUs probable designation based on percentage change in mature individuals over past three generations?** If **threatened** or **endangered** then proceed.
-- **Are there spatial considerations?** Are there commonalities in threats, designations, and/or data landscape at a regional scale that suggest a group of DUs should be bundled together?  
+ 
