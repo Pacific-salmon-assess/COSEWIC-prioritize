@@ -18,8 +18,9 @@ Data on mature individuals, DU-CU mapping, and associated metadata are sourced f
 | **Region (species)** | **Source** |
 | --- | --- |
 | Yukon (Chinook) | Connors BM, Siegle MR, Harding J, Rossi S, Staton B, Jones M, Bradford M, Browne R, Bechtol B, Doherty B and S Cox. Chinook salmon diversity contributes to fishery stability and trade‐offs with mixed‐stock harvest. In press. Ecological Applications. [[link](https://github.com/brendanmichaelconnors/yukon-chinook-diversity)] |
+| Nass (pink, chum, coho, Chinook) | Connors, K, Hertz E, Jones E, Honka L, Kellock K, and R Alexander. 2019. The Nass Region: Snapshots of salmon population status. The Pacific Salmon Foundation, Vancouver, BC, Canada.[[link](https://salmonwatersheds.ca/libraryfiles/lib_453.pdf)]|
 | Skeena/Nass (sockeye) | Pestal, GP, C Carr-Harris, S Cox-Rogers, K English, R Alexander and the Skeena Nass Sockeye Technical Working Group. 2022. 2021 Review of Spawner and Recruit Data for Sockeye Salmon (*Oncorhynchus nerka*) from the Skeena and Nass Basins, British Columbia. Can. 20 Tech. Rep. Fish. Aquat. Sci. [[link]()] |
-| etc. | etc. |
+| Skeena (pink, chum, coho, Chinook) | English K, Peacock D, Challenger W, Noble C, Beveridge I, Robichaud D, Beach K, Hertz E and K Connors. 2018. North and Central Coast Salmon Escapement, Catch, Run Size and Exploitation Rate Estimates for each Salmon Conservation Unit for 1954-2017. [[link](https://salmonwatersheds.ca/libraryfiles/lib_451.pdf)]|
 
 ## Prioritization decison nodes
 Initial thoughts on key decision nodes in prioritization process. 
