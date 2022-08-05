@@ -35,6 +35,10 @@ h2 { /* Header 2 */
     font-size: 15px;
   color: Black;
 }
+h3 { /* Header 3 */
+    font-size: 15px;
+  color: Black;
+}
 </style>
 ```
 # About
@@ -342,11 +346,6 @@ for(i in unique(sp_data$Region)){
       cat('\n') 
 
 }
-
-region_sp_check <- sp_data %>%
-  distinct(Region, Species, du_cu) %>%
-  group_by(Region, Species) %>%
-  summarise(n = n())
 ```
 
 ```{r abundance plots, echo = FALSE}
