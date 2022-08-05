@@ -222,8 +222,21 @@ ggplot(count_bins_status, aes(x = species, y = du_count)) +
 ```{r, warning = FALSE}
 colnames(designations) <- c("Region", "DU", "Species", "Generation length", "COSEWIC status", "% Change (recent)", "% Change (all)", "Recent abundance", "Last year", "Probable status")
 
+#switch characters to factor to make dropdown filtering
+designations <- designations %>%
+  mutate(Region = as.factor(Region), 
+         DU = as.factor(DU), 
+         Species = as.factor(Species),
+         `COSEWIC status` = as.factor(`COSEWIC status`),
+         `Probable status` = as.factor(`Probable status`))
+  
 datatable(designations, rownames = FALSE, 
           caption = 'Table 1: Estimates of percent change in mature individual (spawner) abundance over most recent three generations (based on just last three generations or all years of observations) for Pacific Salmon DUs in the Pacific region. Also shown are the region, average generation length, COSEWIC status if previously assessed, mature individual abundance over most recent generation, the last year with data and probable COSEWIC designation based on percent change based on just the last three generations of observations.',
           filter = 'top', 
-          options = list(pageLength = 20))
+          options = list(pageLength = 20, autoWidth = TRUE))
+```
+
+# Abundance plots  
+```{r, warning = FALSE}
+
 ```
