@@ -251,7 +251,7 @@ ggplot(count_bins_status, aes(x = species, y = du_count)) +
   theme_bw()+
   theme(axis.text.x = element_text(angle=45, hjust=1), legend.position = "top")
 ```
-**Figure 2**. Probable status of unassessed Pacific salmon DUs (or those already recommended for status assessment) based on rate of change in mature individuals over most recent three generations. 
+**Figure 2**. Probable status of unassessed Pacific salmon DUs (excluding those previously assessed by CPOSEWIC or recommended for status assessment) based on rate of change in mature individuals over most recent three generations. 
 
 # Summary table
 
