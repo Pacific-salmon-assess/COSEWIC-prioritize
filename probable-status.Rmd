@@ -41,7 +41,6 @@ h3 { /* Header 3 */
 }
 </style>
 ```
-
 # About
 This document summarizes estimates of change in mature individuals over time for Pacific salmon Designatable Unit (DU) and associated  probable COSEWIC status designation. Data sources are detailed [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize#data-sources) and all code to reproduce the analyses in this document is [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize). These materials are solely intended to support the Marine Fishes sub-committee of COSEWIC in identifying high priority DUs for COSEWIC to consider when conducting formal status assessments.
 
@@ -67,21 +66,22 @@ knitr::opts_chunk$set(echo = FALSE, message=FALSE, cache=FALSE, include=TRUE, dp
 options(scipen=1, digits=4)
 
 # read in data ----
-raw_sp_data <- read.csv("./data/CU_Spawner_Abund_20220804.csv", 
+raw_sp_data <- read.csv("./data/CU_Spawner_Abund_20220809.csv", 
                         header=TRUE) %>%
   mutate(logSp=log(Spawner.Abundance))
 
-cu_metadata <- read.csv("./data/CU_Metadata_20220804.csv",  
+cu_metadata <- read.csv("./data/CU_Metadata_20220809.csv",  
                         header=TRUE, na.strings=c("", "NA")) %>%
   filter(!is.na(gen_length)) %>%
   rename(CUID=cuid)
 
 # join, dump pops with NA DUs ----
-sp_data <- left_join(raw_sp_data, select(cu_metadata, CUID, du_number, gen_length, Sites, cu_enh_rank, COSEWIC_status, spp), 
+sp_data <- left_join(raw_sp_data, select(cu_metadata, Region, CUID, du_number, gen_length, Sites, cu_enh_rank, COSEWIC_status, spp), 
                      by="CUID") %>%
   drop_na(du_number, Spawner.Abundance) %>%
   mutate(Species = spp) %>%
-  group_by(du_number, Region, Year, gen_length, Sites, cu_enh_rank, COSEWIC_status, Species) %>%
+  group_by(du_number, Region.y, Year, gen_length, Sites, cu_enh_rank, COSEWIC_status, Species) %>%
+  rename(Region = Region.y) %>%
   summarise(mat_ind = sum(Spawner.Abundance))%>%
   arrange(du_number, Year)
 
@@ -139,7 +139,7 @@ for(i in unique(sp_data_filtered$du_number)){
   recent_abundance <- last(sub_raw$mat_ind)
   last_year_monitored <- last(sub_raw$Year)
   
-  output <- data.frame(du_number=i, region = unique(sub_raw$Region), per_change_recent, per_change_all, recent_abundance, last_year_monitored)
+  output <- data.frame(du_number=i, Region = unique(sub_raw$Region), per_change_recent, per_change_all, recent_abundance, last_year_monitored)
   
   summary_table <- bind_rows(output, summary_table)
 }
@@ -155,18 +155,17 @@ prob_desg <- summary_table %>%
     per_change_all  > -29 ~ "Not at risk",
     per_change_all < -29 & per_change_all > -49 ~ "Special concern",
     per_change_all < -49 & per_change_all > -69 ~ "Threatened",
-    per_change_all < -69 ~ "Endangered")) %>%
-  mutate(region_full = case_when(
-    region == "HG" ~ "Haida Gwaii",
-    region == "CC" ~ "Central Coast",
-    region == "VIMI" ~ "Van. Isl. Main. Inl.",
-    TRUE ~ region))
+    per_change_all < -69 ~ "Endangered"))
 
-master_desg <- left_join(cu_metadata, select(prob_desg, region_full, du_number, per_change_recent, per_change_all, recent_abundance, last_year_monitored, prob_designation_recent,prob_designation_all), 
+master_desg <- left_join(cu_metadata, select(prob_desg, Region, du_number, per_change_recent, per_change_all, recent_abundance, last_year_monitored, prob_designation_recent,prob_designation_all), 
                      by="du_number") %>%
-  mutate(COSEWIC_status = ifelse(is.na(COSEWIC_status), "Not assessed", COSEWIC_status))
-#^ NOTE! this is where we lose some of the region info. dus are getting merged from 
-  #cu_metadata to prob_desg that don't have and region data!
+  mutate(COSEWIC_status = ifelse(is.na(COSEWIC_status), "Not assessed", COSEWIC_status)) %>%
+  rename(Region = Region.x) %>%
+  mutate(region_full = case_when(
+    Region == "HG" ~ "Haida Gwaii",
+    Region == "CC" ~ "Central Coast",
+    Region == "VIMI" ~ "Van. Isl. Main. Inl.",
+    TRUE ~ Region))
 
 # wrangle assessed and un-assessed status'
 assessed <- master_desg %>%
@@ -194,7 +193,7 @@ write.csv(designations, "./output/master-prob-status/master_status.csv")
 NA_regions <- filter(designations, is.na(region_full))
 ```
 
-# Probable status summary
+# Probable status summary 
 ## Unassessed DUs
 ```{r summary-status-recent, echo=FALSE, fig.align = "center", out.width = '90%'}
 # summarize probable status by spp and region ----
@@ -225,7 +224,7 @@ ggplot(count_bins_status, aes(x = species, y = du_count)) +
 
 # Summary table
 
-## Summary table all DUs
+## Summary table all DUs  
 ```{r, warning = FALSE}
 colnames(designations) <- c("Region", "DU", "Species", "Generation length", "COSEWIC status", "% Change (recent)", "% Change (all)", "Recent abundance", "Last year", "Probable status")
 
@@ -243,11 +242,13 @@ datatable(designations, rownames = FALSE,
           options = list(pageLength = 20, autoWidth = TRUE))
 ```
 
-# Abundance plots
+# Abundance plots  
 ```{r abundance plots, warning = FALSE, results= 'asis'}
 #note: `asis` argument is necessary to properly render headers with cat() below
+
 raw_sp_data <- raw_sp_data %>%
   mutate(logSp=log(Spawner.Abundance))
+
 
 sp_data <- left_join(raw_sp_data, select(cu_metadata, CUID, du_number, gen_length), 
                      by="CUID") %>%
