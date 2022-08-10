@@ -11,7 +11,7 @@ output:
     theme: sandstone
     toc: yes
     toc_float: yes
-    keep_md: false
+    keep_md: true
 ---
 
 ```{=html}
