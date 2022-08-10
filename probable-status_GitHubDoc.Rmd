@@ -148,7 +148,7 @@ not_assessed <- master_desg %>%
 
 designations <- rbind(assessed,not_assessed)%>%
   mutate(species = spp) %>%
-  select(region_full, du_number,species, gen_length, COSEWIC_status,per_change_recent, per_change_all, recent_abundance, last_year_monitored, prob_designation_recent)%>%
+  select(region_full, du_number,species, gen_length, COSEWIC_status, per_change_recent, per_change_all, recent_abundance, last_year_monitored, prob_designation_recent)%>%
   arrange(du_number)%>%
   distinct(du_number,.keep_all = TRUE)
 
@@ -242,7 +242,10 @@ if(FALSE){
           filter = 'top', 
           options = list(pageLength = 20, autoWidth = TRUE))
 }
-head(designations) # a for-now workaround
+designations2 <- designations %>%
+  select(Region, Species, DU,'% Change (recent)', 'COSEWIC status', 'Probable status')
+
+head(designations2) # a for-now workaround
 ```
 
 # Abundance plots  

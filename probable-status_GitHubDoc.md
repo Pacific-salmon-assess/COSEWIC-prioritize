@@ -79,24 +79,18 @@ most recent three generations.
 
 ## 4.1 Summary table all DUs
 
-The summaries for all DUs are available in a table
+The status summaries for all DUs are available for viewing or download
+in a large table
 [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize/blob/main/output/master-prob-status/master_status.csv).
 A preview of the table is shown below.
 
-    ##   Region   DU Species Generation length COSEWIC status % Change (recent)
-    ## 1 Fraser  CK1 Chinook                 5     Threatened               457
-    ## 2 Fraser CK10 Chinook                 5     Threatened               -63
-    ## 3 Fraser CK11 Chinook                 5     Endangered               -46
-    ## 4 Fraser CK12 Chinook                 4    Not at risk               -22
-    ## 5 Fraser CK13 Chinook                 5     Endangered               -15
-    ## 6 Fraser CK14 Chinook                 4     Endangered               -89
-    ##   % Change (all) Recent abundance Last year Probable status      Status
-    ## 1             32              103      2018     Not at risk  Threatened
-    ## 2            -55             4684      2018      Threatened  Threatened
-    ## 3            -14             7339      2018 Special concern  Endangered
-    ## 4              4            37005      2018     Not at risk Not at risk
-    ## 5             15              922      2018     Not at risk  Endangered
-    ## 6            -55                4      2018      Endangered  Endangered
+    ##   Region Species   DU % Change (recent) COSEWIC status Probable status
+    ## 1 Fraser Chinook  CK1               457     Threatened     Not at risk
+    ## 2 Fraser Chinook CK10               -63     Threatened      Threatened
+    ## 3 Fraser Chinook CK11               -46     Endangered Special concern
+    ## 4 Fraser Chinook CK12               -22    Not at risk     Not at risk
+    ## 5 Fraser Chinook CK13               -15     Endangered     Not at risk
+    ## 6 Fraser Chinook CK14               -89     Endangered      Endangered
 
 # 5 Abundance plots
 
