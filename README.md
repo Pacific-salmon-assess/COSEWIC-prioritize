@@ -11,8 +11,8 @@ Repository sources and wrangles data on Pacific salmon spawner abundance (mature
 
 If you just want to explore a summary of probable designations based on currently available data view the rendered HTML [document](https://pacific-salmon-assess.github.io/COSEWIC-prioritize/probable-status.html). The master table of probable (or COSEWIC assessed) status, rates of change, etc., all by DU can be found here: `./output/master-prob-status/master-status.csv`.
 
-## Data sources
-Data on mature individuals, DU-CU mapping, and associated metadata are sourced from a [repository](https://github.com/hertzPSF/COSEWIC-compilation) with the data in the [Pacific Salmon Explorer](https://www.salmonexplorer.ca/) and other published sources (e.g., Yukon Chinook). Original sources of data are detailed below. 
+## Data sources  
+Data on mature individuals, DU-CU mapping, and associated metadata are sourced from a [repository](https://github.com/hertzPSF/COSEWIC-compilation) with the data in the [Pacific Salmon Explorer](https://www.salmonexplorer.ca/) and other published sources (e.g., Yukon Chinook). Original sources of data are detailed below.  
 | **Region (species)** | **Source** |
 |---|---|
 |Yukon (Chinook)|Connors BM, Siegle MR, Harding J, Rossi S, Staton B, Jones M, Bradford M, Browne R, Bechtol B, Doherty B and S Cox. Chinook salmon diversity contributes to fishery stability and trade‐offs with mixed‐stock harvest. In press. Ecological Applications. [[link](https://github.com/brendanmichaelconnors/yukon-chinook-diversity)]|
