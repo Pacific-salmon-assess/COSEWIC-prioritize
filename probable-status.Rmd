@@ -42,9 +42,9 @@ h3 { /* Header 3 */
 </style>
 ```
 # About
-This document summarizes estimates of change in mature individuals over time for Pacific salmon Designatable Unit (DU) and associated  probable COSEWIC status designation. Data sources are detailed [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize#data-sources) and all code to reproduce the analyses in this document is [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize). These materials are solely intended to support the Marine Fishes sub-committee of COSEWIC in identifying high priority DUs for COSEWIC to consider when conducting formal status assessments.
+This document summarizes estimates of change in mature individuals over time for Pacific salmon Designatable Units (DUs) and associated  probable COSEWIC status designation. Data sources are detailed [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize#data-sources) and all code to reproduce the analyses in this document is [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize). These materials are solely intended to support the Marine Fishes sub-committee of COSEWIC in identifying high priority DUs for COSEWIC to consider formally assessing. 
 
-# Prioritization decison nodes
+# Prioritization decision nodes
 Initial thoughts on potential decision nodes in the prioritization process. 
 
 #. **Have DUs been formally defined by COSEWIC?** Chinook, sockeye, and coho salmon DUs have been defined (reports available [here](https://www.cosewic.ca/index.php/en-ca/reports/special-reports.html)), formal pink and chum DU identification is in progress. If **yes** then proceed. 
@@ -66,11 +66,11 @@ knitr::opts_chunk$set(echo = FALSE, message=FALSE, cache=FALSE, include=TRUE, dp
 options(scipen=1, digits=4)
 
 # read in data ----
-raw_sp_data <- read.csv("./data/CU_Spawner_Abund_20220809.csv", 
+raw_sp_data <- read.csv("./data/CU_Spawner_Abund_20220812.csv", 
                         header=TRUE) %>%
   mutate(logSp=log(Spawner.Abundance))
 
-cu_metadata <- read.csv("./data/CU_Metadata_20220809.csv",  
+cu_metadata <- read.csv("./data/CU_Metadata_20220812.csv",  
                         header=TRUE, na.strings=c("", "NA")) %>%
   filter(!is.na(gen_length)) %>%
   rename(CUID=cuid)
@@ -193,10 +193,10 @@ write.csv(designations, "./output/master-prob-status/master_status.csv")
 NA_regions <- filter(designations, is.na(region_full))
 ```
 
-# Status summary 
-## All DUs
+# Status summaries 
+## All DUs - plot
 
-```{r summary-status-recent-all, echo=FALSE, fig.align = "center", out.width = '90%'}
+```{r summary-status-recent-all-dus, echo=FALSE, fig.align = "center", out.width = '90%'}
 
 for(i in 1:length(designations$du_number)){
   if(designations$COSEWIC_status[i] == "Not assessed") {designations$status[i] <- designations$prob_designation_recent[i]}else{designations$status[i] <- designations$COSEWIC_status[i]}
@@ -225,8 +225,8 @@ ggplot(count_bins_status, aes(x = species, y = du_count)) +
 ```
 **Figure 1**. Status of all DUs. For DUs that have been previously assessed by COSEWIC the official status is shown, otherwise probable status is inferred based on percent change in mature individual abundance over the most recent three generations of data.
 
-## Unassessed DUs
-```{r summary-status-recent, echo=FALSE, fig.align = "center", out.width = '90%'}
+## Unassessed official DUs - plot
+```{r summary-status-unassessed-dus, echo=FALSE, fig.align = "center", out.width = '90%', out.height = '60%'}
 # summarize probable status by spp and region ----
 count_bins <- unassessed %>%
   group_by(species, region_full) %>%
@@ -236,9 +236,8 @@ count_bins_status <- unassessed %>%
   group_by(species, region_full, prob_designation_recent) %>%
   summarize(du_count=n()) %>%
   mutate(prob_designation_recent = factor(prob_designation_recent, levels = rev(c("Endangered","Threatened", "Special concern", "Not at risk"))), 
-         region_full = factor(region_full, levels = c("Yukon", "Nass","Skeena", "Haida Gwaii", "Central Coast", "Van. Isl. Main. Inl.", "Fraser")))
-
-count_bins_status[33,4] <- 1 # hard code Fraser pinks which have 8 DUs but only one CU
+         region_full = factor(region_full, levels = c("Yukon", "Nass","Skeena", "Haida Gwaii", "Central Coast", "Van. Isl. Main. Inl.", "Fraser"))) %>%
+  filter(! species %in% c("Chum", "Pink"))
 
 # plot probable status by spp and region ----
 ggplot(count_bins_status, aes(x = species, y = du_count)) + 
@@ -251,11 +250,10 @@ ggplot(count_bins_status, aes(x = species, y = du_count)) +
   theme_bw()+
   theme(axis.text.x = element_text(angle=45, hjust=1), legend.position = "top")
 ```
-**Figure 2**. Probable status of unassessed Pacific salmon DUs (excluding those previously assessed by CPOSEWIC or recommended for status assessment) based on rate of change in mature individuals over most recent three generations. 
+**Figure 2**. Probable status of unassessed, but formally defined, Pacific salmon DUs (excluding those previously assessed by COSEWIC or recommended for status assessment) based on rate of change in mature individuals over most recent three generations. 
 
-# Summary table
+## All DUs - table
 
-## Summary table all DUs  
 ```{r, warning = FALSE}
 colnames(designations) <- c("Region", "DU", "Species", "Generation length", "COSEWIC status", "% Change (recent)", "% Change (all)", "Recent abundance", "Last year", "Probable status", "Status")
 
@@ -268,12 +266,14 @@ designations <- designations %>%
          `Probable status` = as.factor(`Probable status`))
   
 datatable(designations, rownames = FALSE, 
-          caption = 'Table 1: Estimates of percent change in mature individual (spawner) abundance over most recent three generations (based on just last three generations or all years of observations) for Pacific Salmon DUs in the Pacific region. Also shown are the region, average generation length, COSEWIC status if previously assessed, mature individual abundance in most recnet year with data, the last year with data and probable COSEWIC designation based on percent change based on just the last three generations of observations.',
+          caption = 'Table 1: Estimates of percent change in mature individual (spawner) abundance over most recent three generations (based on just last three generations or all years of observations) for Pacific Salmon DUs in the Pacific region. Also shown are the region, average generation length, COSEWIC status if previously assessed, mature individual abundance in most recent year with data, the last year with data, and probable COSEWIC designation based on percent change using just the last three generations of observations.',
           filter = 'top', 
           options = list(pageLength = 20, autoWidth = TRUE))
 ```
 
-# Abundance plots  
+# Abundance plots 
+
+Plots of reconstructed number of mature individuals (spawners) over time for each DU, by region and species. Show are both raw and log(e) transformed estimates, and for the later the trend over the most recent three generations (red line) or entire time-series (black dashed line) are also shown.
 ```{r abundance plots, warning = FALSE, results= 'asis'}
 #note: `asis` argument is necessary to properly render headers with cat() below
 
@@ -281,16 +281,18 @@ raw_sp_data <- raw_sp_data %>%
   mutate(logSp=log(Spawner.Abundance))
 
 
-sp_data <- left_join(raw_sp_data, select(cu_metadata, CUID, du_number, gen_length), 
+sp_data <- left_join(raw_sp_data, select(cu_metadata, CUID, du_number, DU_name,gen_length), 
                      by="CUID") %>%
   drop_na(du_number, Spawner.Abundance) %>%
-  mutate(du_cu=paste(du_number, CUID)) %>%
+  mutate(du_cu=paste(du_number, DU_name)) %>%
   relocate(du_cu, 1) %>%
   arrange(du_cu, Year) %>%
   mutate(Region = case_when(Region == "HG" ~ "Haida Gwaii",
                                  Region == "CC" ~ "Central Coast",
                                  Region == "VIMI" ~ "Van. Isl. Main. Inl.", 
-                                 TRUE ~ Region))
+                                 TRUE ~ Region)) 
+
+regions_ordered <- c("Yukon", "Nass", "Skeena", "Haida Gwaii", "Central Coast", "Van. Isl. Main. Inl.", "Fraser", "Columbia")
 
 last3_gens <- sp_data %>%
   group_by(du_cu) %>%
@@ -301,7 +303,7 @@ max_facets <- 20 #how many facets (i.e. panes) per plot?
 rows <- 4 #how many rows/cols? note needs to be multiple of facets. 
 cols <- 5
 
-for(i in unique(sp_data$Region)){
+for(i in regions_ordered){
   sp_data_region <- filter(sp_data, Region==i)
   
    cat('\n')  
@@ -333,7 +335,7 @@ for(i in unique(sp_data$Region)){
         labs(x="Year", y="spawners (thousands)", 
              title = paste0(i," ",j," spawner abundance ","(",k," of ",pages,")")) +
         theme_bw() +
-        theme(strip.background=element_blank(), axis.text.x=element_text(angle = 45))
+        theme(strip.background=element_blank(), axis.text.x=element_text(angle=45), strip.text = element_text(size = 4))
       print(p)
       
       p_log <- ggplot(data=sub_data_2, aes(x=Year, y=logSp)) +
@@ -347,7 +349,7 @@ for(i in unique(sp_data$Region)){
         labs(x="Year", y="ln(spawners)", 
              title=paste0("ln ",i," ",j," spawner abundance ","(",k," of ",pages,")")) +
         theme_bw() +
-        theme(strip.background=element_blank(), axis.text.x=element_text(angle=45))
+        theme(strip.background=element_blank(), axis.text.x=element_text(angle=45), strip.text = element_text(size = 7))
       print(p_log)
     }
   }else{
@@ -358,7 +360,7 @@ for(i in unique(sp_data$Region)){
                          scales="free_y") +
       labs(x="Year", y="spawners (thousands)", title=paste(i, j, "spawner abundance")) +
       theme_bw() +
-      theme(strip.background=element_blank(), axis.text.x=element_text(angle = 45))
+        theme(strip.background=element_blank(), axis.text.x=element_text(angle=45), strip.text = element_text(size = 5))
     print(p)
     
     p_log <- ggplot(data=sub_data, aes(x=Year, y=logSp)) +
@@ -371,7 +373,7 @@ for(i in unique(sp_data$Region)){
                          scales="free_y") +
       labs(x="Year", y="ln(spawners)", title=paste(i, j, "ln(spawner abundance)")) +
       theme_bw() +
-      theme(strip.background=element_blank(), axis.text.x=element_text(angle = 45))
+        theme(strip.background=element_blank(), axis.text.x=element_text(angle=45), strip.text = element_text(size = 5))
     print(p_log)
   }
         cat('\n')  
