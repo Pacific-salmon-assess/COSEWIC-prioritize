@@ -1,0 +1,281 @@
+Species,population,Year,LGL.counts,lwr95CI,upr95CI,CU,DU,CUID,Region
+Chinook ,Lower Mainstem,1985,4058,2994,5100,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,1986,7446,6063,8838,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,1987,4647,3470,5836,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,1988,1784,1199,2349,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,1989,1257,381,2145,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,1990,1529,733,2322,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,1991,12476,10593,14436,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,1992,5671,4306,7040,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,1993,10986,9232,12731,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,1994,14309,11966,16599,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,1995,8293,6550,10061,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,1996,11579,9503,13678,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,1997,10748,9167,12290,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,1998,1327,698,2034,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,1999,5612,4496,6709,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,2000,6717,5457,7993,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,2001,6989,4502,9473,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,2002,8321,6585,10041,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,2003,15582,12815,18273,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,2004,11399,9411,13318,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,2005,11414,9058,13701,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,2006,14333,13571,15093,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,2007,4237,2584,5908,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,2008,4655,3953,5363,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,2009,7719,5939,9808,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,2010,3996,2518,5527,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,2011,2967,2030,3921,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,2012,7382,6734,8020,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,2013,1091,108,2420,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,2014,1890,758,2960,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,2015,11973,10834,13104,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,2016,15288,8445,17615,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,2017,10607,10051,11164,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,2018,10398,10029,10778,CK-76,CK-66,1207,Yukon
+Chinook ,Lower Mainstem,2019,3162,2164,5089,CK-76,CK-66,1207,Yukon
+Chinook ,White-Donjek,1985,2688,1483,3848,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,1986,4007,2472,5489,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,1987,3077,1895,4276,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,1988,3387,2193,4558,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,1989,9485,3641,14962,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,1990,6620,3212,11382,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,1991,4437,411,6083,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,1992,3082,1871,4292,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,1993,6589,5078,8115,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,1994,5497,3822,7192,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,1995,3480,1822,10982,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,1996,9235,6987,11460,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,1997,3642,2492,4817,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,1998,6070,4682,7478,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,1999,2972,1899,4065,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,2000,4608,3229,5990,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,2001,4513,2660,6319,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,2002,2000,951,3049,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,2003,8315,6339,10297,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,2004,3139,1701,4587,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,2005,7343,5028,9717,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,2006,3505,1310,5797,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,2007,5855,5530,6184,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,2008,1696,1115,2265,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,2009,5684,3854,14371,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,2010,4340,2821,5879,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,2011,1819,681,3230,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,2012,1438,626,2258,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,2013,574,82,1232,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,2014,7658,1479,8770,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,2015,6715,5230,8190,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,2016,9678,8703,18100,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,2017,10382,9863,10920,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,2018,2296,1303,7794,CK-75,CK-65,1206,Yukon
+Chinook ,White-Donjek,2019,5037,1253,6331,CK-75,CK-65,1206,Yukon
+Chinook ,Pelly,1985,5917,4395,7514,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,1986,9146,6945,11338,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,1987,7457,5748,9083,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,1988,6962,386,13284,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,1989,7869,1266,15273,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,1990,16298,3692,47953,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,1991,7887,5606,12296,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,1992,9120,6740,11350,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,1993,5281,3708,6850,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,1994,6128,4453,7835,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,1995,9833,3418,12650,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,1996,6148,4213,8084,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,1997,8679,5995,11296,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,1998,7255,5652,8806,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,1999,5012,3672,6404,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,2000,5780,4274,7278,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,2001,6641,4144,9065,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,2002,5265,3749,6769,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,2003,12749,9790,15700,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,2004,9270,6903,11636,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,2005,8228,6276,10167,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,2006,13240,11123,15358,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,2007,9217,7547,10917,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,2008,4132,3518,4747,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,2009,13566,11875,15125,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,2010,3860,3173,4610,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,2011,6361,5065,8089,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,2012,3934,2503,5312,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,2013,3338,2505,4199,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,2014,10186,6704,12397,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,2015,12583,11396,13770,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,2016,7827,6424,15076,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,2017,8930,7614,10246,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,2018,6098,4913,7310,CK-72,CK-63,1203,Yukon
+Chinook ,Pelly,2019,7429,5922,8722,CK-72,CK-63,1203,Yukon
+Chinook ,Stewart,1985,3951,2692,5204,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,1986,4577,2968,6197,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,1987,3177,2101,4249,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,1988,10276,1,15336,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,1989,10214,2326,16746,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,1990,16871,3860,34925,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,1991,3271,2091,4477,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,1992,5305,3048,7471,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,1993,2424,1355,3505,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,1994,3890,2530,5300,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,1995,6312,4450,8186,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,1996,3007,1658,4389,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,1997,5584,3279,7873,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,1998,8673,4798,11039,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,1999,2059,1179,2929,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,2000,1758,826,2686,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,2001,3320,1820,4806,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,2002,2776,1621,3913,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,2003,2803,1395,4216,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,2004,4402,2758,6075,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,2005,3193,1671,4710,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,2006,1520,1332,1711,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,2007,2429,1941,2896,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,2008,2408,2289,2523,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,2009,5102,4806,5390,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,2010,1931,1692,2170,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,2011,2485,2365,2603,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,2012,2016,1776,2257,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,2013,323,215,431,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,2014,4894,4566,5870,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,2015,3917,3694,4134,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,2016,4917,4566,5199,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,2017,3540,3225,3855,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,2018,3865,3614,4123,CK-74,CK-63,1205,Yukon
+Chinook ,Stewart,2019,2522,2112,2938,CK-74,CK-63,1205,Yukon
+Chinook ,Carmacks,1985,4175,2875,5501,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,1986,5938,4097,7805,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,1987,3931,2702,5122,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,1988,6215,4736,7745,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,1989,3721,2452,4986,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,1990,2671,583,14068,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,1991,3758,2532,5001,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,1992,9412,6124,12676,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,1993,4185,2926,5412,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,1994,5756,4281,7225,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,1995,8395,6011,10799,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,1996,9147,7169,11130,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,1997,16161,12661,19718,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,1998,6342,4267,10724,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,1999,4781,3471,6078,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,2000,5764,4264,7294,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,2001,2759,1378,4146,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,2002,5291,3540,7078,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,2003,7283,5165,9392,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,2004,5576,4023,7140,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,2005,11155,8938,13328,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,2006,18363,16182,20457,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,2007,5286,4957,5611,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,2008,2883,2259,9242,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,2009,13089,12572,13604,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,2010,5523,4627,6161,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,2011,11492,9393,13594,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,2012,5586,4883,6291,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,2013,6494,6057,6922,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,2014,11240,9176,13861,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,2015,19173,18596,19757,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,2016,9514,8111,13873,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,2017,13317,12156,14475,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,2018,11711,6935,12231,CK-70,CK-61,1201,Yukon
+Chinook ,Carmacks,2019,9014,5264,9543,CK-70,CK-61,1201,Yukon
+Chinook ,Teslin,1985,6958,5290,8662,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,1986,8547,6403,10721,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,1987,2957,1892,3987,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,1988,6509,4938,8100,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,1989,11513,4792,17587,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,1990,11831,3731,24836,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,1991,3715,2559,4895,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,1992,7837,5804,9867,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,1993,5623,4061,7202,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,1994,3457,2058,4868,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,1995,7914,5570,10207,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,1996,8582,6354,10830,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,1997,4992,2869,7242,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,1998,7375,5829,8914,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,1999,3443,2297,4570,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,2000,3281,2083,4476,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,2001,18546,12865,24368,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,2002,1140,328,1956,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,2003,3460,1734,5193,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,2004,3553,2027,5039,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,2005,9076,6765,11382,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,2006,4571,2110,7032,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,2007,6451,6003,6890,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,2008,8041,899,8710,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,2009,13636,4730,15458,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,2010,3014,2288,3746,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,2011,7163,4593,9365,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,2012,3551,2474,4609,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,2013,9685,8252,11095,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,2014,5832,4569,7023,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,2015,5651,4653,6650,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,2016,8213,6812,15152,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,2017,12656,11674,13616,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,2018,6210,5011,7405,CK-68,CK-60,1102,Yukon
+Chinook ,Teslin,2019,4928,3581,5827,CK-68,CK-60,1102,Yukon
+Chinook ,Middle Mainstem,1985,8121,6625,9618,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,1986,12858,10973,14701,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,1987,7595,5964,9211,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,1988,5015,3928,6128,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,1989,710,152,1330,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,1990,2456,311,4603,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,1991,10156,8042,12265,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,1992,10872,8366,13324,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,1993,7643,6176,9091,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,1994,7175,5513,8849,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,1995,23198,19844,26605,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,1996,14461,12084,16809,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,1997,23687,19992,27352,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,1998,1608,1098,2115,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,1999,5077,3846,6185,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,2000,9953,8267,11629,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,2001,35036,24719,45368,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,2002,24955,21466,28437,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,2003,10811,8578,13055,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,2004,14254,11906,16580,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,2005,14131,13755,14494,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,2006,6671,6399,6951,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,2007,2221,2063,2382,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,2008,7157,6822,7537,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,2009,5501,5242,5759,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,2010,7701,6855,8165,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,2011,9418,9137,9691,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,2012,6681,6391,6963,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,2013,5239,4992,5486,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,2014,17323,14035,18133,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,2015,18244,17759,18732,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,2016,6035,5725,6594,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,2017,7447,7168,7728,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,2018,11147,10183,11597,CK-71,CK-62,1202,Yukon
+Chinook ,Middle Mainstem,2019,9048,7280,9527,CK-71,CK-62,1202,Yukon
+Chinook ,Upper Lakes and Mainstem,1985,4157,3281,5055,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,1986,2690,2017,3375,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,1987,2488,1278,3719,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,1988,769,394,1150,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,1989,401,133,665,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,1990,298,91,508,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,1991,9096,7341,10873,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,1992,8653,7105,10211,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,1993,2864,2145,3589,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,1994,4792,3764,5820,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,1995,7556,6164,8954,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,1996,5460,4323,6600,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,1997,6457,5189,7818,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,1998,761,417,1105,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,1999,3943,3075,4827,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,2000,3764,2941,4579,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,2001,19992,10844,30510,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,2002,3247,2394,4092,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,2003,4962,3865,6051,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,2004,6869,5500,8252,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,2005,5663,5467,5862,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,2006,2263,2128,2398,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,2007,1270,1189,1352,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,2008,3743,3573,3914,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,2009,1498,1413,1582,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,2010,2318,2182,2434,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,2011,4853,4672,5033,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,2012,2198,2050,2344,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,2013,2157,2053,2263,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,2014,7118,6032,7385,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,2015,4939,4732,5151,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,2016,2948,2788,3128,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,2017,2799,2676,2924,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,2018,3256,2217,3505,CK-69,CK-60,1200,Yukon
+Chinook ,Upper Lakes and Mainstem,2019,3404,2697,3624,CK-69,CK-60,1200,Yukon

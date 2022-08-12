@@ -1,0 +1,4411 @@
+,CUID,Species,Year,LGL counts,NuSEDS counts by CU,Total run,Region
+1,205,Chinook,1950,NA,2000,NA,Skeena
+2,210,Chinook,1950,NA,NA,NA,Skeena
+3,206,Chinook,1950,NA,NA,NA,Skeena
+4,207,Chinook,1950,NA,NA,NA,Skeena
+5,222,Chinook,1950,NA,46800,NA,Skeena
+6,217,Chinook,1950,NA,1375,NA,Skeena
+7,221,Chinook,1950,NA,1075,NA,Skeena
+8,224,Chinook,1950,NA,200,NA,Skeena
+9,212,Chinook,1950,NA,NA,NA,Skeena
+10,227,Chinook,1950,NA,NA,NA,Skeena
+11,229,Chinook,1950,NA,NA,NA,Skeena
+12,241,Chinook,1950,NA,NA,NA,Skeena
+13,211,Chum,1950,NA,13200,NA,Skeena
+14,214,Chum,1950,NA,6007,NA,Skeena
+15,220,Chum,1950,NA,7250,NA,Skeena
+16,242,Chum,1950,NA,NA,NA,Skeena
+17,202,Coho,1950,NA,17812,NA,Skeena
+18,215,Coho,1950,NA,23154,NA,Skeena
+19,231,Coho,1950,NA,300,NA,Skeena
+20,225,Coho,1950,NA,400,NA,Skeena
+21,240,Pink (Even),1950,NA,NA,NA,Skeena
+22,213,Pink (Odd),1950,NA,NA,NA,Skeena
+23,219,Pink (Even),1950,NA,590200,NA,Skeena
+24,218,Pink (Even),1950,NA,345328,NA,Skeena
+25,223,Pink (Odd),1950,NA,NA,NA,Skeena
+26,209,Pink (Odd),1950,NA,NA,NA,Skeena
+27,172,Lake Sockeye,1950,NA,NA,NA,Skeena
+28,173,Lake Sockeye,1950,NA,NA,NA,Skeena
+29,179,Lake Sockeye,1950,NA,NA,NA,Skeena
+30,182,Lake Sockeye,1950,NA,NA,NA,Skeena
+31,184,Lake Sockeye,1950,NA,NA,NA,Skeena
+32,204,Lake Sockeye,1950,NA,NA,NA,Skeena
+33,243,Lake Sockeye,1950,NA,NA,NA,Skeena
+34,174,Lake Sockeye,1950,NA,NA,NA,Skeena
+35,181,Lake Sockeye,1950,NA,NA,NA,Skeena
+36,194,Lake Sockeye,1950,NA,NA,NA,Skeena
+37,195,Lake Sockeye,1950,NA,NA,NA,Skeena
+38,196,Lake Sockeye,1950,NA,NA,NA,Skeena
+39,198,Lake Sockeye,1950,NA,NA,NA,Skeena
+40,199,Lake Sockeye,1950,NA,NA,NA,Skeena
+41,200,Lake Sockeye,1950,NA,NA,NA,Skeena
+42,201,Lake Sockeye,1950,NA,NA,NA,Skeena
+43,230,Lake Sockeye,1950,NA,NA,NA,Skeena
+44,171,Lake Sockeye,1950,NA,13000,NA,Skeena
+45,175,Lake Sockeye,1950,NA,2500,NA,Skeena
+46,176,Lake Sockeye,1950,NA,3200,NA,Skeena
+47,177,Lake Sockeye,1950,NA,2200,NA,Skeena
+48,178,Lake Sockeye,1950,NA,4500,NA,Skeena
+49,180,Lake Sockeye,1950,NA,NA,NA,Skeena
+50,203,Lake Sockeye,1950,NA,NA,NA,Skeena
+51,186,Lake Sockeye,1950,NA,NA,NA,Skeena
+52,189,Lake Sockeye,1950,NA,NA,NA,Skeena
+53,183,Lake Sockeye,1950,NA,NA,NA,Skeena
+54,185,Lake Sockeye,1950,NA,42750,NA,Skeena
+55,187,Lake Sockeye,1950,NA,1200,NA,Skeena
+56,188,Lake Sockeye,1950,NA,NA,NA,Skeena
+57,190,Lake Sockeye,1950,NA,NA,NA,Skeena
+58,191,Lake Sockeye,1950,NA,5000,NA,Skeena
+59,192,Lake Sockeye,1950,NA,11200,NA,Skeena
+60,193,Lake Sockeye,1950,NA,NA,NA,Skeena
+61,197,Lake Sockeye,1950,NA,NA,NA,Skeena
+62,226,River Sockeye,1950,NA,750,NA,Skeena
+63,216,River Sockeye,1950,NA,NA,NA,Skeena
+64,205,Chinook,1951,NA,3000,NA,Skeena
+65,210,Chinook,1951,NA,NA,NA,Skeena
+66,206,Chinook,1951,NA,NA,NA,Skeena
+67,207,Chinook,1951,NA,NA,NA,Skeena
+68,222,Chinook,1951,NA,12300,NA,Skeena
+69,217,Chinook,1951,NA,1400,NA,Skeena
+70,221,Chinook,1951,NA,525,NA,Skeena
+71,224,Chinook,1951,NA,200,NA,Skeena
+72,212,Chinook,1951,NA,NA,NA,Skeena
+73,227,Chinook,1951,NA,30,NA,Skeena
+74,229,Chinook,1951,NA,NA,NA,Skeena
+75,241,Chinook,1951,NA,NA,NA,Skeena
+76,211,Chum,1951,NA,10950,NA,Skeena
+77,214,Chum,1951,NA,5000,NA,Skeena
+78,220,Chum,1951,NA,1500,NA,Skeena
+79,242,Chum,1951,NA,NA,NA,Skeena
+80,202,Coho,1951,NA,35900,NA,Skeena
+81,215,Coho,1951,NA,15310,NA,Skeena
+82,231,Coho,1951,NA,200,NA,Skeena
+83,225,Coho,1951,NA,1040,NA,Skeena
+84,240,Pink (Even),1951,NA,NA,NA,Skeena
+85,213,Pink (Odd),1951,NA,107756,NA,Skeena
+86,219,Pink (Even),1951,NA,NA,NA,Skeena
+87,218,Pink (Even),1951,NA,NA,NA,Skeena
+88,223,Pink (Odd),1951,NA,87000,NA,Skeena
+89,209,Pink (Odd),1951,NA,230100,NA,Skeena
+90,172,Lake Sockeye,1951,NA,NA,NA,Skeena
+91,173,Lake Sockeye,1951,NA,NA,NA,Skeena
+92,179,Lake Sockeye,1951,NA,NA,NA,Skeena
+93,182,Lake Sockeye,1951,NA,NA,NA,Skeena
+94,184,Lake Sockeye,1951,NA,NA,NA,Skeena
+95,204,Lake Sockeye,1951,NA,NA,NA,Skeena
+96,243,Lake Sockeye,1951,NA,NA,NA,Skeena
+97,174,Lake Sockeye,1951,NA,NA,NA,Skeena
+98,181,Lake Sockeye,1951,NA,NA,NA,Skeena
+99,194,Lake Sockeye,1951,NA,NA,NA,Skeena
+100,195,Lake Sockeye,1951,NA,NA,NA,Skeena
+101,196,Lake Sockeye,1951,NA,NA,NA,Skeena
+102,198,Lake Sockeye,1951,NA,NA,NA,Skeena
+103,199,Lake Sockeye,1951,NA,NA,NA,Skeena
+104,200,Lake Sockeye,1951,NA,NA,NA,Skeena
+105,201,Lake Sockeye,1951,NA,NA,NA,Skeena
+106,230,Lake Sockeye,1951,NA,NA,NA,Skeena
+107,171,Lake Sockeye,1951,NA,13500,NA,Skeena
+108,175,Lake Sockeye,1951,NA,2700,NA,Skeena
+109,176,Lake Sockeye,1951,NA,4200,NA,Skeena
+110,177,Lake Sockeye,1951,NA,5700,NA,Skeena
+111,178,Lake Sockeye,1951,NA,4000,NA,Skeena
+112,180,Lake Sockeye,1951,NA,NA,NA,Skeena
+113,203,Lake Sockeye,1951,NA,NA,NA,Skeena
+114,186,Lake Sockeye,1951,NA,NA,NA,Skeena
+115,189,Lake Sockeye,1951,NA,NA,NA,Skeena
+116,183,Lake Sockeye,1951,NA,NA,NA,Skeena
+117,185,Lake Sockeye,1951,NA,55400,NA,Skeena
+118,187,Lake Sockeye,1951,NA,3700,NA,Skeena
+119,188,Lake Sockeye,1951,NA,NA,NA,Skeena
+120,190,Lake Sockeye,1951,NA,NA,NA,Skeena
+121,191,Lake Sockeye,1951,NA,700,NA,Skeena
+122,192,Lake Sockeye,1951,NA,1000,NA,Skeena
+123,193,Lake Sockeye,1951,NA,NA,NA,Skeena
+124,197,Lake Sockeye,1951,NA,NA,NA,Skeena
+125,226,River Sockeye,1951,NA,1500,NA,Skeena
+126,216,River Sockeye,1951,NA,NA,NA,Skeena
+127,205,Chinook,1952,NA,3000,NA,Skeena
+128,210,Chinook,1952,NA,NA,NA,Skeena
+129,206,Chinook,1952,NA,NA,NA,Skeena
+130,207,Chinook,1952,NA,NA,NA,Skeena
+131,222,Chinook,1952,NA,22400,NA,Skeena
+132,217,Chinook,1952,NA,700,NA,Skeena
+133,221,Chinook,1952,NA,1000,NA,Skeena
+134,224,Chinook,1952,NA,NA,NA,Skeena
+135,212,Chinook,1952,NA,NA,NA,Skeena
+136,227,Chinook,1952,NA,NA,NA,Skeena
+137,229,Chinook,1952,NA,NA,NA,Skeena
+138,241,Chinook,1952,NA,NA,NA,Skeena
+139,211,Chum,1952,NA,28275,NA,Skeena
+140,214,Chum,1952,NA,801,NA,Skeena
+141,220,Chum,1952,NA,2525,NA,Skeena
+142,242,Chum,1952,NA,NA,NA,Skeena
+143,202,Coho,1952,NA,32699,NA,Skeena
+144,215,Coho,1952,NA,23979,NA,Skeena
+145,231,Coho,1952,NA,200,NA,Skeena
+146,225,Coho,1952,NA,NA,NA,Skeena
+147,240,Pink (Even),1952,NA,NA,NA,Skeena
+148,213,Pink (Odd),1952,NA,NA,NA,Skeena
+149,219,Pink (Even),1952,NA,1509400,NA,Skeena
+150,218,Pink (Even),1952,NA,167231,NA,Skeena
+151,223,Pink (Odd),1952,NA,NA,NA,Skeena
+152,209,Pink (Odd),1952,NA,NA,NA,Skeena
+153,172,Lake Sockeye,1952,NA,NA,NA,Skeena
+154,173,Lake Sockeye,1952,NA,NA,NA,Skeena
+155,179,Lake Sockeye,1952,NA,NA,NA,Skeena
+156,182,Lake Sockeye,1952,NA,NA,NA,Skeena
+157,184,Lake Sockeye,1952,NA,NA,NA,Skeena
+158,204,Lake Sockeye,1952,NA,NA,NA,Skeena
+159,243,Lake Sockeye,1952,NA,NA,NA,Skeena
+160,174,Lake Sockeye,1952,NA,NA,NA,Skeena
+161,181,Lake Sockeye,1952,NA,NA,NA,Skeena
+162,194,Lake Sockeye,1952,NA,NA,NA,Skeena
+163,195,Lake Sockeye,1952,NA,NA,NA,Skeena
+164,196,Lake Sockeye,1952,NA,NA,NA,Skeena
+165,198,Lake Sockeye,1952,NA,NA,NA,Skeena
+166,199,Lake Sockeye,1952,NA,NA,NA,Skeena
+167,200,Lake Sockeye,1952,NA,NA,NA,Skeena
+168,201,Lake Sockeye,1952,NA,NA,NA,Skeena
+169,230,Lake Sockeye,1952,NA,NA,NA,Skeena
+170,171,Lake Sockeye,1952,NA,18000,NA,Skeena
+171,175,Lake Sockeye,1952,NA,5000,NA,Skeena
+172,176,Lake Sockeye,1952,NA,4900,NA,Skeena
+173,177,Lake Sockeye,1952,NA,13140,NA,Skeena
+174,178,Lake Sockeye,1952,NA,3500,NA,Skeena
+175,180,Lake Sockeye,1952,NA,NA,NA,Skeena
+176,203,Lake Sockeye,1952,NA,NA,NA,Skeena
+177,186,Lake Sockeye,1952,NA,NA,NA,Skeena
+178,189,Lake Sockeye,1952,NA,NA,NA,Skeena
+179,183,Lake Sockeye,1952,NA,NA,NA,Skeena
+180,185,Lake Sockeye,1952,NA,NA,NA,Skeena
+181,187,Lake Sockeye,1952,NA,8250,NA,Skeena
+182,188,Lake Sockeye,1952,NA,NA,NA,Skeena
+183,190,Lake Sockeye,1952,NA,NA,NA,Skeena
+184,191,Lake Sockeye,1952,NA,NA,NA,Skeena
+185,192,Lake Sockeye,1952,NA,15000,NA,Skeena
+186,193,Lake Sockeye,1952,NA,NA,NA,Skeena
+187,197,Lake Sockeye,1952,NA,NA,NA,Skeena
+188,226,River Sockeye,1952,NA,400,NA,Skeena
+189,216,River Sockeye,1952,NA,NA,NA,Skeena
+190,205,Chinook,1953,NA,1500,NA,Skeena
+191,210,Chinook,1953,NA,NA,NA,Skeena
+192,206,Chinook,1953,NA,NA,NA,Skeena
+193,207,Chinook,1953,NA,NA,NA,Skeena
+194,222,Chinook,1953,NA,30553,NA,Skeena
+195,217,Chinook,1953,NA,1200,NA,Skeena
+196,221,Chinook,1953,NA,800,NA,Skeena
+197,224,Chinook,1953,NA,NA,NA,Skeena
+198,212,Chinook,1953,NA,NA,NA,Skeena
+199,227,Chinook,1953,NA,25,NA,Skeena
+200,229,Chinook,1953,NA,NA,NA,Skeena
+201,241,Chinook,1953,NA,NA,NA,Skeena
+202,211,Chum,1953,NA,1750,NA,Skeena
+203,214,Chum,1953,NA,3017,NA,Skeena
+204,220,Chum,1953,NA,3125,NA,Skeena
+205,242,Chum,1953,NA,NA,NA,Skeena
+206,202,Coho,1953,NA,22365,NA,Skeena
+207,215,Coho,1953,NA,22903,NA,Skeena
+208,231,Coho,1953,NA,1025,NA,Skeena
+209,225,Coho,1953,NA,7585,NA,Skeena
+210,240,Pink (Even),1953,NA,NA,NA,Skeena
+211,213,Pink (Odd),1953,NA,83293,NA,Skeena
+212,219,Pink (Even),1953,NA,NA,NA,Skeena
+213,218,Pink (Even),1953,NA,NA,NA,Skeena
+214,223,Pink (Odd),1953,NA,48800,NA,Skeena
+215,209,Pink (Odd),1953,NA,165200,NA,Skeena
+216,172,Lake Sockeye,1953,NA,NA,NA,Skeena
+217,173,Lake Sockeye,1953,NA,NA,NA,Skeena
+218,179,Lake Sockeye,1953,NA,NA,NA,Skeena
+219,182,Lake Sockeye,1953,NA,NA,NA,Skeena
+220,184,Lake Sockeye,1953,NA,NA,NA,Skeena
+221,204,Lake Sockeye,1953,NA,NA,NA,Skeena
+222,243,Lake Sockeye,1953,NA,NA,NA,Skeena
+223,174,Lake Sockeye,1953,NA,NA,NA,Skeena
+224,181,Lake Sockeye,1953,NA,NA,NA,Skeena
+225,194,Lake Sockeye,1953,NA,NA,NA,Skeena
+226,195,Lake Sockeye,1953,NA,NA,NA,Skeena
+227,196,Lake Sockeye,1953,NA,NA,NA,Skeena
+228,198,Lake Sockeye,1953,NA,NA,NA,Skeena
+229,199,Lake Sockeye,1953,NA,NA,NA,Skeena
+230,200,Lake Sockeye,1953,NA,NA,NA,Skeena
+231,201,Lake Sockeye,1953,NA,NA,NA,Skeena
+232,230,Lake Sockeye,1953,NA,NA,NA,Skeena
+233,171,Lake Sockeye,1953,NA,16000,NA,Skeena
+234,175,Lake Sockeye,1953,NA,500,NA,Skeena
+235,176,Lake Sockeye,1953,NA,3200,NA,Skeena
+236,177,Lake Sockeye,1953,NA,9250,NA,Skeena
+237,178,Lake Sockeye,1953,NA,5000,NA,Skeena
+238,180,Lake Sockeye,1953,NA,NA,NA,Skeena
+239,203,Lake Sockeye,1953,NA,NA,NA,Skeena
+240,186,Lake Sockeye,1953,NA,NA,NA,Skeena
+241,189,Lake Sockeye,1953,NA,NA,NA,Skeena
+242,183,Lake Sockeye,1953,NA,NA,NA,Skeena
+243,185,Lake Sockeye,1953,NA,35700,NA,Skeena
+244,187,Lake Sockeye,1953,NA,600,NA,Skeena
+245,188,Lake Sockeye,1953,NA,NA,NA,Skeena
+246,190,Lake Sockeye,1953,NA,NA,NA,Skeena
+247,191,Lake Sockeye,1953,NA,75,NA,Skeena
+248,192,Lake Sockeye,1953,NA,9300,NA,Skeena
+249,193,Lake Sockeye,1953,NA,NA,NA,Skeena
+250,197,Lake Sockeye,1953,NA,NA,NA,Skeena
+251,226,River Sockeye,1953,NA,750,NA,Skeena
+252,216,River Sockeye,1953,NA,NA,NA,Skeena
+253,205,Chinook,1954,NA,3525,NA,Skeena
+254,210,Chinook,1954,NA,NA,NA,Skeena
+255,206,Chinook,1954,NA,NA,NA,Skeena
+256,207,Chinook,1954,NA,NA,NA,Skeena
+257,222,Chinook,1954,NA,30225,NA,Skeena
+258,217,Chinook,1954,NA,4225,NA,Skeena
+259,221,Chinook,1954,NA,1500,NA,Skeena
+260,224,Chinook,1954,NA,NA,NA,Skeena
+261,212,Chinook,1954,NA,NA,NA,Skeena
+262,227,Chinook,1954,NA,25,NA,Skeena
+263,229,Chinook,1954,NA,NA,NA,Skeena
+264,241,Chinook,1954,NA,NA,NA,Skeena
+265,211,Chum,1954,34152,17472,76771,Skeena
+266,214,Chum,1954,51186,18550,115060,Skeena
+267,220,Chum,1954,15112,2700,33969,Skeena
+268,242,Chum,1954,NA,NA,NA,Skeena
+269,202,Coho,1954,231607,40400,514682,Skeena
+270,215,Coho,1954,179410,32889,398689,Skeena
+271,231,Coho,1954,5848,700,12995,Skeena
+272,225,Coho,1954,28551,1500,58420,Skeena
+273,240,Pink (Even),1954,NA,NA,NA,Skeena
+274,213,Pink (Odd),1954,NA,NA,NA,Skeena
+275,219,Pink (Even),1954,843146,499170,1522547,Skeena
+276,218,Pink (Even),1954,171035,165604,384467,Skeena
+277,223,Pink (Odd),1954,NA,NA,NA,Skeena
+278,209,Pink (Odd),1954,NA,NA,NA,Skeena
+279,172,Lake Sockeye,1954,NA,NA,NA,Skeena
+280,173,Lake Sockeye,1954,NA,NA,NA,Skeena
+281,179,Lake Sockeye,1954,NA,NA,NA,Skeena
+282,182,Lake Sockeye,1954,NA,NA,NA,Skeena
+283,184,Lake Sockeye,1954,NA,NA,NA,Skeena
+284,204,Lake Sockeye,1954,NA,NA,NA,Skeena
+285,243,Lake Sockeye,1954,NA,NA,NA,Skeena
+286,174,Lake Sockeye,1954,NA,NA,NA,Skeena
+287,181,Lake Sockeye,1954,NA,NA,NA,Skeena
+288,194,Lake Sockeye,1954,NA,NA,NA,Skeena
+289,195,Lake Sockeye,1954,NA,NA,NA,Skeena
+290,196,Lake Sockeye,1954,NA,NA,NA,Skeena
+291,198,Lake Sockeye,1954,NA,NA,NA,Skeena
+292,199,Lake Sockeye,1954,NA,NA,NA,Skeena
+293,200,Lake Sockeye,1954,NA,NA,NA,Skeena
+294,201,Lake Sockeye,1954,NA,NA,NA,Skeena
+295,230,Lake Sockeye,1954,NA,NA,NA,Skeena
+296,171,Lake Sockeye,1954,NA,20000,NA,Skeena
+297,175,Lake Sockeye,1954,NA,500,NA,Skeena
+298,176,Lake Sockeye,1954,NA,5275,NA,Skeena
+299,177,Lake Sockeye,1954,NA,8250,NA,Skeena
+300,178,Lake Sockeye,1954,NA,1000,NA,Skeena
+301,180,Lake Sockeye,1954,NA,NA,NA,Skeena
+302,203,Lake Sockeye,1954,NA,NA,NA,Skeena
+303,186,Lake Sockeye,1954,NA,NA,NA,Skeena
+304,189,Lake Sockeye,1954,NA,NA,NA,Skeena
+305,183,Lake Sockeye,1954,NA,NA,NA,Skeena
+306,185,Lake Sockeye,1954,NA,NA,NA,Skeena
+307,187,Lake Sockeye,1954,NA,225,NA,Skeena
+308,188,Lake Sockeye,1954,NA,NA,NA,Skeena
+309,190,Lake Sockeye,1954,NA,NA,NA,Skeena
+310,191,Lake Sockeye,1954,NA,1000,NA,Skeena
+311,192,Lake Sockeye,1954,NA,9200,NA,Skeena
+312,193,Lake Sockeye,1954,NA,NA,NA,Skeena
+313,197,Lake Sockeye,1954,NA,NA,NA,Skeena
+314,226,River Sockeye,1954,NA,750,NA,Skeena
+315,216,River Sockeye,1954,NA,NA,NA,Skeena
+316,205,Chinook,1955,NA,3600,NA,Skeena
+317,210,Chinook,1955,NA,NA,NA,Skeena
+318,206,Chinook,1955,NA,750,NA,Skeena
+319,207,Chinook,1955,NA,NA,NA,Skeena
+320,222,Chinook,1955,NA,34028,NA,Skeena
+321,217,Chinook,1955,NA,7850,NA,Skeena
+322,221,Chinook,1955,NA,925,NA,Skeena
+323,224,Chinook,1955,NA,200,NA,Skeena
+324,212,Chinook,1955,NA,NA,NA,Skeena
+325,227,Chinook,1955,NA,75,NA,Skeena
+326,229,Chinook,1955,NA,NA,NA,Skeena
+327,241,Chinook,1955,NA,NA,NA,Skeena
+328,211,Chum,1955,514,600,1004,Skeena
+329,214,Chum,1955,21937,3000,42889,Skeena
+330,220,Chum,1955,1559,250,3048,Skeena
+331,242,Chum,1955,NA,NA,NA,Skeena
+332,202,Coho,1955,193387,42200,429749,Skeena
+333,215,Coho,1955,144682,42097,321515,Skeena
+334,231,Coho,1955,NA,200,NA,Skeena
+335,225,Coho,1955,NA,600,NA,Skeena
+336,240,Pink (Even),1955,NA,NA,NA,Skeena
+337,213,Pink (Odd),1955,302225,225101,590883,Skeena
+338,219,Pink (Even),1955,NA,NA,NA,Skeena
+339,218,Pink (Even),1955,NA,NA,NA,Skeena
+340,223,Pink (Odd),1955,129860,79850,231634,Skeena
+341,209,Pink (Odd),1955,392423,192375,767229,Skeena
+342,172,Lake Sockeye,1955,NA,NA,NA,Skeena
+343,173,Lake Sockeye,1955,NA,NA,NA,Skeena
+344,179,Lake Sockeye,1955,NA,NA,NA,Skeena
+345,182,Lake Sockeye,1955,NA,NA,NA,Skeena
+346,184,Lake Sockeye,1955,NA,NA,NA,Skeena
+347,204,Lake Sockeye,1955,NA,NA,NA,Skeena
+348,243,Lake Sockeye,1955,NA,NA,NA,Skeena
+349,174,Lake Sockeye,1955,NA,NA,NA,Skeena
+350,181,Lake Sockeye,1955,NA,NA,NA,Skeena
+351,194,Lake Sockeye,1955,NA,NA,NA,Skeena
+352,195,Lake Sockeye,1955,NA,NA,NA,Skeena
+353,196,Lake Sockeye,1955,NA,NA,NA,Skeena
+354,198,Lake Sockeye,1955,NA,NA,NA,Skeena
+355,199,Lake Sockeye,1955,NA,NA,NA,Skeena
+356,200,Lake Sockeye,1955,NA,NA,NA,Skeena
+357,201,Lake Sockeye,1955,NA,NA,NA,Skeena
+358,230,Lake Sockeye,1955,NA,NA,NA,Skeena
+359,171,Lake Sockeye,1955,NA,19250,NA,Skeena
+360,175,Lake Sockeye,1955,NA,25,NA,Skeena
+361,176,Lake Sockeye,1955,NA,2450,NA,Skeena
+362,177,Lake Sockeye,1955,NA,3700,NA,Skeena
+363,178,Lake Sockeye,1955,NA,1000,NA,Skeena
+364,180,Lake Sockeye,1955,NA,NA,NA,Skeena
+365,203,Lake Sockeye,1955,NA,NA,NA,Skeena
+366,186,Lake Sockeye,1955,NA,NA,NA,Skeena
+367,189,Lake Sockeye,1955,NA,NA,NA,Skeena
+368,183,Lake Sockeye,1955,NA,NA,NA,Skeena
+369,185,Lake Sockeye,1955,NA,4000,NA,Skeena
+370,187,Lake Sockeye,1955,NA,950,NA,Skeena
+371,188,Lake Sockeye,1955,NA,NA,NA,Skeena
+372,190,Lake Sockeye,1955,NA,NA,NA,Skeena
+373,191,Lake Sockeye,1955,NA,500,NA,Skeena
+374,192,Lake Sockeye,1955,NA,4500,NA,Skeena
+375,193,Lake Sockeye,1955,NA,NA,NA,Skeena
+376,197,Lake Sockeye,1955,NA,NA,NA,Skeena
+377,226,River Sockeye,1955,NA,75,NA,Skeena
+378,216,River Sockeye,1955,NA,NA,NA,Skeena
+379,205,Chinook,1956,NA,2500,NA,Skeena
+380,210,Chinook,1956,NA,25,NA,Skeena
+381,206,Chinook,1956,NA,950,NA,Skeena
+382,207,Chinook,1956,NA,NA,NA,Skeena
+383,222,Chinook,1956,NA,40345,NA,Skeena
+384,217,Chinook,1956,NA,3950,NA,Skeena
+385,221,Chinook,1956,NA,1500,NA,Skeena
+386,224,Chinook,1956,NA,750,NA,Skeena
+387,212,Chinook,1956,NA,NA,NA,Skeena
+388,227,Chinook,1956,NA,200,NA,Skeena
+389,229,Chinook,1956,NA,NA,NA,Skeena
+390,241,Chinook,1956,NA,NA,NA,Skeena
+391,211,Chum,1956,6213,305,14004,Skeena
+392,214,Chum,1956,51186,5003,115372,Skeena
+393,220,Chum,1956,1371,245,3091,Skeena
+394,242,Chum,1956,NA,NA,NA,Skeena
+395,202,Coho,1956,383388,58475,851974,Skeena
+396,215,Coho,1956,210753,51075,468339,Skeena
+397,231,Coho,1956,NA,400,NA,Skeena
+398,225,Coho,1956,66618,3510,136313,Skeena
+399,240,Pink (Even),1956,NA,NA,NA,Skeena
+400,213,Pink (Odd),1956,NA,NA,NA,Skeena
+401,219,Pink (Even),1956,493389,311531,1247491,Skeena
+402,218,Pink (Even),1956,80375,115666,181164,Skeena
+403,223,Pink (Odd),1956,NA,NA,NA,Skeena
+404,209,Pink (Odd),1956,NA,NA,NA,Skeena
+405,172,Lake Sockeye,1956,NA,NA,NA,Skeena
+406,173,Lake Sockeye,1956,NA,NA,NA,Skeena
+407,179,Lake Sockeye,1956,NA,NA,NA,Skeena
+408,182,Lake Sockeye,1956,NA,NA,NA,Skeena
+409,184,Lake Sockeye,1956,NA,NA,NA,Skeena
+410,204,Lake Sockeye,1956,NA,NA,NA,Skeena
+411,243,Lake Sockeye,1956,NA,NA,NA,Skeena
+412,174,Lake Sockeye,1956,NA,NA,NA,Skeena
+413,181,Lake Sockeye,1956,NA,NA,NA,Skeena
+414,194,Lake Sockeye,1956,NA,NA,NA,Skeena
+415,195,Lake Sockeye,1956,NA,NA,NA,Skeena
+416,196,Lake Sockeye,1956,NA,NA,NA,Skeena
+417,198,Lake Sockeye,1956,NA,NA,NA,Skeena
+418,199,Lake Sockeye,1956,NA,NA,NA,Skeena
+419,200,Lake Sockeye,1956,NA,NA,NA,Skeena
+420,201,Lake Sockeye,1956,NA,NA,NA,Skeena
+421,230,Lake Sockeye,1956,NA,NA,NA,Skeena
+422,171,Lake Sockeye,1956,NA,26000,NA,Skeena
+423,175,Lake Sockeye,1956,NA,5,NA,Skeena
+424,176,Lake Sockeye,1956,NA,12575,NA,Skeena
+425,177,Lake Sockeye,1956,NA,3575,NA,Skeena
+426,178,Lake Sockeye,1956,NA,750,NA,Skeena
+427,180,Lake Sockeye,1956,NA,NA,NA,Skeena
+428,203,Lake Sockeye,1956,NA,NA,NA,Skeena
+429,186,Lake Sockeye,1956,NA,NA,NA,Skeena
+430,189,Lake Sockeye,1956,NA,NA,NA,Skeena
+431,183,Lake Sockeye,1956,NA,NA,NA,Skeena
+432,185,Lake Sockeye,1956,NA,6000,NA,Skeena
+433,187,Lake Sockeye,1956,NA,8275,NA,Skeena
+434,188,Lake Sockeye,1956,NA,NA,NA,Skeena
+435,190,Lake Sockeye,1956,NA,NA,NA,Skeena
+436,191,Lake Sockeye,1956,NA,750,NA,Skeena
+437,192,Lake Sockeye,1956,NA,7725,NA,Skeena
+438,193,Lake Sockeye,1956,NA,NA,NA,Skeena
+439,197,Lake Sockeye,1956,NA,NA,NA,Skeena
+440,226,River Sockeye,1956,NA,NA,NA,Skeena
+441,216,River Sockeye,1956,NA,NA,NA,Skeena
+442,205,Chinook,1957,NA,7000,NA,Skeena
+443,210,Chinook,1957,NA,NA,NA,Skeena
+444,206,Chinook,1957,NA,1900,NA,Skeena
+445,207,Chinook,1957,NA,NA,NA,Skeena
+446,222,Chinook,1957,NA,31609,NA,Skeena
+447,217,Chinook,1957,NA,15475,NA,Skeena
+448,221,Chinook,1957,NA,200,NA,Skeena
+449,224,Chinook,1957,NA,750,NA,Skeena
+450,212,Chinook,1957,NA,NA,NA,Skeena
+451,227,Chinook,1957,NA,200,NA,Skeena
+452,229,Chinook,1957,NA,NA,NA,Skeena
+453,241,Chinook,1957,NA,NA,NA,Skeena
+454,211,Chum,1957,3455,5125,7588,Skeena
+455,214,Chum,1957,5850,3915,12847,Skeena
+456,220,Chum,1957,13367,1750,29355,Skeena
+457,242,Chum,1957,NA,NA,NA,Skeena
+458,202,Coho,1957,261359,41950,580797,Skeena
+459,215,Coho,1957,50649,29146,112554,Skeena
+460,231,Coho,1957,NA,NA,NA,Skeena
+461,225,Coho,1957,66618,5675,136313,Skeena
+462,240,Pink (Even),1957,NA,NA,NA,Skeena
+463,213,Pink (Odd),1957,657126,747590,1443123,Skeena
+464,219,Pink (Even),1957,NA,NA,NA,Skeena
+465,218,Pink (Even),1957,NA,NA,NA,Skeena
+466,223,Pink (Odd),1957,61794,119750,130340,Skeena
+467,209,Pink (Odd),1957,502052,225050,1102562,Skeena
+468,172,Lake Sockeye,1957,NA,NA,NA,Skeena
+469,173,Lake Sockeye,1957,NA,NA,NA,Skeena
+470,179,Lake Sockeye,1957,NA,NA,NA,Skeena
+471,182,Lake Sockeye,1957,NA,NA,NA,Skeena
+472,184,Lake Sockeye,1957,NA,NA,NA,Skeena
+473,204,Lake Sockeye,1957,NA,NA,NA,Skeena
+474,243,Lake Sockeye,1957,NA,NA,NA,Skeena
+475,174,Lake Sockeye,1957,NA,NA,NA,Skeena
+476,181,Lake Sockeye,1957,NA,NA,NA,Skeena
+477,194,Lake Sockeye,1957,NA,75,NA,Skeena
+478,195,Lake Sockeye,1957,NA,NA,NA,Skeena
+479,196,Lake Sockeye,1957,NA,NA,NA,Skeena
+480,198,Lake Sockeye,1957,NA,NA,NA,Skeena
+481,199,Lake Sockeye,1957,NA,NA,NA,Skeena
+482,200,Lake Sockeye,1957,NA,NA,NA,Skeena
+483,201,Lake Sockeye,1957,NA,750,NA,Skeena
+484,230,Lake Sockeye,1957,NA,NA,NA,Skeena
+485,171,Lake Sockeye,1957,NA,42900,NA,Skeena
+486,175,Lake Sockeye,1957,NA,NA,NA,Skeena
+487,176,Lake Sockeye,1957,NA,4475,NA,Skeena
+488,177,Lake Sockeye,1957,NA,7700,NA,Skeena
+489,178,Lake Sockeye,1957,NA,3500,NA,Skeena
+490,180,Lake Sockeye,1957,NA,NA,NA,Skeena
+491,203,Lake Sockeye,1957,NA,NA,NA,Skeena
+492,186,Lake Sockeye,1957,NA,NA,NA,Skeena
+493,189,Lake Sockeye,1957,NA,NA,NA,Skeena
+494,183,Lake Sockeye,1957,NA,NA,NA,Skeena
+495,185,Lake Sockeye,1957,NA,400,NA,Skeena
+496,187,Lake Sockeye,1957,NA,4250,NA,Skeena
+497,188,Lake Sockeye,1957,NA,NA,NA,Skeena
+498,190,Lake Sockeye,1957,NA,200,NA,Skeena
+499,191,Lake Sockeye,1957,NA,25,NA,Skeena
+500,192,Lake Sockeye,1957,NA,7500,NA,Skeena
+501,193,Lake Sockeye,1957,NA,NA,NA,Skeena
+502,197,Lake Sockeye,1957,NA,NA,NA,Skeena
+503,226,River Sockeye,1957,NA,NA,NA,Skeena
+504,216,River Sockeye,1957,NA,NA,NA,Skeena
+505,205,Chinook,1958,NA,3050,NA,Skeena
+506,210,Chinook,1958,NA,NA,NA,Skeena
+507,206,Chinook,1958,NA,1900,NA,Skeena
+508,207,Chinook,1958,NA,NA,NA,Skeena
+509,222,Chinook,1958,NA,40774,NA,Skeena
+510,217,Chinook,1958,NA,8100,NA,Skeena
+511,221,Chinook,1958,NA,400,NA,Skeena
+512,224,Chinook,1958,NA,300,NA,Skeena
+513,212,Chinook,1958,NA,NA,NA,Skeena
+514,227,Chinook,1958,NA,200,NA,Skeena
+515,229,Chinook,1958,NA,NA,NA,Skeena
+516,241,Chinook,1958,NA,NA,NA,Skeena
+517,211,Chum,1958,6867,4104,13865,Skeena
+518,214,Chum,1958,5850,1910,11810,Skeena
+519,220,Chum,1958,2099,600,4237,Skeena
+520,242,Chum,1958,NA,NA,NA,Skeena
+521,202,Coho,1958,620978,100773,1379952,Skeena
+522,215,Coho,1958,84084,60281,186852,Skeena
+523,231,Coho,1958,17543,1500,38985,Skeena
+524,225,Coho,1958,14405,2100,29475,Skeena
+525,240,Pink (Even),1958,NA,NA,NA,Skeena
+526,213,Pink (Odd),1958,NA,NA,NA,Skeena
+527,219,Pink (Even),1958,530174,376690,997927,Skeena
+528,218,Pink (Even),1958,226250,179600,456768,Skeena
+529,223,Pink (Odd),1958,NA,NA,NA,Skeena
+530,209,Pink (Odd),1958,NA,NA,NA,Skeena
+531,172,Lake Sockeye,1958,NA,NA,NA,Skeena
+532,173,Lake Sockeye,1958,NA,NA,NA,Skeena
+533,179,Lake Sockeye,1958,NA,NA,NA,Skeena
+534,182,Lake Sockeye,1958,NA,NA,NA,Skeena
+535,184,Lake Sockeye,1958,NA,NA,NA,Skeena
+536,204,Lake Sockeye,1958,NA,NA,NA,Skeena
+537,243,Lake Sockeye,1958,NA,NA,NA,Skeena
+538,174,Lake Sockeye,1958,NA,NA,NA,Skeena
+539,181,Lake Sockeye,1958,NA,NA,NA,Skeena
+540,194,Lake Sockeye,1958,NA,200,NA,Skeena
+541,195,Lake Sockeye,1958,NA,NA,NA,Skeena
+542,196,Lake Sockeye,1958,NA,NA,NA,Skeena
+543,198,Lake Sockeye,1958,NA,NA,NA,Skeena
+544,199,Lake Sockeye,1958,NA,NA,NA,Skeena
+545,200,Lake Sockeye,1958,NA,NA,NA,Skeena
+546,201,Lake Sockeye,1958,NA,400,NA,Skeena
+547,230,Lake Sockeye,1958,NA,NA,NA,Skeena
+548,171,Lake Sockeye,1958,NA,44000,NA,Skeena
+549,175,Lake Sockeye,1958,NA,50,NA,Skeena
+550,176,Lake Sockeye,1958,NA,5450,NA,Skeena
+551,177,Lake Sockeye,1958,NA,8250,NA,Skeena
+552,178,Lake Sockeye,1958,NA,1500,NA,Skeena
+553,180,Lake Sockeye,1958,NA,NA,NA,Skeena
+554,203,Lake Sockeye,1958,NA,NA,NA,Skeena
+555,186,Lake Sockeye,1958,NA,NA,NA,Skeena
+556,189,Lake Sockeye,1958,NA,NA,NA,Skeena
+557,183,Lake Sockeye,1958,NA,NA,NA,Skeena
+558,185,Lake Sockeye,1958,NA,25,NA,Skeena
+559,187,Lake Sockeye,1958,NA,4250,NA,Skeena
+560,188,Lake Sockeye,1958,NA,NA,NA,Skeena
+561,190,Lake Sockeye,1958,NA,200,NA,Skeena
+562,191,Lake Sockeye,1958,NA,200,NA,Skeena
+563,192,Lake Sockeye,1958,NA,7500,NA,Skeena
+564,193,Lake Sockeye,1958,NA,NA,NA,Skeena
+565,197,Lake Sockeye,1958,NA,NA,NA,Skeena
+566,226,River Sockeye,1958,NA,7,NA,Skeena
+567,216,River Sockeye,1958,NA,NA,NA,Skeena
+568,205,Chinook,1959,NA,7025,NA,Skeena
+569,210,Chinook,1959,NA,400,NA,Skeena
+570,206,Chinook,1959,NA,400,NA,Skeena
+571,207,Chinook,1959,NA,NA,NA,Skeena
+572,222,Chinook,1959,NA,92972,NA,Skeena
+573,217,Chinook,1959,NA,8300,NA,Skeena
+574,221,Chinook,1959,NA,400,NA,Skeena
+575,224,Chinook,1959,NA,750,NA,Skeena
+576,212,Chinook,1959,NA,NA,NA,Skeena
+577,227,Chinook,1959,NA,NA,NA,Skeena
+578,229,Chinook,1959,NA,NA,NA,Skeena
+579,241,Chinook,1959,NA,NA,NA,Skeena
+580,211,Chum,1959,NA,225,NA,Skeena
+581,214,Chum,1959,10968,2370,20499,Skeena
+582,220,Chum,1959,1539,475,2877,Skeena
+583,242,Chum,1959,NA,NA,NA,Skeena
+584,202,Coho,1959,NA,3500,NA,Skeena
+585,215,Coho,1959,81728,28272,181617,Skeena
+586,231,Coho,1959,4678,875,10396,Skeena
+587,225,Coho,1959,7613,400,15579,Skeena
+588,240,Pink (Even),1959,NA,NA,NA,Skeena
+589,213,Pink (Odd),1959,881942,1118166,1648279,Skeena
+590,219,Pink (Even),1959,NA,NA,NA,Skeena
+591,218,Pink (Even),1959,NA,NA,NA,Skeena
+592,223,Pink (Odd),1959,114362,125800,200981,Skeena
+593,209,Pink (Odd),1959,479628,207475,896385,Skeena
+594,172,Lake Sockeye,1959,NA,NA,NA,Skeena
+595,173,Lake Sockeye,1959,NA,NA,NA,Skeena
+596,179,Lake Sockeye,1959,NA,NA,NA,Skeena
+597,182,Lake Sockeye,1959,NA,NA,NA,Skeena
+598,184,Lake Sockeye,1959,NA,NA,NA,Skeena
+599,204,Lake Sockeye,1959,NA,NA,NA,Skeena
+600,243,Lake Sockeye,1959,NA,NA,NA,Skeena
+601,174,Lake Sockeye,1959,NA,NA,NA,Skeena
+602,181,Lake Sockeye,1959,NA,NA,NA,Skeena
+603,194,Lake Sockeye,1959,NA,25,NA,Skeena
+604,195,Lake Sockeye,1959,NA,NA,NA,Skeena
+605,196,Lake Sockeye,1959,NA,NA,NA,Skeena
+606,198,Lake Sockeye,1959,NA,NA,NA,Skeena
+607,199,Lake Sockeye,1959,NA,NA,NA,Skeena
+608,200,Lake Sockeye,1959,NA,NA,NA,Skeena
+609,201,Lake Sockeye,1959,NA,NA,NA,Skeena
+610,230,Lake Sockeye,1959,NA,NA,NA,Skeena
+611,171,Lake Sockeye,1959,NA,22500,NA,Skeena
+612,175,Lake Sockeye,1959,NA,NA,NA,Skeena
+613,176,Lake Sockeye,1959,NA,2850,NA,Skeena
+614,177,Lake Sockeye,1959,NA,8250,NA,Skeena
+615,178,Lake Sockeye,1959,NA,750,NA,Skeena
+616,180,Lake Sockeye,1959,NA,NA,NA,Skeena
+617,203,Lake Sockeye,1959,NA,NA,NA,Skeena
+618,186,Lake Sockeye,1959,NA,NA,NA,Skeena
+619,189,Lake Sockeye,1959,NA,NA,NA,Skeena
+620,183,Lake Sockeye,1959,NA,NA,NA,Skeena
+621,185,Lake Sockeye,1959,NA,750,NA,Skeena
+622,187,Lake Sockeye,1959,NA,825,NA,Skeena
+623,188,Lake Sockeye,1959,NA,NA,NA,Skeena
+624,190,Lake Sockeye,1959,NA,NA,NA,Skeena
+625,191,Lake Sockeye,1959,NA,3500,NA,Skeena
+626,192,Lake Sockeye,1959,NA,1500,NA,Skeena
+627,193,Lake Sockeye,1959,NA,NA,NA,Skeena
+628,197,Lake Sockeye,1959,NA,NA,NA,Skeena
+629,226,River Sockeye,1959,NA,NA,NA,Skeena
+630,216,River Sockeye,1959,NA,NA,NA,Skeena
+631,205,Chinook,1960,NA,5075,NA,Skeena
+632,210,Chinook,1960,NA,831,NA,Skeena
+633,206,Chinook,1960,NA,400,NA,Skeena
+634,207,Chinook,1960,NA,NA,NA,Skeena
+635,222,Chinook,1960,NA,23205,NA,Skeena
+636,217,Chinook,1960,NA,427,NA,Skeena
+637,221,Chinook,1960,NA,750,NA,Skeena
+638,224,Chinook,1960,NA,400,NA,Skeena
+639,212,Chinook,1960,NA,NA,NA,Skeena
+640,227,Chinook,1960,NA,200,NA,Skeena
+641,229,Chinook,1960,NA,200,NA,Skeena
+642,241,Chinook,1960,NA,NA,NA,Skeena
+643,211,Chum,1960,NA,225,NA,Skeena
+644,214,Chum,1960,266,431,478,Skeena
+645,220,Chum,1960,1871,1100,3356,Skeena
+646,242,Chum,1960,NA,NA,NA,Skeena
+647,202,Coho,1960,496932,37050,1104293,Skeena
+648,215,Coho,1960,183008,29544,406686,Skeena
+649,231,Coho,1960,NA,1025,NA,Skeena
+650,225,Coho,1960,7613,425,15579,Skeena
+651,240,Pink (Even),1960,NA,NA,NA,Skeena
+652,213,Pink (Odd),1960,NA,NA,NA,Skeena
+653,219,Pink (Even),1960,380814,253150,642308,Skeena
+654,218,Pink (Even),1960,63674,92851,114252,Skeena
+655,223,Pink (Odd),1960,NA,NA,NA,Skeena
+656,209,Pink (Odd),1960,NA,NA,NA,Skeena
+657,172,Lake Sockeye,1960,NA,NA,NA,Skeena
+658,173,Lake Sockeye,1960,NA,NA,NA,Skeena
+659,179,Lake Sockeye,1960,NA,NA,NA,Skeena
+660,182,Lake Sockeye,1960,NA,NA,NA,Skeena
+661,184,Lake Sockeye,1960,NA,NA,NA,Skeena
+662,204,Lake Sockeye,1960,NA,NA,NA,Skeena
+663,243,Lake Sockeye,1960,NA,NA,NA,Skeena
+664,174,Lake Sockeye,1960,NA,NA,NA,Skeena
+665,181,Lake Sockeye,1960,NA,NA,NA,Skeena
+666,194,Lake Sockeye,1960,NA,25,NA,Skeena
+667,195,Lake Sockeye,1960,NA,NA,NA,Skeena
+668,196,Lake Sockeye,1960,NA,NA,NA,Skeena
+669,198,Lake Sockeye,1960,NA,NA,NA,Skeena
+670,199,Lake Sockeye,1960,NA,NA,NA,Skeena
+671,200,Lake Sockeye,1960,NA,NA,NA,Skeena
+672,201,Lake Sockeye,1960,NA,75,NA,Skeena
+673,230,Lake Sockeye,1960,NA,NA,NA,Skeena
+674,171,Lake Sockeye,1960,7851,3900,10971,Skeena
+675,175,Lake Sockeye,1960,NA,NA,NA,Skeena
+676,176,Lake Sockeye,1960,924,1225,1650,Skeena
+677,177,Lake Sockeye,1960,11352,4500,13620,Skeena
+678,178,Lake Sockeye,1960,1500,750,1905,Skeena
+679,180,Lake Sockeye,1960,42485,NA,74607,Skeena
+680,203,Lake Sockeye,1960,44721,NA,104184,Skeena
+681,186,Lake Sockeye,1960,112920,NA,291068,Skeena
+682,189,Lake Sockeye,1960,12298,NA,25047,Skeena
+683,183,Lake Sockeye,1960,800,400,1680,Skeena
+684,185,Lake Sockeye,1960,4197,3500,9665,Skeena
+685,187,Lake Sockeye,1960,5578,3250,8989,Skeena
+686,188,Lake Sockeye,1960,9893,NA,15943,Skeena
+687,190,Lake Sockeye,1960,NA,NA,NA,Skeena
+688,191,Lake Sockeye,1960,3000,1500,5968,Skeena
+689,192,Lake Sockeye,1960,825,200,1640,Skeena
+690,193,Lake Sockeye,1960,NA,NA,NA,Skeena
+691,197,Lake Sockeye,1960,NA,NA,NA,Skeena
+692,226,River Sockeye,1960,NA,200,NA,Skeena
+693,216,River Sockeye,1960,NA,NA,NA,Skeena
+694,205,Chinook,1961,NA,5025,NA,Skeena
+695,210,Chinook,1961,NA,NA,NA,Skeena
+696,206,Chinook,1961,NA,425,NA,Skeena
+697,207,Chinook,1961,NA,775,NA,Skeena
+698,222,Chinook,1961,NA,11071,NA,Skeena
+699,217,Chinook,1961,NA,800,NA,Skeena
+700,221,Chinook,1961,NA,NA,NA,Skeena
+701,224,Chinook,1961,NA,400,NA,Skeena
+702,212,Chinook,1961,NA,NA,NA,Skeena
+703,227,Chinook,1961,NA,75,NA,Skeena
+704,229,Chinook,1961,NA,NA,NA,Skeena
+705,241,Chinook,1961,NA,NA,NA,Skeena
+706,211,Chum,1961,78561,36987,153300,Skeena
+707,214,Chum,1961,366,925,713,Skeena
+708,220,Chum,1961,2938,625,5734,Skeena
+709,242,Chum,1961,NA,NA,NA,Skeena
+710,202,Coho,1961,291312,34637,647360,Skeena
+711,215,Coho,1961,72839,24105,161865,Skeena
+712,231,Coho,1961,14035,1400,31188,Skeena
+713,225,Coho,1961,28551,6900,58420,Skeena
+714,240,Pink (Even),1961,NA,NA,NA,Skeena
+715,213,Pink (Odd),1961,516878,505744,1008612,Skeena
+716,219,Pink (Even),1961,NA,NA,NA,Skeena
+717,218,Pink (Even),1961,NA,NA,NA,Skeena
+718,223,Pink (Odd),1961,177792,169125,297665,Skeena
+719,209,Pink (Odd),1961,784550,565050,1530934,Skeena
+720,172,Lake Sockeye,1961,NA,NA,NA,Skeena
+721,173,Lake Sockeye,1961,NA,NA,NA,Skeena
+722,179,Lake Sockeye,1961,NA,NA,NA,Skeena
+723,182,Lake Sockeye,1961,NA,NA,NA,Skeena
+724,184,Lake Sockeye,1961,NA,NA,NA,Skeena
+725,204,Lake Sockeye,1961,NA,NA,NA,Skeena
+726,243,Lake Sockeye,1961,NA,NA,NA,Skeena
+727,174,Lake Sockeye,1961,NA,NA,NA,Skeena
+728,181,Lake Sockeye,1961,NA,NA,NA,Skeena
+729,194,Lake Sockeye,1961,NA,250,NA,Skeena
+730,195,Lake Sockeye,1961,NA,NA,NA,Skeena
+731,196,Lake Sockeye,1961,NA,NA,NA,Skeena
+732,198,Lake Sockeye,1961,NA,NA,NA,Skeena
+733,199,Lake Sockeye,1961,NA,NA,NA,Skeena
+734,200,Lake Sockeye,1961,NA,NA,NA,Skeena
+735,201,Lake Sockeye,1961,NA,250,NA,Skeena
+736,230,Lake Sockeye,1961,NA,NA,NA,Skeena
+737,171,Lake Sockeye,1961,29720,14250,40643,Skeena
+738,175,Lake Sockeye,1961,NA,NA,NA,Skeena
+739,176,Lake Sockeye,1961,2464,1750,4217,Skeena
+740,177,Lake Sockeye,1961,14884,5900,17663,Skeena
+741,178,Lake Sockeye,1961,1500,750,1877,Skeena
+742,180,Lake Sockeye,1961,133007,NA,224228,Skeena
+743,203,Lake Sockeye,1961,218146,NA,473504,Skeena
+744,186,Lake Sockeye,1961,467457,NA,1108550,Skeena
+745,189,Lake Sockeye,1961,33657,NA,64842,Skeena
+746,183,Lake Sockeye,1961,400,200,792,Skeena
+747,185,Lake Sockeye,1961,5996,5000,12883,Skeena
+748,187,Lake Sockeye,1961,1673,2250,2609,Skeena
+749,188,Lake Sockeye,1961,NA,NA,NA,Skeena
+750,190,Lake Sockeye,1961,600,300,1132,Skeena
+751,191,Lake Sockeye,1961,1178,589,2222,Skeena
+752,192,Lake Sockeye,1961,2154,756,4063,Skeena
+753,193,Lake Sockeye,1961,NA,NA,NA,Skeena
+754,197,Lake Sockeye,1961,NA,NA,NA,Skeena
+755,226,River Sockeye,1961,NA,2,NA,Skeena
+756,216,River Sockeye,1961,NA,NA,NA,Skeena
+757,205,Chinook,1962,NA,5025,NA,Skeena
+758,210,Chinook,1962,NA,25,NA,Skeena
+759,206,Chinook,1962,NA,50,NA,Skeena
+760,207,Chinook,1962,NA,750,NA,Skeena
+761,222,Chinook,1962,NA,15730,NA,Skeena
+762,217,Chinook,1962,NA,50,NA,Skeena
+763,221,Chinook,1962,NA,1500,NA,Skeena
+764,224,Chinook,1962,NA,200,NA,Skeena
+765,212,Chinook,1962,NA,NA,NA,Skeena
+766,227,Chinook,1962,NA,NA,NA,Skeena
+767,229,Chinook,1962,NA,25,NA,Skeena
+768,241,Chinook,1962,NA,NA,NA,Skeena
+769,211,Chum,1962,17293,7975,29674,Skeena
+770,214,Chum,1962,133,298,229,Skeena
+771,220,Chum,1962,1539,475,2641,Skeena
+772,242,Chum,1962,NA,NA,NA,Skeena
+773,202,Coho,1962,108945,21825,242101,Skeena
+774,215,Coho,1962,123096,25125,273547,Skeena
+775,231,Coho,1962,11696,1275,25990,Skeena
+776,225,Coho,1962,66618,3700,136313,Skeena
+777,240,Pink (Even),1962,NA,NA,NA,Skeena
+778,213,Pink (Odd),1962,NA,NA,NA,Skeena
+779,219,Pink (Even),1962,1892597,1159275,2722172,Skeena
+780,218,Pink (Even),1962,245097,194850,420587,Skeena
+781,223,Pink (Odd),1962,NA,NA,NA,Skeena
+782,209,Pink (Odd),1962,NA,NA,NA,Skeena
+783,172,Lake Sockeye,1962,NA,NA,NA,Skeena
+784,173,Lake Sockeye,1962,NA,NA,NA,Skeena
+785,179,Lake Sockeye,1962,NA,NA,NA,Skeena
+786,182,Lake Sockeye,1962,NA,NA,NA,Skeena
+787,184,Lake Sockeye,1962,NA,NA,NA,Skeena
+788,204,Lake Sockeye,1962,NA,NA,NA,Skeena
+789,243,Lake Sockeye,1962,NA,NA,NA,Skeena
+790,174,Lake Sockeye,1962,NA,NA,NA,Skeena
+791,181,Lake Sockeye,1962,NA,NA,NA,Skeena
+792,194,Lake Sockeye,1962,NA,250,NA,Skeena
+793,195,Lake Sockeye,1962,NA,NA,NA,Skeena
+794,196,Lake Sockeye,1962,NA,NA,NA,Skeena
+795,198,Lake Sockeye,1962,NA,NA,NA,Skeena
+796,199,Lake Sockeye,1962,NA,NA,NA,Skeena
+797,200,Lake Sockeye,1962,NA,NA,NA,Skeena
+798,201,Lake Sockeye,1962,NA,250,NA,Skeena
+799,230,Lake Sockeye,1962,NA,NA,NA,Skeena
+800,171,Lake Sockeye,1962,22307,10395,31582,Skeena
+801,175,Lake Sockeye,1962,NA,NA,NA,Skeena
+802,176,Lake Sockeye,1962,2464,2100,4516,Skeena
+803,177,Lake Sockeye,1962,17339,7925,20939,Skeena
+804,178,Lake Sockeye,1962,1000,500,1281,Skeena
+805,180,Lake Sockeye,1962,21587,NA,38866,Skeena
+806,203,Lake Sockeye,1962,99536,NA,242390,Skeena
+807,186,Lake Sockeye,1962,354597,NA,963583,Skeena
+808,189,Lake Sockeye,1962,16828,NA,35471,Skeena
+809,183,Lake Sockeye,1962,400,200,871,Skeena
+810,185,Lake Sockeye,1962,3598,3000,8652,Skeena
+811,187,Lake Sockeye,1962,2,18,4,Skeena
+812,188,Lake Sockeye,1962,NA,NA,NA,Skeena
+813,190,Lake Sockeye,1962,NA,NA,NA,Skeena
+814,191,Lake Sockeye,1962,3000,1500,6167,Skeena
+815,192,Lake Sockeye,1962,2061,600,4237,Skeena
+816,193,Lake Sockeye,1962,NA,NA,NA,Skeena
+817,197,Lake Sockeye,1962,NA,NA,NA,Skeena
+818,226,River Sockeye,1962,NA,750,NA,Skeena
+819,216,River Sockeye,1962,NA,NA,NA,Skeena
+820,205,Chinook,1963,NA,5000,NA,Skeena
+821,210,Chinook,1963,NA,NA,NA,Skeena
+822,206,Chinook,1963,NA,200,NA,Skeena
+823,207,Chinook,1963,NA,NA,NA,Skeena
+824,222,Chinook,1963,NA,17475,NA,Skeena
+825,217,Chinook,1963,NA,NA,NA,Skeena
+826,221,Chinook,1963,NA,2030,NA,Skeena
+827,224,Chinook,1963,NA,1500,NA,Skeena
+828,212,Chinook,1963,NA,NA,NA,Skeena
+829,227,Chinook,1963,NA,200,NA,Skeena
+830,229,Chinook,1963,NA,NA,NA,Skeena
+831,241,Chinook,1963,NA,NA,NA,Skeena
+832,211,Chum,1963,8901,4625,14337,Skeena
+833,214,Chum,1963,NA,25,NA,Skeena
+834,220,Chum,1963,2650,425,4268,Skeena
+835,242,Chum,1963,NA,NA,NA,Skeena
+836,202,Coho,1963,526504,37850,1053009,Skeena
+837,215,Coho,1963,45016,16175,90031,Skeena
+838,231,Coho,1963,23391,2075,46783,Skeena
+839,225,Coho,1963,14275,950,26673,Skeena
+840,240,Pink (Even),1963,NA,NA,NA,Skeena
+841,213,Pink (Odd),1963,743669,350800,1197863,Skeena
+842,219,Pink (Even),1963,NA,NA,NA,Skeena
+843,218,Pink (Even),1963,NA,NA,NA,Skeena
+844,223,Pink (Odd),1963,114450,158375,147227,Skeena
+845,209,Pink (Odd),1963,1271795,535925,2048541,Skeena
+846,172,Lake Sockeye,1963,NA,NA,NA,Skeena
+847,173,Lake Sockeye,1963,NA,NA,NA,Skeena
+848,179,Lake Sockeye,1963,NA,NA,NA,Skeena
+849,182,Lake Sockeye,1963,NA,NA,NA,Skeena
+850,184,Lake Sockeye,1963,NA,NA,NA,Skeena
+851,204,Lake Sockeye,1963,NA,NA,NA,Skeena
+852,243,Lake Sockeye,1963,NA,NA,NA,Skeena
+853,174,Lake Sockeye,1963,NA,NA,NA,Skeena
+854,181,Lake Sockeye,1963,NA,NA,NA,Skeena
+855,194,Lake Sockeye,1963,NA,300,NA,Skeena
+856,195,Lake Sockeye,1963,NA,NA,NA,Skeena
+857,196,Lake Sockeye,1963,NA,NA,NA,Skeena
+858,198,Lake Sockeye,1963,NA,NA,NA,Skeena
+859,199,Lake Sockeye,1963,NA,NA,NA,Skeena
+860,200,Lake Sockeye,1963,NA,NA,NA,Skeena
+861,201,Lake Sockeye,1963,NA,200,NA,Skeena
+862,230,Lake Sockeye,1963,NA,NA,NA,Skeena
+863,171,Lake Sockeye,1963,20187,9000,24626,Skeena
+864,175,Lake Sockeye,1963,NA,NA,NA,Skeena
+865,176,Lake Sockeye,1963,2226,3425,3086,Skeena
+866,177,Lake Sockeye,1963,19929,7900,22280,Skeena
+867,178,Lake Sockeye,1963,1600,800,1849,Skeena
+868,180,Lake Sockeye,1963,77002,NA,105894,Skeena
+869,203,Lake Sockeye,1963,177106,NA,277460,Skeena
+870,186,Lake Sockeye,1963,193636,NA,316326,Skeena
+871,189,Lake Sockeye,1963,56280,NA,83077,Skeena
+872,183,Lake Sockeye,1963,NA,NA,NA,Skeena
+873,185,Lake Sockeye,1963,1199,2500,1869,Skeena
+874,187,Lake Sockeye,1963,7809,3775,10281,Skeena
+875,188,Lake Sockeye,1963,2638,NA,3473,Skeena
+876,190,Lake Sockeye,1963,NA,NA,NA,Skeena
+877,191,Lake Sockeye,1963,8000,4000,11681,Skeena
+878,192,Lake Sockeye,1963,1994,4700,2912,Skeena
+879,193,Lake Sockeye,1963,NA,NA,NA,Skeena
+880,197,Lake Sockeye,1963,NA,NA,NA,Skeena
+881,226,River Sockeye,1963,NA,600,NA,Skeena
+882,216,River Sockeye,1963,NA,NA,NA,Skeena
+883,205,Chinook,1964,NA,2275,NA,Skeena
+884,210,Chinook,1964,NA,750,NA,Skeena
+885,206,Chinook,1964,NA,175,NA,Skeena
+886,207,Chinook,1964,NA,2125,NA,Skeena
+887,222,Chinook,1964,NA,14150,NA,Skeena
+888,217,Chinook,1964,NA,175,NA,Skeena
+889,221,Chinook,1964,NA,2100,NA,Skeena
+890,224,Chinook,1964,NA,400,NA,Skeena
+891,212,Chinook,1964,NA,NA,NA,Skeena
+892,227,Chinook,1964,NA,200,NA,Skeena
+893,229,Chinook,1964,NA,25,NA,Skeena
+894,241,Chinook,1964,NA,NA,NA,Skeena
+895,211,Chum,1964,8776,5828,15669,Skeena
+896,214,Chum,1964,1532,775,2735,Skeena
+897,220,Chum,1964,3897,650,6958,Skeena
+898,242,Chum,1964,NA,NA,NA,Skeena
+899,202,Coho,1964,264025,52475,713581,Skeena
+900,215,Coho,1964,55847,15950,150938,Skeena
+901,231,Coho,1964,NA,NA,NA,Skeena
+902,225,Coho,1964,14275,1700,34453,Skeena
+903,240,Pink (Even),1964,NA,NA,NA,Skeena
+904,213,Pink (Odd),1964,NA,NA,NA,Skeena
+905,219,Pink (Even),1964,3132561,1622225,4711853,Skeena
+906,218,Pink (Even),1964,154731,85925,276268,Skeena
+907,223,Pink (Odd),1964,NA,NA,NA,Skeena
+908,209,Pink (Odd),1964,NA,NA,NA,Skeena
+909,172,Lake Sockeye,1964,NA,NA,NA,Skeena
+910,173,Lake Sockeye,1964,NA,NA,NA,Skeena
+911,179,Lake Sockeye,1964,NA,NA,NA,Skeena
+912,182,Lake Sockeye,1964,NA,NA,NA,Skeena
+913,184,Lake Sockeye,1964,NA,NA,NA,Skeena
+914,204,Lake Sockeye,1964,NA,NA,NA,Skeena
+915,243,Lake Sockeye,1964,NA,NA,NA,Skeena
+916,174,Lake Sockeye,1964,NA,NA,NA,Skeena
+917,181,Lake Sockeye,1964,NA,NA,NA,Skeena
+918,194,Lake Sockeye,1964,NA,200,NA,Skeena
+919,195,Lake Sockeye,1964,NA,NA,NA,Skeena
+920,196,Lake Sockeye,1964,NA,NA,NA,Skeena
+921,198,Lake Sockeye,1964,NA,50,NA,Skeena
+922,199,Lake Sockeye,1964,NA,200,NA,Skeena
+923,200,Lake Sockeye,1964,NA,NA,NA,Skeena
+924,201,Lake Sockeye,1964,NA,200,NA,Skeena
+925,230,Lake Sockeye,1964,NA,NA,NA,Skeena
+926,171,Lake Sockeye,1964,4262,2350,5952,Skeena
+927,175,Lake Sockeye,1964,NA,NA,NA,Skeena
+928,176,Lake Sockeye,1964,1669,5300,2978,Skeena
+929,177,Lake Sockeye,1964,52440,20991,62899,Skeena
+930,178,Lake Sockeye,1964,1000,500,1269,Skeena
+931,180,Lake Sockeye,1964,68409,NA,120007,Skeena
+932,203,Lake Sockeye,1964,186458,NA,433589,Skeena
+933,186,Lake Sockeye,1964,396889,NA,1020830,Skeena
+934,189,Lake Sockeye,1964,35960,NA,73133,Skeena
+935,183,Lake Sockeye,1964,400,200,839,Skeena
+936,185,Lake Sockeye,1964,5996,8500,13783,Skeena
+937,187,Lake Sockeye,1964,3347,3075,5389,Skeena
+938,188,Lake Sockeye,1964,19785,NA,31860,Skeena
+939,190,Lake Sockeye,1964,500,250,993,Skeena
+940,191,Lake Sockeye,1964,6000,3000,11919,Skeena
+941,192,Lake Sockeye,1964,1852,650,3679,Skeena
+942,193,Lake Sockeye,1964,NA,NA,NA,Skeena
+943,197,Lake Sockeye,1964,NA,NA,NA,Skeena
+944,226,River Sockeye,1964,NA,550,NA,Skeena
+945,216,River Sockeye,1964,NA,NA,NA,Skeena
+946,205,Chinook,1965,NA,3525,NA,Skeena
+947,210,Chinook,1965,NA,75,NA,Skeena
+948,206,Chinook,1965,NA,400,NA,Skeena
+949,207,Chinook,1965,NA,1900,NA,Skeena
+950,222,Chinook,1965,NA,8100,NA,Skeena
+951,217,Chinook,1965,NA,1875,NA,Skeena
+952,221,Chinook,1965,NA,800,NA,Skeena
+953,224,Chinook,1965,NA,400,NA,Skeena
+954,212,Chinook,1965,NA,NA,NA,Skeena
+955,227,Chinook,1965,NA,225,NA,Skeena
+956,229,Chinook,1965,NA,NA,NA,Skeena
+957,241,Chinook,1965,NA,NA,NA,Skeena
+958,211,Chum,1965,8754,8275,15845,Skeena
+959,214,Chum,1965,1132,828,2049,Skeena
+960,220,Chum,1965,4095,600,7413,Skeena
+961,242,Chum,1965,NA,NA,NA,Skeena
+962,202,Coho,1965,756017,95500,1453878,Skeena
+963,215,Coho,1965,68618,35225,131958,Skeena
+964,231,Coho,1965,11696,1000,22492,Skeena
+965,225,Coho,1965,10863,1575,19615,Skeena
+966,240,Pink (Even),1965,NA,NA,NA,Skeena
+967,213,Pink (Odd),1965,292400,142579,529246,Skeena
+968,219,Pink (Even),1965,NA,NA,NA,Skeena
+969,218,Pink (Even),1965,NA,NA,NA,Skeena
+970,223,Pink (Odd),1965,90133,55750,162740,Skeena
+971,209,Pink (Odd),1965,2129359,1167300,3854161,Skeena
+972,172,Lake Sockeye,1965,NA,NA,NA,Skeena
+973,173,Lake Sockeye,1965,NA,NA,NA,Skeena
+974,179,Lake Sockeye,1965,NA,NA,NA,Skeena
+975,182,Lake Sockeye,1965,NA,NA,NA,Skeena
+976,184,Lake Sockeye,1965,NA,NA,NA,Skeena
+977,204,Lake Sockeye,1965,NA,NA,NA,Skeena
+978,243,Lake Sockeye,1965,NA,NA,NA,Skeena
+979,174,Lake Sockeye,1965,NA,NA,NA,Skeena
+980,181,Lake Sockeye,1965,NA,NA,NA,Skeena
+981,194,Lake Sockeye,1965,NA,100,NA,Skeena
+982,195,Lake Sockeye,1965,NA,NA,NA,Skeena
+983,196,Lake Sockeye,1965,NA,NA,NA,Skeena
+984,198,Lake Sockeye,1965,NA,150,NA,Skeena
+985,199,Lake Sockeye,1965,NA,500,NA,Skeena
+986,200,Lake Sockeye,1965,NA,NA,NA,Skeena
+987,201,Lake Sockeye,1965,NA,2000,NA,Skeena
+988,230,Lake Sockeye,1965,NA,NA,NA,Skeena
+989,171,Lake Sockeye,1965,17720,7900,23356,Skeena
+990,175,Lake Sockeye,1965,4,2,5,Skeena
+991,176,Lake Sockeye,1965,3285,3450,5242,Skeena
+992,177,Lake Sockeye,1965,87795,40528,102238,Skeena
+993,178,Lake Sockeye,1965,6000,3000,7319,Skeena
+994,180,Lake Sockeye,1965,29888,NA,47090,Skeena
+995,203,Lake Sockeye,1965,176199,NA,341633,Skeena
+996,186,Lake Sockeye,1965,313242,NA,651618,Skeena
+997,189,Lake Sockeye,1965,11094,NA,19527,Skeena
+998,183,Lake Sockeye,1965,800,400,1440,Skeena
+999,185,Lake Sockeye,1965,11993,11000,23062,Skeena
+1000,187,Lake Sockeye,1965,1673,1575,2468,Skeena
+1001,188,Lake Sockeye,1965,9893,NA,14591,Skeena
+1002,190,Lake Sockeye,1965,NA,NA,NA,Skeena
+1003,191,Lake Sockeye,1965,400,200,692,Skeena
+1004,192,Lake Sockeye,1965,2279,800,3943,Skeena
+1005,193,Lake Sockeye,1965,NA,NA,NA,Skeena
+1006,197,Lake Sockeye,1965,NA,NA,NA,Skeena
+1007,226,River Sockeye,1965,NA,3100,NA,Skeena
+1008,216,River Sockeye,1965,NA,NA,NA,Skeena
+1009,205,Chinook,1966,NA,4300,NA,Skeena
+1010,210,Chinook,1966,NA,125,NA,Skeena
+1011,206,Chinook,1966,NA,50,NA,Skeena
+1012,207,Chinook,1966,NA,2150,NA,Skeena
+1013,222,Chinook,1966,NA,9150,NA,Skeena
+1014,217,Chinook,1966,NA,1225,NA,Skeena
+1015,221,Chinook,1966,NA,300,NA,Skeena
+1016,224,Chinook,1966,NA,758,NA,Skeena
+1017,212,Chinook,1966,NA,NA,NA,Skeena
+1018,227,Chinook,1966,NA,225,NA,Skeena
+1019,229,Chinook,1966,NA,NA,NA,Skeena
+1020,241,Chinook,1966,NA,NA,NA,Skeena
+1021,211,Chum,1966,32639,18320,61450,Skeena
+1022,214,Chum,1966,599,1075,1128,Skeena
+1023,220,Chum,1966,1871,525,3522,Skeena
+1024,242,Chum,1966,NA,NA,NA,Skeena
+1025,202,Coho,1966,317662,76650,774786,Skeena
+1026,215,Coho,1966,65007,22200,158554,Skeena
+1027,231,Coho,1966,4678,400,11410,Skeena
+1028,225,Coho,1966,47229,27050,104598,Skeena
+1029,240,Pink (Even),1966,NA,NA,NA,Skeena
+1030,213,Pink (Odd),1966,NA,NA,NA,Skeena
+1031,219,Pink (Even),1966,1577170,932605,2488165,Skeena
+1032,218,Pink (Even),1966,247204,120118,465407,Skeena
+1033,223,Pink (Odd),1966,NA,NA,NA,Skeena
+1034,209,Pink (Odd),1966,NA,NA,NA,Skeena
+1035,172,Lake Sockeye,1966,NA,NA,NA,Skeena
+1036,173,Lake Sockeye,1966,NA,NA,NA,Skeena
+1037,179,Lake Sockeye,1966,NA,NA,NA,Skeena
+1038,182,Lake Sockeye,1966,NA,NA,NA,Skeena
+1039,184,Lake Sockeye,1966,NA,NA,NA,Skeena
+1040,204,Lake Sockeye,1966,NA,NA,NA,Skeena
+1041,243,Lake Sockeye,1966,NA,NA,NA,Skeena
+1042,174,Lake Sockeye,1966,NA,NA,NA,Skeena
+1043,181,Lake Sockeye,1966,NA,NA,NA,Skeena
+1044,194,Lake Sockeye,1966,NA,NA,NA,Skeena
+1045,195,Lake Sockeye,1966,NA,NA,NA,Skeena
+1046,196,Lake Sockeye,1966,NA,NA,NA,Skeena
+1047,198,Lake Sockeye,1966,NA,NA,NA,Skeena
+1048,199,Lake Sockeye,1966,NA,NA,NA,Skeena
+1049,200,Lake Sockeye,1966,NA,NA,NA,Skeena
+1050,201,Lake Sockeye,1966,NA,50,NA,Skeena
+1051,230,Lake Sockeye,1966,NA,NA,NA,Skeena
+1052,171,Lake Sockeye,1966,18841,8400,28320,Skeena
+1053,175,Lake Sockeye,1966,50,25,61,Skeena
+1054,176,Lake Sockeye,1966,1745,2700,3620,Skeena
+1055,177,Lake Sockeye,1966,39887,18431,49607,Skeena
+1056,178,Lake Sockeye,1966,8000,4000,10667,Skeena
+1057,180,Lake Sockeye,1966,31977,NA,64816,Skeena
+1058,203,Lake Sockeye,1966,58581,NA,178396,Skeena
+1059,186,Lake Sockeye,1966,243131,NA,869015,Skeena
+1060,189,Lake Sockeye,1966,15196,NA,37890,Skeena
+1061,183,Lake Sockeye,1966,400,200,1043,Skeena
+1062,185,Lake Sockeye,1966,7196,6900,21525,Skeena
+1063,187,Lake Sockeye,1966,3347,3400,6047,Skeena
+1064,188,Lake Sockeye,1966,19785,NA,35751,Skeena
+1065,190,Lake Sockeye,1966,600,300,1446,Skeena
+1066,191,Lake Sockeye,1966,400,200,964,Skeena
+1067,192,Lake Sockeye,1966,926,425,2232,Skeena
+1068,193,Lake Sockeye,1966,NA,NA,NA,Skeena
+1069,197,Lake Sockeye,1966,NA,NA,NA,Skeena
+1070,226,River Sockeye,1966,NA,350,NA,Skeena
+1071,216,River Sockeye,1966,NA,NA,NA,Skeena
+1072,205,Chinook,1967,NA,3025,NA,Skeena
+1073,210,Chinook,1967,NA,1150,NA,Skeena
+1074,206,Chinook,1967,NA,150,NA,Skeena
+1075,207,Chinook,1967,NA,1700,NA,Skeena
+1076,222,Chinook,1967,NA,18484,NA,Skeena
+1077,217,Chinook,1967,NA,750,NA,Skeena
+1078,221,Chinook,1967,NA,200,NA,Skeena
+1079,224,Chinook,1967,NA,450,NA,Skeena
+1080,212,Chinook,1967,NA,NA,NA,Skeena
+1081,227,Chinook,1967,NA,NA,NA,Skeena
+1082,229,Chinook,1967,NA,NA,NA,Skeena
+1083,241,Chinook,1967,NA,NA,NA,Skeena
+1084,211,Chum,1967,26686,13600,62191,Skeena
+1085,214,Chum,1967,489,150,1139,Skeena
+1086,220,Chum,1967,1119,200,2609,Skeena
+1087,242,Chum,1967,NA,NA,NA,Skeena
+1088,202,Coho,1967,153276,39250,289199,Skeena
+1089,215,Coho,1967,50106,19253,94540,Skeena
+1090,231,Coho,1967,5848,500,11034,Skeena
+1091,225,Coho,1967,10863,2350,19291,Skeena
+1092,240,Pink (Even),1967,NA,NA,NA,Skeena
+1093,213,Pink (Odd),1967,409357,219334,954011,Skeena
+1094,219,Pink (Even),1967,NA,NA,NA,Skeena
+1095,218,Pink (Even),1967,NA,NA,NA,Skeena
+1096,223,Pink (Odd),1967,23547,22352,53841,Skeena
+1097,209,Pink (Odd),1967,584508,355275,1362203,Skeena
+1098,172,Lake Sockeye,1967,NA,NA,NA,Skeena
+1099,173,Lake Sockeye,1967,NA,NA,NA,Skeena
+1100,179,Lake Sockeye,1967,NA,NA,NA,Skeena
+1101,182,Lake Sockeye,1967,NA,NA,NA,Skeena
+1102,184,Lake Sockeye,1967,NA,NA,NA,Skeena
+1103,204,Lake Sockeye,1967,NA,NA,NA,Skeena
+1104,243,Lake Sockeye,1967,NA,NA,NA,Skeena
+1105,174,Lake Sockeye,1967,NA,NA,NA,Skeena
+1106,181,Lake Sockeye,1967,NA,NA,NA,Skeena
+1107,194,Lake Sockeye,1967,NA,50,NA,Skeena
+1108,195,Lake Sockeye,1967,NA,NA,NA,Skeena
+1109,196,Lake Sockeye,1967,NA,NA,NA,Skeena
+1110,198,Lake Sockeye,1967,NA,NA,NA,Skeena
+1111,199,Lake Sockeye,1967,NA,NA,NA,Skeena
+1112,200,Lake Sockeye,1967,NA,NA,NA,Skeena
+1113,201,Lake Sockeye,1967,NA,50,NA,Skeena
+1114,230,Lake Sockeye,1967,NA,NA,NA,Skeena
+1115,171,Lake Sockeye,1967,28038,12500,44325,Skeena
+1116,175,Lake Sockeye,1967,1500,750,1864,Skeena
+1117,176,Lake Sockeye,1967,3182,2300,7376,Skeena
+1118,177,Lake Sockeye,1967,29451,13711,37523,Skeena
+1119,178,Lake Sockeye,1967,400,200,551,Skeena
+1120,180,Lake Sockeye,1967,95242,NA,214619,Skeena
+1121,203,Lake Sockeye,1967,135976,NA,517714,Skeena
+1122,186,Lake Sockeye,1967,296655,NA,1417419,Skeena
+1123,189,Lake Sockeye,1967,24201,NA,70674,Skeena
+1124,183,Lake Sockeye,1967,NA,NA,NA,Skeena
+1125,185,Lake Sockeye,1967,4078,3900,15150,Skeena
+1126,187,Lake Sockeye,1967,4462,4500,8754,Skeena
+1127,188,Lake Sockeye,1967,32976,NA,64694,Skeena
+1128,190,Lake Sockeye,1967,NA,NA,NA,Skeena
+1129,191,Lake Sockeye,1967,300,150,839,Skeena
+1130,192,Lake Sockeye,1967,2061,750,5765,Skeena
+1131,193,Lake Sockeye,1967,NA,NA,NA,Skeena
+1132,197,Lake Sockeye,1967,NA,NA,NA,Skeena
+1133,226,River Sockeye,1967,NA,1200,NA,Skeena
+1134,216,River Sockeye,1967,NA,NA,NA,Skeena
+1135,205,Chinook,1968,NA,5275,NA,Skeena
+1136,210,Chinook,1968,NA,1500,NA,Skeena
+1137,206,Chinook,1968,NA,100,NA,Skeena
+1138,207,Chinook,1968,NA,1600,NA,Skeena
+1139,222,Chinook,1968,NA,13600,NA,Skeena
+1140,217,Chinook,1968,NA,1100,NA,Skeena
+1141,221,Chinook,1968,NA,125,NA,Skeena
+1142,224,Chinook,1968,NA,1150,NA,Skeena
+1143,212,Chinook,1968,NA,NA,NA,Skeena
+1144,227,Chinook,1968,NA,225,NA,Skeena
+1145,229,Chinook,1968,NA,75,NA,Skeena
+1146,241,Chinook,1968,NA,NA,NA,Skeena
+1147,211,Chum,1968,18712,10150,36290,Skeena
+1148,214,Chum,1968,1097,475,2127,Skeena
+1149,220,Chum,1968,2299,400,4459,Skeena
+1150,242,Chum,1968,NA,NA,NA,Skeena
+1151,202,Coho,1968,319857,86475,780139,Skeena
+1152,215,Coho,1968,119879,30475,292387,Skeena
+1153,231,Coho,1968,5848,500,14263,Skeena
+1154,225,Coho,1968,21253,7600,47069,Skeena
+1155,240,Pink (Even),1968,NA,NA,NA,Skeena
+1156,213,Pink (Odd),1968,NA,NA,NA,Skeena
+1157,219,Pink (Even),1968,2807509,1756125,4972719,Skeena
+1158,218,Pink (Even),1968,497653,238600,965118,Skeena
+1159,223,Pink (Odd),1968,NA,NA,NA,Skeena
+1160,209,Pink (Odd),1968,NA,NA,NA,Skeena
+1161,172,Lake Sockeye,1968,NA,NA,NA,Skeena
+1162,173,Lake Sockeye,1968,NA,NA,NA,Skeena
+1163,179,Lake Sockeye,1968,NA,NA,NA,Skeena
+1164,182,Lake Sockeye,1968,NA,NA,NA,Skeena
+1165,184,Lake Sockeye,1968,NA,NA,NA,Skeena
+1166,204,Lake Sockeye,1968,NA,NA,NA,Skeena
+1167,243,Lake Sockeye,1968,NA,NA,NA,Skeena
+1168,174,Lake Sockeye,1968,NA,NA,NA,Skeena
+1169,181,Lake Sockeye,1968,NA,NA,NA,Skeena
+1170,194,Lake Sockeye,1968,NA,600,NA,Skeena
+1171,195,Lake Sockeye,1968,NA,NA,NA,Skeena
+1172,196,Lake Sockeye,1968,NA,NA,NA,Skeena
+1173,198,Lake Sockeye,1968,NA,NA,NA,Skeena
+1174,199,Lake Sockeye,1968,NA,NA,NA,Skeena
+1175,200,Lake Sockeye,1968,NA,200,NA,Skeena
+1176,201,Lake Sockeye,1968,NA,500,NA,Skeena
+1177,230,Lake Sockeye,1968,NA,NA,NA,Skeena
+1178,171,Lake Sockeye,1968,33645,15000,49858,Skeena
+1179,175,Lake Sockeye,1968,1500,750,1813,Skeena
+1180,176,Lake Sockeye,1968,1951,2725,3926,Skeena
+1181,177,Lake Sockeye,1968,24942,11825,30806,Skeena
+1182,178,Lake Sockeye,1968,5000,2500,6604,Skeena
+1183,180,Lake Sockeye,1968,62457,NA,123005,Skeena
+1184,203,Lake Sockeye,1968,125287,NA,360564,Skeena
+1185,186,Lake Sockeye,1968,267415,NA,890618,Skeena
+1186,189,Lake Sockeye,1968,55410,NA,132536,Skeena
+1187,183,Lake Sockeye,1968,400,200,997,Skeena
+1188,185,Lake Sockeye,1968,3598,3800,10186,Skeena
+1189,187,Lake Sockeye,1968,7809,3500,13793,Skeena
+1190,188,Lake Sockeye,1968,NA,NA,NA,Skeena
+1191,190,Lake Sockeye,1968,600,300,1391,Skeena
+1192,191,Lake Sockeye,1968,400,200,927,Skeena
+1193,192,Lake Sockeye,1968,2061,1000,4778,Skeena
+1194,193,Lake Sockeye,1968,NA,NA,NA,Skeena
+1195,197,Lake Sockeye,1968,NA,NA,NA,Skeena
+1196,226,River Sockeye,1968,NA,3500,NA,Skeena
+1197,216,River Sockeye,1968,NA,NA,NA,Skeena
+1198,205,Chinook,1969,NA,8275,NA,Skeena
+1199,210,Chinook,1969,NA,825,NA,Skeena
+1200,206,Chinook,1969,NA,275,NA,Skeena
+1201,207,Chinook,1969,NA,8100,NA,Skeena
+1202,222,Chinook,1969,NA,8780,NA,Skeena
+1203,217,Chinook,1969,NA,675,NA,Skeena
+1204,221,Chinook,1969,NA,1200,NA,Skeena
+1205,224,Chinook,1969,NA,800,NA,Skeena
+1206,212,Chinook,1969,NA,NA,NA,Skeena
+1207,227,Chinook,1969,NA,425,NA,Skeena
+1208,229,Chinook,1969,NA,200,NA,Skeena
+1209,241,Chinook,1969,NA,NA,NA,Skeena
+1210,211,Chum,1969,18270,10100,33446,Skeena
+1211,214,Chum,1969,266,534,488,Skeena
+1212,220,Chum,1969,330,25,604,Skeena
+1213,242,Chum,1969,NA,NA,NA,Skeena
+1214,202,Coho,1969,162823,45925,325647,Skeena
+1215,215,Coho,1969,74631,21860,149263,Skeena
+1216,231,Coho,1969,3509,300,7017,Skeena
+1217,225,Coho,1969,21253,9275,39711,Skeena
+1218,240,Pink (Even),1969,NA,NA,NA,Skeena
+1219,213,Pink (Odd),1969,720035,434699,1318101,Skeena
+1220,219,Pink (Even),1969,NA,NA,NA,Skeena
+1221,218,Pink (Even),1969,NA,NA,NA,Skeena
+1222,223,Pink (Odd),1969,37824,31450,64939,Skeena
+1223,209,Pink (Odd),1969,914331,427650,1673782,Skeena
+1224,172,Lake Sockeye,1969,NA,NA,NA,Skeena
+1225,173,Lake Sockeye,1969,NA,NA,NA,Skeena
+1226,179,Lake Sockeye,1969,NA,NA,NA,Skeena
+1227,182,Lake Sockeye,1969,NA,NA,NA,Skeena
+1228,184,Lake Sockeye,1969,NA,NA,NA,Skeena
+1229,204,Lake Sockeye,1969,NA,NA,NA,Skeena
+1230,243,Lake Sockeye,1969,NA,NA,NA,Skeena
+1231,174,Lake Sockeye,1969,NA,NA,NA,Skeena
+1232,181,Lake Sockeye,1969,NA,200,NA,Skeena
+1233,194,Lake Sockeye,1969,NA,300,NA,Skeena
+1234,195,Lake Sockeye,1969,NA,NA,NA,Skeena
+1235,196,Lake Sockeye,1969,NA,NA,NA,Skeena
+1236,198,Lake Sockeye,1969,NA,NA,NA,Skeena
+1237,199,Lake Sockeye,1969,NA,NA,NA,Skeena
+1238,200,Lake Sockeye,1969,NA,NA,NA,Skeena
+1239,201,Lake Sockeye,1969,NA,1500,NA,Skeena
+1240,230,Lake Sockeye,1969,NA,NA,NA,Skeena
+1241,171,Lake Sockeye,1969,6729,3000,9182,Skeena
+1242,175,Lake Sockeye,1969,800,400,932,Skeena
+1243,176,Lake Sockeye,1969,2464,2375,4200,Skeena
+1244,177,Lake Sockeye,1969,14221,6600,16858,Skeena
+1245,178,Lake Sockeye,1969,1944,972,2429,Skeena
+1246,180,Lake Sockeye,1969,89905,NA,150962,Skeena
+1247,203,Lake Sockeye,1969,105359,NA,227144,Skeena
+1248,186,Lake Sockeye,1969,345342,NA,812479,Skeena
+1249,189,Lake Sockeye,1969,32575,NA,62422,Skeena
+1250,183,Lake Sockeye,1969,NA,NA,NA,Skeena
+1251,185,Lake Sockeye,1969,3958,3300,8446,Skeena
+1252,187,Lake Sockeye,1969,7809,5750,12135,Skeena
+1253,188,Lake Sockeye,1969,19785,NA,30747,Skeena
+1254,190,Lake Sockeye,1969,NA,NA,NA,Skeena
+1255,191,Lake Sockeye,1969,NA,NA,NA,Skeena
+1256,192,Lake Sockeye,1969,NA,NA,NA,Skeena
+1257,193,Lake Sockeye,1969,NA,NA,NA,Skeena
+1258,197,Lake Sockeye,1969,NA,NA,NA,Skeena
+1259,226,River Sockeye,1969,NA,1500,NA,Skeena
+1260,216,River Sockeye,1969,NA,NA,NA,Skeena
+1261,205,Chinook,1970,NA,1500,NA,Skeena
+1262,210,Chinook,1970,NA,875,NA,Skeena
+1263,206,Chinook,1970,NA,475,NA,Skeena
+1264,207,Chinook,1970,NA,7775,NA,Skeena
+1265,222,Chinook,1970,NA,8600,NA,Skeena
+1266,217,Chinook,1970,NA,725,NA,Skeena
+1267,221,Chinook,1970,NA,200,NA,Skeena
+1268,224,Chinook,1970,NA,400,NA,Skeena
+1269,212,Chinook,1970,NA,NA,NA,Skeena
+1270,227,Chinook,1970,NA,425,NA,Skeena
+1271,229,Chinook,1970,NA,200,NA,Skeena
+1272,241,Chinook,1970,NA,NA,NA,Skeena
+1273,211,Chum,1970,19463,10400,33190,Skeena
+1274,214,Chum,1970,286,515,488,Skeena
+1275,220,Chum,1970,NA,25,NA,Skeena
+1276,242,Chum,1970,NA,NA,NA,Skeena
+1277,202,Coho,1970,227220,59075,528419,Skeena
+1278,215,Coho,1970,66673,21000,155053,Skeena
+1279,231,Coho,1970,10247,900,23831,Skeena
+1280,225,Coho,1970,17947,4150,38175,Skeena
+1281,240,Pink (Even),1970,NA,NA,NA,Skeena
+1282,213,Pink (Odd),1970,NA,NA,NA,Skeena
+1283,219,Pink (Even),1970,1521990,867850,2404378,Skeena
+1284,218,Pink (Even),1970,777840,387600,1326454,Skeena
+1285,223,Pink (Odd),1970,NA,NA,NA,Skeena
+1286,209,Pink (Odd),1970,NA,NA,NA,Skeena
+1287,172,Lake Sockeye,1970,NA,NA,NA,Skeena
+1288,173,Lake Sockeye,1970,NA,NA,NA,Skeena
+1289,179,Lake Sockeye,1970,NA,NA,NA,Skeena
+1290,182,Lake Sockeye,1970,NA,NA,NA,Skeena
+1291,184,Lake Sockeye,1970,NA,NA,NA,Skeena
+1292,204,Lake Sockeye,1970,NA,NA,NA,Skeena
+1293,243,Lake Sockeye,1970,NA,NA,NA,Skeena
+1294,174,Lake Sockeye,1970,NA,NA,NA,Skeena
+1295,181,Lake Sockeye,1970,NA,NA,NA,Skeena
+1296,194,Lake Sockeye,1970,NA,500,NA,Skeena
+1297,195,Lake Sockeye,1970,NA,50,NA,Skeena
+1298,196,Lake Sockeye,1970,NA,600,NA,Skeena
+1299,198,Lake Sockeye,1970,NA,NA,NA,Skeena
+1300,199,Lake Sockeye,1970,NA,50,NA,Skeena
+1301,200,Lake Sockeye,1970,NA,NA,NA,Skeena
+1302,201,Lake Sockeye,1970,NA,2000,NA,Skeena
+1303,230,Lake Sockeye,1970,NA,NA,NA,Skeena
+1304,171,Lake Sockeye,1970,5047,2250,6906,Skeena
+1305,175,Lake Sockeye,1970,7000,3500,8169,Skeena
+1306,176,Lake Sockeye,1970,1951,3550,3343,Skeena
+1307,177,Lake Sockeye,1970,11377,5300,13505,Skeena
+1308,178,Lake Sockeye,1970,3000,1500,3755,Skeena
+1309,180,Lake Sockeye,1970,82164,NA,138674,Skeena
+1310,203,Lake Sockeye,1970,195558,NA,425311,Skeena
+1311,186,Lake Sockeye,1970,327830,NA,779227,Skeena
+1312,189,Lake Sockeye,1970,7423,NA,14322,Skeena
+1313,183,Lake Sockeye,1970,NA,NA,NA,Skeena
+1314,185,Lake Sockeye,1970,11273,4700,24266,Skeena
+1315,187,Lake Sockeye,1970,7809,4300,12186,Skeena
+1316,188,Lake Sockeye,1970,5276,NA,8234,Skeena
+1317,190,Lake Sockeye,1970,100,50,189,Skeena
+1318,191,Lake Sockeye,1970,100,50,189,Skeena
+1319,192,Lake Sockeye,1970,1567,550,2960,Skeena
+1320,193,Lake Sockeye,1970,NA,NA,NA,Skeena
+1321,197,Lake Sockeye,1970,1600,800,3404,Skeena
+1322,226,River Sockeye,1970,NA,1550,NA,Skeena
+1323,216,River Sockeye,1970,NA,NA,NA,Skeena
+1324,205,Chinook,1971,NA,750,NA,Skeena
+1325,210,Chinook,1971,NA,875,NA,Skeena
+1326,206,Chinook,1971,NA,600,NA,Skeena
+1327,207,Chinook,1971,NA,7725,NA,Skeena
+1328,222,Chinook,1971,NA,6725,NA,Skeena
+1329,217,Chinook,1971,NA,750,NA,Skeena
+1330,221,Chinook,1971,NA,100,NA,Skeena
+1331,224,Chinook,1971,NA,350,NA,Skeena
+1332,212,Chinook,1971,NA,NA,NA,Skeena
+1333,227,Chinook,1971,NA,225,NA,Skeena
+1334,229,Chinook,1971,NA,400,NA,Skeena
+1335,241,Chinook,1971,NA,NA,NA,Skeena
+1336,211,Chum,1971,6878,4725,12741,Skeena
+1337,214,Chum,1971,286,507,530,Skeena
+1338,220,Chum,1971,NA,NA,NA,Skeena
+1339,242,Chum,1971,NA,NA,NA,Skeena
+1340,202,Coho,1971,185274,50550,430869,Skeena
+1341,215,Coho,1971,86505,21075,201176,Skeena
+1342,231,Coho,1971,NA,NA,NA,Skeena
+1343,225,Coho,1971,6140,4195,13060,Skeena
+1344,240,Pink (Even),1971,NA,NA,NA,Skeena
+1345,213,Pink (Odd),1971,947238,741175,1754581,Skeena
+1346,219,Pink (Even),1971,NA,NA,NA,Skeena
+1347,218,Pink (Even),1971,NA,NA,NA,Skeena
+1348,223,Pink (Odd),1971,138826,127017,213934,Skeena
+1349,209,Pink (Odd),1971,627796,329400,1162873,Skeena
+1350,172,Lake Sockeye,1971,NA,NA,NA,Skeena
+1351,173,Lake Sockeye,1971,NA,NA,NA,Skeena
+1352,179,Lake Sockeye,1971,NA,NA,NA,Skeena
+1353,182,Lake Sockeye,1971,NA,NA,NA,Skeena
+1354,184,Lake Sockeye,1971,NA,NA,NA,Skeena
+1355,204,Lake Sockeye,1971,NA,NA,NA,Skeena
+1356,243,Lake Sockeye,1971,NA,NA,NA,Skeena
+1357,174,Lake Sockeye,1971,NA,NA,NA,Skeena
+1358,181,Lake Sockeye,1971,NA,300,NA,Skeena
+1359,194,Lake Sockeye,1971,NA,NA,NA,Skeena
+1360,195,Lake Sockeye,1971,NA,NA,NA,Skeena
+1361,196,Lake Sockeye,1971,NA,NA,NA,Skeena
+1362,198,Lake Sockeye,1971,NA,NA,NA,Skeena
+1363,199,Lake Sockeye,1971,NA,NA,NA,Skeena
+1364,200,Lake Sockeye,1971,NA,NA,NA,Skeena
+1365,201,Lake Sockeye,1971,NA,500,NA,Skeena
+1366,230,Lake Sockeye,1971,NA,NA,NA,Skeena
+1367,171,Lake Sockeye,1971,2579,1150,3643,Skeena
+1368,175,Lake Sockeye,1971,10000,5000,11836,Skeena
+1369,176,Lake Sockeye,1971,2464,3600,4493,Skeena
+1370,177,Lake Sockeye,1971,6564,3050,7916,Skeena
+1371,178,Lake Sockeye,1971,2600,1300,3325,Skeena
+1372,180,Lake Sockeye,1971,34049,NA,61000,Skeena
+1373,203,Lake Sockeye,1971,282801,NA,682572,Skeena
+1374,186,Lake Sockeye,1971,436876,NA,1174597,Skeena
+1375,189,Lake Sockeye,1971,8381,NA,17546,Skeena
+1376,183,Lake Sockeye,1971,NA,NA,NA,Skeena
+1377,185,Lake Sockeye,1971,7915,3300,18869,Skeena
+1378,187,Lake Sockeye,1971,7809,5400,12789,Skeena
+1379,188,Lake Sockeye,1971,19785,NA,32405,Skeena
+1380,190,Lake Sockeye,1971,NA,NA,NA,Skeena
+1381,191,Lake Sockeye,1971,NA,NA,NA,Skeena
+1382,192,Lake Sockeye,1971,607,200,1239,Skeena
+1383,193,Lake Sockeye,1971,NA,NA,NA,Skeena
+1384,197,Lake Sockeye,1971,NA,NA,NA,Skeena
+1385,226,River Sockeye,1971,NA,1500,NA,Skeena
+1386,216,River Sockeye,1971,NA,NA,NA,Skeena
+1387,205,Chinook,1972,NA,1850,NA,Skeena
+1388,210,Chinook,1972,NA,555,NA,Skeena
+1389,206,Chinook,1972,NA,475,NA,Skeena
+1390,207,Chinook,1972,NA,3725,NA,Skeena
+1391,222,Chinook,1972,NA,12671,NA,Skeena
+1392,217,Chinook,1972,NA,670,NA,Skeena
+1393,221,Chinook,1972,NA,80,NA,Skeena
+1394,224,Chinook,1972,NA,250,NA,Skeena
+1395,212,Chinook,1972,NA,NA,NA,Skeena
+1396,227,Chinook,1972,NA,200,NA,Skeena
+1397,229,Chinook,1972,NA,200,NA,Skeena
+1398,241,Chinook,1972,NA,NA,NA,Skeena
+1399,211,Chum,1972,55601,32275,102589,Skeena
+1400,214,Chum,1972,2531,4650,4669,Skeena
+1401,220,Chum,1972,1093,20,2018,Skeena
+1402,242,Chum,1972,NA,NA,NA,Skeena
+1403,202,Coho,1972,116623,37875,343009,Skeena
+1404,215,Coho,1972,105419,17593,310054,Skeena
+1405,231,Coho,1972,538,46,1582,Skeena
+1406,225,Coho,1972,8029,2400,20776,Skeena
+1407,240,Pink (Even),1972,NA,NA,NA,Skeena
+1408,213,Pink (Odd),1972,NA,NA,NA,Skeena
+1409,219,Pink (Even),1972,2527505,1942400,3985183,Skeena
+1410,218,Pink (Even),1972,441711,229904,814994,Skeena
+1411,223,Pink (Odd),1972,NA,NA,NA,Skeena
+1412,209,Pink (Odd),1972,NA,NA,NA,Skeena
+1413,172,Lake Sockeye,1972,NA,NA,NA,Skeena
+1414,173,Lake Sockeye,1972,NA,NA,NA,Skeena
+1415,179,Lake Sockeye,1972,NA,NA,NA,Skeena
+1416,182,Lake Sockeye,1972,NA,NA,NA,Skeena
+1417,184,Lake Sockeye,1972,NA,NA,NA,Skeena
+1418,204,Lake Sockeye,1972,NA,NA,NA,Skeena
+1419,243,Lake Sockeye,1972,NA,NA,NA,Skeena
+1420,174,Lake Sockeye,1972,NA,NA,NA,Skeena
+1421,181,Lake Sockeye,1972,NA,NA,NA,Skeena
+1422,194,Lake Sockeye,1972,NA,800,NA,Skeena
+1423,195,Lake Sockeye,1972,NA,NA,NA,Skeena
+1424,196,Lake Sockeye,1972,NA,NA,NA,Skeena
+1425,198,Lake Sockeye,1972,NA,NA,NA,Skeena
+1426,199,Lake Sockeye,1972,NA,500,NA,Skeena
+1427,200,Lake Sockeye,1972,NA,NA,NA,Skeena
+1428,201,Lake Sockeye,1972,NA,400,NA,Skeena
+1429,230,Lake Sockeye,1972,NA,NA,NA,Skeena
+1430,171,Lake Sockeye,1972,8972,4000,12802,Skeena
+1431,175,Lake Sockeye,1972,15000,7500,17835,Skeena
+1432,176,Lake Sockeye,1972,6981,4025,12996,Skeena
+1433,177,Lake Sockeye,1972,5798,2700,7029,Skeena
+1434,178,Lake Sockeye,1972,1200,600,1545,Skeena
+1435,180,Lake Sockeye,1972,52692,NA,96301,Skeena
+1436,203,Lake Sockeye,1972,209478,NA,524088,Skeena
+1437,186,Lake Sockeye,1972,309504,NA,868753,Skeena
+1438,189,Lake Sockeye,1972,10277,NA,22118,Skeena
+1439,183,Lake Sockeye,1972,NA,NA,NA,Skeena
+1440,185,Lake Sockeye,1972,4317,1800,10660,Skeena
+1441,187,Lake Sockeye,1972,7809,5400,12996,Skeena
+1442,188,Lake Sockeye,1972,19785,NA,32929,Skeena
+1443,190,Lake Sockeye,1972,100,50,210,Skeena
+1444,191,Lake Sockeye,1972,NA,NA,NA,Skeena
+1445,192,Lake Sockeye,1972,10615,9500,22255,Skeena
+1446,193,Lake Sockeye,1972,NA,NA,NA,Skeena
+1447,197,Lake Sockeye,1972,600,300,1459,Skeena
+1448,226,River Sockeye,1972,NA,1800,NA,Skeena
+1449,216,River Sockeye,1972,NA,NA,NA,Skeena
+1450,205,Chinook,1973,NA,4020,NA,Skeena
+1451,210,Chinook,1973,NA,1625,NA,Skeena
+1452,206,Chinook,1973,NA,950,NA,Skeena
+1453,207,Chinook,1973,NA,5225,NA,Skeena
+1454,222,Chinook,1973,NA,22146,NA,Skeena
+1455,217,Chinook,1973,NA,4500,NA,Skeena
+1456,221,Chinook,1973,NA,850,NA,Skeena
+1457,224,Chinook,1973,NA,250,NA,Skeena
+1458,212,Chinook,1973,NA,NA,NA,Skeena
+1459,227,Chinook,1973,NA,400,NA,Skeena
+1460,229,Chinook,1973,NA,400,NA,Skeena
+1461,241,Chinook,1973,NA,NA,NA,Skeena
+1462,211,Chum,1973,37907,23425,68294,Skeena
+1463,214,Chum,1973,1265,2056,2280,Skeena
+1464,220,Chum,1973,1093,20,1970,Skeena
+1465,242,Chum,1973,NA,NA,NA,Skeena
+1466,202,Coho,1973,72940,19400,148857,Skeena
+1467,215,Coho,1973,84222,18222,171882,Skeena
+1468,231,Coho,1973,5848,1000,11934,Skeena
+1469,225,Coho,1973,3750,2870,7131,Skeena
+1470,240,Pink (Even),1973,NA,NA,NA,Skeena
+1471,213,Pink (Odd),1973,750747,686761,1352535,Skeena
+1472,219,Pink (Even),1973,NA,NA,NA,Skeena
+1473,218,Pink (Even),1973,NA,NA,NA,Skeena
+1474,223,Pink (Odd),1973,45482,22225,65631,Skeena
+1475,209,Pink (Odd),1973,1243294,561800,2239902,Skeena
+1476,172,Lake Sockeye,1973,NA,NA,NA,Skeena
+1477,173,Lake Sockeye,1973,NA,NA,NA,Skeena
+1478,179,Lake Sockeye,1973,NA,NA,NA,Skeena
+1479,182,Lake Sockeye,1973,NA,NA,NA,Skeena
+1480,184,Lake Sockeye,1973,NA,NA,NA,Skeena
+1481,204,Lake Sockeye,1973,NA,NA,NA,Skeena
+1482,243,Lake Sockeye,1973,NA,NA,NA,Skeena
+1483,174,Lake Sockeye,1973,NA,250,NA,Skeena
+1484,181,Lake Sockeye,1973,NA,NA,NA,Skeena
+1485,194,Lake Sockeye,1973,NA,300,NA,Skeena
+1486,195,Lake Sockeye,1973,NA,NA,NA,Skeena
+1487,196,Lake Sockeye,1973,NA,NA,NA,Skeena
+1488,198,Lake Sockeye,1973,NA,NA,NA,Skeena
+1489,199,Lake Sockeye,1973,NA,NA,NA,Skeena
+1490,200,Lake Sockeye,1973,NA,NA,NA,Skeena
+1491,201,Lake Sockeye,1973,NA,3000,NA,Skeena
+1492,230,Lake Sockeye,1973,NA,NA,NA,Skeena
+1493,171,Lake Sockeye,1973,8972,4000,13460,Skeena
+1494,175,Lake Sockeye,1973,6000,3000,7292,Skeena
+1495,176,Lake Sockeye,1973,6981,4000,14419,Skeena
+1496,177,Lake Sockeye,1973,3938,1850,4893,Skeena
+1497,178,Lake Sockeye,1973,4000,2000,5327,Skeena
+1498,180,Lake Sockeye,1973,140253,NA,283174,Skeena
+1499,203,Lake Sockeye,1973,261485,NA,790131,Skeena
+1500,186,Lake Sockeye,1973,236140,NA,835820,Skeena
+1501,189,Lake Sockeye,1973,32179,NA,79783,Skeena
+1502,183,Lake Sockeye,1973,NA,NA,NA,Skeena
+1503,185,Lake Sockeye,1973,2399,1200,7121,Skeena
+1504,187,Lake Sockeye,1973,7809,4650,14066,Skeena
+1505,188,Lake Sockeye,1973,9893,NA,17821,Skeena
+1506,190,Lake Sockeye,1973,600,300,1439,Skeena
+1507,191,Lake Sockeye,1973,4000,2000,9591,Skeena
+1508,192,Lake Sockeye,1973,15164,5600,36361,Skeena
+1509,193,Lake Sockeye,1973,NA,NA,NA,Skeena
+1510,197,Lake Sockeye,1973,6000,3000,17457,Skeena
+1511,226,River Sockeye,1973,NA,2800,NA,Skeena
+1512,216,River Sockeye,1973,NA,NA,NA,Skeena
+1513,205,Chinook,1974,NA,2800,NA,Skeena
+1514,210,Chinook,1974,NA,1525,NA,Skeena
+1515,206,Chinook,1974,NA,950,NA,Skeena
+1516,207,Chinook,1974,NA,5425,NA,Skeena
+1517,222,Chinook,1974,NA,15976,NA,Skeena
+1518,217,Chinook,1974,NA,3925,NA,Skeena
+1519,221,Chinook,1974,NA,NA,NA,Skeena
+1520,224,Chinook,1974,NA,200,NA,Skeena
+1521,212,Chinook,1974,NA,NA,NA,Skeena
+1522,227,Chinook,1974,NA,400,NA,Skeena
+1523,229,Chinook,1974,NA,400,NA,Skeena
+1524,241,Chinook,1974,NA,NA,NA,Skeena
+1525,211,Chum,1974,16353,11975,34904,Skeena
+1526,214,Chum,1974,1598,2177,3411,Skeena
+1527,220,Chum,1974,NA,100,NA,Skeena
+1528,242,Chum,1974,NA,NA,NA,Skeena
+1529,202,Coho,1974,77480,21350,176091,Skeena
+1530,215,Coho,1974,52996,16278,120446,Skeena
+1531,231,Coho,1974,NA,NA,NA,Skeena
+1532,225,Coho,1974,5626,1920,11734,Skeena
+1533,240,Pink (Even),1974,NA,NA,NA,Skeena
+1534,213,Pink (Odd),1974,NA,NA,NA,Skeena
+1535,219,Pink (Even),1974,766905,492190,1308909,Skeena
+1536,218,Pink (Even),1974,80451,43230,171711,Skeena
+1537,223,Pink (Odd),1974,NA,NA,NA,Skeena
+1538,209,Pink (Odd),1974,NA,NA,NA,Skeena
+1539,172,Lake Sockeye,1974,NA,NA,NA,Skeena
+1540,173,Lake Sockeye,1974,NA,NA,NA,Skeena
+1541,179,Lake Sockeye,1974,NA,NA,NA,Skeena
+1542,182,Lake Sockeye,1974,NA,NA,NA,Skeena
+1543,184,Lake Sockeye,1974,NA,NA,NA,Skeena
+1544,204,Lake Sockeye,1974,NA,NA,NA,Skeena
+1545,243,Lake Sockeye,1974,NA,NA,NA,Skeena
+1546,174,Lake Sockeye,1974,NA,NA,NA,Skeena
+1547,181,Lake Sockeye,1974,NA,NA,NA,Skeena
+1548,194,Lake Sockeye,1974,NA,50,NA,Skeena
+1549,195,Lake Sockeye,1974,NA,NA,NA,Skeena
+1550,196,Lake Sockeye,1974,NA,NA,NA,Skeena
+1551,198,Lake Sockeye,1974,NA,NA,NA,Skeena
+1552,199,Lake Sockeye,1974,NA,NA,NA,Skeena
+1553,200,Lake Sockeye,1974,NA,NA,NA,Skeena
+1554,201,Lake Sockeye,1974,NA,25,NA,Skeena
+1555,230,Lake Sockeye,1974,NA,NA,NA,Skeena
+1556,171,Lake Sockeye,1974,3925,1750,6145,Skeena
+1557,175,Lake Sockeye,1974,1500,750,1856,Skeena
+1558,176,Lake Sockeye,1974,6981,3250,15824,Skeena
+1559,177,Lake Sockeye,1974,5251,2450,6659,Skeena
+1560,178,Lake Sockeye,1974,3600,1800,4930,Skeena
+1561,180,Lake Sockeye,1974,109851,NA,242376,Skeena
+1562,203,Lake Sockeye,1974,156822,NA,569890,Skeena
+1563,186,Lake Sockeye,1974,291444,NA,1308503,Skeena
+1564,189,Lake Sockeye,1974,38189,NA,107998,Skeena
+1565,183,Lake Sockeye,1974,NA,NA,NA,Skeena
+1566,185,Lake Sockeye,1974,2878,1200,10222,Skeena
+1567,187,Lake Sockeye,1974,7809,4650,15073,Skeena
+1568,188,Lake Sockeye,1974,9893,NA,19096,Skeena
+1569,190,Lake Sockeye,1974,2,1,5,Skeena
+1570,191,Lake Sockeye,1974,NA,NA,NA,Skeena
+1571,192,Lake Sockeye,1974,NA,NA,NA,Skeena
+1572,193,Lake Sockeye,1974,NA,NA,NA,Skeena
+1573,197,Lake Sockeye,1974,NA,NA,NA,Skeena
+1574,226,River Sockeye,1974,NA,2200,NA,Skeena
+1575,216,River Sockeye,1974,NA,NA,NA,Skeena
+1576,205,Chinook,1975,NA,2300,NA,Skeena
+1577,210,Chinook,1975,NA,2850,NA,Skeena
+1578,206,Chinook,1975,NA,950,NA,Skeena
+1579,207,Chinook,1975,NA,3925,NA,Skeena
+1580,222,Chinook,1975,NA,5110,NA,Skeena
+1581,217,Chinook,1975,NA,3909,NA,Skeena
+1582,221,Chinook,1975,NA,500,NA,Skeena
+1583,224,Chinook,1975,NA,200,NA,Skeena
+1584,212,Chinook,1975,NA,NA,NA,Skeena
+1585,227,Chinook,1975,NA,400,NA,Skeena
+1586,229,Chinook,1975,NA,200,NA,Skeena
+1587,241,Chinook,1975,NA,NA,NA,Skeena
+1588,211,Chum,1975,13243,9225,23010,Skeena
+1589,214,Chum,1975,1066,1175,1851,Skeena
+1590,220,Chum,1975,NA,NA,NA,Skeena
+1591,242,Chum,1975,NA,NA,NA,Skeena
+1592,202,Coho,1975,42220,12825,78186,Skeena
+1593,215,Coho,1975,23367,8624,43272,Skeena
+1594,231,Coho,1975,NA,50,NA,Skeena
+1595,225,Coho,1975,3750,1220,6552,Skeena
+1596,240,Pink (Even),1975,NA,NA,NA,Skeena
+1597,213,Pink (Odd),1975,1270862,752007,2208028,Skeena
+1598,219,Pink (Even),1975,NA,NA,NA,Skeena
+1599,218,Pink (Even),1975,NA,NA,NA,Skeena
+1600,223,Pink (Odd),1975,71896,75650,100539,Skeena
+1601,209,Pink (Odd),1975,1855152,967450,3223188,Skeena
+1602,172,Lake Sockeye,1975,NA,NA,NA,Skeena
+1603,173,Lake Sockeye,1975,NA,NA,NA,Skeena
+1604,179,Lake Sockeye,1975,NA,NA,NA,Skeena
+1605,182,Lake Sockeye,1975,NA,NA,NA,Skeena
+1606,184,Lake Sockeye,1975,NA,NA,NA,Skeena
+1607,204,Lake Sockeye,1975,NA,NA,NA,Skeena
+1608,243,Lake Sockeye,1975,NA,NA,NA,Skeena
+1609,174,Lake Sockeye,1975,NA,NA,NA,Skeena
+1610,181,Lake Sockeye,1975,NA,NA,NA,Skeena
+1611,194,Lake Sockeye,1975,NA,NA,NA,Skeena
+1612,195,Lake Sockeye,1975,NA,NA,NA,Skeena
+1613,196,Lake Sockeye,1975,NA,400,NA,Skeena
+1614,198,Lake Sockeye,1975,NA,NA,NA,Skeena
+1615,199,Lake Sockeye,1975,NA,NA,NA,Skeena
+1616,200,Lake Sockeye,1975,NA,NA,NA,Skeena
+1617,201,Lake Sockeye,1975,NA,12,NA,Skeena
+1618,230,Lake Sockeye,1975,NA,NA,NA,Skeena
+1619,171,Lake Sockeye,1975,1346,600,1736,Skeena
+1620,175,Lake Sockeye,1975,2000,1000,2271,Skeena
+1621,176,Lake Sockeye,1975,3901,2300,5982,Skeena
+1622,177,Lake Sockeye,1975,5688,2700,6551,Skeena
+1623,178,Lake Sockeye,1975,200,100,240,Skeena
+1624,180,Lake Sockeye,1975,60353,NA,91485,Skeena
+1625,203,Lake Sockeye,1975,473953,NA,863483,Skeena
+1626,186,Lake Sockeye,1975,118485,NA,229514,Skeena
+1627,189,Lake Sockeye,1975,28686,NA,47994,Skeena
+1628,183,Lake Sockeye,1975,NA,NA,NA,Skeena
+1629,185,Lake Sockeye,1975,540,325,976,Skeena
+1630,187,Lake Sockeye,1975,7809,4450,11155,Skeena
+1631,188,Lake Sockeye,1975,9893,NA,14132,Skeena
+1632,190,Lake Sockeye,1975,NA,NA,NA,Skeena
+1633,191,Lake Sockeye,1975,2100,1050,3460,Skeena
+1634,192,Lake Sockeye,1975,152,300,250,Skeena
+1635,193,Lake Sockeye,1975,NA,NA,NA,Skeena
+1636,197,Lake Sockeye,1975,66,33,118,Skeena
+1637,226,River Sockeye,1975,NA,464,NA,Skeena
+1638,216,River Sockeye,1975,NA,NA,NA,Skeena
+1639,205,Chinook,1976,NA,1500,NA,Skeena
+1640,210,Chinook,1976,NA,1980,NA,Skeena
+1641,206,Chinook,1976,NA,825,NA,Skeena
+1642,207,Chinook,1976,NA,3925,NA,Skeena
+1643,222,Chinook,1976,NA,3358,NA,Skeena
+1644,217,Chinook,1976,NA,975,NA,Skeena
+1645,221,Chinook,1976,NA,15,NA,Skeena
+1646,224,Chinook,1976,NA,100,NA,Skeena
+1647,212,Chinook,1976,NA,NA,NA,Skeena
+1648,227,Chinook,1976,NA,200,NA,Skeena
+1649,229,Chinook,1976,NA,200,NA,Skeena
+1650,241,Chinook,1976,NA,NA,NA,Skeena
+1651,211,Chum,1976,14852,10150,22618,Skeena
+1652,214,Chum,1976,400,926,609,Skeena
+1653,220,Chum,1976,1093,20,1665,Skeena
+1654,242,Chum,1976,NA,NA,NA,Skeena
+1655,202,Coho,1976,92007,23100,170384,Skeena
+1656,215,Coho,1976,40769,9421,75498,Skeena
+1657,231,Coho,1976,NA,NA,NA,Skeena
+1658,225,Coho,1976,3750,1120,6552,Skeena
+1659,240,Pink (Even),1976,NA,NA,NA,Skeena
+1660,213,Pink (Odd),1976,NA,NA,NA,Skeena
+1661,219,Pink (Even),1976,992919,580275,1338511,Skeena
+1662,218,Pink (Even),1976,623261,319325,949164,Skeena
+1663,223,Pink (Odd),1976,NA,NA,NA,Skeena
+1664,209,Pink (Odd),1976,NA,NA,NA,Skeena
+1665,172,Lake Sockeye,1976,NA,NA,NA,Skeena
+1666,173,Lake Sockeye,1976,NA,NA,NA,Skeena
+1667,179,Lake Sockeye,1976,NA,NA,NA,Skeena
+1668,182,Lake Sockeye,1976,NA,NA,NA,Skeena
+1669,184,Lake Sockeye,1976,NA,NA,NA,Skeena
+1670,204,Lake Sockeye,1976,NA,NA,NA,Skeena
+1671,243,Lake Sockeye,1976,NA,NA,NA,Skeena
+1672,174,Lake Sockeye,1976,NA,NA,NA,Skeena
+1673,181,Lake Sockeye,1976,NA,NA,NA,Skeena
+1674,194,Lake Sockeye,1976,NA,NA,NA,Skeena
+1675,195,Lake Sockeye,1976,NA,NA,NA,Skeena
+1676,196,Lake Sockeye,1976,NA,NA,NA,Skeena
+1677,198,Lake Sockeye,1976,NA,NA,NA,Skeena
+1678,199,Lake Sockeye,1976,NA,NA,NA,Skeena
+1679,200,Lake Sockeye,1976,NA,NA,NA,Skeena
+1680,201,Lake Sockeye,1976,NA,NA,NA,Skeena
+1681,230,Lake Sockeye,1976,NA,NA,NA,Skeena
+1682,171,Lake Sockeye,1976,6729,3000,9682,Skeena
+1683,175,Lake Sockeye,1976,6000,3000,7161,Skeena
+1684,176,Lake Sockeye,1976,1951,1475,3693,Skeena
+1685,177,Lake Sockeye,1976,6564,3050,7990,Skeena
+1686,178,Lake Sockeye,1976,NA,NA,NA,Skeena
+1687,180,Lake Sockeye,1976,13336,NA,24773,Skeena
+1688,203,Lake Sockeye,1976,321865,NA,829586,Skeena
+1689,186,Lake Sockeye,1976,163137,NA,474653,Skeena
+1690,189,Lake Sockeye,1976,8022,NA,17661,Skeena
+1691,183,Lake Sockeye,1976,NA,NA,NA,Skeena
+1692,185,Lake Sockeye,1976,240,100,610,Skeena
+1693,187,Lake Sockeye,1976,892,625,1505,Skeena
+1694,188,Lake Sockeye,1976,330,NA,556,Skeena
+1695,190,Lake Sockeye,1976,NA,NA,NA,Skeena
+1696,191,Lake Sockeye,1976,200,100,429,Skeena
+1697,192,Lake Sockeye,1976,NA,NA,NA,Skeena
+1698,193,Lake Sockeye,1976,NA,NA,NA,Skeena
+1699,197,Lake Sockeye,1976,NA,NA,NA,Skeena
+1700,226,River Sockeye,1976,NA,400,NA,Skeena
+1701,216,River Sockeye,1976,NA,NA,NA,Skeena
+1702,205,Chinook,1977,NA,2700,NA,Skeena
+1703,210,Chinook,1977,NA,4475,NA,Skeena
+1704,206,Chinook,1977,NA,3700,NA,Skeena
+1705,207,Chinook,1977,NA,7925,NA,Skeena
+1706,222,Chinook,1977,NA,6993,NA,Skeena
+1707,217,Chinook,1977,NA,1900,NA,Skeena
+1708,221,Chinook,1977,NA,250,NA,Skeena
+1709,224,Chinook,1977,NA,300,NA,Skeena
+1710,212,Chinook,1977,NA,NA,NA,Skeena
+1711,227,Chinook,1977,NA,400,NA,Skeena
+1712,229,Chinook,1977,NA,400,NA,Skeena
+1713,241,Chinook,1977,NA,NA,NA,Skeena
+1714,211,Chum,1977,14906,9950,34548,Skeena
+1715,214,Chum,1977,599,1002,1389,Skeena
+1716,220,Chum,1977,NA,10,NA,Skeena
+1717,242,Chum,1977,NA,NA,NA,Skeena
+1718,202,Coho,1977,56924,16775,138838,Skeena
+1719,215,Coho,1977,67002,20139,163420,Skeena
+1720,231,Coho,1977,NA,NA,NA,Skeena
+1721,225,Coho,1977,5626,1120,12459,Skeena
+1722,240,Pink (Even),1977,NA,NA,NA,Skeena
+1723,213,Pink (Odd),1977,831133,505277,1926412,Skeena
+1724,219,Pink (Even),1977,NA,NA,NA,Skeena
+1725,218,Pink (Even),1977,NA,NA,NA,Skeena
+1726,223,Pink (Odd),1977,62050,43750,141690,Skeena
+1727,209,Pink (Odd),1977,746178,446200,1729503,Skeena
+1728,172,Lake Sockeye,1977,NA,NA,NA,Skeena
+1729,173,Lake Sockeye,1977,NA,NA,NA,Skeena
+1730,179,Lake Sockeye,1977,NA,NA,NA,Skeena
+1731,182,Lake Sockeye,1977,NA,NA,NA,Skeena
+1732,184,Lake Sockeye,1977,NA,NA,NA,Skeena
+1733,204,Lake Sockeye,1977,NA,NA,NA,Skeena
+1734,243,Lake Sockeye,1977,NA,NA,NA,Skeena
+1735,174,Lake Sockeye,1977,NA,NA,NA,Skeena
+1736,181,Lake Sockeye,1977,NA,100,NA,Skeena
+1737,194,Lake Sockeye,1977,NA,40,NA,Skeena
+1738,195,Lake Sockeye,1977,NA,NA,NA,Skeena
+1739,196,Lake Sockeye,1977,NA,NA,NA,Skeena
+1740,198,Lake Sockeye,1977,NA,NA,NA,Skeena
+1741,199,Lake Sockeye,1977,NA,NA,NA,Skeena
+1742,200,Lake Sockeye,1977,NA,NA,NA,Skeena
+1743,201,Lake Sockeye,1977,NA,NA,NA,Skeena
+1744,230,Lake Sockeye,1977,NA,NA,NA,Skeena
+1745,171,Lake Sockeye,1977,15701,7000,22698,Skeena
+1746,175,Lake Sockeye,1977,1000,500,1196,Skeena
+1747,176,Lake Sockeye,1977,6981,3250,13347,Skeena
+1748,177,Lake Sockeye,1977,5087,2375,6207,Skeena
+1749,178,Lake Sockeye,1977,1200,600,1559,Skeena
+1750,180,Lake Sockeye,1977,54679,NA,102521,Skeena
+1751,203,Lake Sockeye,1977,557566,NA,1461929,Skeena
+1752,186,Lake Sockeye,1977,199711,NA,593270,Skeena
+1753,189,Lake Sockeye,1977,15573,NA,34737,Skeena
+1754,183,Lake Sockeye,1977,50,25,116,Skeena
+1755,185,Lake Sockeye,1977,1439,600,3720,Skeena
+1756,187,Lake Sockeye,1977,7809,4300,13265,Skeena
+1757,188,Lake Sockeye,1977,5276,NA,8963,Skeena
+1758,190,Lake Sockeye,1977,NA,NA,NA,Skeena
+1759,191,Lake Sockeye,1977,NA,NA,NA,Skeena
+1760,192,Lake Sockeye,1977,NA,800,NA,Skeena
+1761,193,Lake Sockeye,1977,NA,NA,NA,Skeena
+1762,197,Lake Sockeye,1977,NA,NA,NA,Skeena
+1763,226,River Sockeye,1977,NA,1700,NA,Skeena
+1764,216,River Sockeye,1977,NA,NA,NA,Skeena
+1765,205,Chinook,1978,NA,1250,NA,Skeena
+1766,210,Chinook,1978,NA,460,NA,Skeena
+1767,206,Chinook,1978,NA,825,NA,Skeena
+1768,207,Chinook,1978,NA,7550,NA,Skeena
+1769,222,Chinook,1978,NA,10016,NA,Skeena
+1770,217,Chinook,1978,NA,1500,NA,Skeena
+1771,221,Chinook,1978,NA,400,NA,Skeena
+1772,224,Chinook,1978,NA,300,NA,Skeena
+1773,212,Chinook,1978,NA,250,NA,Skeena
+1774,227,Chinook,1978,NA,75,NA,Skeena
+1775,229,Chinook,1978,NA,75,NA,Skeena
+1776,241,Chinook,1978,NA,NA,NA,Skeena
+1777,211,Chum,1978,10241,7700,18735,Skeena
+1778,214,Chum,1978,599,453,1097,Skeena
+1779,220,Chum,1978,797,75,1459,Skeena
+1780,242,Chum,1978,NA,NA,NA,Skeena
+1781,202,Coho,1978,79132,21000,255264,Skeena
+1782,215,Coho,1978,85372,23963,275393,Skeena
+1783,231,Coho,1978,NA,4875,NA,Skeena
+1784,225,Coho,1978,3807,625,10617,Skeena
+1785,240,Pink (Even),1978,NA,NA,NA,Skeena
+1786,213,Pink (Odd),1978,NA,NA,NA,Skeena
+1787,219,Pink (Even),1978,1145818,672690,2137121,Skeena
+1788,218,Pink (Even),1978,1012011,504147,1851409,Skeena
+1789,223,Pink (Odd),1978,NA,NA,NA,Skeena
+1790,209,Pink (Odd),1978,NA,NA,NA,Skeena
+1791,172,Lake Sockeye,1978,NA,NA,NA,Skeena
+1792,173,Lake Sockeye,1978,NA,NA,NA,Skeena
+1793,179,Lake Sockeye,1978,NA,NA,NA,Skeena
+1794,182,Lake Sockeye,1978,NA,NA,NA,Skeena
+1795,184,Lake Sockeye,1978,NA,NA,NA,Skeena
+1796,204,Lake Sockeye,1978,NA,NA,NA,Skeena
+1797,243,Lake Sockeye,1978,NA,NA,NA,Skeena
+1798,174,Lake Sockeye,1978,NA,NA,NA,Skeena
+1799,181,Lake Sockeye,1978,NA,NA,NA,Skeena
+1800,194,Lake Sockeye,1978,NA,2,NA,Skeena
+1801,195,Lake Sockeye,1978,NA,NA,NA,Skeena
+1802,196,Lake Sockeye,1978,NA,NA,NA,Skeena
+1803,198,Lake Sockeye,1978,NA,NA,NA,Skeena
+1804,199,Lake Sockeye,1978,NA,4800,NA,Skeena
+1805,200,Lake Sockeye,1978,NA,NA,NA,Skeena
+1806,201,Lake Sockeye,1978,NA,NA,NA,Skeena
+1807,230,Lake Sockeye,1978,NA,NA,NA,Skeena
+1808,171,Lake Sockeye,1978,20187,9000,29715,Skeena
+1809,175,Lake Sockeye,1978,1000,500,1205,Skeena
+1810,176,Lake Sockeye,1978,1951,1100,3871,Skeena
+1811,177,Lake Sockeye,1978,11814,5450,14545,Skeena
+1812,178,Lake Sockeye,1978,8000,4000,10520,Skeena
+1813,180,Lake Sockeye,1978,32032,NA,62242,Skeena
+1814,203,Lake Sockeye,1978,248535,NA,697005,Skeena
+1815,186,Lake Sockeye,1978,57402,NA,185156,Skeena
+1816,189,Lake Sockeye,1978,3931,NA,9223,Skeena
+1817,183,Lake Sockeye,1978,150,75,366,Skeena
+1818,185,Lake Sockeye,1978,1199,750,3311,Skeena
+1819,187,Lake Sockeye,1978,446,1700,780,Skeena
+1820,188,Lake Sockeye,1978,NA,NA,NA,Skeena
+1821,190,Lake Sockeye,1978,600,300,1366,Skeena
+1822,191,Lake Sockeye,1978,2000,1000,4552,Skeena
+1823,192,Lake Sockeye,1978,712,550,1621,Skeena
+1824,193,Lake Sockeye,1978,NA,NA,NA,Skeena
+1825,197,Lake Sockeye,1978,NA,NA,NA,Skeena
+1826,226,River Sockeye,1978,NA,3550,NA,Skeena
+1827,216,River Sockeye,1978,NA,NA,NA,Skeena
+1828,205,Chinook,1979,NA,1525,NA,Skeena
+1829,210,Chinook,1979,NA,590,NA,Skeena
+1830,206,Chinook,1979,NA,1200,NA,Skeena
+1831,207,Chinook,1979,NA,5510,NA,Skeena
+1832,222,Chinook,1979,NA,7913,NA,Skeena
+1833,217,Chinook,1979,NA,425,NA,Skeena
+1834,221,Chinook,1979,NA,500,NA,Skeena
+1835,224,Chinook,1979,NA,400,NA,Skeena
+1836,212,Chinook,1979,NA,NA,NA,Skeena
+1837,227,Chinook,1979,NA,250,NA,Skeena
+1838,229,Chinook,1979,NA,200,NA,Skeena
+1839,241,Chinook,1979,NA,NA,NA,Skeena
+1840,211,Chum,1979,7796,5755,14922,Skeena
+1841,214,Chum,1979,NA,25,NA,Skeena
+1842,220,Chum,1979,NA,NA,NA,Skeena
+1843,242,Chum,1979,NA,NA,NA,Skeena
+1844,202,Coho,1979,47984,18600,165463,Skeena
+1845,215,Coho,1979,13847,5219,47749,Skeena
+1846,231,Coho,1979,NA,NA,NA,Skeena
+1847,225,Coho,1979,3778,800,11114,Skeena
+1848,240,Pink (Even),1979,NA,NA,NA,Skeena
+1849,213,Pink (Odd),1979,217762,183103,416824,Skeena
+1850,219,Pink (Even),1979,NA,NA,NA,Skeena
+1851,218,Pink (Even),1979,NA,NA,NA,Skeena
+1852,223,Pink (Odd),1979,41245,22420,68539,Skeena
+1853,209,Pink (Odd),1979,624075,321065,1194558,Skeena
+1854,172,Lake Sockeye,1979,NA,NA,NA,Skeena
+1855,173,Lake Sockeye,1979,NA,NA,NA,Skeena
+1856,179,Lake Sockeye,1979,NA,NA,NA,Skeena
+1857,182,Lake Sockeye,1979,NA,NA,NA,Skeena
+1858,184,Lake Sockeye,1979,NA,NA,NA,Skeena
+1859,204,Lake Sockeye,1979,NA,NA,NA,Skeena
+1860,243,Lake Sockeye,1979,NA,NA,NA,Skeena
+1861,174,Lake Sockeye,1979,NA,NA,NA,Skeena
+1862,181,Lake Sockeye,1979,NA,NA,NA,Skeena
+1863,194,Lake Sockeye,1979,NA,100,NA,Skeena
+1864,195,Lake Sockeye,1979,NA,NA,NA,Skeena
+1865,196,Lake Sockeye,1979,NA,NA,NA,Skeena
+1866,198,Lake Sockeye,1979,NA,NA,NA,Skeena
+1867,199,Lake Sockeye,1979,NA,800,NA,Skeena
+1868,200,Lake Sockeye,1979,NA,NA,NA,Skeena
+1869,201,Lake Sockeye,1979,NA,100,NA,Skeena
+1870,230,Lake Sockeye,1979,NA,NA,NA,Skeena
+1871,171,Lake Sockeye,1979,20187,9000,28810,Skeena
+1872,175,Lake Sockeye,1979,NA,NA,NA,Skeena
+1873,176,Lake Sockeye,1979,862,560,1606,Skeena
+1874,177,Lake Sockeye,1979,12471,5760,15120,Skeena
+1875,178,Lake Sockeye,1979,2200,1100,2834,Skeena
+1876,180,Lake Sockeye,1979,42455,NA,77622,Skeena
+1877,203,Lake Sockeye,1979,541481,NA,1355676,Skeena
+1878,186,Lake Sockeye,1979,357449,NA,1004184,Skeena
+1879,189,Lake Sockeye,1979,21765,NA,46868,Skeena
+1880,183,Lake Sockeye,1979,NA,NA,NA,Skeena
+1881,185,Lake Sockeye,1979,1679,1050,4149,Skeena
+1882,187,Lake Sockeye,1979,7809,5000,13000,Skeena
+1883,188,Lake Sockeye,1979,19785,NA,32939,Skeena
+1884,190,Lake Sockeye,1979,100,50,210,Skeena
+1885,191,Lake Sockeye,1979,NA,NA,NA,Skeena
+1886,192,Lake Sockeye,1979,2350,800,4930,Skeena
+1887,193,Lake Sockeye,1979,NA,NA,NA,Skeena
+1888,197,Lake Sockeye,1979,NA,NA,NA,Skeena
+1889,226,River Sockeye,1979,NA,1000,NA,Skeena
+1890,216,River Sockeye,1979,NA,NA,NA,Skeena
+1891,205,Chinook,1980,3495,1200,NA,Skeena
+1892,210,Chinook,1980,892,687,NA,Skeena
+1893,206,Chinook,1980,966,850,NA,Skeena
+1894,207,Chinook,1980,4445,4525,NA,Skeena
+1895,222,Chinook,1980,19258,14463,NA,Skeena
+1896,217,Chinook,1980,566,625,NA,Skeena
+1897,221,Chinook,1980,739,500,NA,Skeena
+1898,224,Chinook,1980,NA,400,NA,Skeena
+1899,212,Chinook,1980,NA,NA,NA,Skeena
+1900,227,Chinook,1980,NA,75,NA,Skeena
+1901,229,Chinook,1980,NA,100,NA,Skeena
+1902,241,Chinook,1980,NA,NA,NA,Skeena
+1903,211,Chum,1980,39361,26931,70216,Skeena
+1904,214,Chum,1980,NA,76,NA,Skeena
+1905,220,Chum,1980,NA,NA,NA,Skeena
+1906,242,Chum,1980,NA,NA,NA,Skeena
+1907,202,Coho,1980,85180,18368,327614,Skeena
+1908,215,Coho,1980,58527,12214,225103,Skeena
+1909,231,Coho,1980,NA,NA,NA,Skeena
+1910,225,Coho,1980,7433,1165,23818,Skeena
+1911,240,Pink (Even),1980,NA,NA,NA,Skeena
+1912,213,Pink (Odd),1980,NA,NA,NA,Skeena
+1913,219,Pink (Even),1980,1018335,583653,1823475,Skeena
+1914,218,Pink (Even),1980,607592,367116,1083877,Skeena
+1915,223,Pink (Odd),1980,NA,NA,NA,Skeena
+1916,209,Pink (Odd),1980,NA,NA,NA,Skeena
+1917,172,Lake Sockeye,1980,NA,NA,NA,Skeena
+1918,173,Lake Sockeye,1980,NA,NA,NA,Skeena
+1919,179,Lake Sockeye,1980,NA,NA,NA,Skeena
+1920,182,Lake Sockeye,1980,NA,NA,NA,Skeena
+1921,184,Lake Sockeye,1980,NA,NA,NA,Skeena
+1922,204,Lake Sockeye,1980,NA,NA,NA,Skeena
+1923,243,Lake Sockeye,1980,NA,NA,NA,Skeena
+1924,174,Lake Sockeye,1980,NA,NA,NA,Skeena
+1925,181,Lake Sockeye,1980,NA,NA,NA,Skeena
+1926,194,Lake Sockeye,1980,NA,100,NA,Skeena
+1927,195,Lake Sockeye,1980,NA,NA,NA,Skeena
+1928,196,Lake Sockeye,1980,NA,NA,NA,Skeena
+1929,198,Lake Sockeye,1980,NA,NA,NA,Skeena
+1930,199,Lake Sockeye,1980,NA,NA,NA,Skeena
+1931,200,Lake Sockeye,1980,NA,NA,NA,Skeena
+1932,201,Lake Sockeye,1980,NA,500,NA,Skeena
+1933,230,Lake Sockeye,1980,NA,NA,NA,Skeena
+1934,171,Lake Sockeye,1980,33645,15000,49197,Skeena
+1935,175,Lake Sockeye,1980,NA,NA,NA,Skeena
+1936,176,Lake Sockeye,1980,924,650,1808,Skeena
+1937,177,Lake Sockeye,1980,29449,13767,36136,Skeena
+1938,178,Lake Sockeye,1980,280,140,367,Skeena
+1939,180,Lake Sockeye,1980,31679,NA,60748,Skeena
+1940,203,Lake Sockeye,1980,178731,NA,488772,Skeena
+1941,186,Lake Sockeye,1980,197031,NA,616156,Skeena
+1942,189,Lake Sockeye,1980,11166,NA,25709,Skeena
+1943,183,Lake Sockeye,1980,200,100,479,Skeena
+1944,185,Lake Sockeye,1980,959,650,2584,Skeena
+1945,187,Lake Sockeye,1980,6693,3850,11575,Skeena
+1946,188,Lake Sockeye,1980,9893,NA,17109,Skeena
+1947,190,Lake Sockeye,1980,100,50,224,Skeena
+1948,191,Lake Sockeye,1980,1500,750,3353,Skeena
+1949,192,Lake Sockeye,1980,492,150,1101,Skeena
+1950,193,Lake Sockeye,1980,NA,NA,NA,Skeena
+1951,197,Lake Sockeye,1980,NA,NA,NA,Skeena
+1952,226,River Sockeye,1980,NA,427,NA,Skeena
+1953,216,River Sockeye,1980,NA,NA,NA,Skeena
+1954,205,Chinook,1981,1748,1727,NA,Skeena
+1955,210,Chinook,1981,1416,900,NA,Skeena
+1956,206,Chinook,1981,966,750,NA,Skeena
+1957,207,Chinook,1981,9842,9300,NA,Skeena
+1958,222,Chinook,1981,12284,9437,NA,Skeena
+1959,217,Chinook,1981,1639,900,NA,Skeena
+1960,221,Chinook,1981,369,250,NA,Skeena
+1961,224,Chinook,1981,NA,150,NA,Skeena
+1962,212,Chinook,1981,NA,260,NA,Skeena
+1963,227,Chinook,1981,NA,260,NA,Skeena
+1964,229,Chinook,1981,NA,600,NA,Skeena
+1965,241,Chinook,1981,NA,NA,NA,Skeena
+1966,211,Chum,1981,17968,9535,39651,Skeena
+1967,214,Chum,1981,5939,50,13107,Skeena
+1968,220,Chum,1981,NA,11,NA,Skeena
+1969,242,Chum,1981,NA,NA,NA,Skeena
+1970,202,Coho,1981,85195,20010,258165,Skeena
+1971,215,Coho,1981,24117,5932,73082,Skeena
+1972,231,Coho,1981,NA,50,NA,Skeena
+1973,225,Coho,1981,3732,812,9896,Skeena
+1974,240,Pink (Even),1981,NA,NA,NA,Skeena
+1975,213,Pink (Odd),1981,676790,384485,1493518,Skeena
+1976,219,Pink (Even),1981,NA,NA,NA,Skeena
+1977,218,Pink (Even),1981,NA,NA,NA,Skeena
+1978,223,Pink (Odd),1981,92749,55569,166773,Skeena
+1979,209,Pink (Odd),1981,1764135,784000,3893035,Skeena
+1980,172,Lake Sockeye,1981,NA,NA,NA,Skeena
+1981,173,Lake Sockeye,1981,NA,NA,NA,Skeena
+1982,179,Lake Sockeye,1981,NA,NA,NA,Skeena
+1983,182,Lake Sockeye,1981,NA,NA,NA,Skeena
+1984,184,Lake Sockeye,1981,NA,NA,NA,Skeena
+1985,204,Lake Sockeye,1981,NA,NA,NA,Skeena
+1986,243,Lake Sockeye,1981,NA,NA,NA,Skeena
+1987,174,Lake Sockeye,1981,NA,NA,NA,Skeena
+1988,181,Lake Sockeye,1981,NA,NA,NA,Skeena
+1989,194,Lake Sockeye,1981,NA,NA,NA,Skeena
+1990,195,Lake Sockeye,1981,NA,NA,NA,Skeena
+1991,196,Lake Sockeye,1981,NA,NA,NA,Skeena
+1992,198,Lake Sockeye,1981,NA,NA,NA,Skeena
+1993,199,Lake Sockeye,1981,NA,2000,NA,Skeena
+1994,200,Lake Sockeye,1981,NA,NA,NA,Skeena
+1995,201,Lake Sockeye,1981,NA,300,NA,Skeena
+1996,230,Lake Sockeye,1981,NA,NA,NA,Skeena
+1997,171,Lake Sockeye,1981,2019,900,2908,Skeena
+1998,175,Lake Sockeye,1981,1007,500,1203,Skeena
+1999,176,Lake Sockeye,1981,719,475,1364,Skeena
+2000,177,Lake Sockeye,1981,15971,7555,19454,Skeena
+2001,178,Lake Sockeye,1981,3000,1500,3888,Skeena
+2002,180,Lake Sockeye,1981,46466,NA,86520,Skeena
+2003,203,Lake Sockeye,1981,781574,NA,2023173,Skeena
+2004,186,Lake Sockeye,1981,113332,NA,331473,Skeena
+2005,189,Lake Sockeye,1981,7178,NA,15855,Skeena
+2006,183,Lake Sockeye,1981,NA,NA,NA,Skeena
+2007,185,Lake Sockeye,1981,2399,1300,6123,Skeena
+2008,187,Lake Sockeye,1981,6693,5000,11307,Skeena
+2009,188,Lake Sockeye,1981,26381,NA,44566,Skeena
+2010,190,Lake Sockeye,1981,NA,NA,NA,Skeena
+2011,191,Lake Sockeye,1981,400,200,860,Skeena
+2012,192,Lake Sockeye,1981,627,220,1347,Skeena
+2013,193,Lake Sockeye,1981,NA,NA,NA,Skeena
+2014,197,Lake Sockeye,1981,NA,NA,NA,Skeena
+2015,226,River Sockeye,1981,NA,325,NA,Skeena
+2016,216,River Sockeye,1981,NA,NA,NA,Skeena
+2017,205,Chinook,1982,1748,1021,NA,Skeena
+2018,210,Chinook,1982,1511,462,NA,Skeena
+2019,206,Chinook,1982,1208,825,NA,Skeena
+2020,207,Chinook,1982,5821,7260,NA,Skeena
+2021,222,Chinook,1982,8990,6748,NA,Skeena
+2022,217,Chinook,1982,NA,10,NA,Skeena
+2023,221,Chinook,1982,148,112,NA,Skeena
+2024,224,Chinook,1982,NA,56,NA,Skeena
+2025,212,Chinook,1982,NA,NA,NA,Skeena
+2026,227,Chinook,1982,NA,104,NA,Skeena
+2027,229,Chinook,1982,NA,400,NA,Skeena
+2028,241,Chinook,1982,NA,NA,NA,Skeena
+2029,211,Chum,1982,9390,4711,13808,Skeena
+2030,214,Chum,1982,2376,10,3494,Skeena
+2031,220,Chum,1982,273,155,402,Skeena
+2032,242,Chum,1982,NA,NA,NA,Skeena
+2033,202,Coho,1982,46639,16641,111045,Skeena
+2034,215,Coho,1982,47537,7311,113184,Skeena
+2035,231,Coho,1982,NA,NA,NA,Skeena
+2036,225,Coho,1982,7613,719,16521,Skeena
+2037,240,Pink (Even),1982,NA,NA,NA,Skeena
+2038,213,Pink (Odd),1982,NA,NA,NA,Skeena
+2039,219,Pink (Even),1982,1238837,690652,2224594,Skeena
+2040,218,Pink (Even),1982,972486,494530,1425974,Skeena
+2041,223,Pink (Odd),1982,NA,NA,NA,Skeena
+2042,209,Pink (Odd),1982,NA,NA,NA,Skeena
+2043,172,Lake Sockeye,1982,NA,NA,NA,Skeena
+2044,173,Lake Sockeye,1982,NA,NA,NA,Skeena
+2045,179,Lake Sockeye,1982,NA,NA,NA,Skeena
+2046,182,Lake Sockeye,1982,NA,NA,NA,Skeena
+2047,184,Lake Sockeye,1982,NA,NA,NA,Skeena
+2048,204,Lake Sockeye,1982,NA,NA,NA,Skeena
+2049,243,Lake Sockeye,1982,NA,NA,NA,Skeena
+2050,174,Lake Sockeye,1982,NA,NA,NA,Skeena
+2051,181,Lake Sockeye,1982,NA,NA,NA,Skeena
+2052,194,Lake Sockeye,1982,NA,NA,NA,Skeena
+2053,195,Lake Sockeye,1982,NA,NA,NA,Skeena
+2054,196,Lake Sockeye,1982,NA,NA,NA,Skeena
+2055,198,Lake Sockeye,1982,NA,NA,NA,Skeena
+2056,199,Lake Sockeye,1982,NA,NA,NA,Skeena
+2057,200,Lake Sockeye,1982,NA,NA,NA,Skeena
+2058,201,Lake Sockeye,1982,NA,NA,NA,Skeena
+2059,230,Lake Sockeye,1982,NA,NA,NA,Skeena
+2060,171,Lake Sockeye,1982,10654,4750,16773,Skeena
+2061,175,Lake Sockeye,1982,1007,500,1170,Skeena
+2062,176,Lake Sockeye,1982,1129,1525,2566,Skeena
+2063,177,Lake Sockeye,1982,30120,17507,35907,Skeena
+2064,178,Lake Sockeye,1982,2000,1000,2465,Skeena
+2065,180,Lake Sockeye,1982,93630,NA,198111,Skeena
+2066,203,Lake Sockeye,1982,605442,NA,2056805,Skeena
+2067,186,Lake Sockeye,1982,159595,NA,538689,Skeena
+2068,189,Lake Sockeye,1982,4827,NA,13663,Skeena
+2069,183,Lake Sockeye,1982,NA,NA,NA,Skeena
+2070,185,Lake Sockeye,1982,7196,3000,19838,Skeena
+2071,187,Lake Sockeye,1982,11155,8000,20982,Skeena
+2072,188,Lake Sockeye,1982,26381,NA,49619,Skeena
+2073,190,Lake Sockeye,1982,NA,NA,NA,Skeena
+2074,191,Lake Sockeye,1982,NA,NA,NA,Skeena
+2075,192,Lake Sockeye,1982,NA,NA,NA,Skeena
+2076,193,Lake Sockeye,1982,NA,NA,NA,Skeena
+2077,197,Lake Sockeye,1982,NA,NA,NA,Skeena
+2078,226,River Sockeye,1982,NA,195,NA,Skeena
+2079,216,River Sockeye,1982,NA,NA,NA,Skeena
+2080,205,Chinook,1983,1748,550,NA,Skeena
+2081,210,Chinook,1983,511,391,NA,Skeena
+2082,206,Chinook,1983,966,675,NA,Skeena
+2083,207,Chinook,1983,11313,11090,NA,Skeena
+2084,222,Chinook,1983,11803,9048,NA,Skeena
+2085,217,Chinook,1983,1130,975,NA,Skeena
+2086,221,Chinook,1983,591,400,NA,Skeena
+2087,224,Chinook,1983,NA,250,NA,Skeena
+2088,212,Chinook,1983,NA,NA,NA,Skeena
+2089,227,Chinook,1983,NA,200,NA,Skeena
+2090,229,Chinook,1983,NA,25,NA,Skeena
+2091,241,Chinook,1983,NA,NA,NA,Skeena
+2092,211,Chum,1983,2330,1777,4743,Skeena
+2093,214,Chum,1983,2376,10,4835,Skeena
+2094,220,Chum,1983,46,176,93,Skeena
+2095,242,Chum,1983,NA,NA,NA,Skeena
+2096,202,Coho,1983,54479,13262,286730,Skeena
+2097,215,Coho,1983,59021,10754,310639,Skeena
+2098,231,Coho,1983,NA,NA,NA,Skeena
+2099,225,Coho,1983,4758,1062,19264,Skeena
+2100,240,Pink (Even),1983,NA,NA,NA,Skeena
+2101,213,Pink (Odd),1983,1904812,969888,4736740,Skeena
+2102,219,Pink (Even),1983,NA,NA,NA,Skeena
+2103,218,Pink (Even),1983,NA,NA,NA,Skeena
+2104,223,Pink (Odd),1983,217066,98804,718803,Skeena
+2105,209,Pink (Odd),1983,3092371,1590182,7689871,Skeena
+2106,172,Lake Sockeye,1983,NA,NA,NA,Skeena
+2107,173,Lake Sockeye,1983,NA,NA,NA,Skeena
+2108,179,Lake Sockeye,1983,NA,NA,NA,Skeena
+2109,182,Lake Sockeye,1983,NA,NA,NA,Skeena
+2110,184,Lake Sockeye,1983,NA,NA,NA,Skeena
+2111,204,Lake Sockeye,1983,NA,NA,NA,Skeena
+2112,243,Lake Sockeye,1983,NA,NA,NA,Skeena
+2113,174,Lake Sockeye,1983,NA,NA,NA,Skeena
+2114,181,Lake Sockeye,1983,NA,NA,NA,Skeena
+2115,194,Lake Sockeye,1983,NA,NA,NA,Skeena
+2116,195,Lake Sockeye,1983,NA,NA,NA,Skeena
+2117,196,Lake Sockeye,1983,NA,NA,NA,Skeena
+2118,198,Lake Sockeye,1983,NA,NA,NA,Skeena
+2119,199,Lake Sockeye,1983,NA,NA,NA,Skeena
+2120,200,Lake Sockeye,1983,NA,NA,NA,Skeena
+2121,201,Lake Sockeye,1983,NA,NA,NA,Skeena
+2122,230,Lake Sockeye,1983,NA,NA,NA,Skeena
+2123,171,Lake Sockeye,1983,14580,6500,17957,Skeena
+2124,175,Lake Sockeye,1983,NA,NA,NA,Skeena
+2125,176,Lake Sockeye,1983,903,1020,1441,Skeena
+2126,177,Lake Sockeye,1983,19253,9335,20773,Skeena
+2127,178,Lake Sockeye,1983,10000,5000,10940,Skeena
+2128,180,Lake Sockeye,1983,26965,NA,43951,Skeena
+2129,203,Lake Sockeye,1983,535594,NA,1120368,Skeena
+2130,186,Lake Sockeye,1983,103027,NA,262290,Skeena
+2131,189,Lake Sockeye,1983,8904,NA,16151,Skeena
+2132,183,Lake Sockeye,1983,NA,NA,NA,Skeena
+2133,185,Lake Sockeye,1983,9594,4000,21538,Skeena
+2134,187,Lake Sockeye,1983,NA,NA,NA,Skeena
+2135,188,Lake Sockeye,1983,NA,NA,NA,Skeena
+2136,190,Lake Sockeye,1983,NA,NA,NA,Skeena
+2137,191,Lake Sockeye,1983,NA,NA,NA,Skeena
+2138,192,Lake Sockeye,1983,NA,NA,NA,Skeena
+2139,193,Lake Sockeye,1983,NA,NA,NA,Skeena
+2140,197,Lake Sockeye,1983,NA,NA,NA,Skeena
+2141,226,River Sockeye,1983,NA,201,NA,Skeena
+2142,216,River Sockeye,1983,NA,NA,NA,Skeena
+2143,205,Chinook,1984,874,2600,1911,Skeena
+2144,210,Chinook,1984,639,267,1397,Skeena
+2145,206,Chinook,1984,403,375,426,Skeena
+2146,207,Chinook,1984,12514,11925,27365,Skeena
+2147,222,Chinook,1984,23872,18380,52201,Skeena
+2148,217,Chinook,1984,1942,1472,4248,Skeena
+2149,221,Chinook,1984,296,200,313,Skeena
+2150,224,Chinook,1984,NA,225,NA,Skeena
+2151,212,Chinook,1984,NA,300,NA,Skeena
+2152,227,Chinook,1984,NA,45,NA,Skeena
+2153,229,Chinook,1984,NA,75,NA,Skeena
+2154,241,Chinook,1984,NA,NA,NA,Skeena
+2155,211,Chum,1984,55531,27061,95268,Skeena
+2156,214,Chum,1984,5408,3203,9278,Skeena
+2157,220,Chum,1984,456,35,782,Skeena
+2158,242,Chum,1984,NA,NA,NA,Skeena
+2159,202,Coho,1984,133513,38778,476833,Skeena
+2160,215,Coho,1984,37794,10501,134979,Skeena
+2161,231,Coho,1984,NA,NA,NA,Skeena
+2162,225,Coho,1984,6140,1280,18567,Skeena
+2163,240,Pink (Even),1984,NA,NA,NA,Skeena
+2164,213,Pink (Odd),1984,NA,NA,NA,Skeena
+2165,219,Pink (Even),1984,2468996,1447431,5497689,Skeena
+2166,218,Pink (Even),1984,359935,160052,942472,Skeena
+2167,223,Pink (Odd),1984,NA,NA,NA,Skeena
+2168,209,Pink (Odd),1984,NA,NA,NA,Skeena
+2169,172,Lake Sockeye,1984,NA,NA,NA,Skeena
+2170,173,Lake Sockeye,1984,NA,NA,NA,Skeena
+2171,179,Lake Sockeye,1984,NA,NA,NA,Skeena
+2172,182,Lake Sockeye,1984,NA,NA,NA,Skeena
+2173,184,Lake Sockeye,1984,NA,NA,NA,Skeena
+2174,204,Lake Sockeye,1984,NA,NA,NA,Skeena
+2175,243,Lake Sockeye,1984,NA,NA,NA,Skeena
+2176,174,Lake Sockeye,1984,NA,NA,NA,Skeena
+2177,181,Lake Sockeye,1984,NA,NA,NA,Skeena
+2178,194,Lake Sockeye,1984,NA,NA,NA,Skeena
+2179,195,Lake Sockeye,1984,NA,NA,NA,Skeena
+2180,196,Lake Sockeye,1984,NA,NA,NA,Skeena
+2181,198,Lake Sockeye,1984,NA,NA,NA,Skeena
+2182,199,Lake Sockeye,1984,NA,NA,NA,Skeena
+2183,200,Lake Sockeye,1984,NA,NA,NA,Skeena
+2184,201,Lake Sockeye,1984,NA,NA,NA,Skeena
+2185,230,Lake Sockeye,1984,NA,NA,NA,Skeena
+2186,171,Lake Sockeye,1984,8972,4000,12294,Skeena
+2187,175,Lake Sockeye,1984,NA,NA,NA,Skeena
+2188,176,Lake Sockeye,1984,1169,725,1984,Skeena
+2189,177,Lake Sockeye,1984,9517,4660,10905,Skeena
+2190,178,Lake Sockeye,1984,1000,500,1145,Skeena
+2191,180,Lake Sockeye,1984,26503,NA,42614,Skeena
+2192,203,Lake Sockeye,1984,435090,NA,1000741,Skeena
+2193,186,Lake Sockeye,1984,204447,NA,548951,Skeena
+2194,189,Lake Sockeye,1984,8065,NA,15473,Skeena
+2195,183,Lake Sockeye,1984,NA,NA,NA,Skeena
+2196,185,Lake Sockeye,1984,7196,3000,19659,Skeena
+2197,187,Lake Sockeye,1984,7809,6000,11449,Skeena
+2198,188,Lake Sockeye,1984,32976,NA,48349,Skeena
+2199,190,Lake Sockeye,1984,NA,NA,NA,Skeena
+2200,191,Lake Sockeye,1984,600,300,1129,Skeena
+2201,192,Lake Sockeye,1984,NA,NA,NA,Skeena
+2202,193,Lake Sockeye,1984,NA,NA,NA,Skeena
+2203,197,Lake Sockeye,1984,NA,NA,NA,Skeena
+2204,226,River Sockeye,1984,NA,95,NA,Skeena
+2205,216,River Sockeye,1984,NA,NA,NA,Skeena
+2206,205,Chinook,1985,5243,3622,12803,Skeena
+2207,210,Chinook,1985,1674,755,4087,Skeena
+2208,206,Chinook,1985,1449,1250,1540,Skeena
+2209,207,Chinook,1985,8792,8308,21472,Skeena
+2210,222,Chinook,1985,43990,33722,107429,Skeena
+2211,217,Chinook,1985,5226,3405,12763,Skeena
+2212,221,Chinook,1985,517,375,550,Skeena
+2213,224,Chinook,1985,NA,250,NA,Skeena
+2214,212,Chinook,1985,NA,NA,NA,Skeena
+2215,227,Chinook,1985,NA,345,NA,Skeena
+2216,229,Chinook,1985,NA,450,NA,Skeena
+2217,241,Chinook,1985,NA,NA,NA,Skeena
+2218,211,Chum,1985,23000,12085,41143,Skeena
+2219,214,Chum,1985,8315,313,14875,Skeena
+2220,220,Chum,1985,NA,NA,NA,Skeena
+2221,242,Chum,1985,NA,NA,NA,Skeena
+2222,202,Coho,1985,48857,13180,195427,Skeena
+2223,215,Coho,1985,33805,5919,135221,Skeena
+2224,231,Coho,1985,NA,NA,NA,Skeena
+2225,225,Coho,1985,6612,875,21837,Skeena
+2226,240,Pink (Even),1985,NA,NA,NA,Skeena
+2227,213,Pink (Odd),1985,1663714,901630,3718905,Skeena
+2228,219,Pink (Even),1985,NA,NA,NA,Skeena
+2229,218,Pink (Even),1985,NA,NA,NA,Skeena
+2230,223,Pink (Odd),1985,260981,141740,535401,Skeena
+2231,209,Pink (Odd),1985,1515564,1060650,3387744,Skeena
+2232,172,Lake Sockeye,1985,NA,NA,NA,Skeena
+2233,173,Lake Sockeye,1985,NA,NA,NA,Skeena
+2234,179,Lake Sockeye,1985,NA,NA,NA,Skeena
+2235,182,Lake Sockeye,1985,NA,NA,NA,Skeena
+2236,184,Lake Sockeye,1985,NA,NA,NA,Skeena
+2237,204,Lake Sockeye,1985,NA,NA,NA,Skeena
+2238,243,Lake Sockeye,1985,NA,NA,NA,Skeena
+2239,174,Lake Sockeye,1985,NA,NA,NA,Skeena
+2240,181,Lake Sockeye,1985,NA,NA,NA,Skeena
+2241,194,Lake Sockeye,1985,NA,NA,NA,Skeena
+2242,195,Lake Sockeye,1985,NA,NA,NA,Skeena
+2243,196,Lake Sockeye,1985,NA,NA,NA,Skeena
+2244,198,Lake Sockeye,1985,NA,NA,NA,Skeena
+2245,199,Lake Sockeye,1985,NA,NA,NA,Skeena
+2246,200,Lake Sockeye,1985,NA,NA,NA,Skeena
+2247,201,Lake Sockeye,1985,NA,NA,NA,Skeena
+2248,230,Lake Sockeye,1985,NA,NA,NA,Skeena
+2249,171,Lake Sockeye,1985,8972,4000,13081,Skeena
+2250,175,Lake Sockeye,1985,1813,900,2270,Skeena
+2251,176,Lake Sockeye,1985,2339,4850,4553,Skeena
+2252,177,Lake Sockeye,1985,36319,16785,45932,Skeena
+2253,178,Lake Sockeye,1985,1200,600,1792,Skeena
+2254,180,Lake Sockeye,1985,75649,NA,139953,Skeena
+2255,203,Lake Sockeye,1985,823141,NA,2055330,Skeena
+2256,186,Lake Sockeye,1985,623637,NA,1615135,Skeena
+2257,189,Lake Sockeye,1985,17229,NA,38137,Skeena
+2258,183,Lake Sockeye,1985,4400,2200,9590,Skeena
+2259,185,Lake Sockeye,1985,4797,2002,11269,Skeena
+2260,187,Lake Sockeye,1985,12271,7700,22241,Skeena
+2261,188,Lake Sockeye,1985,29019,NA,52597,Skeena
+2262,190,Lake Sockeye,1985,NA,NA,NA,Skeena
+2263,191,Lake Sockeye,1985,2000,1000,4389,Skeena
+2264,192,Lake Sockeye,1985,657,200,1441,Skeena
+2265,193,Lake Sockeye,1985,NA,NA,NA,Skeena
+2266,197,Lake Sockeye,1985,NA,NA,NA,Skeena
+2267,226,River Sockeye,1985,NA,25,NA,Skeena
+2268,216,River Sockeye,1985,NA,NA,NA,Skeena
+2269,205,Chinook,1986,5243,3800,12031,Skeena
+2270,210,Chinook,1986,2899,1860,6653,Skeena
+2271,206,Chinook,1986,1288,1150,1365,Skeena
+2272,207,Chinook,1986,10743,10151,24653,Skeena
+2273,222,Chinook,1986,42367,32478,97226,Skeena
+2274,217,Chinook,1986,8711,7375,19989,Skeena
+2275,221,Chinook,1986,665,450,705,Skeena
+2276,224,Chinook,1986,NA,280,NA,Skeena
+2277,212,Chinook,1986,NA,NA,NA,Skeena
+2278,227,Chinook,1986,NA,275,NA,Skeena
+2279,229,Chinook,1986,NA,2000,NA,Skeena
+2280,241,Chinook,1986,NA,NA,NA,Skeena
+2281,211,Chum,1986,16266,11590,31304,Skeena
+2282,214,Chum,1986,2021,1125,3889,Skeena
+2283,220,Chum,1986,617,90,1188,Skeena
+2284,242,Chum,1986,NA,NA,NA,Skeena
+2285,202,Coho,1986,144410,39590,849468,Skeena
+2286,215,Coho,1986,52572,13557,309247,Skeena
+2287,231,Coho,1986,NA,200,NA,Skeena
+2288,225,Coho,1986,7553,1410,33065,Skeena
+2289,240,Pink (Even),1986,NA,NA,NA,Skeena
+2290,213,Pink (Odd),1986,NA,NA,NA,Skeena
+2291,219,Pink (Even),1986,2943006,2179283,6670315,Skeena
+2292,218,Pink (Even),1986,878763,592761,2109935,Skeena
+2293,223,Pink (Odd),1986,NA,NA,NA,Skeena
+2294,209,Pink (Odd),1986,NA,NA,NA,Skeena
+2295,172,Lake Sockeye,1986,NA,NA,NA,Skeena
+2296,173,Lake Sockeye,1986,NA,NA,NA,Skeena
+2297,179,Lake Sockeye,1986,NA,NA,NA,Skeena
+2298,182,Lake Sockeye,1986,NA,NA,NA,Skeena
+2299,184,Lake Sockeye,1986,NA,NA,NA,Skeena
+2300,204,Lake Sockeye,1986,NA,NA,NA,Skeena
+2301,243,Lake Sockeye,1986,NA,NA,NA,Skeena
+2302,174,Lake Sockeye,1986,NA,75,NA,Skeena
+2303,181,Lake Sockeye,1986,NA,NA,NA,Skeena
+2304,194,Lake Sockeye,1986,NA,NA,NA,Skeena
+2305,195,Lake Sockeye,1986,NA,NA,NA,Skeena
+2306,196,Lake Sockeye,1986,NA,NA,NA,Skeena
+2307,198,Lake Sockeye,1986,NA,NA,NA,Skeena
+2308,199,Lake Sockeye,1986,NA,100,NA,Skeena
+2309,200,Lake Sockeye,1986,NA,NA,NA,Skeena
+2310,201,Lake Sockeye,1986,NA,NA,NA,Skeena
+2311,230,Lake Sockeye,1986,NA,NA,NA,Skeena
+2312,171,Lake Sockeye,1986,23552,10500,32608,Skeena
+2313,175,Lake Sockeye,1986,705,350,834,Skeena
+2314,176,Lake Sockeye,1986,2339,2600,4125,Skeena
+2315,177,Lake Sockeye,1986,8970,4400,10858,Skeena
+2316,178,Lake Sockeye,1986,6000,3000,7686,Skeena
+2317,180,Lake Sockeye,1986,26865,NA,48622,Skeena
+2318,203,Lake Sockeye,1986,266086,NA,642027,Skeena
+2319,186,Lake Sockeye,1986,167437,NA,463635,Skeena
+2320,189,Lake Sockeye,1986,3874,NA,8056,Skeena
+2321,183,Lake Sockeye,1986,NA,NA,NA,Skeena
+2322,185,Lake Sockeye,1986,7196,3000,16631,Skeena
+2323,187,Lake Sockeye,1986,7809,6250,12602,Skeena
+2324,188,Lake Sockeye,1986,32976,NA,53219,Skeena
+2325,190,Lake Sockeye,1986,NA,NA,NA,Skeena
+2326,191,Lake Sockeye,1986,2000,1000,4014,Skeena
+2327,192,Lake Sockeye,1986,NA,NA,NA,Skeena
+2328,193,Lake Sockeye,1986,NA,NA,NA,Skeena
+2329,197,Lake Sockeye,1986,NA,NA,NA,Skeena
+2330,226,River Sockeye,1986,NA,2030,NA,Skeena
+2331,216,River Sockeye,1986,NA,NA,NA,Skeena
+2332,205,Chinook,1987,1748,2905,2924,Skeena
+2333,210,Chinook,1987,1256,1650,2102,Skeena
+2334,206,Chinook,1987,3221,2300,3356,Skeena
+2335,207,Chinook,1987,25937,24508,43390,Skeena
+2336,222,Chinook,1987,23828,18290,39862,Skeena
+2337,217,Chinook,1987,8711,8170,14572,Skeena
+2338,221,Chinook,1987,369,250,385,Skeena
+2339,224,Chinook,1987,NA,75,NA,Skeena
+2340,212,Chinook,1987,NA,600,NA,Skeena
+2341,227,Chinook,1987,NA,300,NA,Skeena
+2342,229,Chinook,1987,NA,2000,NA,Skeena
+2343,241,Chinook,1987,NA,NA,NA,Skeena
+2344,211,Chum,1987,8511,7000,13959,Skeena
+2345,214,Chum,1987,1212,1050,1988,Skeena
+2346,220,Chum,1987,NA,2,NA,Skeena
+2347,242,Chum,1987,NA,NA,NA,Skeena
+2348,202,Coho,1987,149344,21824,414844,Skeena
+2349,215,Coho,1987,44195,10537,122765,Skeena
+2350,231,Coho,1987,NA,200,NA,Skeena
+2351,225,Coho,1987,NA,278,NA,Skeena
+2352,240,Pink (Even),1987,NA,NA,NA,Skeena
+2353,213,Pink (Odd),1987,1934815,1286868,4198959,Skeena
+2354,219,Pink (Even),1987,NA,NA,NA,Skeena
+2355,218,Pink (Even),1987,NA,NA,NA,Skeena
+2356,223,Pink (Odd),1987,94112,76155,211099,Skeena
+2357,209,Pink (Odd),1987,2599726,1845391,5641959,Skeena
+2358,172,Lake Sockeye,1987,NA,NA,NA,Skeena
+2359,173,Lake Sockeye,1987,NA,NA,NA,Skeena
+2360,179,Lake Sockeye,1987,NA,NA,NA,Skeena
+2361,182,Lake Sockeye,1987,NA,NA,NA,Skeena
+2362,184,Lake Sockeye,1987,NA,NA,NA,Skeena
+2363,204,Lake Sockeye,1987,NA,NA,NA,Skeena
+2364,243,Lake Sockeye,1987,NA,NA,NA,Skeena
+2365,174,Lake Sockeye,1987,NA,1400,NA,Skeena
+2366,181,Lake Sockeye,1987,NA,NA,NA,Skeena
+2367,194,Lake Sockeye,1987,NA,400,NA,Skeena
+2368,195,Lake Sockeye,1987,NA,NA,NA,Skeena
+2369,196,Lake Sockeye,1987,NA,NA,NA,Skeena
+2370,198,Lake Sockeye,1987,NA,NA,NA,Skeena
+2371,199,Lake Sockeye,1987,NA,400,NA,Skeena
+2372,200,Lake Sockeye,1987,NA,NA,NA,Skeena
+2373,201,Lake Sockeye,1987,NA,500,NA,Skeena
+2374,230,Lake Sockeye,1987,NA,NA,NA,Skeena
+2375,171,Lake Sockeye,1987,11215,5000,13532,Skeena
+2376,175,Lake Sockeye,1987,1209,600,1303,Skeena
+2377,176,Lake Sockeye,1987,4678,1200,6678,Skeena
+2378,177,Lake Sockeye,1987,5306,2550,5812,Skeena
+2379,178,Lake Sockeye,1987,6000,3000,6786,Skeena
+2380,180,Lake Sockeye,1987,38206,NA,52767,Skeena
+2381,203,Lake Sockeye,1987,331145,NA,578670,Skeena
+2382,186,Lake Sockeye,1987,237400,NA,465336,Skeena
+2383,189,Lake Sockeye,1987,15786,NA,24363,Skeena
+2384,183,Lake Sockeye,1987,NA,NA,NA,Skeena
+2385,185,Lake Sockeye,1987,9594,4000,17389,Skeena
+2386,187,Lake Sockeye,1987,8924,9000,11694,Skeena
+2387,188,Lake Sockeye,1987,65952,NA,86424,Skeena
+2388,190,Lake Sockeye,1987,100,50,152,Skeena
+2389,191,Lake Sockeye,1987,8000,4000,12151,Skeena
+2390,192,Lake Sockeye,1987,3283,1000,4987,Skeena
+2391,193,Lake Sockeye,1987,NA,NA,NA,Skeena
+2392,197,Lake Sockeye,1987,1500,750,2577,Skeena
+2393,226,River Sockeye,1987,NA,22,NA,Skeena
+2394,216,River Sockeye,1987,NA,NA,NA,Skeena
+2395,205,Chinook,1988,6990,4600,20061,Skeena
+2396,210,Chinook,1988,612,1335,1757,Skeena
+2397,206,Chinook,1988,1932,1400,2067,Skeena
+2398,207,Chinook,1988,24082,22755,69110,Skeena
+2399,222,Chinook,1988,36655,28107,105194,Skeena
+2400,217,Chinook,1988,10453,7670,29998,Skeena
+2401,221,Chinook,1988,1478,1100,1581,Skeena
+2402,224,Chinook,1988,NA,300,NA,Skeena
+2403,212,Chinook,1988,NA,350,NA,Skeena
+2404,227,Chinook,1988,NA,420,NA,Skeena
+2405,229,Chinook,1988,NA,300,NA,Skeena
+2406,241,Chinook,1988,NA,NA,NA,Skeena
+2407,211,Chum,1988,169087,104900,328529,Skeena
+2408,214,Chum,1988,13471,5501,26173,Skeena
+2409,220,Chum,1988,319,170,620,Skeena
+2410,242,Chum,1988,NA,NA,NA,Skeena
+2411,202,Coho,1988,35318,6937,95454,Skeena
+2412,215,Coho,1988,8552,4056,23113,Skeena
+2413,231,Coho,1988,NA,NA,NA,Skeena
+2414,225,Coho,1988,3807,375,9187,Skeena
+2415,240,Pink (Even),1988,NA,NA,NA,Skeena
+2416,213,Pink (Odd),1988,NA,NA,NA,Skeena
+2417,219,Pink (Even),1988,1442672,893840,3057099,Skeena
+2418,218,Pink (Even),1988,285865,163990,792639,Skeena
+2419,223,Pink (Odd),1988,NA,NA,NA,Skeena
+2420,209,Pink (Odd),1988,NA,NA,NA,Skeena
+2421,172,Lake Sockeye,1988,NA,NA,NA,Skeena
+2422,173,Lake Sockeye,1988,NA,NA,NA,Skeena
+2423,179,Lake Sockeye,1988,NA,NA,NA,Skeena
+2424,182,Lake Sockeye,1988,NA,NA,NA,Skeena
+2425,184,Lake Sockeye,1988,NA,NA,NA,Skeena
+2426,204,Lake Sockeye,1988,NA,NA,NA,Skeena
+2427,243,Lake Sockeye,1988,NA,NA,NA,Skeena
+2428,174,Lake Sockeye,1988,NA,500,NA,Skeena
+2429,181,Lake Sockeye,1988,NA,NA,NA,Skeena
+2430,194,Lake Sockeye,1988,NA,50,NA,Skeena
+2431,195,Lake Sockeye,1988,NA,NA,NA,Skeena
+2432,196,Lake Sockeye,1988,NA,NA,NA,Skeena
+2433,198,Lake Sockeye,1988,NA,NA,NA,Skeena
+2434,199,Lake Sockeye,1988,NA,NA,NA,Skeena
+2435,200,Lake Sockeye,1988,NA,NA,NA,Skeena
+2436,201,Lake Sockeye,1988,NA,500,NA,Skeena
+2437,230,Lake Sockeye,1988,NA,NA,NA,Skeena
+2438,171,Lake Sockeye,1988,14580,6500,24915,Skeena
+2439,175,Lake Sockeye,1988,1410,704,2006,Skeena
+2440,176,Lake Sockeye,1988,2807,600,6251,Skeena
+2441,177,Lake Sockeye,1988,10447,5050,15104,Skeena
+2442,178,Lake Sockeye,1988,4000,2000,6411,Skeena
+2443,180,Lake Sockeye,1988,42435,NA,92373,Skeena
+2444,203,Lake Sockeye,1988,699538,NA,1992772,Skeena
+2445,186,Lake Sockeye,1988,241974,NA,697984,Skeena
+2446,189,Lake Sockeye,1988,23459,NA,60022,Skeena
+2447,183,Lake Sockeye,1988,NA,NA,NA,Skeena
+2448,185,Lake Sockeye,1988,2399,1000,7584,Skeena
+2449,187,Lake Sockeye,1988,6693,9000,13685,Skeena
+2450,188,Lake Sockeye,1988,79142,NA,161821,Skeena
+2451,190,Lake Sockeye,1988,NA,NA,NA,Skeena
+2452,191,Lake Sockeye,1988,6000,3000,15017,Skeena
+2453,192,Lake Sockeye,1988,985,300,2465,Skeena
+2454,193,Lake Sockeye,1988,NA,NA,NA,Skeena
+2455,197,Lake Sockeye,1988,100,50,273,Skeena
+2456,226,River Sockeye,1988,NA,10,NA,Skeena
+2457,216,River Sockeye,1988,NA,NA,NA,Skeena
+2458,205,Chinook,1989,2184,1626,4372,Skeena
+2459,210,Chinook,1989,2094,1260,4191,Skeena
+2460,206,Chinook,1989,1932,1450,2034,Skeena
+2461,207,Chinook,1989,21060,19900,42148,Skeena
+2462,222,Chinook,1989,33085,24833,66214,Skeena
+2463,217,Chinook,1989,7840,5445,15690,Skeena
+2464,221,Chinook,1989,739,500,778,Skeena
+2465,224,Chinook,1989,NA,368,NA,Skeena
+2466,212,Chinook,1989,NA,400,NA,Skeena
+2467,227,Chinook,1989,NA,410,NA,Skeena
+2468,229,Chinook,1989,NA,1000,NA,Skeena
+2469,241,Chinook,1989,NA,NA,NA,Skeena
+2470,211,Chum,1989,33936,18888,60721,Skeena
+2471,214,Chum,1989,4041,2137,7231,Skeena
+2472,220,Chum,1989,198,31,353,Skeena
+2473,242,Chum,1989,NA,NA,NA,Skeena
+2474,202,Coho,1989,124207,27965,322527,Skeena
+2475,215,Coho,1989,72892,15993,189277,Skeena
+2476,231,Coho,1989,NA,NA,NA,Skeena
+2477,225,Coho,1989,1142,168,2666,Skeena
+2478,240,Pink (Even),1989,NA,NA,NA,Skeena
+2479,213,Pink (Odd),1989,2533955,1789077,4987990,Skeena
+2480,219,Pink (Even),1989,NA,NA,NA,Skeena
+2481,218,Pink (Even),1989,NA,NA,NA,Skeena
+2482,223,Pink (Odd),1989,509230,283820,1218639,Skeena
+2483,209,Pink (Odd),1989,3813648,2673330,7507015,Skeena
+2484,172,Lake Sockeye,1989,NA,NA,NA,Skeena
+2485,173,Lake Sockeye,1989,NA,NA,NA,Skeena
+2486,179,Lake Sockeye,1989,NA,NA,NA,Skeena
+2487,182,Lake Sockeye,1989,NA,NA,NA,Skeena
+2488,184,Lake Sockeye,1989,NA,NA,NA,Skeena
+2489,204,Lake Sockeye,1989,NA,NA,NA,Skeena
+2490,243,Lake Sockeye,1989,NA,NA,NA,Skeena
+2491,174,Lake Sockeye,1989,NA,75,NA,Skeena
+2492,181,Lake Sockeye,1989,NA,NA,NA,Skeena
+2493,194,Lake Sockeye,1989,NA,NA,NA,Skeena
+2494,195,Lake Sockeye,1989,NA,NA,NA,Skeena
+2495,196,Lake Sockeye,1989,NA,NA,NA,Skeena
+2496,198,Lake Sockeye,1989,NA,NA,NA,Skeena
+2497,199,Lake Sockeye,1989,NA,NA,NA,Skeena
+2498,200,Lake Sockeye,1989,NA,NA,NA,Skeena
+2499,201,Lake Sockeye,1989,NA,NA,NA,Skeena
+2500,230,Lake Sockeye,1989,NA,NA,NA,Skeena
+2501,171,Lake Sockeye,1989,16747,5500,23827,Skeena
+2502,175,Lake Sockeye,1989,604,300,742,Skeena
+2503,176,Lake Sockeye,1989,4210,1000,7548,Skeena
+2504,177,Lake Sockeye,1989,7679,3720,9662,Skeena
+2505,178,Lake Sockeye,1989,NA,NA,NA,Skeena
+2506,180,Lake Sockeye,1989,18412,NA,34310,Skeena
+2507,203,Lake Sockeye,1989,717960,NA,1620619,Skeena
+2508,186,Lake Sockeye,1989,132563,NA,340668,Skeena
+2509,189,Lake Sockeye,1989,7701,NA,15709,Skeena
+2510,183,Lake Sockeye,1989,NA,NA,NA,Skeena
+2511,185,Lake Sockeye,1989,13432,5600,25413,Skeena
+2512,187,Lake Sockeye,1989,7809,5500,13180,Skeena
+2513,188,Lake Sockeye,1989,26381,NA,44528,Skeena
+2514,190,Lake Sockeye,1989,NA,NA,NA,Skeena
+2515,191,Lake Sockeye,1989,1400,700,2784,Skeena
+2516,192,Lake Sockeye,1989,211,74,419,Skeena
+2517,193,Lake Sockeye,1989,NA,NA,NA,Skeena
+2518,197,Lake Sockeye,1989,400,200,896,Skeena
+2519,226,River Sockeye,1989,NA,9,NA,Skeena
+2520,216,River Sockeye,1989,NA,NA,NA,Skeena
+2521,205,Chinook,1990,2621,1500,5199,Skeena
+2522,210,Chinook,1990,1346,692,2670,Skeena
+2523,206,Chinook,1990,1550,1120,1631,Skeena
+2524,207,Chinook,1990,21166,20000,41979,Skeena
+2525,222,Chinook,1990,31484,23724,62442,Skeena
+2526,217,Chinook,1990,11324,7385,22459,Skeena
+2527,221,Chinook,1990,443,400,467,Skeena
+2528,224,Chinook,1990,NA,100,NA,Skeena
+2529,212,Chinook,1990,NA,NA,NA,Skeena
+2530,227,Chinook,1990,NA,120,NA,Skeena
+2531,229,Chinook,1990,NA,500,NA,Skeena
+2532,241,Chinook,1990,NA,NA,NA,Skeena
+2533,211,Chum,1990,6265,4485,11485,Skeena
+2534,214,Chum,1990,4262,2146,7813,Skeena
+2535,220,Chum,1990,NA,12,NA,Skeena
+2536,242,Chum,1990,NA,NA,NA,Skeena
+2537,202,Coho,1990,186603,50155,616663,Skeena
+2538,215,Coho,1990,85000,19127,280898,Skeena
+2539,231,Coho,1990,2339,210,7730,Skeena
+2540,225,Coho,1990,61476,7470,174796,Skeena
+2541,240,Pink (Even),1990,NA,NA,NA,Skeena
+2542,213,Pink (Odd),1990,NA,NA,NA,Skeena
+2543,219,Pink (Even),1990,3431780,2029120,6149956,Skeena
+2544,218,Pink (Even),1990,1593105,798500,3231191,Skeena
+2545,223,Pink (Odd),1990,NA,NA,NA,Skeena
+2546,209,Pink (Odd),1990,NA,NA,NA,Skeena
+2547,172,Lake Sockeye,1990,NA,NA,NA,Skeena
+2548,173,Lake Sockeye,1990,NA,NA,NA,Skeena
+2549,179,Lake Sockeye,1990,NA,NA,NA,Skeena
+2550,182,Lake Sockeye,1990,NA,NA,NA,Skeena
+2551,184,Lake Sockeye,1990,NA,NA,NA,Skeena
+2552,204,Lake Sockeye,1990,NA,NA,NA,Skeena
+2553,243,Lake Sockeye,1990,NA,NA,NA,Skeena
+2554,174,Lake Sockeye,1990,NA,50,NA,Skeena
+2555,181,Lake Sockeye,1990,NA,NA,NA,Skeena
+2556,194,Lake Sockeye,1990,NA,70,NA,Skeena
+2557,195,Lake Sockeye,1990,NA,NA,NA,Skeena
+2558,196,Lake Sockeye,1990,NA,NA,NA,Skeena
+2559,198,Lake Sockeye,1990,NA,NA,NA,Skeena
+2560,199,Lake Sockeye,1990,NA,NA,NA,Skeena
+2561,200,Lake Sockeye,1990,NA,NA,NA,Skeena
+2562,201,Lake Sockeye,1990,NA,100,NA,Skeena
+2563,230,Lake Sockeye,1990,NA,NA,NA,Skeena
+2564,171,Lake Sockeye,1990,11215,5000,17401,Skeena
+2565,175,Lake Sockeye,1990,NA,NA,NA,Skeena
+2566,176,Lake Sockeye,1990,7017,1700,14342,Skeena
+2567,177,Lake Sockeye,1990,2691,1380,3556,Skeena
+2568,178,Lake Sockeye,1990,3000,1500,4170,Skeena
+2569,180,Lake Sockeye,1990,21328,NA,39887,Skeena
+2570,203,Lake Sockeye,1990,527016,NA,1443121,Skeena
+2571,186,Lake Sockeye,1990,198864,NA,663377,Skeena
+2572,189,Lake Sockeye,1990,7395,NA,16557,Skeena
+2573,183,Lake Sockeye,1990,1000,500,2565,Skeena
+2574,185,Lake Sockeye,1990,7196,6000,19638,Skeena
+2575,187,Lake Sockeye,1990,7809,6000,13456,Skeena
+2576,188,Lake Sockeye,1990,32976,NA,56824,Skeena
+2577,190,Lake Sockeye,1990,260,130,569,Skeena
+2578,191,Lake Sockeye,1990,2000,1000,4376,Skeena
+2579,192,Lake Sockeye,1990,197,260,431,Skeena
+2580,193,Lake Sockeye,1990,NA,NA,NA,Skeena
+2581,197,Lake Sockeye,1990,60,30,162,Skeena
+2582,226,River Sockeye,1990,NA,200,NA,Skeena
+2583,216,River Sockeye,1990,NA,NA,NA,Skeena
+2584,205,Chinook,1991,1311,150,4020,Skeena
+2585,210,Chinook,1991,1256,1180,3853,Skeena
+2586,206,Chinook,1991,271,325,291,Skeena
+2587,207,Chinook,1991,9736,9210,29860,Skeena
+2588,222,Chinook,1991,43189,32543,132456,Skeena
+2589,217,Chinook,1991,8188,6550,25112,Skeena
+2590,221,Chinook,1991,1774,1200,1902,Skeena
+2591,224,Chinook,1991,NA,250,NA,Skeena
+2592,212,Chinook,1991,NA,300,NA,Skeena
+2593,227,Chinook,1991,NA,284,NA,Skeena
+2594,229,Chinook,1991,NA,800,NA,Skeena
+2595,241,Chinook,1991,NA,NA,NA,Skeena
+2596,211,Chum,1991,4394,2830,9985,Skeena
+2597,214,Chum,1991,4196,2100,9534,Skeena
+2598,220,Chum,1991,NA,54,NA,Skeena
+2599,242,Chum,1991,NA,NA,NA,Skeena
+2600,202,Coho,1991,139204,39360,370442,Skeena
+2601,215,Coho,1991,58033,11704,154434,Skeena
+2602,231,Coho,1991,NA,NA,NA,Skeena
+2603,225,Coho,1991,5219,1690,15302,Skeena
+2604,240,Pink (Even),1991,NA,NA,NA,Skeena
+2605,213,Pink (Odd),1991,3668050,1764724,13079738,Skeena
+2606,219,Pink (Even),1991,NA,NA,NA,Skeena
+2607,218,Pink (Even),1991,NA,NA,NA,Skeena
+2608,223,Pink (Odd),1991,222482,132856,1155050,Skeena
+2609,209,Pink (Odd),1991,4912632,2931320,17517738,Skeena
+2610,172,Lake Sockeye,1991,NA,NA,NA,Skeena
+2611,173,Lake Sockeye,1991,NA,NA,NA,Skeena
+2612,179,Lake Sockeye,1991,NA,NA,NA,Skeena
+2613,182,Lake Sockeye,1991,NA,NA,NA,Skeena
+2614,184,Lake Sockeye,1991,NA,NA,NA,Skeena
+2615,204,Lake Sockeye,1991,NA,NA,NA,Skeena
+2616,243,Lake Sockeye,1991,NA,NA,NA,Skeena
+2617,174,Lake Sockeye,1991,NA,NA,NA,Skeena
+2618,181,Lake Sockeye,1991,NA,NA,NA,Skeena
+2619,194,Lake Sockeye,1991,NA,NA,NA,Skeena
+2620,195,Lake Sockeye,1991,NA,NA,NA,Skeena
+2621,196,Lake Sockeye,1991,NA,NA,NA,Skeena
+2622,198,Lake Sockeye,1991,NA,NA,NA,Skeena
+2623,199,Lake Sockeye,1991,NA,NA,NA,Skeena
+2624,200,Lake Sockeye,1991,NA,NA,NA,Skeena
+2625,201,Lake Sockeye,1991,NA,NA,NA,Skeena
+2626,230,Lake Sockeye,1991,NA,NA,NA,Skeena
+2627,171,Lake Sockeye,1991,24673,11000,37909,Skeena
+2628,175,Lake Sockeye,1991,1226,600,1537,Skeena
+2629,176,Lake Sockeye,1991,7017,1800,15025,Skeena
+2630,177,Lake Sockeye,1991,13455,6350,17007,Skeena
+2631,178,Lake Sockeye,1991,1200,600,1659,Skeena
+2632,180,Lake Sockeye,1991,58719,NA,109499,Skeena
+2633,203,Lake Sockeye,1991,202114,NA,598901,Skeena
+2634,186,Lake Sockeye,1991,432582,NA,1502805,Skeena
+2635,189,Lake Sockeye,1991,24980,NA,58270,Skeena
+2636,183,Lake Sockeye,1991,NA,NA,NA,Skeena
+2637,185,Lake Sockeye,1991,47971,40000,105698,Skeena
+2638,187,Lake Sockeye,1991,8924,7500,15637,Skeena
+2639,188,Lake Sockeye,1991,46166,NA,80891,Skeena
+2640,190,Lake Sockeye,1991,NA,NA,NA,Skeena
+2641,191,Lake Sockeye,1991,6800,3400,15582,Skeena
+2642,192,Lake Sockeye,1991,492,450,1128,Skeena
+2643,193,Lake Sockeye,1991,NA,NA,NA,Skeena
+2644,197,Lake Sockeye,1991,300,150,865,Skeena
+2645,226,River Sockeye,1991,NA,NA,NA,Skeena
+2646,216,River Sockeye,1991,NA,NA,NA,Skeena
+2647,205,Chinook,1992,NA,750,NA,Skeena
+2648,210,Chinook,1992,2292,1715,4232,Skeena
+2649,206,Chinook,1992,986,786,1033,Skeena
+2650,207,Chinook,1992,14816,14003,27365,Skeena
+2651,222,Chinook,1992,38329,28885,70793,Skeena
+2652,217,Chinook,1992,28745,17733,53091,Skeena
+2653,221,Chinook,1992,2069,1400,2169,Skeena
+2654,224,Chinook,1992,NA,250,NA,Skeena
+2655,212,Chinook,1992,NA,870,NA,Skeena
+2656,227,Chinook,1992,NA,146,NA,Skeena
+2657,229,Chinook,1992,NA,580,NA,Skeena
+2658,241,Chinook,1992,NA,NA,NA,Skeena
+2659,211,Chum,1992,7047,9153,16079,Skeena
+2660,214,Chum,1992,3330,2611,7598,Skeena
+2661,220,Chum,1992,55,116,125,Skeena
+2662,242,Chum,1992,NA,NA,NA,Skeena
+2663,202,Coho,1992,129820,25576,373874,Skeena
+2664,215,Coho,1992,44713,8467,128771,Skeena
+2665,231,Coho,1992,NA,NA,NA,Skeena
+2666,225,Coho,1992,5796,1010,16200,Skeena
+2667,240,Pink (Even),1992,NA,NA,NA,Skeena
+2668,213,Pink (Odd),1992,NA,NA,NA,Skeena
+2669,219,Pink (Even),1992,597072,381711,1126338,Skeena
+2670,218,Pink (Even),1992,1193579,642222,3920847,Skeena
+2671,223,Pink (Odd),1992,NA,NA,NA,Skeena
+2672,209,Pink (Odd),1992,NA,NA,NA,Skeena
+2673,172,Lake Sockeye,1992,NA,NA,NA,Skeena
+2674,173,Lake Sockeye,1992,NA,NA,NA,Skeena
+2675,179,Lake Sockeye,1992,NA,NA,NA,Skeena
+2676,182,Lake Sockeye,1992,NA,NA,NA,Skeena
+2677,184,Lake Sockeye,1992,NA,NA,NA,Skeena
+2678,204,Lake Sockeye,1992,NA,NA,NA,Skeena
+2679,243,Lake Sockeye,1992,NA,NA,NA,Skeena
+2680,174,Lake Sockeye,1992,NA,NA,NA,Skeena
+2681,181,Lake Sockeye,1992,NA,NA,NA,Skeena
+2682,194,Lake Sockeye,1992,NA,2600,NA,Skeena
+2683,195,Lake Sockeye,1992,NA,NA,NA,Skeena
+2684,196,Lake Sockeye,1992,NA,NA,NA,Skeena
+2685,198,Lake Sockeye,1992,NA,NA,NA,Skeena
+2686,199,Lake Sockeye,1992,NA,NA,NA,Skeena
+2687,200,Lake Sockeye,1992,NA,NA,NA,Skeena
+2688,201,Lake Sockeye,1992,NA,2600,NA,Skeena
+2689,230,Lake Sockeye,1992,NA,NA,NA,Skeena
+2690,171,Lake Sockeye,1992,17944,8000,33147,Skeena
+2691,175,Lake Sockeye,1992,NA,NA,NA,Skeena
+2692,176,Lake Sockeye,1992,18712,4250,44670,Skeena
+2693,177,Lake Sockeye,1992,10392,4990,16413,Skeena
+2694,178,Lake Sockeye,1992,10000,5000,17629,Skeena
+2695,180,Lake Sockeye,1992,52358,NA,118056,Skeena
+2696,203,Lake Sockeye,1992,318210,NA,1037732,Skeena
+2697,186,Lake Sockeye,1992,582914,NA,2340193,Skeena
+2698,189,Lake Sockeye,1992,8426,NA,21931,Skeena
+2699,183,Lake Sockeye,1992,NA,NA,NA,Skeena
+2700,185,Lake Sockeye,1992,32380,27000,94836,Skeena
+2701,187,Lake Sockeye,1992,13386,11250,26675,Skeena
+2702,188,Lake Sockeye,1992,65952,NA,131421,Skeena
+2703,190,Lake Sockeye,1992,800,400,1944,Skeena
+2704,191,Lake Sockeye,1992,4200,2100,10205,Skeena
+2705,192,Lake Sockeye,1992,657,200,1595,Skeena
+2706,193,Lake Sockeye,1992,NA,NA,NA,Skeena
+2707,197,Lake Sockeye,1992,500,250,1543,Skeena
+2708,226,River Sockeye,1992,NA,1012,NA,Skeena
+2709,216,River Sockeye,1992,NA,NA,NA,Skeena
+2710,205,Chinook,1993,437,50,903,Skeena
+2711,210,Chinook,1993,2722,2285,5629,Skeena
+2712,206,Chinook,1993,1008,825,1063,Skeena
+2713,207,Chinook,1993,15874,15000,32826,Skeena
+2714,222,Chinook,1993,56921,42890,117706,Skeena
+2715,217,Chinook,1993,7622,4951,15761,Skeena
+2716,221,Chinook,1993,1626,1180,1714,Skeena
+2717,224,Chinook,1993,NA,90,NA,Skeena
+2718,212,Chinook,1993,NA,290,NA,Skeena
+2719,227,Chinook,1993,NA,60,NA,Skeena
+2720,229,Chinook,1993,NA,665,NA,Skeena
+2721,241,Chinook,1993,NA,NA,NA,Skeena
+2722,211,Chum,1993,18257,9640,35077,Skeena
+2723,214,Chum,1993,1630,1212,3132,Skeena
+2724,220,Chum,1993,228,5,438,Skeena
+2725,242,Chum,1993,NA,NA,NA,Skeena
+2726,202,Coho,1993,61342,14064,141610,Skeena
+2727,215,Coho,1993,34996,8120,80790,Skeena
+2728,231,Coho,1993,844,43,1949,Skeena
+2729,225,Coho,1993,16006,965,43952,Skeena
+2730,240,Pink (Even),1993,NA,NA,NA,Skeena
+2731,213,Pink (Odd),1993,608450,235060,1639619,Skeena
+2732,219,Pink (Even),1993,NA,NA,NA,Skeena
+2733,218,Pink (Even),1993,NA,NA,NA,Skeena
+2734,223,Pink (Odd),1993,81182,47710,262444,Skeena
+2735,209,Pink (Odd),1993,707193,395190,1905704,Skeena
+2736,172,Lake Sockeye,1993,NA,NA,NA,Skeena
+2737,173,Lake Sockeye,1993,NA,NA,NA,Skeena
+2738,179,Lake Sockeye,1993,NA,NA,NA,Skeena
+2739,182,Lake Sockeye,1993,NA,NA,NA,Skeena
+2740,184,Lake Sockeye,1993,NA,NA,NA,Skeena
+2741,204,Lake Sockeye,1993,NA,NA,NA,Skeena
+2742,243,Lake Sockeye,1993,NA,NA,NA,Skeena
+2743,174,Lake Sockeye,1993,NA,NA,NA,Skeena
+2744,181,Lake Sockeye,1993,NA,NA,NA,Skeena
+2745,194,Lake Sockeye,1993,NA,1021,NA,Skeena
+2746,195,Lake Sockeye,1993,NA,NA,NA,Skeena
+2747,196,Lake Sockeye,1993,NA,NA,NA,Skeena
+2748,198,Lake Sockeye,1993,NA,NA,NA,Skeena
+2749,199,Lake Sockeye,1993,NA,NA,NA,Skeena
+2750,200,Lake Sockeye,1993,NA,NA,NA,Skeena
+2751,201,Lake Sockeye,1993,NA,2169,NA,Skeena
+2752,230,Lake Sockeye,1993,NA,NA,NA,Skeena
+2753,171,Lake Sockeye,1993,16823,7500,28429,Skeena
+2754,175,Lake Sockeye,1993,NA,100,NA,Skeena
+2755,176,Lake Sockeye,1993,16373,3700,35377,Skeena
+2756,177,Lake Sockeye,1993,13674,6400,20142,Skeena
+2757,178,Lake Sockeye,1993,15000,7500,25167,Skeena
+2758,180,Lake Sockeye,1993,16646,NA,39326,Skeena
+2759,203,Lake Sockeye,1993,470660,NA,1345220,Skeena
+2760,186,Lake Sockeye,1993,595377,NA,1726443,Skeena
+2761,189,Lake Sockeye,1993,21962,NA,59660,Skeena
+2762,183,Lake Sockeye,1993,NA,NA,NA,Skeena
+2763,185,Lake Sockeye,1993,26384,22000,63179,Skeena
+2764,187,Lake Sockeye,1993,11155,13050,22501,Skeena
+2765,188,Lake Sockeye,1993,52761,NA,106422,Skeena
+2766,190,Lake Sockeye,1993,700,350,1622,Skeena
+2767,191,Lake Sockeye,1993,5000,2500,11584,Skeena
+2768,192,Lake Sockeye,1993,328,100,761,Skeena
+2769,193,Lake Sockeye,1993,NA,NA,NA,Skeena
+2770,197,Lake Sockeye,1993,400,200,1005,Skeena
+2771,226,River Sockeye,1993,NA,NA,NA,Skeena
+2772,216,River Sockeye,1993,NA,NA,NA,Skeena
+2773,205,Chinook,1994,437,150,838,Skeena
+2774,210,Chinook,1994,688,210,1320,Skeena
+2775,206,Chinook,1994,698,500,733,Skeena
+2776,207,Chinook,1994,14816,14000,28432,Skeena
+2777,222,Chinook,1994,9631,485,18481,Skeena
+2778,217,Chinook,1994,9582,5510,18387,Skeena
+2779,221,Chinook,1994,591,400,621,Skeena
+2780,224,Chinook,1994,NA,150,NA,Skeena
+2781,212,Chinook,1994,NA,1111,NA,Skeena
+2782,227,Chinook,1994,NA,50,NA,Skeena
+2783,229,Chinook,1994,NA,45,NA,Skeena
+2784,241,Chinook,1994,NA,NA,NA,Skeena
+2785,211,Chum,1994,15065,7690,25939,Skeena
+2786,214,Chum,1994,1440,502,2480,Skeena
+2787,220,Chum,1994,NA,NA,NA,Skeena
+2788,242,Chum,1994,NA,NA,NA,Skeena
+2789,202,Coho,1994,152386,25670,442125,Skeena
+2790,215,Coho,1994,63498,7030,184229,Skeena
+2791,231,Coho,1994,NA,NA,NA,Skeena
+2792,225,Coho,1994,NA,1230,NA,Skeena
+2793,240,Pink (Even),1994,NA,NA,NA,Skeena
+2794,213,Pink (Odd),1994,NA,NA,NA,Skeena
+2795,219,Pink (Even),1994,419130,259391,636786,Skeena
+2796,218,Pink (Even),1994,238892,150950,555590,Skeena
+2797,223,Pink (Odd),1994,NA,NA,NA,Skeena
+2798,209,Pink (Odd),1994,NA,NA,NA,Skeena
+2799,172,Lake Sockeye,1994,NA,NA,NA,Skeena
+2800,173,Lake Sockeye,1994,NA,NA,NA,Skeena
+2801,179,Lake Sockeye,1994,NA,NA,NA,Skeena
+2802,182,Lake Sockeye,1994,NA,NA,NA,Skeena
+2803,184,Lake Sockeye,1994,NA,NA,NA,Skeena
+2804,204,Lake Sockeye,1994,NA,NA,NA,Skeena
+2805,243,Lake Sockeye,1994,NA,NA,NA,Skeena
+2806,174,Lake Sockeye,1994,NA,1000,NA,Skeena
+2807,181,Lake Sockeye,1994,NA,NA,NA,Skeena
+2808,194,Lake Sockeye,1994,NA,1429,NA,Skeena
+2809,195,Lake Sockeye,1994,NA,NA,NA,Skeena
+2810,196,Lake Sockeye,1994,NA,NA,NA,Skeena
+2811,198,Lake Sockeye,1994,NA,NA,NA,Skeena
+2812,199,Lake Sockeye,1994,NA,NA,NA,Skeena
+2813,200,Lake Sockeye,1994,NA,NA,NA,Skeena
+2814,201,Lake Sockeye,1994,NA,2308,NA,Skeena
+2815,230,Lake Sockeye,1994,NA,NA,NA,Skeena
+2816,171,Lake Sockeye,1994,14580,6500,21724,Skeena
+2817,175,Lake Sockeye,1994,NA,NA,NA,Skeena
+2818,176,Lake Sockeye,1994,25729,5500,48721,Skeena
+2819,177,Lake Sockeye,1994,3118,1629,4075,Skeena
+2820,178,Lake Sockeye,1994,NA,NA,NA,Skeena
+2821,180,Lake Sockeye,1994,25124,NA,45612,Skeena
+2822,203,Lake Sockeye,1994,636540,NA,1565171,Skeena
+2823,186,Lake Sockeye,1994,132299,NA,403375,Skeena
+2824,189,Lake Sockeye,1994,7560,NA,15576,Skeena
+2825,183,Lake Sockeye,1994,NA,NA,NA,Skeena
+2826,185,Lake Sockeye,1994,NA,NA,NA,Skeena
+2827,187,Lake Sockeye,1994,NA,NA,NA,Skeena
+2828,188,Lake Sockeye,1994,NA,NA,NA,Skeena
+2829,190,Lake Sockeye,1994,NA,NA,NA,Skeena
+2830,191,Lake Sockeye,1994,NA,NA,NA,Skeena
+2831,192,Lake Sockeye,1994,NA,NA,NA,Skeena
+2832,193,Lake Sockeye,1994,NA,NA,NA,Skeena
+2833,197,Lake Sockeye,1994,NA,NA,NA,Skeena
+2834,226,River Sockeye,1994,NA,2000,NA,Skeena
+2835,216,River Sockeye,1994,NA,NA,NA,Skeena
+2836,205,Chinook,1995,NA,800,NA,Skeena
+2837,210,Chinook,1995,1645,430,4440,Skeena
+2838,206,Chinook,1995,698,580,744,Skeena
+2839,207,Chinook,1995,6680,7221,18025,Skeena
+2840,222,Chinook,1995,27463,20693,74104,Skeena
+2841,217,Chinook,1995,5052,2934,13633,Skeena
+2842,221,Chinook,1995,517,350,552,Skeena
+2843,224,Chinook,1995,NA,200,NA,Skeena
+2844,212,Chinook,1995,NA,1172,NA,Skeena
+2845,227,Chinook,1995,NA,10,NA,Skeena
+2846,229,Chinook,1995,NA,NA,NA,Skeena
+2847,241,Chinook,1995,NA,NA,NA,Skeena
+2848,211,Chum,1995,14942,7625,26347,Skeena
+2849,214,Chum,1995,1008,653,1778,Skeena
+2850,220,Chum,1995,456,11,803,Skeena
+2851,242,Chum,1995,NA,NA,NA,Skeena
+2852,202,Coho,1995,59276,12490,96016,Skeena
+2853,215,Coho,1995,17136,3595,27757,Skeena
+2854,231,Coho,1995,NA,28,NA,Skeena
+2855,225,Coho,1995,NA,330,NA,Skeena
+2856,240,Pink (Even),1995,NA,NA,NA,Skeena
+2857,213,Pink (Odd),1995,948514,458973,2710085,Skeena
+2858,219,Pink (Even),1995,NA,NA,NA,Skeena
+2859,218,Pink (Even),1995,NA,NA,NA,Skeena
+2860,223,Pink (Odd),1995,199110,108356,498484,Skeena
+2861,209,Pink (Odd),1995,2618665,1107600,7482026,Skeena
+2862,172,Lake Sockeye,1995,NA,NA,NA,Skeena
+2863,173,Lake Sockeye,1995,NA,NA,NA,Skeena
+2864,179,Lake Sockeye,1995,NA,NA,NA,Skeena
+2865,182,Lake Sockeye,1995,NA,NA,NA,Skeena
+2866,184,Lake Sockeye,1995,NA,NA,NA,Skeena
+2867,204,Lake Sockeye,1995,NA,NA,NA,Skeena
+2868,243,Lake Sockeye,1995,NA,NA,NA,Skeena
+2869,174,Lake Sockeye,1995,NA,200,NA,Skeena
+2870,181,Lake Sockeye,1995,NA,NA,NA,Skeena
+2871,194,Lake Sockeye,1995,NA,328,NA,Skeena
+2872,195,Lake Sockeye,1995,NA,NA,NA,Skeena
+2873,196,Lake Sockeye,1995,NA,NA,NA,Skeena
+2874,198,Lake Sockeye,1995,NA,NA,NA,Skeena
+2875,199,Lake Sockeye,1995,NA,NA,NA,Skeena
+2876,200,Lake Sockeye,1995,NA,NA,NA,Skeena
+2877,201,Lake Sockeye,1995,NA,802,NA,Skeena
+2878,230,Lake Sockeye,1995,NA,NA,NA,Skeena
+2879,171,Lake Sockeye,1995,19066,8500,31649,Skeena
+2880,175,Lake Sockeye,1995,12258,6000,16589,Skeena
+2881,176,Lake Sockeye,1995,22805,4875,51580,Skeena
+2882,177,Lake Sockeye,1995,27458,12550,37989,Skeena
+2883,178,Lake Sockeye,1995,NA,NA,NA,Skeena
+2884,180,Lake Sockeye,1995,79679,NA,174013,Skeena
+2885,203,Lake Sockeye,1995,916955,NA,3005027,Skeena
+2886,186,Lake Sockeye,1995,69506,NA,227553,Skeena
+2887,189,Lake Sockeye,1995,6555,NA,17973,Skeena
+2888,183,Lake Sockeye,1995,NA,NA,NA,Skeena
+2889,185,Lake Sockeye,1995,41974,35000,121179,Skeena
+2890,187,Lake Sockeye,1995,5578,5900,11273,Skeena
+2891,188,Lake Sockeye,1995,25062,NA,50651,Skeena
+2892,190,Lake Sockeye,1995,NA,NA,NA,Skeena
+2893,191,Lake Sockeye,1995,8000,4000,20501,Skeena
+2894,192,Lake Sockeye,1995,2627,800,6731,Skeena
+2895,193,Lake Sockeye,1995,NA,NA,NA,Skeena
+2896,197,Lake Sockeye,1995,NA,NA,NA,Skeena
+2897,226,River Sockeye,1995,NA,40,NA,Skeena
+2898,216,River Sockeye,1995,NA,NA,NA,Skeena
+2899,205,Chinook,1996,NA,NA,NA,Skeena
+2900,210,Chinook,1996,1496,710,2554,Skeena
+2901,206,Chinook,1996,814,585,849,Skeena
+2902,207,Chinook,1996,12540,11849,21411,Skeena
+2903,222,Chinook,1996,69182,53093,118126,Skeena
+2904,217,Chinook,1996,10975,6390,18740,Skeena
+2905,221,Chinook,1996,1518,1027,1583,Skeena
+2906,224,Chinook,1996,NA,NA,NA,Skeena
+2907,212,Chinook,1996,NA,NA,NA,Skeena
+2908,227,Chinook,1996,NA,30,NA,Skeena
+2909,229,Chinook,1996,NA,NA,NA,Skeena
+2910,241,Chinook,1996,NA,NA,NA,Skeena
+2911,211,Chum,1996,16017,8200,27672,Skeena
+2912,214,Chum,1996,864,804,1493,Skeena
+2913,220,Chum,1996,NA,250,NA,Skeena
+2914,242,Chum,1996,NA,NA,NA,Skeena
+2915,202,Coho,1996,47928,10775,182863,Skeena
+2916,215,Coho,1996,27447,4109,104722,Skeena
+2917,231,Coho,1996,NA,NA,NA,Skeena
+2918,225,Coho,1996,NA,NA,NA,Skeena
+2919,240,Pink (Even),1996,NA,NA,NA,Skeena
+2920,213,Pink (Odd),1996,NA,NA,NA,Skeena
+2921,219,Pink (Even),1996,2797784,1645280,5388525,Skeena
+2922,218,Pink (Even),1996,1355995,844728,3366598,Skeena
+2923,223,Pink (Odd),1996,NA,NA,NA,Skeena
+2924,209,Pink (Odd),1996,NA,NA,NA,Skeena
+2925,172,Lake Sockeye,1996,NA,NA,NA,Skeena
+2926,173,Lake Sockeye,1996,NA,NA,NA,Skeena
+2927,179,Lake Sockeye,1996,NA,NA,NA,Skeena
+2928,182,Lake Sockeye,1996,NA,NA,NA,Skeena
+2929,184,Lake Sockeye,1996,NA,NA,NA,Skeena
+2930,204,Lake Sockeye,1996,NA,NA,NA,Skeena
+2931,243,Lake Sockeye,1996,NA,NA,NA,Skeena
+2932,174,Lake Sockeye,1996,NA,150,NA,Skeena
+2933,181,Lake Sockeye,1996,NA,NA,NA,Skeena
+2934,194,Lake Sockeye,1996,NA,NA,NA,Skeena
+2935,195,Lake Sockeye,1996,NA,NA,NA,Skeena
+2936,196,Lake Sockeye,1996,NA,NA,NA,Skeena
+2937,198,Lake Sockeye,1996,NA,NA,NA,Skeena
+2938,199,Lake Sockeye,1996,NA,NA,NA,Skeena
+2939,200,Lake Sockeye,1996,NA,NA,NA,Skeena
+2940,201,Lake Sockeye,1996,NA,NA,NA,Skeena
+2941,230,Lake Sockeye,1996,NA,NA,NA,Skeena
+2942,171,Lake Sockeye,1996,28038,12500,51579,Skeena
+2943,175,Lake Sockeye,1996,NA,NA,NA,Skeena
+2944,176,Lake Sockeye,1996,8888,1900,22918,Skeena
+2945,177,Lake Sockeye,1996,23684,10825,34562,Skeena
+2946,178,Lake Sockeye,1996,NA,NA,NA,Skeena
+2947,180,Lake Sockeye,1996,60909,NA,153524,Skeena
+2948,203,Lake Sockeye,1996,917303,NA,4196307,Skeena
+2949,186,Lake Sockeye,1996,143305,NA,498775,Skeena
+2950,189,Lake Sockeye,1996,7975,NA,25871,Skeena
+2951,183,Lake Sockeye,1996,NA,NA,NA,Skeena
+2952,185,Lake Sockeye,1996,49170,41000,124764,Skeena
+2953,187,Lake Sockeye,1996,5131,7800,12533,Skeena
+2954,188,Lake Sockeye,1996,23743,NA,57990,Skeena
+2955,190,Lake Sockeye,1996,NA,NA,NA,Skeena
+2956,191,Lake Sockeye,1996,4500,2250,13706,Skeena
+2957,192,Lake Sockeye,1996,1970,600,6000,Skeena
+2958,193,Lake Sockeye,1996,NA,NA,NA,Skeena
+2959,197,Lake Sockeye,1996,100,50,329,Skeena
+2960,226,River Sockeye,1996,NA,NA,NA,Skeena
+2961,216,River Sockeye,1996,NA,NA,NA,Skeena
+2962,205,Chinook,1997,NA,NA,NA,Skeena
+2963,210,Chinook,1997,1418,412,2539,Skeena
+2964,206,Chinook,1997,1163,860,1216,Skeena
+2965,207,Chinook,1997,5653,5342,10122,Skeena
+2966,222,Chinook,1997,38271,29378,68520,Skeena
+2967,217,Chinook,1997,9233,5383,16531,Skeena
+2968,221,Chinook,1997,1129,764,1181,Skeena
+2969,224,Chinook,1997,NA,250,NA,Skeena
+2970,212,Chinook,1997,NA,NA,NA,Skeena
+2971,227,Chinook,1997,NA,150,NA,Skeena
+2972,229,Chinook,1997,NA,NA,NA,Skeena
+2973,241,Chinook,1997,NA,NA,NA,Skeena
+2974,211,Chum,1997,45041,21750,60778,Skeena
+2975,214,Chum,1997,576,600,777,Skeena
+2976,220,Chum,1997,NA,500,NA,Skeena
+2977,242,Chum,1997,NA,NA,NA,Skeena
+2978,202,Coho,1997,25919,5030,51866,Skeena
+2979,215,Coho,1997,9060,853,18130,Skeena
+2980,231,Coho,1997,NA,NA,NA,Skeena
+2981,225,Coho,1997,3952,450,8741,Skeena
+2982,240,Pink (Even),1997,NA,NA,NA,Skeena
+2983,213,Pink (Odd),1997,283070,140526,542191,Skeena
+2984,219,Pink (Even),1997,NA,NA,NA,Skeena
+2985,218,Pink (Even),1997,NA,NA,NA,Skeena
+2986,223,Pink (Odd),1997,88662,121790,153279,Skeena
+2987,209,Pink (Odd),1997,517296,243300,990827,Skeena
+2988,172,Lake Sockeye,1997,NA,NA,NA,Skeena
+2989,173,Lake Sockeye,1997,NA,NA,NA,Skeena
+2990,179,Lake Sockeye,1997,NA,NA,NA,Skeena
+2991,182,Lake Sockeye,1997,NA,NA,NA,Skeena
+2992,184,Lake Sockeye,1997,NA,NA,NA,Skeena
+2993,204,Lake Sockeye,1997,NA,NA,NA,Skeena
+2994,243,Lake Sockeye,1997,NA,NA,NA,Skeena
+2995,174,Lake Sockeye,1997,NA,350,NA,Skeena
+2996,181,Lake Sockeye,1997,NA,NA,NA,Skeena
+2997,194,Lake Sockeye,1997,NA,NA,NA,Skeena
+2998,195,Lake Sockeye,1997,NA,NA,NA,Skeena
+2999,196,Lake Sockeye,1997,NA,NA,NA,Skeena
+3000,198,Lake Sockeye,1997,NA,NA,NA,Skeena
+3001,199,Lake Sockeye,1997,NA,NA,NA,Skeena
+3002,200,Lake Sockeye,1997,NA,NA,NA,Skeena
+3003,201,Lake Sockeye,1997,NA,NA,NA,Skeena
+3004,230,Lake Sockeye,1997,NA,NA,NA,Skeena
+3005,171,Lake Sockeye,1997,26916,12000,55754,Skeena
+3006,175,Lake Sockeye,1997,8172,4000,14018,Skeena
+3007,176,Lake Sockeye,1997,17074,3650,44943,Skeena
+3008,177,Lake Sockeye,1997,3446,1575,6077,Skeena
+3009,178,Lake Sockeye,1997,NA,NA,NA,Skeena
+3010,180,Lake Sockeye,1997,92245,NA,277576,Skeena
+3011,203,Lake Sockeye,1997,488761,NA,1934885,Skeena
+3012,186,Lake Sockeye,1997,129975,NA,436682,Skeena
+3013,189,Lake Sockeye,1997,34660,NA,124939,Skeena
+3014,183,Lake Sockeye,1997,NA,NA,NA,Skeena
+3015,185,Lake Sockeye,1997,28782,24000,104650,Skeena
+3016,187,Lake Sockeye,1997,2677,2000,7376,Skeena
+3017,188,Lake Sockeye,1997,NA,NA,NA,Skeena
+3018,190,Lake Sockeye,1997,NA,NA,NA,Skeena
+3019,191,Lake Sockeye,1997,3600,1800,11543,Skeena
+3020,192,Lake Sockeye,1997,33,10,105,Skeena
+3021,193,Lake Sockeye,1997,NA,NA,NA,Skeena
+3022,197,Lake Sockeye,1997,220,110,710,Skeena
+3023,226,River Sockeye,1997,NA,NA,NA,Skeena
+3024,216,River Sockeye,1997,NA,NA,NA,Skeena
+3025,205,Chinook,1998,NA,NA,NA,Skeena
+3026,210,Chinook,1998,5235,1145,7351,Skeena
+3027,206,Chinook,1998,1085,790,1117,Skeena
+3028,207,Chinook,1998,10076,9521,14149,Skeena
+3029,222,Chinook,1998,33670,25853,47280,Skeena
+3030,217,Chinook,1998,13927,8140,19556,Skeena
+3031,221,Chinook,1998,1626,1100,1674,Skeena
+3032,224,Chinook,1998,NA,NA,NA,Skeena
+3033,212,Chinook,1998,NA,NA,NA,Skeena
+3034,227,Chinook,1998,NA,NA,NA,Skeena
+3035,229,Chinook,1998,NA,225,NA,Skeena
+3036,241,Chinook,1998,NA,NA,NA,Skeena
+3037,211,Chum,1998,29239,13800,35074,Skeena
+3038,214,Chum,1998,1152,804,1382,Skeena
+3039,220,Chum,1998,638,100,765,Skeena
+3040,242,Chum,1998,NA,NA,NA,Skeena
+3041,202,Coho,1998,115767,29570,143860,Skeena
+3042,215,Coho,1998,59828,9174,74347,Skeena
+3043,231,Coho,1998,NA,NA,NA,Skeena
+3044,225,Coho,1998,NA,400,NA,Skeena
+3045,240,Pink (Even),1998,NA,NA,NA,Skeena
+3046,213,Pink (Odd),1998,NA,NA,NA,Skeena
+3047,219,Pink (Even),1998,522623,321680,732549,Skeena
+3048,218,Pink (Even),1998,212595,135731,292662,Skeena
+3049,223,Pink (Odd),1998,NA,NA,NA,Skeena
+3050,209,Pink (Odd),1998,NA,NA,NA,Skeena
+3051,172,Lake Sockeye,1998,NA,NA,NA,Skeena
+3052,173,Lake Sockeye,1998,NA,NA,NA,Skeena
+3053,179,Lake Sockeye,1998,NA,NA,NA,Skeena
+3054,182,Lake Sockeye,1998,NA,NA,NA,Skeena
+3055,184,Lake Sockeye,1998,NA,NA,NA,Skeena
+3056,204,Lake Sockeye,1998,NA,NA,NA,Skeena
+3057,243,Lake Sockeye,1998,NA,NA,NA,Skeena
+3058,174,Lake Sockeye,1998,NA,NA,NA,Skeena
+3059,181,Lake Sockeye,1998,NA,NA,NA,Skeena
+3060,194,Lake Sockeye,1998,NA,NA,NA,Skeena
+3061,195,Lake Sockeye,1998,NA,NA,NA,Skeena
+3062,196,Lake Sockeye,1998,NA,NA,NA,Skeena
+3063,198,Lake Sockeye,1998,NA,NA,NA,Skeena
+3064,199,Lake Sockeye,1998,NA,NA,NA,Skeena
+3065,200,Lake Sockeye,1998,NA,NA,NA,Skeena
+3066,201,Lake Sockeye,1998,NA,NA,NA,Skeena
+3067,230,Lake Sockeye,1998,NA,NA,NA,Skeena
+3068,171,Lake Sockeye,1998,12337,5500,15492,Skeena
+3069,175,Lake Sockeye,1998,NA,NA,NA,Skeena
+3070,176,Lake Sockeye,1998,18244,4900,26107,Skeena
+3071,177,Lake Sockeye,1998,5378,1075,6423,Skeena
+3072,178,Lake Sockeye,1998,NA,NA,NA,Skeena
+3073,180,Lake Sockeye,1998,43130,NA,70482,Skeena
+3074,203,Lake Sockeye,1998,244797,NA,425532,Skeena
+3075,186,Lake Sockeye,1998,97880,NA,201601,Skeena
+3076,189,Lake Sockeye,1998,16545,NA,27516,Skeena
+3077,183,Lake Sockeye,1998,NA,NA,NA,Skeena
+3078,185,Lake Sockeye,1998,7196,6000,14289,Skeena
+3079,187,Lake Sockeye,1998,NA,NA,NA,Skeena
+3080,188,Lake Sockeye,1998,NA,NA,NA,Skeena
+3081,190,Lake Sockeye,1998,NA,NA,NA,Skeena
+3082,191,Lake Sockeye,1998,1400,700,2271,Skeena
+3083,192,Lake Sockeye,1998,131,40,213,Skeena
+3084,193,Lake Sockeye,1998,NA,NA,NA,Skeena
+3085,197,Lake Sockeye,1998,500,250,888,Skeena
+3086,226,River Sockeye,1998,NA,NA,NA,Skeena
+3087,216,River Sockeye,1998,NA,NA,NA,Skeena
+3088,205,Chinook,1999,NA,300,NA,Skeena
+3089,210,Chinook,1999,1765,385,3436,Skeena
+3090,206,Chinook,1999,465,350,489,Skeena
+3091,207,Chinook,1999,10583,10000,20600,Skeena
+3092,222,Chinook,1999,32545,25000,63349,Skeena
+3093,217,Chinook,1999,12195,7000,23738,Skeena
+3094,221,Chinook,1999,1020,690,1072,Skeena
+3095,224,Chinook,1999,NA,NA,NA,Skeena
+3096,212,Chinook,1999,NA,NA,NA,Skeena
+3097,227,Chinook,1999,NA,50,NA,Skeena
+3098,229,Chinook,1999,NA,NA,NA,Skeena
+3099,241,Chinook,1999,NA,NA,NA,Skeena
+3100,211,Chum,1999,6168,2650,7224,Skeena
+3101,214,Chum,1999,NA,NA,NA,Skeena
+3102,220,Chum,1999,NA,NA,NA,Skeena
+3103,242,Chum,1999,NA,NA,NA,Skeena
+3104,202,Coho,1999,149768,42095,192016,Skeena
+3105,215,Coho,1999,188448,28742,241607,Skeena
+3106,231,Coho,1999,NA,NA,NA,Skeena
+3107,225,Coho,1999,12395,1050,24881,Skeena
+3108,240,Pink (Even),1999,NA,NA,NA,Skeena
+3109,213,Pink (Odd),1999,980444,496095,2030579,Skeena
+3110,219,Pink (Even),1999,NA,NA,NA,Skeena
+3111,218,Pink (Even),1999,NA,NA,NA,Skeena
+3112,223,Pink (Odd),1999,378999,261075,991154,Skeena
+3113,209,Pink (Odd),1999,810005,427200,1677586,Skeena
+3114,172,Lake Sockeye,1999,NA,NA,NA,Skeena
+3115,173,Lake Sockeye,1999,NA,NA,NA,Skeena
+3116,179,Lake Sockeye,1999,NA,NA,NA,Skeena
+3117,182,Lake Sockeye,1999,NA,NA,NA,Skeena
+3118,184,Lake Sockeye,1999,NA,NA,NA,Skeena
+3119,204,Lake Sockeye,1999,NA,NA,NA,Skeena
+3120,243,Lake Sockeye,1999,NA,NA,NA,Skeena
+3121,174,Lake Sockeye,1999,NA,1000,NA,Skeena
+3122,181,Lake Sockeye,1999,NA,NA,NA,Skeena
+3123,194,Lake Sockeye,1999,NA,NA,NA,Skeena
+3124,195,Lake Sockeye,1999,NA,NA,NA,Skeena
+3125,196,Lake Sockeye,1999,NA,NA,NA,Skeena
+3126,198,Lake Sockeye,1999,NA,NA,NA,Skeena
+3127,199,Lake Sockeye,1999,NA,NA,NA,Skeena
+3128,200,Lake Sockeye,1999,NA,NA,NA,Skeena
+3129,201,Lake Sockeye,1999,NA,NA,NA,Skeena
+3130,230,Lake Sockeye,1999,NA,NA,NA,Skeena
+3131,171,Lake Sockeye,1999,2243,1000,2667,Skeena
+3132,175,Lake Sockeye,1999,16344,8000,19280,Skeena
+3133,176,Lake Sockeye,1999,NA,NA,NA,Skeena
+3134,177,Lake Sockeye,1999,NA,NA,NA,Skeena
+3135,178,Lake Sockeye,1999,NA,NA,NA,Skeena
+3136,180,Lake Sockeye,1999,63692,NA,84022,Skeena
+3137,203,Lake Sockeye,1999,208657,NA,266434,Skeena
+3138,186,Lake Sockeye,1999,155040,NA,214844,Skeena
+3139,189,Lake Sockeye,1999,22946,NA,28962,Skeena
+3140,183,Lake Sockeye,1999,NA,NA,NA,Skeena
+3141,185,Lake Sockeye,1999,17989,15000,22883,Skeena
+3142,187,Lake Sockeye,1999,13386,7000,15546,Skeena
+3143,188,Lake Sockeye,1999,13190,NA,15318,Skeena
+3144,190,Lake Sockeye,1999,400,200,481,Skeena
+3145,191,Lake Sockeye,1999,8000,4000,9623,Skeena
+3146,192,Lake Sockeye,1999,1313,500,1580,Skeena
+3147,193,Lake Sockeye,1999,NA,NA,NA,Skeena
+3148,197,Lake Sockeye,1999,500,250,625,Skeena
+3149,226,River Sockeye,1999,NA,NA,NA,Skeena
+3150,216,River Sockeye,1999,NA,NA,NA,Skeena
+3151,205,Chinook,2000,1748,700,3060,Skeena
+3152,210,Chinook,2000,1328,570,2326,Skeena
+3153,206,Chinook,2000,1916,1455,2001,Skeena
+3154,207,Chinook,2000,15380,14533,26932,Skeena
+3155,222,Chinook,2000,41118,31622,72001,Skeena
+3156,217,Chinook,2000,15409,114,26983,Skeena
+3157,221,Chinook,2000,3784,2560,3953,Skeena
+3158,224,Chinook,2000,NA,NA,NA,Skeena
+3159,212,Chinook,2000,NA,NA,NA,Skeena
+3160,227,Chinook,2000,NA,NA,NA,Skeena
+3161,229,Chinook,2000,NA,250,NA,Skeena
+3162,241,Chinook,2000,NA,NA,NA,Skeena
+3163,211,Chum,2000,10271,4650,13910,Skeena
+3164,214,Chum,2000,NA,NA,NA,Skeena
+3165,220,Chum,2000,205,30,277,Skeena
+3166,242,Chum,2000,NA,NA,NA,Skeena
+3167,202,Coho,2000,62736,17942,76154,Skeena
+3168,215,Coho,2000,136304,10459,165458,Skeena
+3169,231,Coho,2000,5049,851,6129,Skeena
+3170,225,Coho,2000,5884,670,12526,Skeena
+3171,240,Pink (Even),2000,NA,NA,NA,Skeena
+3172,213,Pink (Odd),2000,NA,NA,NA,Skeena
+3173,219,Pink (Even),2000,1094709,602815,1704339,Skeena
+3174,218,Pink (Even),2000,267430,78156,540583,Skeena
+3175,223,Pink (Odd),2000,NA,NA,NA,Skeena
+3176,209,Pink (Odd),2000,NA,NA,NA,Skeena
+3177,172,Lake Sockeye,2000,NA,NA,NA,Skeena
+3178,173,Lake Sockeye,2000,NA,NA,NA,Skeena
+3179,179,Lake Sockeye,2000,NA,NA,NA,Skeena
+3180,182,Lake Sockeye,2000,NA,NA,NA,Skeena
+3181,184,Lake Sockeye,2000,NA,NA,NA,Skeena
+3182,204,Lake Sockeye,2000,NA,NA,NA,Skeena
+3183,243,Lake Sockeye,2000,NA,NA,NA,Skeena
+3184,174,Lake Sockeye,2000,NA,NA,NA,Skeena
+3185,181,Lake Sockeye,2000,NA,NA,NA,Skeena
+3186,194,Lake Sockeye,2000,NA,NA,NA,Skeena
+3187,195,Lake Sockeye,2000,NA,NA,NA,Skeena
+3188,196,Lake Sockeye,2000,NA,NA,NA,Skeena
+3189,198,Lake Sockeye,2000,NA,NA,NA,Skeena
+3190,199,Lake Sockeye,2000,NA,NA,NA,Skeena
+3191,200,Lake Sockeye,2000,NA,NA,NA,Skeena
+3192,201,Lake Sockeye,2000,NA,NA,NA,Skeena
+3193,230,Lake Sockeye,2000,NA,NA,NA,Skeena
+3194,171,Lake Sockeye,2000,6953,3100,11136,Skeena
+3195,175,Lake Sockeye,2000,3000,1500,4032,Skeena
+3196,176,Lake Sockeye,2000,20696,5040,39847,Skeena
+3197,177,Lake Sockeye,2000,NA,NA,NA,Skeena
+3198,178,Lake Sockeye,2000,NA,NA,NA,Skeena
+3199,180,Lake Sockeye,2000,84558,NA,199195,Skeena
+3200,203,Lake Sockeye,2000,888911,NA,3352087,Skeena
+3201,186,Lake Sockeye,2000,185020,NA,455240,Skeena
+3202,189,Lake Sockeye,2000,19982,NA,54735,Skeena
+3203,183,Lake Sockeye,2000,231,231,472,Skeena
+3204,185,Lake Sockeye,2000,3598,3000,8297,Skeena
+3205,187,Lake Sockeye,2000,NA,NA,NA,Skeena
+3206,188,Lake Sockeye,2000,NA,NA,NA,Skeena
+3207,190,Lake Sockeye,2000,600,300,1548,Skeena
+3208,191,Lake Sockeye,2000,2800,1400,7225,Skeena
+3209,192,Lake Sockeye,2000,2374,200,6126,Skeena
+3210,193,Lake Sockeye,2000,949,949,2449,Skeena
+3211,197,Lake Sockeye,2000,400,200,1006,Skeena
+3212,226,River Sockeye,2000,NA,NA,NA,Skeena
+3213,216,River Sockeye,2000,NA,NA,NA,Skeena
+3214,205,Chinook,2001,1311,150,2311,Skeena
+3215,210,Chinook,2001,1999,1185,3525,Skeena
+3216,206,Chinook,2001,2837,2095,2966,Skeena
+3217,207,Chinook,2001,25480,24076,44931,Skeena
+3218,222,Chinook,2001,47410,36470,83602,Skeena
+3219,217,Chinook,2001,18263,11261,32205,Skeena
+3220,221,Chinook,2001,8277,5600,8651,Skeena
+3221,224,Chinook,2001,NA,NA,NA,Skeena
+3222,212,Chinook,2001,NA,NA,NA,Skeena
+3223,227,Chinook,2001,NA,NA,NA,Skeena
+3224,229,Chinook,2001,NA,666,NA,Skeena
+3225,241,Chinook,2001,NA,NA,NA,Skeena
+3226,211,Chum,2001,18996,8620,25405,Skeena
+3227,214,Chum,2001,NA,NA,NA,Skeena
+3228,220,Chum,2001,NA,NA,NA,Skeena
+3229,242,Chum,2001,NA,NA,NA,Skeena
+3230,202,Coho,2001,107616,20456,149485,Skeena
+3231,215,Coho,2001,333828,50723,463706,Skeena
+3232,231,Coho,2001,7401,2200,10280,Skeena
+3233,225,Coho,2001,7684,875,16534,Skeena
+3234,240,Pink (Even),2001,NA,NA,NA,Skeena
+3235,213,Pink (Odd),2001,583558,215212,1012507,Skeena
+3236,219,Pink (Even),2001,NA,NA,NA,Skeena
+3237,218,Pink (Even),2001,NA,NA,NA,Skeena
+3238,223,Pink (Odd),2001,500485,217650,709341,Skeena
+3239,209,Pink (Odd),2001,1613261,692900,2799101,Skeena
+3240,172,Lake Sockeye,2001,NA,NA,NA,Skeena
+3241,173,Lake Sockeye,2001,NA,NA,NA,Skeena
+3242,179,Lake Sockeye,2001,NA,NA,NA,Skeena
+3243,182,Lake Sockeye,2001,NA,NA,NA,Skeena
+3244,184,Lake Sockeye,2001,NA,NA,NA,Skeena
+3245,204,Lake Sockeye,2001,NA,NA,NA,Skeena
+3246,243,Lake Sockeye,2001,NA,NA,NA,Skeena
+3247,174,Lake Sockeye,2001,NA,NA,NA,Skeena
+3248,181,Lake Sockeye,2001,NA,NA,NA,Skeena
+3249,194,Lake Sockeye,2001,NA,NA,NA,Skeena
+3250,195,Lake Sockeye,2001,NA,NA,NA,Skeena
+3251,196,Lake Sockeye,2001,NA,NA,NA,Skeena
+3252,198,Lake Sockeye,2001,NA,NA,NA,Skeena
+3253,199,Lake Sockeye,2001,NA,NA,NA,Skeena
+3254,200,Lake Sockeye,2001,NA,NA,NA,Skeena
+3255,201,Lake Sockeye,2001,NA,NA,NA,Skeena
+3256,230,Lake Sockeye,2001,NA,NA,NA,Skeena
+3257,171,Lake Sockeye,2001,12112,5400,15737,Skeena
+3258,175,Lake Sockeye,2001,9000,4500,10126,Skeena
+3259,176,Lake Sockeye,2001,12356,3009,20862,Skeena
+3260,177,Lake Sockeye,2001,10336,500,11742,Skeena
+3261,178,Lake Sockeye,2001,NA,NA,NA,Skeena
+3262,180,Lake Sockeye,2001,232802,NA,421874,Skeena
+3263,203,Lake Sockeye,2001,462095,NA,2437343,Skeena
+3264,186,Lake Sockeye,2001,617401,NA,1708331,Skeena
+3265,189,Lake Sockeye,2001,47818,NA,110373,Skeena
+3266,183,Lake Sockeye,2001,221,221,433,Skeena
+3267,185,Lake Sockeye,2001,4797,4000,7773,Skeena
+3268,187,Lake Sockeye,2001,17744,9970,25967,Skeena
+3269,188,Lake Sockeye,2001,8142,NA,11916,Skeena
+3270,190,Lake Sockeye,2001,1400,700,2596,Skeena
+3271,191,Lake Sockeye,2001,2000,1000,3708,Skeena
+3272,192,Lake Sockeye,2001,1781,150,3301,Skeena
+3273,193,Lake Sockeye,2001,855,855,1585,Skeena
+3274,197,Lake Sockeye,2001,200,100,436,Skeena
+3275,226,River Sockeye,2001,NA,NA,NA,Skeena
+3276,216,River Sockeye,2001,139,139,203,Skeena
+3277,205,Chinook,2002,NA,NA,NA,Skeena
+3278,210,Chinook,2002,1261,595,2146,Skeena
+3279,206,Chinook,2002,2160,1500,2253,Skeena
+3280,207,Chinook,2002,25239,23849,42948,Skeena
+3281,222,Chinook,2002,17529,13488,29828,Skeena
+3282,217,Chinook,2002,8281,3859,14091,Skeena
+3283,221,Chinook,2002,1626,1100,1696,Skeena
+3284,224,Chinook,2002,NA,NA,NA,Skeena
+3285,212,Chinook,2002,NA,NA,NA,Skeena
+3286,227,Chinook,2002,NA,NA,NA,Skeena
+3287,229,Chinook,2002,NA,380,NA,Skeena
+3288,241,Chinook,2002,NA,NA,NA,Skeena
+3289,211,Chum,2002,7292,3060,9362,Skeena
+3290,214,Chum,2002,NA,NA,NA,Skeena
+3291,220,Chum,2002,273,46,351,Skeena
+3292,242,Chum,2002,NA,NA,NA,Skeena
+3293,202,Coho,2002,104596,20127,136416,Skeena
+3294,215,Coho,2002,245261,23367,319873,Skeena
+3295,231,Coho,2002,7208,1215,9401,Skeena
+3296,225,Coho,2002,12471,1420,16070,Skeena
+3297,240,Pink (Even),2002,NA,NA,NA,Skeena
+3298,213,Pink (Odd),2002,NA,NA,NA,Skeena
+3299,219,Pink (Even),2002,2281210,986364,3229840,Skeena
+3300,218,Pink (Even),2002,128178,37351,199499,Skeena
+3301,223,Pink (Odd),2002,NA,NA,NA,Skeena
+3302,209,Pink (Odd),2002,NA,NA,NA,Skeena
+3303,172,Lake Sockeye,2002,NA,NA,NA,Skeena
+3304,173,Lake Sockeye,2002,NA,NA,NA,Skeena
+3305,179,Lake Sockeye,2002,NA,NA,NA,Skeena
+3306,182,Lake Sockeye,2002,NA,NA,NA,Skeena
+3307,184,Lake Sockeye,2002,NA,NA,NA,Skeena
+3308,204,Lake Sockeye,2002,NA,NA,NA,Skeena
+3309,243,Lake Sockeye,2002,NA,NA,NA,Skeena
+3310,174,Lake Sockeye,2002,NA,250,NA,Skeena
+3311,181,Lake Sockeye,2002,NA,NA,NA,Skeena
+3312,194,Lake Sockeye,2002,NA,NA,NA,Skeena
+3313,195,Lake Sockeye,2002,NA,NA,NA,Skeena
+3314,196,Lake Sockeye,2002,NA,NA,NA,Skeena
+3315,198,Lake Sockeye,2002,NA,NA,NA,Skeena
+3316,199,Lake Sockeye,2002,NA,NA,NA,Skeena
+3317,200,Lake Sockeye,2002,NA,NA,NA,Skeena
+3318,201,Lake Sockeye,2002,NA,NA,NA,Skeena
+3319,230,Lake Sockeye,2002,NA,NA,NA,Skeena
+3320,171,Lake Sockeye,2002,4486,2000,6625,Skeena
+3321,175,Lake Sockeye,2002,4000,2000,4940,Skeena
+3322,176,Lake Sockeye,2002,16499,4018,28595,Skeena
+3323,177,Lake Sockeye,2002,NA,NA,NA,Skeena
+3324,178,Lake Sockeye,2002,7072,3536,9434,Skeena
+3325,180,Lake Sockeye,2002,29324,NA,55220,Skeena
+3326,203,Lake Sockeye,2002,290370,NA,658070,Skeena
+3327,186,Lake Sockeye,2002,130726,NA,278965,Skeena
+3328,189,Lake Sockeye,2002,24573,NA,52625,Skeena
+3329,183,Lake Sockeye,2002,978,978,1768,Skeena
+3330,185,Lake Sockeye,2002,NA,NA,NA,Skeena
+3331,187,Lake Sockeye,2002,8074,4258,13915,Skeena
+3332,188,Lake Sockeye,2002,2777,NA,4786,Skeena
+3333,190,Lake Sockeye,2002,NA,NA,NA,Skeena
+3334,191,Lake Sockeye,2002,600,300,1223,Skeena
+3335,192,Lake Sockeye,2002,NA,NA,NA,Skeena
+3336,193,Lake Sockeye,2002,398,398,811,Skeena
+3337,197,Lake Sockeye,2002,100,50,210,Skeena
+3338,226,River Sockeye,2002,NA,NA,NA,Skeena
+3339,216,River Sockeye,2002,10,10,17,Skeena
+3340,205,Chinook,2003,NA,NA,NA,Skeena
+3341,210,Chinook,2003,1878,800,2991,Skeena
+3342,206,Chinook,2003,2025,1516,2103,Skeena
+3343,207,Chinook,2003,24984,23608,39781,Skeena
+3344,222,Chinook,2003,27466,21123,43731,Skeena
+3345,217,Chinook,2003,14225,8216,22650,Skeena
+3346,221,Chinook,2003,1892,1280,1965,Skeena
+3347,224,Chinook,2003,NA,NA,NA,Skeena
+3348,212,Chinook,2003,NA,NA,NA,Skeena
+3349,227,Chinook,2003,NA,NA,NA,Skeena
+3350,229,Chinook,2003,NA,215,NA,Skeena
+3351,241,Chinook,2003,NA,NA,NA,Skeena
+3352,211,Chum,2003,9786,27,12124,Skeena
+3353,214,Chum,2003,3371,1755,4176,Skeena
+3354,220,Chum,2003,NA,NA,NA,Skeena
+3355,242,Chum,2003,NA,NA,NA,Skeena
+3356,202,Coho,2003,116284,18014,158680,Skeena
+3357,215,Coho,2003,222614,29091,303777,Skeena
+3358,231,Coho,2003,7498,2229,10232,Skeena
+3359,225,Coho,2003,10100,1150,18671,Skeena
+3360,240,Pink (Even),2003,NA,NA,NA,Skeena
+3361,213,Pink (Odd),2003,1643221,577595,2428382,Skeena
+3362,219,Pink (Even),2003,NA,NA,NA,Skeena
+3363,218,Pink (Even),2003,NA,NA,NA,Skeena
+3364,223,Pink (Odd),2003,621163,258200,865928,Skeena
+3365,209,Pink (Odd),2003,1860769,808060,2749879,Skeena
+3366,172,Lake Sockeye,2003,NA,NA,NA,Skeena
+3367,173,Lake Sockeye,2003,NA,NA,NA,Skeena
+3368,179,Lake Sockeye,2003,NA,NA,NA,Skeena
+3369,182,Lake Sockeye,2003,NA,NA,NA,Skeena
+3370,184,Lake Sockeye,2003,NA,NA,NA,Skeena
+3371,204,Lake Sockeye,2003,NA,NA,NA,Skeena
+3372,243,Lake Sockeye,2003,NA,NA,NA,Skeena
+3373,174,Lake Sockeye,2003,NA,600,NA,Skeena
+3374,181,Lake Sockeye,2003,NA,NA,NA,Skeena
+3375,194,Lake Sockeye,2003,NA,NA,NA,Skeena
+3376,195,Lake Sockeye,2003,NA,NA,NA,Skeena
+3377,196,Lake Sockeye,2003,NA,NA,NA,Skeena
+3378,198,Lake Sockeye,2003,NA,NA,NA,Skeena
+3379,199,Lake Sockeye,2003,NA,NA,NA,Skeena
+3380,200,Lake Sockeye,2003,NA,NA,NA,Skeena
+3381,201,Lake Sockeye,2003,NA,NA,NA,Skeena
+3382,230,Lake Sockeye,2003,NA,NA,NA,Skeena
+3383,171,Lake Sockeye,2003,30281,13500,37164,Skeena
+3384,175,Lake Sockeye,2003,10100,5050,11334,Skeena
+3385,176,Lake Sockeye,2003,42295,10300,58621,Skeena
+3386,177,Lake Sockeye,2003,NA,NA,NA,Skeena
+3387,178,Lake Sockeye,2003,9106,4553,10854,Skeena
+3388,180,Lake Sockeye,2003,55028,NA,79852,Skeena
+3389,203,Lake Sockeye,2003,682889,NA,1101973,Skeena
+3390,186,Lake Sockeye,2003,99284,NA,167756,Skeena
+3391,189,Lake Sockeye,2003,83151,NA,128766,Skeena
+3392,183,Lake Sockeye,2003,3377,3377,5204,Skeena
+3393,185,Lake Sockeye,2003,11993,10000,16388,Skeena
+3394,187,Lake Sockeye,2003,18174,9613,24637,Skeena
+3395,188,Lake Sockeye,2003,5559,NA,7536,Skeena
+3396,190,Lake Sockeye,2003,NA,NA,NA,Skeena
+3397,191,Lake Sockeye,2003,3000,1500,4497,Skeena
+3398,192,Lake Sockeye,2003,8309,700,12456,Skeena
+3399,193,Lake Sockeye,2003,430,430,645,Skeena
+3400,197,Lake Sockeye,2003,2000,1000,3143,Skeena
+3401,226,River Sockeye,2003,NA,NA,NA,Skeena
+3402,216,River Sockeye,2003,130,130,176,Skeena
+3403,205,Chinook,2004,NA,NA,NA,Skeena
+3404,210,Chinook,2004,1664,640,2541,Skeena
+3405,206,Chinook,2004,1655,1261,1714,Skeena
+3406,207,Chinook,2004,27269,25767,41656,Skeena
+3407,222,Chinook,2004,13426,10113,20509,Skeena
+3408,217,Chinook,2004,10299,1573,15732,Skeena
+3409,221,Chinook,2004,NA,NA,NA,Skeena
+3410,224,Chinook,2004,NA,NA,NA,Skeena
+3411,212,Chinook,2004,NA,NA,NA,Skeena
+3412,227,Chinook,2004,NA,NA,NA,Skeena
+3413,229,Chinook,2004,NA,198,NA,Skeena
+3414,241,Chinook,2004,NA,NA,NA,Skeena
+3415,211,Chum,2004,25371,70,32333,Skeena
+3416,214,Chum,2004,3745,1950,4773,Skeena
+3417,220,Chum,2004,182,14,232,Skeena
+3418,242,Chum,2004,NA,NA,NA,Skeena
+3419,202,Coho,2004,77815,7807,129469,Skeena
+3420,215,Coho,2004,169283,21619,281653,Skeena
+3421,231,Coho,2004,7446,2037,12388,Skeena
+3422,225,Coho,2004,7377,840,16536,Skeena
+3423,240,Pink (Even),2004,NA,NA,NA,Skeena
+3424,213,Pink (Odd),2004,NA,NA,NA,Skeena
+3425,219,Pink (Even),2004,2220776,1098500,3706813,Skeena
+3426,218,Pink (Even),2004,258507,121850,434237,Skeena
+3427,223,Pink (Odd),2004,NA,NA,NA,Skeena
+3428,209,Pink (Odd),2004,NA,NA,NA,Skeena
+3429,172,Lake Sockeye,2004,NA,NA,NA,Skeena
+3430,173,Lake Sockeye,2004,NA,NA,NA,Skeena
+3431,179,Lake Sockeye,2004,NA,NA,NA,Skeena
+3432,182,Lake Sockeye,2004,NA,NA,NA,Skeena
+3433,184,Lake Sockeye,2004,NA,NA,NA,Skeena
+3434,204,Lake Sockeye,2004,NA,NA,NA,Skeena
+3435,243,Lake Sockeye,2004,NA,NA,NA,Skeena
+3436,174,Lake Sockeye,2004,NA,NA,NA,Skeena
+3437,181,Lake Sockeye,2004,NA,NA,NA,Skeena
+3438,194,Lake Sockeye,2004,NA,NA,NA,Skeena
+3439,195,Lake Sockeye,2004,NA,NA,NA,Skeena
+3440,196,Lake Sockeye,2004,NA,NA,NA,Skeena
+3441,198,Lake Sockeye,2004,NA,NA,NA,Skeena
+3442,199,Lake Sockeye,2004,NA,16,NA,Skeena
+3443,200,Lake Sockeye,2004,NA,NA,NA,Skeena
+3444,201,Lake Sockeye,2004,NA,NA,NA,Skeena
+3445,230,Lake Sockeye,2004,NA,NA,NA,Skeena
+3446,171,Lake Sockeye,2004,NA,NA,NA,Skeena
+3447,175,Lake Sockeye,2004,NA,NA,NA,Skeena
+3448,176,Lake Sockeye,2004,20815,5069,28867,Skeena
+3449,177,Lake Sockeye,2004,5910,2000,6820,Skeena
+3450,178,Lake Sockeye,2004,6332,3166,7586,Skeena
+3451,180,Lake Sockeye,2004,39546,NA,59085,Skeena
+3452,203,Lake Sockeye,2004,445304,NA,758786,Skeena
+3453,186,Lake Sockeye,2004,249231,NA,494848,Skeena
+3454,189,Lake Sockeye,2004,51747,NA,80618,Skeena
+3455,183,Lake Sockeye,2004,1317,1317,2220,Skeena
+3456,185,Lake Sockeye,2004,9294,7750,12641,Skeena
+3457,187,Lake Sockeye,2004,12242,6929,16266,Skeena
+3458,188,Lake Sockeye,2004,6073,NA,8069,Skeena
+3459,190,Lake Sockeye,2004,NA,NA,NA,Skeena
+3460,191,Lake Sockeye,2004,1200,600,1787,Skeena
+3461,192,Lake Sockeye,2004,1781,150,2652,Skeena
+3462,193,Lake Sockeye,2004,293,293,436,Skeena
+3463,197,Lake Sockeye,2004,600,300,1008,Skeena
+3464,226,River Sockeye,2004,NA,NA,NA,Skeena
+3465,216,River Sockeye,2004,208,208,276,Skeena
+3466,205,Chinook,2005,NA,NA,NA,Skeena
+3467,210,Chinook,2005,1003,235,1787,Skeena
+3468,206,Chinook,2005,1138,790,1190,Skeena
+3469,207,Chinook,2005,15923,15046,28387,Skeena
+3470,222,Chinook,2005,14970,10227,26687,Skeena
+3471,217,Chinook,2005,15970,2408,28470,Skeena
+3472,221,Chinook,2005,916,620,958,Skeena
+3473,224,Chinook,2005,NA,NA,NA,Skeena
+3474,212,Chinook,2005,NA,NA,NA,Skeena
+3475,227,Chinook,2005,NA,NA,NA,Skeena
+3476,229,Chinook,2005,NA,170,NA,Skeena
+3477,241,Chinook,2005,NA,NA,NA,Skeena
+3478,211,Chum,2005,24758,435,28599,Skeena
+3479,214,Chum,2005,3576,1862,4131,Skeena
+3480,220,Chum,2005,1367,68,1579,Skeena
+3481,242,Chum,2005,NA,NA,NA,Skeena
+3482,202,Coho,2005,85553,6329,117618,Skeena
+3483,215,Coho,2005,398685,65891,548109,Skeena
+3484,231,Coho,2005,15595,4636,21440,Skeena
+3485,225,Coho,2005,7693,876,18006,Skeena
+3486,240,Pink (Even),2005,NA,NA,NA,Skeena
+3487,213,Pink (Odd),2005,1932477,685070,2692626,Skeena
+3488,219,Pink (Even),2005,NA,NA,NA,Skeena
+3489,218,Pink (Even),2005,NA,NA,NA,Skeena
+3490,223,Pink (Odd),2005,847286,218100,1218081,Skeena
+3491,209,Pink (Odd),2005,1076104,453200,1499395,Skeena
+3492,172,Lake Sockeye,2005,NA,NA,NA,Skeena
+3493,173,Lake Sockeye,2005,NA,NA,NA,Skeena
+3494,179,Lake Sockeye,2005,NA,NA,NA,Skeena
+3495,182,Lake Sockeye,2005,NA,NA,NA,Skeena
+3496,184,Lake Sockeye,2005,NA,NA,NA,Skeena
+3497,204,Lake Sockeye,2005,NA,NA,NA,Skeena
+3498,243,Lake Sockeye,2005,NA,NA,NA,Skeena
+3499,174,Lake Sockeye,2005,NA,NA,NA,Skeena
+3500,181,Lake Sockeye,2005,NA,NA,NA,Skeena
+3501,194,Lake Sockeye,2005,NA,NA,NA,Skeena
+3502,195,Lake Sockeye,2005,NA,NA,NA,Skeena
+3503,196,Lake Sockeye,2005,NA,NA,NA,Skeena
+3504,198,Lake Sockeye,2005,NA,NA,NA,Skeena
+3505,199,Lake Sockeye,2005,NA,NA,NA,Skeena
+3506,200,Lake Sockeye,2005,NA,NA,NA,Skeena
+3507,201,Lake Sockeye,2005,NA,NA,NA,Skeena
+3508,230,Lake Sockeye,2005,NA,NA,NA,Skeena
+3509,171,Lake Sockeye,2005,13734,4700,15468,Skeena
+3510,175,Lake Sockeye,2005,NA,NA,NA,Skeena
+3511,176,Lake Sockeye,2005,13321,3244,16269,Skeena
+3512,177,Lake Sockeye,2005,6268,2865,7035,Skeena
+3513,178,Lake Sockeye,2005,6888,3444,7842,Skeena
+3514,180,Lake Sockeye,2005,25141,NA,37414,Skeena
+3515,203,Lake Sockeye,2005,327460,NA,502263,Skeena
+3516,186,Lake Sockeye,2005,163178,NA,259392,Skeena
+3517,189,Lake Sockeye,2005,31371,NA,46030,Skeena
+3518,183,Lake Sockeye,2005,937,937,1256,Skeena
+3519,185,Lake Sockeye,2005,NA,NA,NA,Skeena
+3520,187,Lake Sockeye,2005,8103,4261,9926,Skeena
+3521,188,Lake Sockeye,2005,2796,NA,3425,Skeena
+3522,190,Lake Sockeye,2005,250,125,344,Skeena
+3523,191,Lake Sockeye,2005,NA,NA,NA,Skeena
+3524,192,Lake Sockeye,2005,NA,NA,NA,Skeena
+3525,193,Lake Sockeye,2005,216,216,297,Skeena
+3526,197,Lake Sockeye,2005,290,145,423,Skeena
+3527,226,River Sockeye,2005,NA,NA,NA,Skeena
+3528,216,River Sockeye,2005,41,41,50,Skeena
+3529,205,Chinook,2006,NA,NA,NA,Skeena
+3530,210,Chinook,2006,1745,409,3119,Skeena
+3531,206,Chinook,2006,1216,844,1272,Skeena
+3532,207,Chinook,2006,13089,12368,23393,Skeena
+3533,222,Chinook,2006,26682,18648,47686,Skeena
+3534,217,Chinook,2006,20022,3071,35783,Skeena
+3535,221,Chinook,2006,1138,770,1190,Skeena
+3536,224,Chinook,2006,NA,450,NA,Skeena
+3537,212,Chinook,2006,NA,NA,NA,Skeena
+3538,227,Chinook,2006,NA,NA,NA,Skeena
+3539,229,Chinook,2006,NA,122,NA,Skeena
+3540,241,Chinook,2006,NA,NA,NA,Skeena
+3541,211,Chum,2006,NA,NA,NA,Skeena
+3542,214,Chum,2006,1316,685,1634,Skeena
+3543,220,Chum,2006,3189,70,3961,Skeena
+3544,242,Chum,2006,NA,NA,NA,Skeena
+3545,202,Coho,2006,59133,9354,76598,Skeena
+3546,215,Coho,2006,225266,37898,291799,Skeena
+3547,231,Coho,2006,8326,2525,10785,Skeena
+3548,225,Coho,2006,4874,555,9289,Skeena
+3549,240,Pink (Even),2006,NA,NA,NA,Skeena
+3550,213,Pink (Odd),2006,NA,NA,NA,Skeena
+3551,219,Pink (Even),2006,394700,193450,482321,Skeena
+3552,218,Pink (Even),2006,128291,60467,231411,Skeena
+3553,223,Pink (Odd),2006,NA,NA,NA,Skeena
+3554,209,Pink (Odd),2006,NA,NA,NA,Skeena
+3555,172,Lake Sockeye,2006,NA,NA,NA,Skeena
+3556,173,Lake Sockeye,2006,NA,NA,NA,Skeena
+3557,179,Lake Sockeye,2006,NA,NA,NA,Skeena
+3558,182,Lake Sockeye,2006,NA,NA,NA,Skeena
+3559,184,Lake Sockeye,2006,NA,NA,NA,Skeena
+3560,204,Lake Sockeye,2006,NA,NA,NA,Skeena
+3561,243,Lake Sockeye,2006,NA,NA,NA,Skeena
+3562,174,Lake Sockeye,2006,NA,NA,NA,Skeena
+3563,181,Lake Sockeye,2006,NA,NA,NA,Skeena
+3564,194,Lake Sockeye,2006,NA,NA,NA,Skeena
+3565,195,Lake Sockeye,2006,NA,NA,NA,Skeena
+3566,196,Lake Sockeye,2006,NA,NA,NA,Skeena
+3567,198,Lake Sockeye,2006,NA,NA,NA,Skeena
+3568,199,Lake Sockeye,2006,NA,2,NA,Skeena
+3569,200,Lake Sockeye,2006,NA,NA,NA,Skeena
+3570,201,Lake Sockeye,2006,NA,NA,NA,Skeena
+3571,230,Lake Sockeye,2006,NA,NA,NA,Skeena
+3572,171,Lake Sockeye,2006,5383,2400,7022,Skeena
+3573,175,Lake Sockeye,2006,NA,NA,NA,Skeena
+3574,176,Lake Sockeye,2006,14187,3455,21785,Skeena
+3575,177,Lake Sockeye,2006,3548,1450,4335,Skeena
+3576,178,Lake Sockeye,2006,6116,3058,8251,Skeena
+3577,180,Lake Sockeye,2006,40874,NA,74859,Skeena
+3578,203,Lake Sockeye,2006,684130,NA,1820922,Skeena
+3579,186,Lake Sockeye,2006,137660,NA,298888,Skeena
+3580,189,Lake Sockeye,2006,12515,NA,26458,Skeena
+3581,183,Lake Sockeye,2006,5139,5139,8187,Skeena
+3582,185,Lake Sockeye,2006,9896,8252,17162,Skeena
+3583,187,Lake Sockeye,2006,20236,10143,33224,Skeena
+3584,188,Lake Sockeye,2006,4967,NA,8155,Skeena
+3585,190,Lake Sockeye,2006,NA,NA,NA,Skeena
+3586,191,Lake Sockeye,2006,NA,NA,NA,Skeena
+3587,192,Lake Sockeye,2006,NA,NA,NA,Skeena
+3588,193,Lake Sockeye,2006,331,331,621,Skeena
+3589,197,Lake Sockeye,2006,120,60,224,Skeena
+3590,226,River Sockeye,2006,NA,NA,NA,Skeena
+3591,216,River Sockeye,2006,NA,NA,NA,Skeena
+3592,205,Chinook,2007,NA,NA,NA,Skeena
+3593,210,Chinook,2007,1852,1040,2838,Skeena
+3594,206,Chinook,2007,1224,850,1268,Skeena
+3595,207,Chinook,2007,17213,16265,26380,Skeena
+3596,222,Chinook,2007,21448,14994,32870,Skeena
+3597,217,Chinook,2007,22916,3525,35120,Skeena
+3598,221,Chinook,2007,NA,NA,NA,Skeena
+3599,224,Chinook,2007,NA,300,NA,Skeena
+3600,212,Chinook,2007,NA,NA,NA,Skeena
+3601,227,Chinook,2007,NA,NA,NA,Skeena
+3602,229,Chinook,2007,NA,80,NA,Skeena
+3603,241,Chinook,2007,NA,NA,NA,Skeena
+3604,211,Chum,2007,8102,120,10118,Skeena
+3605,214,Chum,2007,680,354,849,Skeena
+3606,220,Chum,2007,NA,NA,NA,Skeena
+3607,242,Chum,2007,NA,NA,NA,Skeena
+3608,202,Coho,2007,53504,3830,92967,Skeena
+3609,215,Coho,2007,163456,20673,284014,Skeena
+3610,231,Coho,2007,6556,1949,11392,Skeena
+3611,225,Coho,2007,2986,340,5926,Skeena
+3612,240,Pink (Even),2007,NA,NA,NA,Skeena
+3613,213,Pink (Odd),2007,1068141,378643,1742457,Skeena
+3614,219,Pink (Even),2007,NA,NA,NA,Skeena
+3615,218,Pink (Even),2007,NA,NA,NA,Skeena
+3616,223,Pink (Odd),2007,512660,152500,824310,Skeena
+3617,209,Pink (Odd),2007,437453,173300,713615,Skeena
+3618,172,Lake Sockeye,2007,NA,NA,NA,Skeena
+3619,173,Lake Sockeye,2007,NA,NA,NA,Skeena
+3620,179,Lake Sockeye,2007,NA,NA,NA,Skeena
+3621,182,Lake Sockeye,2007,NA,NA,NA,Skeena
+3622,184,Lake Sockeye,2007,NA,NA,NA,Skeena
+3623,204,Lake Sockeye,2007,NA,NA,NA,Skeena
+3624,243,Lake Sockeye,2007,NA,NA,NA,Skeena
+3625,174,Lake Sockeye,2007,NA,NA,NA,Skeena
+3626,181,Lake Sockeye,2007,NA,NA,NA,Skeena
+3627,194,Lake Sockeye,2007,NA,NA,NA,Skeena
+3628,195,Lake Sockeye,2007,NA,NA,NA,Skeena
+3629,196,Lake Sockeye,2007,NA,NA,NA,Skeena
+3630,198,Lake Sockeye,2007,NA,NA,NA,Skeena
+3631,199,Lake Sockeye,2007,NA,NA,NA,Skeena
+3632,200,Lake Sockeye,2007,NA,NA,NA,Skeena
+3633,201,Lake Sockeye,2007,NA,NA,NA,Skeena
+3634,230,Lake Sockeye,2007,NA,NA,NA,Skeena
+3635,171,Lake Sockeye,2007,24673,11000,30017,Skeena
+3636,175,Lake Sockeye,2007,NA,NA,NA,Skeena
+3637,176,Lake Sockeye,2007,18561,4520,28357,Skeena
+3638,177,Lake Sockeye,2007,6585,3010,7274,Skeena
+3639,178,Lake Sockeye,2007,3800,1900,4287,Skeena
+3640,180,Lake Sockeye,2007,52862,NA,74568,Skeena
+3641,203,Lake Sockeye,2007,607886,NA,1217080,Skeena
+3642,186,Lake Sockeye,2007,100762,NA,268184,Skeena
+3643,189,Lake Sockeye,2007,12595,NA,20601,Skeena
+3644,183,Lake Sockeye,2007,245,245,530,Skeena
+3645,185,Lake Sockeye,2007,16070,13400,21630,Skeena
+3646,187,Lake Sockeye,2007,9036,4562,11771,Skeena
+3647,188,Lake Sockeye,2007,2291,NA,2985,Skeena
+3648,190,Lake Sockeye,2007,320,160,489,Skeena
+3649,191,Lake Sockeye,2007,NA,NA,NA,Skeena
+3650,192,Lake Sockeye,2007,NA,NA,NA,Skeena
+3651,193,Lake Sockeye,2007,366,366,559,Skeena
+3652,197,Lake Sockeye,2007,300,150,577,Skeena
+3653,226,River Sockeye,2007,NA,NA,NA,Skeena
+3654,216,River Sockeye,2007,20,20,26,Skeena
+3655,205,Chinook,2008,NA,NA,NA,Skeena
+3656,210,Chinook,2008,NA,215,NA,Skeena
+3657,206,Chinook,2008,1080,750,1143,Skeena
+3658,207,Chinook,2008,10979,10374,24316,Skeena
+3659,222,Chinook,2008,27892,21450,61776,Skeena
+3660,217,Chinook,2008,9616,1450,21298,Skeena
+3661,221,Chinook,2008,NA,NA,NA,Skeena
+3662,224,Chinook,2008,NA,200,NA,Skeena
+3663,212,Chinook,2008,NA,176,NA,Skeena
+3664,227,Chinook,2008,NA,NA,NA,Skeena
+3665,229,Chinook,2008,NA,NA,NA,Skeena
+3666,241,Chinook,2008,NA,NA,NA,Skeena
+3667,211,Chum,2008,4051,360,4967,Skeena
+3668,214,Chum,2008,288,150,353,Skeena
+3669,220,Chum,2008,NA,NA,NA,Skeena
+3670,242,Chum,2008,NA,NA,NA,Skeena
+3671,202,Coho,2008,41281,5294,62489,Skeena
+3672,215,Coho,2008,144141,24859,218195,Skeena
+3673,231,Coho,2008,8830,2957,13367,Skeena
+3674,225,Coho,2008,2407,35,4036,Skeena
+3675,240,Pink (Even),2008,NA,NA,NA,Skeena
+3676,213,Pink (Odd),2008,NA,NA,NA,Skeena
+3677,219,Pink (Even),2008,213534,105826,251549,Skeena
+3678,218,Pink (Even),2008,82519,29948,114039,Skeena
+3679,223,Pink (Odd),2008,NA,NA,NA,Skeena
+3680,209,Pink (Odd),2008,NA,NA,NA,Skeena
+3681,172,Lake Sockeye,2008,NA,NA,NA,Skeena
+3682,173,Lake Sockeye,2008,NA,NA,NA,Skeena
+3683,179,Lake Sockeye,2008,NA,NA,NA,Skeena
+3684,182,Lake Sockeye,2008,NA,NA,NA,Skeena
+3685,184,Lake Sockeye,2008,NA,NA,NA,Skeena
+3686,204,Lake Sockeye,2008,NA,NA,NA,Skeena
+3687,243,Lake Sockeye,2008,NA,NA,NA,Skeena
+3688,174,Lake Sockeye,2008,NA,NA,NA,Skeena
+3689,181,Lake Sockeye,2008,NA,NA,NA,Skeena
+3690,194,Lake Sockeye,2008,NA,NA,NA,Skeena
+3691,195,Lake Sockeye,2008,NA,NA,NA,Skeena
+3692,196,Lake Sockeye,2008,NA,NA,NA,Skeena
+3693,198,Lake Sockeye,2008,NA,NA,NA,Skeena
+3694,199,Lake Sockeye,2008,NA,NA,NA,Skeena
+3695,200,Lake Sockeye,2008,NA,NA,NA,Skeena
+3696,201,Lake Sockeye,2008,NA,NA,NA,Skeena
+3697,230,Lake Sockeye,2008,NA,NA,NA,Skeena
+3698,171,Lake Sockeye,2008,1169,400,1414,Skeena
+3699,175,Lake Sockeye,2008,NA,NA,NA,Skeena
+3700,176,Lake Sockeye,2008,22872,5570,32753,Skeena
+3701,177,Lake Sockeye,2008,5481,2541,5873,Skeena
+3702,178,Lake Sockeye,2008,280,140,297,Skeena
+3703,180,Lake Sockeye,2008,28667,NA,44784,Skeena
+3704,203,Lake Sockeye,2008,507968,NA,1243501,Skeena
+3705,186,Lake Sockeye,2008,93158,NA,231601,Skeena
+3706,189,Lake Sockeye,2008,12744,NA,23977,Skeena
+3707,183,Lake Sockeye,2008,1200,1200,2158,Skeena
+3708,185,Lake Sockeye,2008,10793,9000,16776,Skeena
+3709,187,Lake Sockeye,2008,8255,4790,10326,Skeena
+3710,188,Lake Sockeye,2008,4907,NA,6137,Skeena
+3711,190,Lake Sockeye,2008,114,57,175,Skeena
+3712,191,Lake Sockeye,2008,6106,3053,9354,Skeena
+3713,192,Lake Sockeye,2008,NA,NA,NA,Skeena
+3714,193,Lake Sockeye,2008,150,150,230,Skeena
+3715,197,Lake Sockeye,2008,100,50,183,Skeena
+3716,226,River Sockeye,2008,NA,NA,NA,Skeena
+3717,216,River Sockeye,2008,105,105,131,Skeena
+3718,205,Chinook,2009,NA,NA,NA,Skeena
+3719,210,Chinook,2009,1087,405,1686,Skeena
+3720,206,Chinook,2009,504,350,523,Skeena
+3721,207,Chinook,2009,11327,10703,17574,Skeena
+3722,222,Chinook,2009,31046,23874,48168,Skeena
+3723,217,Chinook,2009,5465,824,8479,Skeena
+3724,221,Chinook,2009,NA,NA,NA,Skeena
+3725,224,Chinook,2009,NA,300,NA,Skeena
+3726,212,Chinook,2009,NA,20,NA,Skeena
+3727,227,Chinook,2009,NA,NA,NA,Skeena
+3728,229,Chinook,2009,NA,NA,NA,Skeena
+3729,241,Chinook,2009,NA,NA,NA,Skeena
+3730,211,Chum,2009,4645,501,5342,Skeena
+3731,214,Chum,2009,1592,829,1831,Skeena
+3732,220,Chum,2009,1822,58,2096,Skeena
+3733,242,Chum,2009,NA,NA,NA,Skeena
+3734,202,Coho,2009,108724,15819,173483,Skeena
+3735,215,Coho,2009,350118,65972,558660,Skeena
+3736,231,Coho,2009,21526,6399,34348,Skeena
+3737,225,Coho,2009,NA,25,NA,Skeena
+3738,240,Pink (Even),2009,NA,NA,NA,Skeena
+3739,213,Pink (Odd),2009,3283065,1168557,4187880,Skeena
+3740,219,Pink (Even),2009,NA,NA,NA,Skeena
+3741,218,Pink (Even),2009,NA,NA,NA,Skeena
+3742,223,Pink (Odd),2009,415208,114450,528925,Skeena
+3743,209,Pink (Odd),2009,3204768,1291855,4088005,Skeena
+3744,172,Lake Sockeye,2009,NA,NA,NA,Skeena
+3745,173,Lake Sockeye,2009,NA,NA,NA,Skeena
+3746,179,Lake Sockeye,2009,NA,NA,NA,Skeena
+3747,182,Lake Sockeye,2009,NA,NA,NA,Skeena
+3748,184,Lake Sockeye,2009,NA,NA,NA,Skeena
+3749,204,Lake Sockeye,2009,NA,NA,NA,Skeena
+3750,243,Lake Sockeye,2009,NA,NA,NA,Skeena
+3751,174,Lake Sockeye,2009,NA,NA,NA,Skeena
+3752,181,Lake Sockeye,2009,NA,NA,NA,Skeena
+3753,194,Lake Sockeye,2009,NA,NA,NA,Skeena
+3754,195,Lake Sockeye,2009,NA,NA,NA,Skeena
+3755,196,Lake Sockeye,2009,NA,NA,NA,Skeena
+3756,198,Lake Sockeye,2009,NA,NA,NA,Skeena
+3757,199,Lake Sockeye,2009,NA,NA,NA,Skeena
+3758,200,Lake Sockeye,2009,NA,NA,NA,Skeena
+3759,201,Lake Sockeye,2009,NA,NA,NA,Skeena
+3760,230,Lake Sockeye,2009,NA,NA,NA,Skeena
+3761,171,Lake Sockeye,2009,24112,10750,25866,Skeena
+3762,175,Lake Sockeye,2009,NA,NA,NA,Skeena
+3763,176,Lake Sockeye,2009,29089,7084,32841,Skeena
+3764,177,Lake Sockeye,2009,7531,3486,8113,Skeena
+3765,178,Lake Sockeye,2009,3400,1700,3679,Skeena
+3766,180,Lake Sockeye,2009,20503,NA,27203,Skeena
+3767,203,Lake Sockeye,2009,340254,NA,449110,Skeena
+3768,186,Lake Sockeye,2009,93791,NA,134914,Skeena
+3769,189,Lake Sockeye,2009,18341,NA,23781,Skeena
+3770,183,Lake Sockeye,2009,3047,3047,3888,Skeena
+3771,185,Lake Sockeye,2009,13738,11971,17330,Skeena
+3772,187,Lake Sockeye,2009,17848,8821,20106,Skeena
+3773,188,Lake Sockeye,2009,3800,NA,4281,Skeena
+3774,190,Lake Sockeye,2009,780,390,915,Skeena
+3775,191,Lake Sockeye,2009,3342,1671,3921,Skeena
+3776,192,Lake Sockeye,2009,3561,950,4179,Skeena
+3777,193,Lake Sockeye,2009,161,161,189,Skeena
+3778,197,Lake Sockeye,2009,410,205,506,Skeena
+3779,226,River Sockeye,2009,NA,NA,NA,Skeena
+3780,216,River Sockeye,2009,83,83,93,Skeena
+3781,205,Chinook,2010,NA,NA,NA,Skeena
+3782,210,Chinook,2010,522,135,778,Skeena
+3783,206,Chinook,2010,NA,NA,NA,Skeena
+3784,207,Chinook,2010,14511,13712,21649,Skeena
+3785,222,Chinook,2010,30700,23613,45800,Skeena
+3786,217,Chinook,2010,7325,4564,10927,Skeena
+3787,221,Chinook,2010,NA,NA,NA,Skeena
+3788,224,Chinook,2010,NA,200,NA,Skeena
+3789,212,Chinook,2010,NA,115,NA,Skeena
+3790,227,Chinook,2010,NA,NA,NA,Skeena
+3791,229,Chinook,2010,NA,NA,NA,Skeena
+3792,241,Chinook,2010,NA,NA,NA,Skeena
+3793,211,Chum,2010,2466,384,2828,Skeena
+3794,214,Chum,2010,707,733,810,Skeena
+3795,220,Chum,2010,957,21,1097,Skeena
+3796,242,Chum,2010,NA,NA,NA,Skeena
+3797,202,Coho,2010,135006,21047,193866,Skeena
+3798,215,Coho,2010,188635,18292,270876,Skeena
+3799,231,Coho,2010,16483,4900,23670,Skeena
+3800,225,Coho,2010,4361,717,8121,Skeena
+3801,240,Pink (Even),2010,NA,NA,NA,Skeena
+3802,213,Pink (Odd),2010,NA,NA,NA,Skeena
+3803,219,Pink (Even),2010,1009340,498654,1186567,Skeena
+3804,218,Pink (Even),2010,183372,86739,213704,Skeena
+3805,223,Pink (Odd),2010,NA,NA,NA,Skeena
+3806,209,Pink (Odd),2010,NA,NA,NA,Skeena
+3807,172,Lake Sockeye,2010,NA,NA,NA,Skeena
+3808,173,Lake Sockeye,2010,NA,NA,NA,Skeena
+3809,179,Lake Sockeye,2010,NA,NA,NA,Skeena
+3810,182,Lake Sockeye,2010,NA,NA,NA,Skeena
+3811,184,Lake Sockeye,2010,NA,NA,NA,Skeena
+3812,204,Lake Sockeye,2010,NA,NA,NA,Skeena
+3813,243,Lake Sockeye,2010,NA,NA,NA,Skeena
+3814,174,Lake Sockeye,2010,NA,NA,NA,Skeena
+3815,181,Lake Sockeye,2010,NA,NA,NA,Skeena
+3816,194,Lake Sockeye,2010,NA,NA,NA,Skeena
+3817,195,Lake Sockeye,2010,NA,NA,NA,Skeena
+3818,196,Lake Sockeye,2010,NA,NA,NA,Skeena
+3819,198,Lake Sockeye,2010,NA,NA,NA,Skeena
+3820,199,Lake Sockeye,2010,NA,NA,NA,Skeena
+3821,200,Lake Sockeye,2010,NA,NA,NA,Skeena
+3822,201,Lake Sockeye,2010,NA,NA,NA,Skeena
+3823,230,Lake Sockeye,2010,NA,NA,NA,Skeena
+3824,171,Lake Sockeye,2010,37795,16850,41467,Skeena
+3825,175,Lake Sockeye,2010,NA,NA,NA,Skeena
+3826,176,Lake Sockeye,2010,45445,11067,52628,Skeena
+3827,177,Lake Sockeye,2010,16035,5837,17550,Skeena
+3828,178,Lake Sockeye,2010,2980,1490,3285,Skeena
+3829,180,Lake Sockeye,2010,20455,NA,30157,Skeena
+3830,203,Lake Sockeye,2010,361259,NA,525483,Skeena
+3831,186,Lake Sockeye,2010,74126,NA,112996,Skeena
+3832,189,Lake Sockeye,2010,6065,NA,8759,Skeena
+3833,183,Lake Sockeye,2010,20804,20804,27763,Skeena
+3834,185,Lake Sockeye,2010,4419,3685,5896,Skeena
+3835,187,Lake Sockeye,2010,3971,1843,4870,Skeena
+3836,188,Lake Sockeye,2010,292,NA,358,Skeena
+3837,190,Lake Sockeye,2010,1020,510,1353,Skeena
+3838,191,Lake Sockeye,2010,NA,NA,NA,Skeena
+3839,192,Lake Sockeye,2010,4123,1100,5469,Skeena
+3840,193,Lake Sockeye,2010,740,740,981,Skeena
+3841,197,Lake Sockeye,2010,592,296,810,Skeena
+3842,226,River Sockeye,2010,NA,NA,NA,Skeena
+3843,216,River Sockeye,2010,4,4,5,Skeena
+3844,205,Chinook,2011,NA,NA,NA,Skeena
+3845,210,Chinook,2011,313,81,546,Skeena
+3846,206,Chinook,2011,507,390,530,Skeena
+3847,207,Chinook,2011,12811,12105,22334,Skeena
+3848,222,Chinook,2011,26808,20619,46736,Skeena
+3849,217,Chinook,2011,5604,851,9770,Skeena
+3850,221,Chinook,2011,NA,NA,NA,Skeena
+3851,224,Chinook,2011,NA,60,NA,Skeena
+3852,212,Chinook,2011,NA,84,NA,Skeena
+3853,227,Chinook,2011,NA,NA,NA,Skeena
+3854,229,Chinook,2011,NA,NA,NA,Skeena
+3855,241,Chinook,2011,NA,NA,NA,Skeena
+3856,211,Chum,2011,6973,3245,8325,Skeena
+3857,214,Chum,2011,905,460,1081,Skeena
+3858,220,Chum,2011,NA,NA,NA,Skeena
+3859,242,Chum,2011,NA,NA,NA,Skeena
+3860,202,Coho,2011,63601,10701,111428,Skeena
+3861,215,Coho,2011,73965,20273,129584,Skeena
+3862,231,Coho,2011,12800,4395,22425,Skeena
+3863,225,Coho,2011,NA,269,NA,Skeena
+3864,240,Pink (Even),2011,NA,NA,NA,Skeena
+3865,213,Pink (Odd),2011,416506,146972,525898,Skeena
+3866,219,Pink (Even),2011,NA,NA,NA,Skeena
+3867,218,Pink (Even),2011,NA,NA,NA,Skeena
+3868,223,Pink (Odd),2011,108919,27930,128620,Skeena
+3869,209,Pink (Odd),2011,297974,117013,376234,Skeena
+3870,172,Lake Sockeye,2011,NA,NA,NA,Skeena
+3871,173,Lake Sockeye,2011,NA,NA,NA,Skeena
+3872,179,Lake Sockeye,2011,NA,NA,NA,Skeena
+3873,182,Lake Sockeye,2011,NA,NA,NA,Skeena
+3874,184,Lake Sockeye,2011,NA,NA,NA,Skeena
+3875,204,Lake Sockeye,2011,NA,NA,NA,Skeena
+3876,243,Lake Sockeye,2011,NA,NA,NA,Skeena
+3877,174,Lake Sockeye,2011,NA,NA,NA,Skeena
+3878,181,Lake Sockeye,2011,NA,NA,NA,Skeena
+3879,194,Lake Sockeye,2011,NA,NA,NA,Skeena
+3880,195,Lake Sockeye,2011,NA,NA,NA,Skeena
+3881,196,Lake Sockeye,2011,NA,NA,NA,Skeena
+3882,198,Lake Sockeye,2011,NA,NA,NA,Skeena
+3883,199,Lake Sockeye,2011,NA,NA,NA,Skeena
+3884,200,Lake Sockeye,2011,NA,NA,NA,Skeena
+3885,201,Lake Sockeye,2011,NA,NA,NA,Skeena
+3886,230,Lake Sockeye,2011,NA,NA,NA,Skeena
+3887,171,Lake Sockeye,2011,23327,10400,27207,Skeena
+3888,175,Lake Sockeye,2011,NA,NA,NA,Skeena
+3889,176,Lake Sockeye,2011,27800,6770,36968,Skeena
+3890,177,Lake Sockeye,2011,34785,16052,38204,Skeena
+3891,178,Lake Sockeye,2011,4418,2209,4923,Skeena
+3892,180,Lake Sockeye,2011,64622,NA,93036,Skeena
+3893,203,Lake Sockeye,2011,402226,NA,1029475,Skeena
+3894,186,Lake Sockeye,2011,152998,NA,288635,Skeena
+3895,189,Lake Sockeye,2011,43110,NA,66352,Skeena
+3896,183,Lake Sockeye,2011,2366,2366,3631,Skeena
+3897,185,Lake Sockeye,2011,5525,4607,7198,Skeena
+3898,187,Lake Sockeye,2011,4105,2619,5203,Skeena
+3899,188,Lake Sockeye,2011,3333,NA,4224,Skeena
+3900,190,Lake Sockeye,2011,964,482,1371,Skeena
+3901,191,Lake Sockeye,2011,5094,2547,7246,Skeena
+3902,192,Lake Sockeye,2011,2088,557,2970,Skeena
+3903,193,Lake Sockeye,2011,687,687,977,Skeena
+3904,197,Lake Sockeye,2011,880,440,1397,Skeena
+3905,226,River Sockeye,2011,NA,NA,NA,Skeena
+3906,216,River Sockeye,2011,160,160,203,Skeena
+3907,205,Chinook,2012,NA,NA,NA,Skeena
+3908,210,Chinook,2012,433,162,713,Skeena
+3909,206,Chinook,2012,NA,NA,NA,Skeena
+3910,207,Chinook,2012,9909,9363,16331,Skeena
+3911,222,Chinook,2012,29780,22905,49081,Skeena
+3912,217,Chinook,2012,5624,851,9269,Skeena
+3913,221,Chinook,2012,NA,NA,NA,Skeena
+3914,224,Chinook,2012,NA,160,NA,Skeena
+3915,212,Chinook,2012,NA,89,NA,Skeena
+3916,227,Chinook,2012,NA,NA,NA,Skeena
+3917,229,Chinook,2012,NA,NA,NA,Skeena
+3918,241,Chinook,2012,NA,NA,NA,Skeena
+3919,211,Chum,2012,5078,1611,5920,Skeena
+3920,214,Chum,2012,838,426,978,Skeena
+3921,220,Chum,2012,NA,NA,NA,Skeena
+3922,242,Chum,2012,NA,NA,NA,Skeena
+3923,202,Coho,2012,67480,9609,102484,Skeena
+3924,215,Coho,2012,137341,20738,208583,Skeena
+3925,231,Coho,2012,12638,3731,19193,Skeena
+3926,225,Coho,2012,NA,185,NA,Skeena
+3927,240,Pink (Even),2012,NA,NA,NA,Skeena
+3928,213,Pink (Odd),2012,NA,NA,NA,Skeena
+3929,219,Pink (Even),2012,1033670,536668,1298582,Skeena
+3930,218,Pink (Even),2012,154537,73281,202274,Skeena
+3931,223,Pink (Odd),2012,NA,NA,NA,Skeena
+3932,209,Pink (Odd),2012,NA,NA,NA,Skeena
+3933,172,Lake Sockeye,2012,NA,NA,NA,Skeena
+3934,173,Lake Sockeye,2012,NA,NA,NA,Skeena
+3935,179,Lake Sockeye,2012,NA,NA,NA,Skeena
+3936,182,Lake Sockeye,2012,NA,NA,NA,Skeena
+3937,184,Lake Sockeye,2012,NA,NA,NA,Skeena
+3938,204,Lake Sockeye,2012,NA,NA,NA,Skeena
+3939,243,Lake Sockeye,2012,NA,NA,NA,Skeena
+3940,174,Lake Sockeye,2012,NA,NA,NA,Skeena
+3941,181,Lake Sockeye,2012,NA,NA,NA,Skeena
+3942,194,Lake Sockeye,2012,NA,NA,NA,Skeena
+3943,195,Lake Sockeye,2012,NA,NA,NA,Skeena
+3944,196,Lake Sockeye,2012,NA,NA,NA,Skeena
+3945,198,Lake Sockeye,2012,NA,NA,NA,Skeena
+3946,199,Lake Sockeye,2012,NA,NA,NA,Skeena
+3947,200,Lake Sockeye,2012,NA,NA,NA,Skeena
+3948,201,Lake Sockeye,2012,NA,NA,NA,Skeena
+3949,230,Lake Sockeye,2012,NA,NA,NA,Skeena
+3950,171,Lake Sockeye,2012,36785,16400,43597,Skeena
+3951,175,Lake Sockeye,2012,NA,NA,NA,Skeena
+3952,176,Lake Sockeye,2012,45063,10974,58562,Skeena
+3953,177,Lake Sockeye,2012,27604,12798,30279,Skeena
+3954,178,Lake Sockeye,2012,3940,1970,4339,Skeena
+3955,180,Lake Sockeye,2012,60983,NA,90736,Skeena
+3956,203,Lake Sockeye,2012,584156,NA,1068105,Skeena
+3957,186,Lake Sockeye,2012,112218,NA,180828,Skeena
+3958,189,Lake Sockeye,2012,82348,NA,127540,Skeena
+3959,183,Lake Sockeye,2012,5476,5476,8028,Skeena
+3960,185,Lake Sockeye,2012,8035,6700,10636,Skeena
+3961,187,Lake Sockeye,2012,10017,5109,12881,Skeena
+3962,188,Lake Sockeye,2012,2865,NA,3684,Skeena
+3963,190,Lake Sockeye,2012,2860,1430,4025,Skeena
+3964,191,Lake Sockeye,2012,8600,4300,12102,Skeena
+3965,192,Lake Sockeye,2012,NA,NA,NA,Skeena
+3966,193,Lake Sockeye,2012,940,940,1323,Skeena
+3967,197,Lake Sockeye,2012,NA,NA,NA,Skeena
+3968,226,River Sockeye,2012,NA,NA,NA,Skeena
+3969,216,River Sockeye,2012,90,90,116,Skeena
+3970,205,Chinook,2013,NA,NA,NA,Skeena
+3971,210,Chinook,2013,606,75,976,Skeena
+3972,206,Chinook,2013,NA,NA,NA,Skeena
+3973,207,Chinook,2013,NA,NA,NA,Skeena
+3974,222,Chinook,2013,18830,14485,30329,Skeena
+3975,217,Chinook,2013,5027,766,8097,Skeena
+3976,221,Chinook,2013,NA,NA,NA,Skeena
+3977,224,Chinook,2013,NA,NA,NA,Skeena
+3978,212,Chinook,2013,NA,NA,NA,Skeena
+3979,227,Chinook,2013,NA,NA,NA,Skeena
+3980,229,Chinook,2013,NA,95,NA,Skeena
+3981,241,Chinook,2013,NA,NA,NA,Skeena
+3982,211,Chum,2013,1152,700,1317,Skeena
+3983,214,Chum,2013,1116,567,1275,Skeena
+3984,220,Chum,2013,185,15,212,Skeena
+3985,242,Chum,2013,NA,NA,NA,Skeena
+3986,202,Coho,2013,158310,16760,250128,Skeena
+3987,215,Coho,2013,235092,25956,371444,Skeena
+3988,231,Coho,2013,16235,4472,25652,Skeena
+3989,225,Coho,2013,4814,399,14057,Skeena
+3990,240,Pink (Even),2013,NA,NA,NA,Skeena
+3991,213,Pink (Odd),2013,572472,121648,708454,Skeena
+3992,219,Pink (Even),2013,NA,NA,NA,Skeena
+3993,218,Pink (Even),2013,NA,NA,NA,Skeena
+3994,223,Pink (Odd),2013,550908,178498,693378,Skeena
+3995,209,Pink (Odd),2013,1886525,746233,2334641,Skeena
+3996,172,Lake Sockeye,2013,NA,NA,NA,Skeena
+3997,173,Lake Sockeye,2013,NA,NA,NA,Skeena
+3998,179,Lake Sockeye,2013,NA,NA,NA,Skeena
+3999,182,Lake Sockeye,2013,NA,NA,NA,Skeena
+4000,184,Lake Sockeye,2013,NA,NA,NA,Skeena
+4001,204,Lake Sockeye,2013,NA,NA,NA,Skeena
+4002,243,Lake Sockeye,2013,NA,NA,NA,Skeena
+4003,174,Lake Sockeye,2013,NA,NA,NA,Skeena
+4004,181,Lake Sockeye,2013,NA,NA,NA,Skeena
+4005,194,Lake Sockeye,2013,NA,NA,NA,Skeena
+4006,195,Lake Sockeye,2013,NA,NA,NA,Skeena
+4007,196,Lake Sockeye,2013,NA,NA,NA,Skeena
+4008,198,Lake Sockeye,2013,NA,NA,NA,Skeena
+4009,199,Lake Sockeye,2013,NA,NA,NA,Skeena
+4010,200,Lake Sockeye,2013,NA,NA,NA,Skeena
+4011,201,Lake Sockeye,2013,NA,NA,NA,Skeena
+4012,230,Lake Sockeye,2013,NA,NA,NA,Skeena
+4013,171,Lake Sockeye,2013,19963,8900,20696,Skeena
+4014,175,Lake Sockeye,2013,NA,NA,NA,Skeena
+4015,176,Lake Sockeye,2013,NA,NA,NA,Skeena
+4016,177,Lake Sockeye,2013,27295,9060,28219,Skeena
+4017,178,Lake Sockeye,2013,3320,1660,3454,Skeena
+4018,180,Lake Sockeye,2013,8760,NA,10339,Skeena
+4019,203,Lake Sockeye,2013,220714,NA,253342,Skeena
+4020,186,Lake Sockeye,2013,39602,NA,47663,Skeena
+4021,189,Lake Sockeye,2013,7960,NA,9128,Skeena
+4022,183,Lake Sockeye,2013,828,828,953,Skeena
+4023,185,Lake Sockeye,2013,7760,6471,9171,Skeena
+4024,187,Lake Sockeye,2013,3793,1700,4138,Skeena
+4025,188,Lake Sockeye,2013,NA,NA,NA,Skeena
+4026,190,Lake Sockeye,2013,550,275,618,Skeena
+4027,191,Lake Sockeye,2013,800,400,900,Skeena
+4028,192,Lake Sockeye,2013,5196,1386,5842,Skeena
+4029,193,Lake Sockeye,2013,93,93,105,Skeena
+4030,197,Lake Sockeye,2013,NA,NA,NA,Skeena
+4031,226,River Sockeye,2013,NA,NA,NA,Skeena
+4032,216,River Sockeye,2013,NA,NA,NA,Skeena
+4033,205,Chinook,2014,NA,NA,NA,Skeena
+4034,210,Chinook,2014,NA,NA,NA,Skeena
+4035,206,Chinook,2014,NA,NA,NA,Skeena
+4036,207,Chinook,2014,NA,NA,NA,Skeena
+4037,222,Chinook,2014,19709,15159,31950,Skeena
+4038,217,Chinook,2014,6413,967,10396,Skeena
+4039,221,Chinook,2014,NA,NA,NA,Skeena
+4040,224,Chinook,2014,NA,2,NA,Skeena
+4041,212,Chinook,2014,NA,NA,NA,Skeena
+4042,227,Chinook,2014,NA,NA,NA,Skeena
+4043,229,Chinook,2014,NA,NA,NA,Skeena
+4044,241,Chinook,2014,NA,NA,NA,Skeena
+4045,211,Chum,2014,1902,577,2289,Skeena
+4046,214,Chum,2014,833,423,1002,Skeena
+4047,220,Chum,2014,NA,NA,NA,Skeena
+4048,242,Chum,2014,NA,NA,NA,Skeena
+4049,202,Coho,2014,124904,25277,164930,Skeena
+4050,215,Coho,2014,271287,14201,358219,Skeena
+4051,231,Coho,2014,25446,7009,33600,Skeena
+4052,225,Coho,2014,4127,60,7155,Skeena
+4053,240,Pink (Even),2014,NA,NA,NA,Skeena
+4054,213,Pink (Odd),2014,NA,NA,NA,Skeena
+4055,219,Pink (Even),2014,3624384,1590553,4700646,Skeena
+4056,218,Pink (Even),2014,485780,206166,692478,Skeena
+4057,223,Pink (Odd),2014,NA,NA,NA,Skeena
+4058,209,Pink (Odd),2014,NA,NA,NA,Skeena
+4059,172,Lake Sockeye,2014,NA,NA,NA,Skeena
+4060,173,Lake Sockeye,2014,NA,NA,NA,Skeena
+4061,179,Lake Sockeye,2014,NA,NA,NA,Skeena
+4062,182,Lake Sockeye,2014,NA,NA,NA,Skeena
+4063,184,Lake Sockeye,2014,NA,NA,NA,Skeena
+4064,204,Lake Sockeye,2014,NA,NA,NA,Skeena
+4065,243,Lake Sockeye,2014,NA,NA,NA,Skeena
+4066,174,Lake Sockeye,2014,NA,NA,NA,Skeena
+4067,181,Lake Sockeye,2014,NA,NA,NA,Skeena
+4068,194,Lake Sockeye,2014,NA,NA,NA,Skeena
+4069,195,Lake Sockeye,2014,NA,NA,NA,Skeena
+4070,196,Lake Sockeye,2014,NA,NA,NA,Skeena
+4071,198,Lake Sockeye,2014,NA,NA,NA,Skeena
+4072,199,Lake Sockeye,2014,NA,NA,NA,Skeena
+4073,200,Lake Sockeye,2014,NA,NA,NA,Skeena
+4074,201,Lake Sockeye,2014,NA,NA,NA,Skeena
+4075,230,Lake Sockeye,2014,NA,NA,NA,Skeena
+4076,171,Lake Sockeye,2014,6370,2840,7452,Skeena
+4077,175,Lake Sockeye,2014,NA,NA,NA,Skeena
+4078,176,Lake Sockeye,2014,29375,7000,39568,Skeena
+4079,177,Lake Sockeye,2014,24370,8880,26439,Skeena
+4080,178,Lake Sockeye,2014,3628,1814,3961,Skeena
+4081,180,Lake Sockeye,2014,20322,NA,28070,Skeena
+4082,203,Lake Sockeye,2014,1114482,NA,2614080,Skeena
+4083,186,Lake Sockeye,2014,133799,NA,233736,Skeena
+4084,189,Lake Sockeye,2014,14701,NA,22360,Skeena
+4085,183,Lake Sockeye,2014,13699,13699,22044,Skeena
+4086,185,Lake Sockeye,2014,17269,14400,21957,Skeena
+4087,187,Lake Sockeye,2014,4239,1900,5347,Skeena
+4088,188,Lake Sockeye,2014,NA,NA,NA,Skeena
+4089,190,Lake Sockeye,2014,3126,1563,4455,Skeena
+4090,191,Lake Sockeye,2014,NA,NA,NA,Skeena
+4091,192,Lake Sockeye,2014,NA,NA,NA,Skeena
+4092,193,Lake Sockeye,2014,401,401,571,Skeena
+4093,197,Lake Sockeye,2014,NA,NA,NA,Skeena
+4094,226,River Sockeye,2014,NA,NA,NA,Skeena
+4095,216,River Sockeye,2014,NA,NA,NA,Skeena
+4096,205,Chinook,2015,NA,NA,NA,Skeena
+4097,210,Chinook,2015,NA,NA,NA,Skeena
+4098,206,Chinook,2015,NA,NA,NA,Skeena
+4099,207,Chinook,2015,7609,14500,13663,Skeena
+4100,222,Chinook,2015,32318,24857,58029,Skeena
+4101,217,Chinook,2015,5949,897,10682,Skeena
+4102,221,Chinook,2015,NA,NA,NA,Skeena
+4103,224,Chinook,2015,NA,NA,NA,Skeena
+4104,212,Chinook,2015,NA,NA,NA,Skeena
+4105,227,Chinook,2015,NA,112,NA,Skeena
+4106,229,Chinook,2015,NA,NA,NA,Skeena
+4107,241,Chinook,2015,NA,NA,NA,Skeena
+4108,211,Chum,2015,2012,549,2297,Skeena
+4109,214,Chum,2015,614,312,701,Skeena
+4110,220,Chum,2015,NA,2,NA,Skeena
+4111,242,Chum,2015,NA,NA,NA,Skeena
+4112,202,Coho,2015,36992,2720,61689,Skeena
+4113,215,Coho,2015,105821,5840,176471,Skeena
+4114,231,Coho,2015,16015,3066,26708,Skeena
+4115,225,Coho,2015,NA,NA,NA,Skeena
+4116,240,Pink (Even),2015,NA,NA,NA,Skeena
+4117,213,Pink (Odd),2015,453039,95105,583198,Skeena
+4118,219,Pink (Even),2015,NA,NA,NA,Skeena
+4119,218,Pink (Even),2015,NA,NA,NA,Skeena
+4120,223,Pink (Odd),2015,103423,2745,134587,Skeena
+4121,209,Pink (Odd),2015,206841,77552,266267,Skeena
+4122,172,Lake Sockeye,2015,NA,NA,NA,Skeena
+4123,173,Lake Sockeye,2015,NA,NA,NA,Skeena
+4124,179,Lake Sockeye,2015,NA,NA,NA,Skeena
+4125,182,Lake Sockeye,2015,NA,NA,NA,Skeena
+4126,184,Lake Sockeye,2015,NA,NA,NA,Skeena
+4127,204,Lake Sockeye,2015,NA,NA,NA,Skeena
+4128,243,Lake Sockeye,2015,NA,NA,NA,Skeena
+4129,174,Lake Sockeye,2015,NA,NA,NA,Skeena
+4130,181,Lake Sockeye,2015,NA,NA,NA,Skeena
+4131,194,Lake Sockeye,2015,NA,NA,NA,Skeena
+4132,195,Lake Sockeye,2015,NA,NA,NA,Skeena
+4133,196,Lake Sockeye,2015,NA,NA,NA,Skeena
+4134,198,Lake Sockeye,2015,NA,NA,NA,Skeena
+4135,199,Lake Sockeye,2015,NA,NA,NA,Skeena
+4136,200,Lake Sockeye,2015,NA,NA,NA,Skeena
+4137,201,Lake Sockeye,2015,NA,NA,NA,Skeena
+4138,230,Lake Sockeye,2015,NA,NA,NA,Skeena
+4139,171,Lake Sockeye,2015,18841,8400,20179,Skeena
+4140,175,Lake Sockeye,2015,NA,NA,NA,Skeena
+4141,176,Lake Sockeye,2015,25359,6043,29869,Skeena
+4142,177,Lake Sockeye,2015,4685,440,4944,Skeena
+4143,178,Lake Sockeye,2015,9818,4909,10441,Skeena
+4144,180,Lake Sockeye,2015,52239,NA,63479,Skeena
+4145,203,Lake Sockeye,2015,788301,NA,1587903,Skeena
+4146,186,Lake Sockeye,2015,140168,NA,215857,Skeena
+4147,189,Lake Sockeye,2015,68421,NA,86177,Skeena
+4148,183,Lake Sockeye,2015,4636,4636,6170,Skeena
+4149,185,Lake Sockeye,2015,24880,20746,30054,Skeena
+4150,187,Lake Sockeye,2015,14642,8753,16349,Skeena
+4151,188,Lake Sockeye,2015,10137,NA,11319,Skeena
+4152,190,Lake Sockeye,2015,766,383,927,Skeena
+4153,191,Lake Sockeye,2015,NA,NA,NA,Skeena
+4154,192,Lake Sockeye,2015,NA,NA,NA,Skeena
+4155,193,Lake Sockeye,2015,1281,1281,1550,Skeena
+4156,197,Lake Sockeye,2015,NA,NA,NA,Skeena
+4157,226,River Sockeye,2015,NA,NA,NA,Skeena
+4158,216,River Sockeye,2015,170,170,190,Skeena
+4159,205,Chinook,2016,NA,NA,NA,Skeena
+4160,210,Chinook,2016,NA,1,NA,Skeena
+4161,206,Chinook,2016,NA,NA,NA,Skeena
+4162,207,Chinook,2016,11049,10440,19373,Skeena
+4163,222,Chinook,2016,29446,22648,51629,Skeena
+4164,217,Chinook,2016,4344,655,7617,Skeena
+4165,221,Chinook,2016,NA,NA,NA,Skeena
+4166,224,Chinook,2016,NA,NA,NA,Skeena
+4167,212,Chinook,2016,NA,336,NA,Skeena
+4168,227,Chinook,2016,NA,NA,NA,Skeena
+4169,229,Chinook,2016,NA,NA,NA,Skeena
+4170,241,Chinook,2016,NA,NA,NA,Skeena
+4171,211,Chum,2016,2182,386,2578,Skeena
+4172,214,Chum,2016,1614,820,1907,Skeena
+4173,220,Chum,2016,364,8,431,Skeena
+4174,242,Chum,2016,NA,NA,NA,Skeena
+4175,202,Coho,2016,123388,11353,210686,Skeena
+4176,215,Coho,2016,211500,11450,361138,Skeena
+4177,231,Coho,2016,9177,1901,15670,Skeena
+4178,225,Coho,2016,NA,NA,NA,Skeena
+4179,240,Pink (Even),2016,NA,NA,NA,Skeena
+4180,213,Pink (Odd),2016,NA,NA,NA,Skeena
+4181,219,Pink (Even),2016,824510,74610,1075600,Skeena
+4182,218,Pink (Even),2016,160195,19700,208696,Skeena
+4183,223,Pink (Odd),2016,NA,NA,NA,Skeena
+4184,209,Pink (Odd),2016,NA,NA,NA,Skeena
+4185,172,Lake Sockeye,2016,NA,NA,NA,Skeena
+4186,173,Lake Sockeye,2016,NA,NA,NA,Skeena
+4187,179,Lake Sockeye,2016,NA,NA,NA,Skeena
+4188,182,Lake Sockeye,2016,NA,NA,NA,Skeena
+4189,184,Lake Sockeye,2016,NA,NA,NA,Skeena
+4190,204,Lake Sockeye,2016,NA,NA,NA,Skeena
+4191,243,Lake Sockeye,2016,NA,NA,NA,Skeena
+4192,174,Lake Sockeye,2016,NA,NA,NA,Skeena
+4193,181,Lake Sockeye,2016,NA,NA,NA,Skeena
+4194,194,Lake Sockeye,2016,NA,NA,NA,Skeena
+4195,195,Lake Sockeye,2016,NA,NA,NA,Skeena
+4196,196,Lake Sockeye,2016,NA,NA,NA,Skeena
+4197,198,Lake Sockeye,2016,NA,NA,NA,Skeena
+4198,199,Lake Sockeye,2016,NA,NA,NA,Skeena
+4199,200,Lake Sockeye,2016,NA,NA,NA,Skeena
+4200,201,Lake Sockeye,2016,NA,1263,NA,Skeena
+4201,230,Lake Sockeye,2016,NA,NA,NA,Skeena
+4202,171,Lake Sockeye,2016,27230,12140,31168,Skeena
+4203,175,Lake Sockeye,2016,NA,NA,NA,Skeena
+4204,176,Lake Sockeye,2016,24616,5866,33065,Skeena
+4205,177,Lake Sockeye,2016,15931,6768,17542,Skeena
+4206,178,Lake Sockeye,2016,NA,NA,NA,Skeena
+4207,180,Lake Sockeye,2016,41607,NA,64497,Skeena
+4208,203,Lake Sockeye,2016,464118,NA,953912,Skeena
+4209,186,Lake Sockeye,2016,164716,NA,319807,Skeena
+4210,189,Lake Sockeye,2016,39540,NA,63017,Skeena
+4211,183,Lake Sockeye,2016,1100,1100,1714,Skeena
+4212,185,Lake Sockeye,2016,16958,14140,22527,Skeena
+4213,187,Lake Sockeye,2016,12855,6083,16357,Skeena
+4214,188,Lake Sockeye,2016,1754,NA,2232,Skeena
+4215,190,Lake Sockeye,2016,NA,NA,NA,Skeena
+4216,191,Lake Sockeye,2016,NA,NA,NA,Skeena
+4217,192,Lake Sockeye,2016,NA,NA,NA,Skeena
+4218,193,Lake Sockeye,2016,267,267,382,Skeena
+4219,197,Lake Sockeye,2016,NA,NA,NA,Skeena
+4220,226,River Sockeye,2016,NA,NA,NA,Skeena
+4221,216,River Sockeye,2016,285,285,363,Skeena
+4222,205,Chinook,2017,NA,131,NA,Skeena
+4223,210,Chinook,2017,NA,1,NA,Skeena
+4224,206,Chinook,2017,NA,NA,NA,Skeena
+4225,207,Chinook,2017,5231,4943,9452,Skeena
+4226,222,Chinook,2017,7673,5822,13863,Skeena
+4227,217,Chinook,2017,3886,586,7022,Skeena
+4228,221,Chinook,2017,NA,NA,NA,Skeena
+4229,224,Chinook,2017,NA,NA,NA,Skeena
+4230,212,Chinook,2017,NA,NA,NA,Skeena
+4231,227,Chinook,2017,NA,21,NA,Skeena
+4232,229,Chinook,2017,NA,NA,NA,Skeena
+4233,241,Chinook,2017,NA,NA,NA,Skeena
+4234,211,Chum,2017,1327,362,1408,Skeena
+4235,214,Chum,2017,665,338,706,Skeena
+4236,220,Chum,2017,456,10,483,Skeena
+4237,242,Chum,2017,NA,NA,NA,Skeena
+4238,202,Coho,2017,65139,5664,65139,Skeena
+4239,215,Coho,2017,209016,49771,209016,Skeena
+4240,231,Coho,2017,14653,4036,14653,Skeena
+4241,225,Coho,2017,NA,NA,NA,Skeena
+4242,240,Pink (Even),2017,NA,NA,NA,Skeena
+4243,213,Pink (Odd),2017,853053,180757,977934,Skeena
+4244,219,Pink (Even),2017,NA,NA,NA,Skeena
+4245,218,Pink (Even),2017,NA,NA,NA,Skeena
+4246,223,Pink (Odd),2017,104406,23275,121566,Skeena
+4247,209,Pink (Odd),2017,176055,67110,201829,Skeena
+4248,172,Lake Sockeye,2017,NA,NA,NA,Skeena
+4249,173,Lake Sockeye,2017,NA,NA,NA,Skeena
+4250,179,Lake Sockeye,2017,NA,NA,NA,Skeena
+4251,182,Lake Sockeye,2017,NA,NA,NA,Skeena
+4252,184,Lake Sockeye,2017,NA,NA,NA,Skeena
+4253,204,Lake Sockeye,2017,NA,NA,NA,Skeena
+4254,243,Lake Sockeye,2017,NA,NA,NA,Skeena
+4255,174,Lake Sockeye,2017,NA,NA,NA,Skeena
+4256,181,Lake Sockeye,2017,NA,NA,NA,Skeena
+4257,194,Lake Sockeye,2017,NA,NA,NA,Skeena
+4258,195,Lake Sockeye,2017,NA,NA,NA,Skeena
+4259,196,Lake Sockeye,2017,NA,NA,NA,Skeena
+4260,198,Lake Sockeye,2017,NA,NA,NA,Skeena
+4261,199,Lake Sockeye,2017,NA,NA,NA,Skeena
+4262,200,Lake Sockeye,2017,NA,NA,NA,Skeena
+4263,201,Lake Sockeye,2017,NA,NA,NA,Skeena
+4264,230,Lake Sockeye,2017,NA,NA,NA,Skeena
+4265,171,Lake Sockeye,2017,5608,2500,5727,Skeena
+4266,175,Lake Sockeye,2017,NA,NA,NA,Skeena
+4267,176,Lake Sockeye,2017,29858,7115,31900,Skeena
+4268,177,Lake Sockeye,2017,7754,250,7842,Skeena
+4269,178,Lake Sockeye,2017,8942,4471,9033,Skeena
+4270,180,Lake Sockeye,2017,28036,NA,29734,Skeena
+4271,203,Lake Sockeye,2017,531607,NA,601105,Skeena
+4272,186,Lake Sockeye,2017,84732,NA,107911,Skeena
+4273,189,Lake Sockeye,2017,21094,NA,22814,Skeena
+4274,183,Lake Sockeye,2017,357,357,445,Skeena
+4275,185,Lake Sockeye,2017,16438,14135,17157,Skeena
+4276,187,Lake Sockeye,2017,6323,3245,6516,Skeena
+4277,188,Lake Sockeye,2017,2245,NA,2314,Skeena
+4278,190,Lake Sockeye,2017,2262,1131,2420,Skeena
+4279,191,Lake Sockeye,2017,13786,6893,14747,Skeena
+4280,192,Lake Sockeye,2017,NA,NA,NA,Skeena
+4281,193,Lake Sockeye,2017,366,366,392,Skeena
+4282,197,Lake Sockeye,2017,1124,562,1291,Skeena
+4283,226,River Sockeye,2017,NA,NA,NA,Skeena
+4284,216,River Sockeye,2017,91,91,94,Skeena
+4285,205,Chinook,2018,NA,580,NA,Skeena
+4286,210,Chinook,2018,NA,NA,NA,Skeena
+4287,206,Chinook,2018,NA,NA,NA,Skeena
+4288,207,Chinook,2018,NA,9537,NA,Skeena
+4289,222,Chinook,2018,NA,22429,NA,Skeena
+4290,217,Chinook,2018,NA,4512,NA,Skeena
+4291,221,Chinook,2018,NA,NA,NA,Skeena
+4292,224,Chinook,2018,NA,12,NA,Skeena
+4293,212,Chinook,2018,NA,NA,NA,Skeena
+4294,227,Chinook,2018,NA,55,NA,Skeena
+4295,229,Chinook,2018,NA,NA,NA,Skeena
+4296,241,Chinook,2018,NA,NA,NA,Skeena
+4297,211,Chum,2018,NA,585,NA,Skeena
+4298,214,Chum,2018,NA,273,NA,Skeena
+4299,220,Chum,2018,NA,NA,NA,Skeena
+4300,242,Chum,2018,NA,NA,NA,Skeena
+4301,202,Coho,2018,NA,6713,NA,Skeena
+4302,215,Coho,2018,NA,13428,NA,Skeena
+4303,231,Coho,2018,NA,2232,NA,Skeena
+4304,225,Coho,2018,NA,NA,NA,Skeena
+4305,240,Pink (Even),2018,NA,NA,NA,Skeena
+4306,213,Pink (Odd),2018,NA,NA,NA,Skeena
+4307,219,Pink (Even),2018,NA,155494,NA,Skeena
+4308,218,Pink (Even),2018,NA,2736,NA,Skeena
+4309,223,Pink (Odd),2018,NA,NA,NA,Skeena
+4310,209,Pink (Odd),2018,NA,NA,NA,Skeena
+4311,172,Lake Sockeye,2018,NA,NA,NA,Skeena
+4312,173,Lake Sockeye,2018,NA,NA,NA,Skeena
+4313,179,Lake Sockeye,2018,NA,NA,NA,Skeena
+4314,182,Lake Sockeye,2018,NA,NA,NA,Skeena
+4315,184,Lake Sockeye,2018,NA,NA,NA,Skeena
+4316,204,Lake Sockeye,2018,NA,NA,NA,Skeena
+4317,243,Lake Sockeye,2018,NA,NA,NA,Skeena
+4318,174,Lake Sockeye,2018,NA,8,NA,Skeena
+4319,181,Lake Sockeye,2018,NA,NA,NA,Skeena
+4320,194,Lake Sockeye,2018,NA,NA,NA,Skeena
+4321,195,Lake Sockeye,2018,NA,NA,NA,Skeena
+4322,196,Lake Sockeye,2018,NA,NA,NA,Skeena
+4323,198,Lake Sockeye,2018,NA,NA,NA,Skeena
+4324,199,Lake Sockeye,2018,NA,333,NA,Skeena
+4325,200,Lake Sockeye,2018,NA,NA,NA,Skeena
+4326,201,Lake Sockeye,2018,NA,NA,NA,Skeena
+4327,230,Lake Sockeye,2018,NA,NA,NA,Skeena
+4328,171,Lake Sockeye,2018,NA,1400,NA,Skeena
+4329,175,Lake Sockeye,2018,NA,640,NA,Skeena
+4330,176,Lake Sockeye,2018,NA,10050,NA,Skeena
+4331,177,Lake Sockeye,2018,NA,12159,NA,Skeena
+4332,178,Lake Sockeye,2018,NA,1742,NA,Skeena
+4333,180,Lake Sockeye,2018,NA,NA,NA,Skeena
+4334,203,Lake Sockeye,2018,NA,NA,NA,Skeena
+4335,186,Lake Sockeye,2018,NA,NA,NA,Skeena
+4336,189,Lake Sockeye,2018,NA,NA,NA,Skeena
+4337,183,Lake Sockeye,2018,NA,1434,NA,Skeena
+4338,185,Lake Sockeye,2018,NA,15301,NA,Skeena
+4339,187,Lake Sockeye,2018,NA,1969,NA,Skeena
+4340,188,Lake Sockeye,2018,NA,NA,NA,Skeena
+4341,190,Lake Sockeye,2018,NA,408,NA,Skeena
+4342,191,Lake Sockeye,2018,NA,3558,NA,Skeena
+4343,192,Lake Sockeye,2018,NA,NA,NA,Skeena
+4344,193,Lake Sockeye,2018,NA,333,NA,Skeena
+4345,197,Lake Sockeye,2018,NA,153,NA,Skeena
+4346,226,River Sockeye,2018,NA,NA,NA,Skeena
+4347,216,River Sockeye,2018,NA,NA,NA,Skeena
+4348,205,Chinook,2019,NA,960,NA,Skeena
+4349,210,Chinook,2019,NA,136,NA,Skeena
+4350,206,Chinook,2019,NA,NA,NA,Skeena
+4351,207,Chinook,2019,NA,NA,NA,Skeena
+4352,222,Chinook,2019,NA,15298,NA,Skeena
+4353,217,Chinook,2019,NA,689,NA,Skeena
+4354,221,Chinook,2019,NA,NA,NA,Skeena
+4355,224,Chinook,2019,NA,NA,NA,Skeena
+4356,212,Chinook,2019,NA,NA,NA,Skeena
+4357,227,Chinook,2019,NA,NA,NA,Skeena
+4358,229,Chinook,2019,NA,NA,NA,Skeena
+4359,241,Chinook,2019,NA,NA,NA,Skeena
+4360,211,Chum,2019,NA,1399,NA,Skeena
+4361,214,Chum,2019,NA,492,NA,Skeena
+4362,220,Chum,2019,NA,NA,NA,Skeena
+4363,242,Chum,2019,NA,NA,NA,Skeena
+4364,202,Coho,2019,NA,5207,NA,Skeena
+4365,215,Coho,2019,NA,21529,NA,Skeena
+4366,231,Coho,2019,NA,1825,NA,Skeena
+4367,225,Coho,2019,NA,20,NA,Skeena
+4368,240,Pink (Even),2019,NA,NA,NA,Skeena
+4369,213,Pink (Odd),2019,NA,52644,NA,Skeena
+4370,219,Pink (Even),2019,NA,NA,NA,Skeena
+4371,218,Pink (Even),2019,NA,NA,NA,Skeena
+4372,223,Pink (Odd),2019,NA,4470,NA,Skeena
+4373,209,Pink (Odd),2019,NA,9007,NA,Skeena
+4374,172,Lake Sockeye,2019,NA,NA,NA,Skeena
+4375,173,Lake Sockeye,2019,NA,NA,NA,Skeena
+4376,179,Lake Sockeye,2019,NA,NA,NA,Skeena
+4377,182,Lake Sockeye,2019,NA,NA,NA,Skeena
+4378,184,Lake Sockeye,2019,NA,NA,NA,Skeena
+4379,204,Lake Sockeye,2019,NA,NA,NA,Skeena
+4380,243,Lake Sockeye,2019,NA,NA,NA,Skeena
+4381,174,Lake Sockeye,2019,NA,NA,NA,Skeena
+4382,181,Lake Sockeye,2019,NA,NA,NA,Skeena
+4383,194,Lake Sockeye,2019,NA,NA,NA,Skeena
+4384,195,Lake Sockeye,2019,NA,NA,NA,Skeena
+4385,196,Lake Sockeye,2019,NA,NA,NA,Skeena
+4386,198,Lake Sockeye,2019,NA,NA,NA,Skeena
+4387,199,Lake Sockeye,2019,NA,NA,NA,Skeena
+4388,200,Lake Sockeye,2019,NA,NA,NA,Skeena
+4389,201,Lake Sockeye,2019,NA,NA,NA,Skeena
+4390,230,Lake Sockeye,2019,NA,NA,NA,Skeena
+4391,171,Lake Sockeye,2019,NA,1640,NA,Skeena
+4392,175,Lake Sockeye,2019,NA,NA,NA,Skeena
+4393,176,Lake Sockeye,2019,NA,NA,NA,Skeena
+4394,177,Lake Sockeye,2019,NA,6864,NA,Skeena
+4395,178,Lake Sockeye,2019,NA,1610,NA,Skeena
+4396,180,Lake Sockeye,2019,NA,NA,NA,Skeena
+4397,203,Lake Sockeye,2019,NA,NA,NA,Skeena
+4398,186,Lake Sockeye,2019,NA,NA,NA,Skeena
+4399,189,Lake Sockeye,2019,NA,NA,NA,Skeena
+4400,183,Lake Sockeye,2019,NA,125,NA,Skeena
+4401,185,Lake Sockeye,2019,NA,24768,NA,Skeena
+4402,187,Lake Sockeye,2019,NA,3660,NA,Skeena
+4403,188,Lake Sockeye,2019,NA,NA,NA,Skeena
+4404,190,Lake Sockeye,2019,NA,500,NA,Skeena
+4405,191,Lake Sockeye,2019,NA,1313,NA,Skeena
+4406,192,Lake Sockeye,2019,NA,NA,NA,Skeena
+4407,193,Lake Sockeye,2019,NA,NA,NA,Skeena
+4408,197,Lake Sockeye,2019,NA,431,NA,Skeena
+4409,226,River Sockeye,2019,NA,29,NA,Skeena
+4410,216,River Sockeye,2019,NA,335,NA,Skeena
