@@ -280,10 +280,10 @@ raw_sp_data <- raw_sp_data %>%
   mutate(logSp=log(Spawner.Abundance))
 
 
-sp_data <- left_join(raw_sp_data, select(cu_metadata, CUID, du_number, DU_name,gen_length), 
+sp_data <- left_join(raw_sp_data, select(cu_metadata, CUID, du_number, DU_name_short,gen_length), 
                      by="CUID") %>%
   drop_na(du_number, Spawner.Abundance) %>%
-  mutate(du_cu=paste(du_number, DU_name)) %>%
+  mutate(du_cu=paste(du_number, DU_name_short)) %>%
   relocate(du_cu, 1) %>%
   arrange(du_cu, Year) %>%
   mutate(Region = case_when(Region == "HG" ~ "Haida Gwaii",
@@ -334,7 +334,7 @@ for(i in regions_ordered){
         labs(x="Year", y="spawners (thousands)", 
              title = paste0(i," ",j," spawner abundance ","(",k," of ",pages,")")) +
         theme_bw() +
-        theme(strip.background=element_blank(), axis.text.x=element_text(angle=45), strip.text = element_text(size = 4))
+        theme(strip.background=element_blank(), axis.text.x=element_text(angle=45), strip.text = element_text(size = 5))
       print(p)
       
       p_log <- ggplot(data=sub_data_2, aes(x=Year, y=logSp)) +
@@ -348,7 +348,7 @@ for(i in regions_ordered){
         labs(x="Year", y="ln(spawners)", 
              title=paste0("ln ",i," ",j," spawner abundance ","(",k," of ",pages,")")) +
         theme_bw() +
-        theme(strip.background=element_blank(), axis.text.x=element_text(angle=45), strip.text = element_text(size = 7))
+        theme(strip.background=element_blank(), axis.text.x=element_text(angle=45), strip.text = element_text(size = 5))
       print(p_log)
     }
   }else{
