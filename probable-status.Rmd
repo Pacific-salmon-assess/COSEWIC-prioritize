@@ -1,5 +1,5 @@
 ---
-title: "COSEWIC Pacific salmon DU probabale status'"
+title: "Prioritizing Pacific salmon DUs for COSEWIC assessment"
 date: '`r format(Sys.time(), "%d %B, %Y")`'
 output:
   html_document:
@@ -41,7 +41,7 @@ h3 { /* Header 3 */
 </style>
 ```
 # About
-This document summarizes estimates of change in mature individuals over time for Pacific salmon Designatable Units (DUs) and associated  probable COSEWIC status designation. Data sources are detailed [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize#data-sources) and all code to reproduce the analyses in this document is [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize). These materials are solely intended to support the Marine Fishes sub-committee of COSEWIC in identifying high priority DUs for COSEWIC to consider formally assessing. 
+This document summarizes estimates of change in mature individuals over time for Pacific salmon Designatable Units (DUs) and associated  probable COSEWIC status designations. These estimates can then be used to help COSEWIC's Marine Fishes sub-committee identify high priority DUs for formally assessment. Data sources are detailed [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize#data-sources) and all code to reproduce the analyses in this document is [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize). These materials are solely intended to support the Marine Fishes sub-committee of COSEWIC, and may not be appropriate for other applications. 
 
 # Prioritization decision nodes
 Initial thoughts on potential decision nodes in the prioritization process. 
