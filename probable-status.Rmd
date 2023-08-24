@@ -267,7 +267,12 @@ designations <- designations %>%
 datatable(designations, rownames = FALSE, 
           caption = 'Table 1: Estimates of percent change in mature individual (spawner) abundance over most recent three generations (based on just last three generations or all years of observations) for Pacific Salmon DUs in the Pacific region. Also shown are the region, average generation length, COSEWIC status if previously assessed, mature individual abundance in most recent year with data, the last year with data, and probable COSEWIC designation based on percent change using just the last three generations of observations.',
           filter = 'top', 
-          options = list(pageLength = 20, autoWidth = TRUE))
+          #extensions = 'Buttons',   #tradeoff if you uncomment these you can select which columns to see, 
+          options = list(scrollX = TRUE, #^but you lose the pagelength option b/c too many buttons... 
+                         pagelength = 10, 
+                         #dom = 'Bfrtip',
+                         #buttons = I('colvis'),
+                         lengthMenu = c(10, 15, 20, 25)))
 ```
 
 # Abundance plots 
