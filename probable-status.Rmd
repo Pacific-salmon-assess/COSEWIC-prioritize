@@ -58,6 +58,9 @@ Initial thoughts on potential decision nodes in the prioritization process.
 
 ```{r setup, include=FALSE}
 # libraries and global settings ----
+#library(devtools) # Load the devtools package.
+#install_github("Pacific-salmon-assess/MetricsCOSEWIC", dependencies = TRUE, build_vignettes = FALSE)
+library(MetricsCOSEWIC) #run lines above if you don't have this pkg
 library(tidyverse)
 library(DT)
 
