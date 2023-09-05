@@ -41,26 +41,30 @@ h3 { /* Header 3 */
 </style>
 ```
 # About
-This document summarizes estimates of change in mature individuals over time for Pacific salmon Designatable Units (DUs) and associated  probable COSEWIC status designations. These estimates can then be used to help COSEWIC's Marine Fishes sub-committee identify high priority DUs for formally assessment. Data sources are detailed [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize#data-sources) and all code to reproduce the analyses in this document is [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize). These materials are solely intended to support the Marine Fishes sub-committee of COSEWIC, and may not be appropriate for other applications. 
+
+This document summarizes estimates of change in mature individuals over time for Pacific salmon Designatable Units (DUs) and associated probable COSEWIC status designations. These estimates are being used to help COSEWIC's Marine Fishes sub-committee identify high priority DUs to recommend for formal status assessments. Data sources are detailed [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize#data-sources) and all code to reproduce the analyses in this document is [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize). These materials are solely intended to support the Marine Fishes sub-committee of COSEWIC, and may not be appropriate for other applications.
+
+As is inevitable when trying to automate assessments across a large number of population units based on data of from a variety of sources there may be errors and inconsistencies in the information presented. If you notice any please flag them as a github issue.
 
 # Prioritization decision nodes
-Initial thoughts on potential decision nodes in the prioritization process. 
 
-#. **Have DUs been formally defined by COSEWIC?** Chinook, sockeye, and coho salmon DUs have been defined (reports available [here](https://www.cosewic.ca/index.php/en-ca/reports/special-reports.html)), formal pink and chum DU identification is in progress. If **yes** then proceed. 
+Initial thoughts on potential decision nodes in the prioritization process.
 
-#. **Is information on mature individuals over time available at the DU scale?** If **yes** then proceed.
+1.  **Have DUs been formally defined by COSEWIC?** Chinook, sockeye, and coho salmon DUs have been defined (reports available [here](https://www.cosewic.ca/index.php/en-ca/reports/special-reports.html)), formal pink and chum DU identification is in progress. If **yes** then proceed.
 
-#. **Has DU been previously assessed by COSEWIC?** If **yes** then consider a re-assessment, otherwise proceed except for DUs that have already been approved for a status assessment.
+2.  **Is information on mature individuals over time available at the DU scale?** If **yes** then proceed.
 
-#. **What is the DUs probable designation based on percentage change in mature individuals over past three generations?** If **special concern**,  **threatened** or **endangered** then proceed.
+3.  **Has DU been previously assessed by COSEWIC?** If **yes** then consider a re-assessment, otherwise proceed except for DUs that have already been approved for a status assessment.
 
-#. **Are there spatial considerations?** Are there commonalities in threats, designations, and/or data landscape at a regional scale that suggest a group of DUs should be bundled together?  
+4.  **What is the DUs probable designation based on percentage change in mature individuals over past three generations and total number of mature individuals for those DUs with absolute estimates?** If **special concern**, **threatened** or **endangered** then proceed.
+
+5.  **Are there spatial considerations?** Are there commonalities in threats, designations, and/or data landscape at a regional scale that suggest a group of DUs should be bundled together?
 
 ```{r setup, include=FALSE}
 # libraries and global settings ----
 #library(devtools) # Load the devtools package.
 #install_github("Pacific-salmon-assess/MetricsCOSEWIC", dependencies = TRUE, build_vignettes = FALSE)
-library(MetricsCOSEWIC) #run lines above if you don't have this pkg
+#library(MetricsCOSEWIC) #run lines above if you don't have this pkg
 library(tidyverse)
 library(DT)
 
@@ -177,6 +181,10 @@ assessed <- master_desg %>%
 
 not_assessed <- master_desg %>%
   filter(COSEWIC_status == "Not assessed") %>%
+  mutate(prob_designation_recent = ifelse(recent_abundance < 1000, "Threatened", 
+                                          prob_designation_recent))%>%
+  mutate(prob_designation_recent = ifelse(recent_abundance < 250, "Endangered", 
+                                          prob_designation_recent)) %>%
   mutate(prob_designation_recent = ifelse(is.na(prob_designation_recent), "Data defficient", 
                                           prob_designation_recent),
          prob_designation_all = ifelse(is.na(prob_designation_all), "Data defficient", 
@@ -192,12 +200,13 @@ unassessed <- designations %>%
   filter(COSEWIC_status == "Not assessed",
          prob_designation_recent != "Data defficient")
 
-write.csv(designations, "./output/master-prob-status/master_status.csv")
+write.csv(designations, "./output/master-prob-status/master_status.csv", row.names=FALSE)
 
 NA_regions <- filter(designations, is.na(region_full))
 ```
 
-# Status summaries 
+# Status summaries
+
 ## All DUs - plot
 
 ```{r summary-status-recent-all-dus, echo=FALSE, fig.align = "center", out.width = '90%'}
@@ -227,9 +236,11 @@ ggplot(count_bins_status, aes(x = species, y = du_count)) +
   theme_bw()+
   theme(axis.text.x = element_text(angle=45, hjust=1), legend.position = "top")
 ```
-**Figure 1**. Status of all DUs. For DUs that have been previously assessed by COSEWIC the official status is shown, otherwise probable status is inferred based on percent change in mature individual abundance over the most recent three generations of data.
 
-## Unassessed official DUs - plot
+**Figure 1**. Status of all DUs. For DUs that have been previously assessed by COSEWIC the official status is shown, otherwise probable status is inferred based on percent change in mature individual abundance over the most recent three generations of data. DUs with absolute estimates of mature individuals less than 250 and 1000 are assigned a probable status of endangered and threatened, respectively (Criterion D).
+
+## Unassessed DUs - plot
+
 ```{r summary-status-unassessed-dus, echo=FALSE, fig.align = "center", out.width = '90%', out.height = '60%'}
 # summarize probable status by spp and region ----
 count_bins <- unassessed %>%
@@ -240,8 +251,7 @@ count_bins_status <- unassessed %>%
   group_by(species, region_full, prob_designation_recent) %>%
   summarize(du_count=n()) %>%
   mutate(prob_designation_recent = factor(prob_designation_recent, levels = rev(c("Endangered","Threatened", "Special concern", "Not at risk"))), 
-         region_full = factor(region_full, levels = c("Yukon", "Nass","Skeena", "Haida Gwaii", "Central Coast", "Van. Isl. Main. Inl.", "Fraser"))) %>%
-  filter(! species %in% c("Chum", "Pink"))
+         region_full = factor(region_full, levels = c("Yukon", "Nass","Skeena", "Haida Gwaii", "Central Coast", "Van. Isl. Main. Inl.", "Fraser"))) 
 
 # plot probable status by spp and region ----
 ggplot(count_bins_status, aes(x = species, y = du_count)) + 
@@ -254,7 +264,8 @@ ggplot(count_bins_status, aes(x = species, y = du_count)) +
   theme_bw()+
   theme(axis.text.x = element_text(angle=45, hjust=1), legend.position = "top")
 ```
-**Figure 2**. Probable status of unassessed, but formally defined, Pacific salmon DUs (excluding those previously assessed by COSEWIC or recommended for status assessment) based on rate of change in mature individuals over most recent three generations. 
+
+**Figure 2**. Probable status of unassessed, but formally defined, Pacific salmon DUs (excluding those previously assessed by COSEWIC or recommended for status assessment) based on rate of change in mature individuals over most recent three generations.DUs with absolute estimates of mature individuals less than 250 and 1000 are assigned a probable status of endangered and threatened, respectively (Criterion D).
 
 ## All DUs - table
 
@@ -280,9 +291,10 @@ datatable(designations, rownames = FALSE,
                          lengthMenu = c(10, 15, 20, 25)))
 ```
 
-# Abundance plots 
+# Abundance plots
 
 Plots of reconstructed number of mature individuals (spawners) over time for each DU, by region and species. Show are both raw and log(e) transformed estimates, and for the later the trend over the most recent three generations (red line) or entire time-series (black dashed line) are also shown.
+
 ```{r abundance plots, warning = FALSE, results= 'asis'}
 #note: `asis` argument is necessary to properly render headers with cat() below
 
@@ -392,3 +404,17 @@ for(i in regions_ordered){
 
 }
 ```
+
+# Future extensions
+
+Running list of possible extensions: 
+
+- switch to using Bayesian based estimates of percent decline from the [MetricsCOSEWIC]() repository once stable, consider incorporating cumulative probability and probability density associated percent change in table and abundance plots section of this summary document.
+
+-   incorporate absolute abundance thresholds (Criterion C) into classification of probable status for those DUs with absolute abundance.
+
+-   expand guidance and thinking around key considerations with respect to bundling/grouping high priority DUs (e.g., similar threats, magnitude of declines, etc.).
+
+-   explore whether or not spatial considerations (Criterion B) based on index of area of occupancy can be calculated across DUs and be incorporated into assessment of probable status (or just be reported on). This mght present an opportunity to fold in traditional knowledge and spatial considerations.
+
+-   consider whether an objective criteria could be developed to flag DUs that are candidates for emergency listings (e.g., if recent mature individuals falls way below recent average).
