@@ -185,6 +185,8 @@ not_assessed <- master_desg %>%
                                           prob_designation_recent))%>%
   mutate(prob_designation_recent = ifelse(recent_abundance < 250, "Endangered", 
                                           prob_designation_recent)) %>%
+  mutate(prob_designation_recent = ifelse(per_change_recent < -69, "Endangered", 
+                                          prob_designation_recent)) %>%
   mutate(prob_designation_recent = ifelse(is.na(prob_designation_recent), "Data defficient", 
                                           prob_designation_recent),
          prob_designation_all = ifelse(is.na(prob_designation_all), "Data defficient", 
