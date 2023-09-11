@@ -194,7 +194,7 @@ not_assessed <- master_desg %>%
 
 designations <- rbind(assessed,not_assessed)%>%
   mutate(species = spp) %>%
-  select(region_full, du_number,species, gen_length, COSEWIC_status,per_change_recent, per_change_all, recent_abundance, last_year_monitored, prob_designation_recent)%>%
+  select(region_full, DU_name_short, du_number,species, gen_length, COSEWIC_status,per_change_recent, per_change_all, recent_abundance, last_year_monitored, prob_designation_recent)%>%
   arrange(du_number)%>%
   distinct(du_number,.keep_all = TRUE)
 
@@ -272,12 +272,12 @@ ggplot(count_bins_status, aes(x = species, y = du_count)) +
 ## All DUs - table
 
 ```{r, warning = FALSE}
-colnames(designations) <- c("Region", "DU", "Species", "Generation length", "COSEWIC status", "% Change (recent)", "% Change (all)", "Recent abundance", "Last year", "Probable status", "Status")
+colnames(designations) <- c("Region", "DU name", "DU no.", "Species", "Generation length", "COSEWIC status", "% Change (recent)", "% Change (all)", "Recent abundance", "Last year", "Probable status", "Status")
 
 #switch characters to factor to make dropdown filtering
 designations <- designations %>%
   mutate(Region = as.factor(Region), 
-         DU = as.factor(DU), 
+         'DU no.' = as.factor('DU no.'), 
          Species = as.factor(Species),
          `COSEWIC status` = as.factor(`COSEWIC status`),
          `Probable status` = as.factor(`Probable status`))
