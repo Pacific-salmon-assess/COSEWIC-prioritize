@@ -72,9 +72,11 @@ knitr::opts_chunk$set(echo = FALSE, message=FALSE, cache=FALSE, include=TRUE, dp
 options(scipen=1, digits=4)
 
 # read in data ----
-raw_sp_data <- read.csv("./data/CU_Spawner_Abund_20230828.csv", 
+raw_sp_data <- read.csv("./data/CU_Spawner_Abund_20230915.csv", 
+#raw_sp_data <- read.csv("./data/CU_Spawner_Abund_20230915-alt-Yt.csv", 
                         header=TRUE) %>%
   mutate(logSp=log(Spawner.Abundance))
+
 
 cu_metadata <- read.csv("./data/CU_Metadata_20230828.csv",  
                         header=TRUE, na.strings=c("", "NA")) %>%
@@ -92,7 +94,7 @@ sp_data <- left_join(raw_sp_data, select(cu_metadata, Region, CUID, du_number, g
   summarise(mat_ind = sum(Spawner.Abundance))%>%
   arrange(du_number, Year)
 
-# filter to DUs with spawner estimates in at least 50% of last three generations (and 20% of all years) ----
+# filter to DUs with spawner estimates in at least 30% of last three generations (and 20% of all years) ----
 last3_gens <- sp_data %>%
   group_by(du_number) %>%
   mutate(three_gens = gen_length*3) %>%
@@ -154,15 +156,15 @@ for(i in unique(sp_data_filtered$du_number)){
 # assess probable designation, rename a couple of regions ----
 prob_desg <- summary_table %>%
   mutate(prob_designation_recent = case_when(
-    per_change_recent  > -29 ~ "Not at risk",
-    per_change_recent < -29 & per_change_recent > -49 ~ "Special concern",
-    per_change_recent < -49 & per_change_recent > -69 ~ "Threatened",
-    per_change_recent < -69 ~ "Endangered")) %>%
+    per_change_recent  > -10~ "Not at risk",
+    per_change_recent < -10& per_change_recent > -29 ~ "Special concern",
+    per_change_recent < -29 & per_change_recent > -49 ~ "Threatened",
+    per_change_recent < -49 ~ "Endangered")) %>%
   mutate(prob_designation_all = case_when(
-    per_change_all  > -29 ~ "Not at risk",
-    per_change_all < -29 & per_change_all > -49 ~ "Special concern",
-    per_change_all < -49 & per_change_all > -69 ~ "Threatened",
-    per_change_all < -69 ~ "Endangered"))
+    per_change_all  > -10 ~ "Not at risk",
+    per_change_all < -10 & per_change_all > -29 ~ "Special concern",
+    per_change_all < -29 & per_change_all > -49 ~ "Threatened",
+    per_change_all < -49 ~ "Endangered"))
 
 master_desg <- left_join(cu_metadata, select(prob_desg, Region, du_number, per_change_recent, per_change_all, recent_abundance, last_year_monitored, prob_designation_recent,prob_designation_all), 
                      by="du_number") %>%
@@ -185,7 +187,7 @@ not_assessed <- master_desg %>%
                                           prob_designation_recent))%>%
   mutate(prob_designation_recent = ifelse(recent_abundance < 250, "Endangered", 
                                           prob_designation_recent)) %>%
-  mutate(prob_designation_recent = ifelse(per_change_recent < -69, "Endangered", 
+  mutate(prob_designation_recent = ifelse(per_change_recent < -49, "Endangered", 
                                           prob_designation_recent)) %>%
   mutate(prob_designation_recent = ifelse(is.na(prob_designation_recent), "Data defficient", 
                                           prob_designation_recent),
