@@ -42,7 +42,11 @@ h3 { /* Header 3 */
 ```
 # About
 
-This document summarizes estimates of change in mature individuals over time for Pacific salmon Designatable Units (DUs) and associated probable COSEWIC status designations. These estimates are being used to help COSEWIC's Marine Fishes sub-committee identify high priority DUs to recommend for formal status assessments. Data sources are detailed [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize#data-sources) and all code to reproduce the analyses in this document is [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize). These materials are solely intended to support the Marine Fishes sub-committee of COSEWIC, and may not be appropriate for other applications.
+This document summarizes estimates of change in mature individuals over time for Pacific salmon Designatable Units (DUs) and associated probable COSEWIC status designations. These estimates are being used to help COSEWIC's Marine Fishes sub-committee identify high priority DUs to recommend for formal status assessments. 
+
+The specific COSEWIC criteria that are used for this rapid status assessment include A2 (Endangered = greater than 50% decline over most recent three generations; Threatened = greater than 30% (and less than 50%) decline over most recent three generations) and D1 (Endangered = fewer than 250 mature individual in recent generation; Threatened = fewer than 1000 (but greater than 250) mature individual in recent generation).
+
+Data sources are detailed [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize#data-sources) and all code to reproduce the analyses in this document is [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize). These materials are solely intended to support the Marine Fishes sub-committee of COSEWIC, and may not be appropriate for other applications.
 
 As is inevitable when trying to automate assessments across a large number of population units based on data of from a variety of sources there may be errors and inconsistencies in the information presented. If you notice any please flag them as a github issue.
 
