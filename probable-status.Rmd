@@ -68,7 +68,12 @@ Initial thoughts on potential decision nodes in the prioritization process.
 # libraries and global settings ----
 #library(devtools) # Load the devtools package.
 #install_github("Pacific-salmon-assess/MetricsCOSEWIC", dependencies = TRUE, build_vignettes = FALSE)
+<<<<<<< Updated upstream
 #library(MetricsCOSEWIC) #run lines above if you don't have this pkg
+=======
+library(MetricsCOSEWIC) #run lines above if you don't have this pkg
+library(ggridges) #^dependency
+>>>>>>> Stashed changes
 library(tidyverse)
 library(DT)
 
@@ -129,10 +134,35 @@ deficient_historical <- sp_data %>%
 sp_data_filtered <- filter(sp_data, !(du_number %in% deficient_historical))
 ```
 
-```{r models, include=FALSE}
+```{r check stan model, include=FALSE}
+if(FALSE){
+#testing 1 pop with run.stan()
+check <- filter(sp_data, du_number=="CK1") |> #CK1 didnt fit nice
+  rename(Abd = mat_ind, 
+         DU = du_number) |>
+  as.data.frame() |>
+  dplyr::select(DU, Year, Abd) |>
+  mutate(logAbd = log(Abd))
+ggplot(check, aes(Year, Abd)) +
+  geom_point()
+fit <- MetricsCOSEWIC::run.stan(du.label = "test", check, standardize.data=FALSE)
+
+fit$fit.obj #standard stan output
+fit$pchange #percent change
+probdecl_df <- fit$probdecl #probability decline df from MetricsCOSEWIC
+fit$conv.details
+
+loo(fit$fit.obj)
+
+params <- rstan::extract(fit$fit.obj) #regular ol' stan parms 
+fit_summary <- as.data.frame(rstan::summary(fit$fit.obj)$summary) #regular ol' stan summary
+}
+```
+
+```{r, run on all pops}
 # estimates rate of change using simple lm ----
 summary_table <- NULL
-
+#run the rest as usual
 for(i in unique(sp_data_filtered$du_number)){
   sub_raw <- filter(sp_data, du_number==i)
   sub_data <- filter(sp_data_filtered, du_number==i)
@@ -200,7 +230,12 @@ not_assessed <- master_desg %>%
 
 designations <- rbind(assessed,not_assessed)%>%
   mutate(species = spp) %>%
+<<<<<<< Updated upstream
   select(region_full, DU_name_short, du_number,species, gen_length, COSEWIC_status,per_change_recent, per_change_all, recent_abundance, last_year_monitored, prob_designation_recent)%>%
+=======
+  select(region_full, du_number,species, gen_length, COSEWIC_status,per_change_recent, 
+         per_change_all, recent_abundance, last_year_monitored, prob_designation_recent)%>%
+>>>>>>> Stashed changes
   arrange(du_number)%>%
   distinct(du_number,.keep_all = TRUE)
 
@@ -371,7 +406,7 @@ for(i in regions_ordered){
         geom_line(color="grey") +
         geom_point() +
         stat_smooth(method="lm", formula=y~x, color="black", lty="dashed", se=FALSE) +
-        stat_smooth(data = sub_last3_2, formula=y~x, method="lm", color="red", se=FALSE, 
+        stat_smooth(data = sub_last3_2, formula=y~x, method="lm", color="red", #se=FALSE, 
                     na.rm=TRUE) +
         ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE,
                            scales="free_y") +
@@ -385,8 +420,15 @@ for(i in regions_ordered){
     p <- ggplot(data=sub_data, aes(x=Year, y=Spawner.Abundance/1000)) +
       geom_line(color="grey") +
       geom_point() +
-      ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE, 
-                         scales="free_y") +
+      stat_smooth(formula=log(y)~x, method="lm", color="black", lty="dashed", se=FALSE) +
+      stat_smooth(data=sub_last3, formula=log(y)~x, method="lm", color="red", 
+                  na.rm=TRUE) +
+      #stat_smooth(formula=log(y)~x, method="lm", color="black", lty="dashed", se=FALSE) +
+      #stat_smooth(data=sub_last3, formula=log(y)~x, method="lm", color="red", 
+      #            na.rm=TRUE) +
+      #ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE, 
+      #                   scales="free_y") +
+      facet_wrap(vars(du_cu), scales = "free_y") +
       labs(x="Year", y="spawners (thousands)", title=paste(i, j, "spawner abundance")) +
       theme_bw() +
         theme(strip.background=element_blank(), axis.text.x=element_text(angle=45), strip.text = element_text(size = 5))
@@ -413,6 +455,7 @@ for(i in regions_ordered){
 }
 ```
 
+<<<<<<< Updated upstream
 # Future extensions
 
 Running list of possible extensions: 
@@ -426,3 +469,48 @@ Running list of possible extensions:
 -   explore whether or not spatial considerations (Criterion B) based on index of area of occupancy can be calculated across DUs and be incorporated into assessment of probable status (or just be reported on). This mght present an opportunity to fold in traditional knowledge and spatial considerations.
 
 -   consider whether an objective criteria could be developed to flag DUs that are candidates for emergency listings (e.g., if recent mature individuals falls way below recent average).
+=======
+```{r, check plot, include=FALSE}
+for(i in unique(last3_gens_filtered$du_number)){
+  sub_data <- filter(last3_gens_filtered, du_number == i)
+  jags_mod <- calcPercChangeMCMC(sub_data$mat_ind, method="jags", out.type="long") 
+  
+  summary <- data.frame(jags_mod$summary) %>%
+    slice(1:3) %>%
+    select(mean, sd, X2.5., X50., X97.5., n.eff, Rhat) %>%
+    rename(perc_2.5 = X2.5., 
+           perc_97.5 = X97.5.,
+           median = X50.) %>%
+    mutate(du_number = i,
+           Species = sub_data$Species[1],
+           Region = sub_data$Region[1]) %>%
+    relocate(du_number, Region, Species, .before = mean) 
+  
+  rownames(summary) <- NULL #rownames to columns - probably a better way
+  summary$var <- c("intercept", "slope", "sigma")
+  jags_summary <- bind_rows(summary, jags_summary)
+  slope_posterior <- bind_rows(data.frame(du_number =i, Region = unique(sub_data$Region),
+                                          Species = unique(sub_data$Species),
+                                          draw = jags_mod$samples$slope), slope_posterior)
+}
+
+symmetric_limits <- function(x){
+    max <- max(abs(x))
+    c(-max, max)
+}
+sub_data <- filter(sp_data, du_number=="CK1")
+  p <- ggplot(data = sub_data, aes(draw)) +
+        geom_density(fill = "gray") + 
+        scale_x_continuous(limits = symmetric_limits) +
+        geom_rect(aes(xmin=-30, xmax=Inf, ymin=0, ymax= Inf), fill="green", alpha=0.002) +
+        geom_rect(aes(xmin=-50 , xmax=-30, ymax=Inf, ymin=-Inf), fill="yellow", alpha=0.002) +
+        geom_rect(aes(xmin=-70, xmax=-50, ymax=Inf, ymin=-Inf), fill="orange", alpha=0.002) +
+        geom_rect(aes(xmin=-Inf, xmax=-70, ymax=Inf, ymin=-Inf), fill="red", alpha=0.002) +
+        theme_classic() +
+      #  ggh4x::facet_wrap2(vars(du_number), nrow=rows, ncol=cols, trim_blank=FALSE, 
+       #                    scales="free") +
+      #  labs(title = paste(i, j, "slope posterior"), x = "MCMC draws") +
+        guides(x = "none", y = "none")
+      print(p)
+```
+>>>>>>> Stashed changes
