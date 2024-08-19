@@ -3,31 +3,31 @@ title: "Prioritizing Pacific salmon DUs for COSEWIC assessment"
 date: '`r format(Sys.time(), "%d %B, %Y")`'
 output:
   html_document:
-    collapsed: no
-    fig_caption: yes
-    highlight: espresso
-    number_sections: yes
-    smooth_scroll: yes
-    theme: sandstone
-    toc: yes
-    toc_float: yes
+  collapsed: no
+  fig_caption: yes
+  highlight: espresso
+  number_sections: yes
+  smooth_scroll: yes
+  theme: sandstone
+  toc: yes
+  toc_float: yes
 ---
-
-```{=html}
+  
+  ```{=html}
 <style type="text/css">
-
-body{ /* Normal  */
+  
+  body{ /* Normal  */
       font-size: 13px;
   }
 td {  /* Table  */
-  font-size: 13px;
+    font-size: 13px;
 }
 h1.title {
   font-size: 24px;
   color: Black;
 }
 h1 { /* Header 1 */
-  font-size: 19px;
+    font-size: 19px;
   color: Black;
 }
 h2 { /* Header 2 */
@@ -39,61 +39,53 @@ h3 { /* Header 3 */
   color: Black;
 }
 </style>
-```
+  ```
 # About
-
-This document summarizes estimates of change in mature individuals over time for Pacific salmon Designatable Units (DUs) and associated probable COSEWIC status designations. These estimates are being used to help COSEWIC's Marine Fishes sub-committee identify high priority DUs to recommend for formal status assessments. 
-
-The specific COSEWIC criteria that are used for this rapid status assessment include A2 (Endangered = greater than 50% decline over most recent three generations; Threatened = greater than 30% (and less than 50%) decline over most recent three generations) and D1 (Endangered = fewer than 250 mature individual in recent generation; Threatened = fewer than 1000 (but greater than 250) mature individual in recent generation).
-
-Data sources are detailed [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize#data-sources) and all code to reproduce the analyses in this document is [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize). These materials are solely intended to support the Marine Fishes sub-committee of COSEWIC, and may not be appropriate for other applications.
-
-As is inevitable when trying to automate assessments across a large number of population units based on data of from a variety of sources there may be errors and inconsistencies in the information presented. If you notice any please flag them as a github issue.
+This document summarizes estimates of change in mature individuals over time for Pacific salmon Designatable Units (DUs) and associated  probable COSEWIC status designations. These estimates can then be used to help COSEWIC's Marine Fishes sub-committee identify high priority DUs for formally assessment. Data sources are detailed [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize#data-sources) and all code to reproduce the analyses in this document is [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize). These materials are solely intended to support the Marine Fishes sub-committee of COSEWIC, and may not be appropriate for other applications. 
 
 # Prioritization decision nodes
+Initial thoughts on potential decision nodes in the prioritization process. 
 
-Initial thoughts on potential decision nodes in the prioritization process.
+#. **Have DUs been formally defined by COSEWIC?** Chinook, sockeye, and coho salmon DUs have been defined (reports available [here](https://www.cosewic.ca/index.php/en-ca/reports/special-reports.html)), formal pink and chum DU identification is in progress. If **yes** then proceed. 
 
-1.  **Have DUs been formally defined by COSEWIC?** Chinook, sockeye, and coho salmon DUs have been defined (reports available [here](https://www.cosewic.ca/index.php/en-ca/reports/special-reports.html)), formal pink and chum DU identification is in progress. If **yes** then proceed.
+#. **Is information on mature individuals over time available at the DU scale?** If **yes** then proceed.
 
-2.  **Is information on mature individuals over time available at the DU scale?** If **yes** then proceed.
+#. **Has DU been previously assessed by COSEWIC?** If **yes** then consider a re-assessment, otherwise proceed except for DUs that have already been approved for a status assessment.
 
-3.  **Has DU been previously assessed by COSEWIC?** If **yes** then consider a re-assessment, otherwise proceed except for DUs that have already been approved for a status assessment.
+#. **What is the DUs probable designation based on percentage change in mature individuals over past three generations?** If **special concern**,  **threatened** or **endangered** then proceed.
 
-4.  **What is the DUs probable designation based on percentage change in mature individuals over past three generations and total number of mature individuals for those DUs with absolute estimates?** If **special concern**, **threatened** or **endangered** then proceed.
-
-5.  **Are there spatial considerations?** Are there commonalities in threats, designations, and/or data landscape at a regional scale that suggest a group of DUs should be bundled together?
+#. **Are there spatial considerations?** Are there commonalities in threats, designations, and/or data landscape at a regional scale that suggest a group of DUs should be bundled together?  
 
 ```{r setup, include=FALSE}
 # libraries and global settings ----
 #library(devtools) # Load the devtools package.
 #install_github("Pacific-salmon-assess/MetricsCOSEWIC", dependencies = TRUE, build_vignettes = FALSE)
-<<<<<<< Updated upstream
-#library(MetricsCOSEWIC) #run lines above if you don't have this pkg
-=======
 library(MetricsCOSEWIC) #run lines above if you don't have this pkg
 library(ggridges) #^dependency
->>>>>>> Stashed changes
 library(tidyverse)
 library(DT)
 
 knitr::opts_chunk$set(echo = FALSE, message=FALSE, cache=FALSE, include=TRUE, dpi=300)
 options(scipen=1, digits=4)
+```
 
+```{r wrangle}
 # read in data ----
 raw_sp_data <- read.csv("./data/CU_Spawner_Abund_20230915.csv", 
-#raw_sp_data <- read.csv("./data/CU_Spawner_Abund_20230915-alt-Yt.csv", 
                         header=TRUE) %>%
   mutate(logSp=log(Spawner.Abundance))
-
+nrow(distinct(raw_sp_data, CUID))
 
 cu_metadata <- read.csv("./data/CU_Metadata_20230828.csv",  
                         header=TRUE, na.strings=c("", "NA")) %>%
   filter(!is.na(gen_length)) %>%
-  rename(CUID=cuid)
+  rename(CUID=cuid) |>
+  distinct()
+#THERE ARE STILL DUPLICATES in cu_metadata that need fixing so we don't get the warning below
 
 # join, dump pops with NA DUs ----
-sp_data <- left_join(raw_sp_data, select(cu_metadata, Region, CUID, du_number, gen_length, Sites, cu_enh_rank, COSEWIC_status_2023, spp), 
+sp_data <- left_join(raw_sp_data, select(cu_metadata, Region, CUID, du_number, gen_length, 
+                                         Sites, cu_enh_rank, COSEWIC_status_2023, spp), 
                      by="CUID") %>%
   drop_na(du_number, Spawner.Abundance) %>%
   mutate(Species = spp) %>%
@@ -103,7 +95,7 @@ sp_data <- left_join(raw_sp_data, select(cu_metadata, Region, CUID, du_number, g
   summarise(mat_ind = sum(Spawner.Abundance))%>%
   arrange(du_number, Year)
 
-# filter to DUs with spawner estimates in at least 30% of last three generations (and 20% of all years) ----
+# filter to DUs with spawner estimates in at least 50% of last three generations (and 20% of all years) ----
 last3_gens <- sp_data %>%
   group_by(du_number) %>%
   mutate(three_gens = gen_length*3) %>%
@@ -136,26 +128,26 @@ sp_data_filtered <- filter(sp_data, !(du_number %in% deficient_historical))
 
 ```{r check stan model, include=FALSE}
 if(FALSE){
-#testing 1 pop with run.stan()
-check <- filter(sp_data, du_number=="CK1") |> #CK1 didnt fit nice
-  rename(Abd = mat_ind, 
-         DU = du_number) |>
-  as.data.frame() |>
-  dplyr::select(DU, Year, Abd) |>
-  mutate(logAbd = log(Abd))
-ggplot(check, aes(Year, Abd)) +
-  geom_point()
-fit <- MetricsCOSEWIC::run.stan(du.label = "test", check, standardize.data=FALSE)
-
-fit$fit.obj #standard stan output
-fit$pchange #percent change
-probdecl_df <- fit$probdecl #probability decline df from MetricsCOSEWIC
-fit$conv.details
-
-loo(fit$fit.obj)
-
-params <- rstan::extract(fit$fit.obj) #regular ol' stan parms 
-fit_summary <- as.data.frame(rstan::summary(fit$fit.obj)$summary) #regular ol' stan summary
+  #testing 1 pop with run.stan()
+  check <- filter(sp_data, du_number=="CK1") |> #CK1 didnt fit nice
+    rename(Abd = mat_ind, 
+           DU = du_number) |>
+    as.data.frame() |>
+    dplyr::select(DU, Year, Abd) |>
+    mutate(logAbd = log(Abd))
+  ggplot(check, aes(Year, Abd)) +
+    geom_point()
+  fit <- MetricsCOSEWIC::run.stan(du.label = "test", check, standardize.data=FALSE)
+  
+  fit$fit.obj #standard stan output
+  fit$pchange #percent change
+  probdecl_df <- fit$probdecl #probability decline df from MetricsCOSEWIC
+  fit$conv.details
+  
+  loo(fit$fit.obj)
+  
+  params <- rstan::extract(fit$fit.obj) #regular ol' stan parms 
+  fit_summary <- as.data.frame(rstan::summary(fit$fit.obj)$summary) #regular ol' stan summary
 }
 ```
 
@@ -190,18 +182,18 @@ for(i in unique(sp_data_filtered$du_number)){
 # assess probable designation, rename a couple of regions ----
 prob_desg <- summary_table %>%
   mutate(prob_designation_recent = case_when(
-    per_change_recent  > -10~ "Not at risk",
-    per_change_recent < -10& per_change_recent > -29 ~ "Special concern",
-    per_change_recent < -29 & per_change_recent > -49 ~ "Threatened",
-    per_change_recent < -49 ~ "Endangered")) %>%
+    per_change_recent  > -29 ~ "Not at risk",
+    per_change_recent < -29 & per_change_recent > -49 ~ "Special concern",
+    per_change_recent < -49 & per_change_recent > -69 ~ "Threatened",
+    per_change_recent < -69 ~ "Endangered")) %>%
   mutate(prob_designation_all = case_when(
-    per_change_all  > -10 ~ "Not at risk",
-    per_change_all < -10 & per_change_all > -29 ~ "Special concern",
-    per_change_all < -29 & per_change_all > -49 ~ "Threatened",
-    per_change_all < -49 ~ "Endangered"))
+    per_change_all  > -29 ~ "Not at risk",
+    per_change_all < -29 & per_change_all > -49 ~ "Special concern",
+    per_change_all < -49 & per_change_all > -69 ~ "Threatened",
+    per_change_all < -69 ~ "Endangered"))
 
 master_desg <- left_join(cu_metadata, select(prob_desg, Region, du_number, per_change_recent, per_change_all, recent_abundance, last_year_monitored, prob_designation_recent,prob_designation_all), 
-                     by="du_number") %>%
+                         by="du_number") %>%
   mutate(COSEWIC_status_2023 = ifelse(is.na(COSEWIC_status_2023), "Not assessed", COSEWIC_status_2023)) %>%
   rename(Region = Region.x,
          COSEWIC_status = COSEWIC_status_2023) %>%
@@ -217,25 +209,15 @@ assessed <- master_desg %>%
 
 not_assessed <- master_desg %>%
   filter(COSEWIC_status == "Not assessed") %>%
-  mutate(prob_designation_recent = ifelse(recent_abundance < 1000, "Threatened", 
-                                          prob_designation_recent))%>%
-  mutate(prob_designation_recent = ifelse(recent_abundance < 250, "Endangered", 
-                                          prob_designation_recent)) %>%
-  mutate(prob_designation_recent = ifelse(per_change_recent < -49, "Endangered", 
-                                          prob_designation_recent)) %>%
   mutate(prob_designation_recent = ifelse(is.na(prob_designation_recent), "Data defficient", 
                                           prob_designation_recent),
          prob_designation_all = ifelse(is.na(prob_designation_all), "Data defficient", 
-                                          prob_designation_all))
+                                       prob_designation_all))
 
 designations <- rbind(assessed,not_assessed)%>%
   mutate(species = spp) %>%
-<<<<<<< Updated upstream
-  select(region_full, DU_name_short, du_number,species, gen_length, COSEWIC_status,per_change_recent, per_change_all, recent_abundance, last_year_monitored, prob_designation_recent)%>%
-=======
   select(region_full, du_number,species, gen_length, COSEWIC_status,per_change_recent, 
          per_change_all, recent_abundance, last_year_monitored, prob_designation_recent)%>%
->>>>>>> Stashed changes
   arrange(du_number)%>%
   distinct(du_number,.keep_all = TRUE)
 
@@ -243,13 +225,12 @@ unassessed <- designations %>%
   filter(COSEWIC_status == "Not assessed",
          prob_designation_recent != "Data defficient")
 
-write.csv(designations, "./output/master-prob-status/master_status.csv", row.names=FALSE)
+write.csv(designations, "./output/master-prob-status/master_status.csv")
 
 NA_regions <- filter(designations, is.na(region_full))
 ```
 
-# Status summaries
-
+# Status summaries 
 ## All DUs - plot
 
 ```{r summary-status-recent-all-dus, echo=FALSE, fig.align = "center", out.width = '90%'}
@@ -262,10 +243,10 @@ for(i in 1:length(designations$du_number)){
 count_bins_status <- designations %>%
   group_by(species, region_full, status) %>%
   summarize(du_count=n()) %>%
-mutate(status = factor(status, levels = rev(c("Extinct","Endangered","Threatened", "Special concern", "Not at risk", "Data defficient"))), 
+  mutate(status = factor(status, levels = rev(c("Extinct","Endangered","Threatened", "Special concern", "Not at risk", "Data defficient"))), 
          region_full = factor(region_full, levels = c("Yukon", "Nass","Skeena", "Haida Gwaii", "Central Coast", "Van. Isl. Main. Inl.", "Fraser"))) %>%
   drop_na(status, region_full)
-  
+
 count_bins_status[54,4] <- 1 # hard code Fraser pinks which have 8 DUs but only one CU
 
 # plot status by spp and region for all DUs ----
@@ -279,11 +260,9 @@ ggplot(count_bins_status, aes(x = species, y = du_count)) +
   theme_bw()+
   theme(axis.text.x = element_text(angle=45, hjust=1), legend.position = "top")
 ```
+**Figure 1**. Status of all DUs. For DUs that have been previously assessed by COSEWIC the official status is shown, otherwise probable status is inferred based on percent change in mature individual abundance over the most recent three generations of data.
 
-**Figure 1**. Status of all DUs. For DUs that have been previously assessed by COSEWIC the official status is shown, otherwise probable status is inferred based on percent change in mature individual abundance over the most recent three generations of data. DUs with absolute estimates of mature individuals less than 250 and 1000 are assigned a probable status of endangered and threatened, respectively (Criterion D).
-
-## Unassessed DUs - plot
-
+## Unassessed official DUs - plot
 ```{r summary-status-unassessed-dus, echo=FALSE, fig.align = "center", out.width = '90%', out.height = '60%'}
 # summarize probable status by spp and region ----
 count_bins <- unassessed %>%
@@ -294,7 +273,8 @@ count_bins_status <- unassessed %>%
   group_by(species, region_full, prob_designation_recent) %>%
   summarize(du_count=n()) %>%
   mutate(prob_designation_recent = factor(prob_designation_recent, levels = rev(c("Endangered","Threatened", "Special concern", "Not at risk"))), 
-         region_full = factor(region_full, levels = c("Yukon", "Nass","Skeena", "Haida Gwaii", "Central Coast", "Van. Isl. Main. Inl.", "Fraser"))) 
+         region_full = factor(region_full, levels = c("Yukon", "Nass","Skeena", "Haida Gwaii", "Central Coast", "Van. Isl. Main. Inl.", "Fraser"))) %>%
+  filter(! species %in% c("Chum", "Pink"))
 
 # plot probable status by spp and region ----
 ggplot(count_bins_status, aes(x = species, y = du_count)) + 
@@ -307,22 +287,21 @@ ggplot(count_bins_status, aes(x = species, y = du_count)) +
   theme_bw()+
   theme(axis.text.x = element_text(angle=45, hjust=1), legend.position = "top")
 ```
-
-**Figure 2**. Probable status of unassessed, but formally defined, Pacific salmon DUs (excluding those previously assessed by COSEWIC or recommended for status assessment) based on rate of change in mature individuals over most recent three generations.DUs with absolute estimates of mature individuals less than 250 and 1000 are assigned a probable status of endangered and threatened, respectively (Criterion D).
+**Figure 2**. Probable status of unassessed, but formally defined, Pacific salmon DUs (excluding those previously assessed by COSEWIC or recommended for status assessment) based on rate of change in mature individuals over most recent three generations. 
 
 ## All DUs - table
 
 ```{r, warning = FALSE}
-colnames(designations) <- c("Region", "DU name", "DU no.", "Species", "Generation length", "COSEWIC status", "% Change (recent)", "% Change (all)", "Recent abundance", "Last year", "Probable status", "Status")
+colnames(designations) <- c("Region", "DU", "Species", "Generation length", "COSEWIC status", "% Change (recent)", "% Change (all)", "Recent abundance", "Last year", "Probable status", "Status")
 
 #switch characters to factor to make dropdown filtering
 designations <- designations %>%
   mutate(Region = as.factor(Region), 
-         'DU no.' = as.factor('DU no.'), 
+         DU = as.factor(DU), 
          Species = as.factor(Species),
          `COSEWIC status` = as.factor(`COSEWIC status`),
          `Probable status` = as.factor(`Probable status`))
-  
+
 datatable(designations, rownames = FALSE, 
           caption = 'Table 1: Estimates of percent change in mature individual (spawner) abundance over most recent three generations (based on just last three generations or all years of observations) for Pacific Salmon DUs in the Pacific region. Also shown are the region, average generation length, COSEWIC status if previously assessed, mature individual abundance in most recent year with data, the last year with data, and probable COSEWIC designation based on percent change using just the last three generations of observations.',
           filter = 'top', 
@@ -334,13 +313,11 @@ datatable(designations, rownames = FALSE,
                          lengthMenu = c(10, 15, 20, 25)))
 ```
 
-# Abundance plots
+# Abundance plots 
 
 Plots of reconstructed number of mature individuals (spawners) over time for each DU, by region and species. Show are both raw and log(e) transformed estimates, and for the later the trend over the most recent three generations (red line) or entire time-series (black dashed line) are also shown.
-
 ```{r abundance plots, warning = FALSE, results= 'asis'}
 #note: `asis` argument is necessary to properly render headers with cat() below
-
 raw_sp_data <- raw_sp_data %>%
   mutate(logSp=log(Spawner.Abundance))
 
@@ -352,11 +329,12 @@ sp_data <- left_join(raw_sp_data, select(cu_metadata, CUID, du_number, DU_name_s
   relocate(du_cu, 1) %>%
   arrange(du_cu, Year) %>%
   mutate(Region = case_when(Region == "HG" ~ "Haida Gwaii",
-                                 Region == "CC" ~ "Central Coast",
-                                 Region == "VIMI" ~ "Van. Isl. Main. Inl.", 
-                                 TRUE ~ Region)) 
+                            Region == "CC" ~ "Central Coast",
+                            Region == "VIMI" ~ "Van. Isl. Main. Inl.", 
+                            TRUE ~ Region)) 
 
-regions_ordered <- c("Yukon", "Nass", "Skeena", "Haida Gwaii", "Central Coast", "Van. Isl. Main. Inl.", "Fraser", "Columbia")
+regions_ordered <- c("Yukon", "Nass", "Skeena", "Haida Gwaii", "Central Coast", 
+                     "Van. Isl. Main. Inl.", "Fraser", "Columbia")
 
 last3_gens <- sp_data %>%
   group_by(du_cu) %>%
@@ -370,9 +348,9 @@ cols <- 5
 for(i in regions_ordered){
   sp_data_region <- filter(sp_data, Region==i)
   
-   cat('\n')  
-   cat("## ", i, "\n") #nested region header
-   
+  cat('\n')  
+  cat("## ", i, "\n") #nested region header
+  
   for(j in unique(sp_data_region$Species)){
     sub_data <- filter(sp_data_region, Species==j) %>%
       complete(Year, Species, Region, du_cu) #explicitly include NA so line draws right
@@ -384,93 +362,62 @@ for(i in regions_ordered){
     n_pops <- length(unique(sub_data$du_cu))
     if( n_pops>max_facets){
       pages <- ceiling(n_pops/max_facets)
-    for(k in 1:pages){
-      sub_data_2 <- filter(sub_data, du_cu %in% 
+      for(k in 1:pages){
+        sub_data_2 <- filter(sub_data, du_cu %in% 
                                unique(sub_data$du_cu)[((k-1)*max_facets)+1:(max_facets*k)])
-      
-      sub_last3_2 <- filter(sub_last3, du_cu %in% 
+        
+        sub_last3_2 <- filter(sub_last3, du_cu %in% 
                                 unique(sub_last3$du_cu)[((k-1)*max_facets)+1:(max_facets*k)])
-      
-      p <- ggplot(data = sub_data_2, aes(x=Year, y=Spawner.Abundance/1000)) +
+        
+      p <- ggplot(data=sub_data_2, aes(x=Year, y=Spawner.Abundance/1000)) +
         geom_line(color="grey") +
         geom_point() +
-        ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE,
-                           scales="free_y") +
-        labs(x="Year", y="spawners (thousands)", 
-             title = paste0(i," ",j," spawner abundance ","(",k," of ",pages,")")) +
-        theme_bw() +
-        theme(strip.background=element_blank(), axis.text.x=element_text(angle=45), strip.text = element_text(size = 5))
-      print(p)
-      
-      p_log <- ggplot(data=sub_data_2, aes(x=Year, y=logSp)) +
-        geom_line(color="grey") +
-        geom_point() +
-        stat_smooth(method="lm", formula=y~x, color="black", lty="dashed", se=FALSE) +
-        stat_smooth(data = sub_last3_2, formula=y~x, method="lm", color="red", #se=FALSE, 
+        stat_smooth(formula=y~x, method="glm", color="black", lty="dashed", se=FALSE, 
+                    method.args = list(family = gaussian(link = 'log'))) +
+        stat_smooth(data=sub_last3_2, formula=y~x, method="glm", color="red", 
+                    method.args = list(family = gaussian(link = 'log')),
                     na.rm=TRUE) +
-        ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE,
+        ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE, 
                            scales="free_y") +
-        labs(x="Year", y="ln(spawners)", 
-             title=paste0("ln ",i," ",j," spawner abundance ","(",k," of ",pages,")")) +
+        labs(x="Year", y="Mature individuals (thousands)"#, title=paste(i, j, "spawner abundance")
+             ) +
+        scale_y_continuous(labels = scales::number_format(accuracy = 1)) +
         theme_bw() +
-        theme(strip.background=element_blank(), axis.text.x=element_text(angle=45), strip.text = element_text(size = 5))
-      print(p_log)
+        theme(strip.background=element_blank(), axis.text.x=element_text(angle=0), 
+              strip.text = element_text(size = 5))
+      print(p)
+        print(p)
+      }
+    }else{
+      p <- ggplot(data=sub_data, aes(x=Year, y=Spawner.Abundance/1000)) +
+        geom_line(color="grey") +
+        geom_point() +
+        #stat_smooth(formula=y~x, method="glm", color="black", lty="dashed", se=FALSE, 
+        #            method.args = list(family = gaussian(link = 'log'))) +
+        stat_smooth(data=sub_last3, formula=y~x, method="glm", color="red", 
+                    method.args = list(family = gaussian(link = 'log')),
+                    na.rm=TRUE) +
+        #ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE, 
+        #                   scales="free_y") +
+        facet_wrap(~du_cu, scales = "free_y") +
+        labs(x="Year", y="Mature individuals (thousands)"#, title=paste(i, j, "spawner abundance")
+             ) +
+        scale_y_continuous(labels = scales::number_format(accuracy = 1)) +
+        theme_bw() +
+        theme(strip.background=element_blank(), axis.text.x=element_text(angle=0), 
+              strip.text = element_text(size = 5), strip.text.x = element_text(size=10))
+      print(p)
     }
-  }else{
-    p <- ggplot(data=sub_data, aes(x=Year, y=Spawner.Abundance/1000)) +
-      geom_line(color="grey") +
-      geom_point() +
-      stat_smooth(formula=log(y)~x, method="lm", color="black", lty="dashed", se=FALSE) +
-      stat_smooth(data=sub_last3, formula=log(y)~x, method="lm", color="red", 
-                  na.rm=TRUE) +
-      #stat_smooth(formula=log(y)~x, method="lm", color="black", lty="dashed", se=FALSE) +
-      #stat_smooth(data=sub_last3, formula=log(y)~x, method="lm", color="red", 
-      #            na.rm=TRUE) +
-      #ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE, 
-      #                   scales="free_y") +
-      facet_wrap(vars(du_cu), scales = "free_y") +
-      labs(x="Year", y="spawners (thousands)", title=paste(i, j, "spawner abundance")) +
-      theme_bw() +
-        theme(strip.background=element_blank(), axis.text.x=element_text(angle=45), strip.text = element_text(size = 5))
-    print(p)
+    cat('\n')  
     
-    p_log <- ggplot(data=sub_data, aes(x=Year, y=logSp)) +
-      geom_line(color="grey") +
-      geom_point() +
-      stat_smooth(formula=y~x, method="lm", color="black", lty="dashed", se=FALSE) +
-      stat_smooth(data=sub_last3, formula=y~x, method="lm", color="red", se=FALSE, 
-                  na.rm=TRUE) +
-      ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE, 
-                         scales="free_y") +
-      labs(x="Year", y="ln(spawners)", title=paste(i, j, "ln(spawner abundance)")) +
-      theme_bw() +
-        theme(strip.background=element_blank(), axis.text.x=element_text(angle=45), strip.text = element_text(size = 5))
-    print(p_log)
   }
-        cat('\n')  
-
-  }
-      cat('\n') 
-
+  cat('\n') 
+  
 }
 ```
 
-<<<<<<< Updated upstream
-# Future extensions
-
-Running list of possible extensions: 
-
-- switch to using Bayesian based estimates of percent decline from the [MetricsCOSEWIC]() repository once stable, consider incorporating cumulative probability and probability density associated percent change in table and abundance plots section of this summary document.
-
--   incorporate absolute abundance thresholds (Criterion C) into classification of probable status for those DUs with absolute abundance.
-
--   expand guidance and thinking around key considerations with respect to bundling/grouping high priority DUs (e.g., similar threats, magnitude of declines, etc.).
-
--   explore whether or not spatial considerations (Criterion B) based on index of area of occupancy can be calculated across DUs and be incorporated into assessment of probable status (or just be reported on). This mght present an opportunity to fold in traditional knowledge and spatial considerations.
-
--   consider whether an objective criteria could be developed to flag DUs that are candidates for emergency listings (e.g., if recent mature individuals falls way below recent average).
-=======
 ```{r, check plot, include=FALSE}
+if(FALSE){
 for(i in unique(last3_gens_filtered$du_number)){
   sub_data <- filter(last3_gens_filtered, du_number == i)
   jags_mod <- calcPercChangeMCMC(sub_data$mat_ind, method="jags", out.type="long") 
@@ -495,22 +442,22 @@ for(i in unique(last3_gens_filtered$du_number)){
 }
 
 symmetric_limits <- function(x){
-    max <- max(abs(x))
-    c(-max, max)
+  max <- max(abs(x))
+  c(-max, max)
 }
 sub_data <- filter(sp_data, du_number=="CK1")
-  p <- ggplot(data = sub_data, aes(draw)) +
-        geom_density(fill = "gray") + 
-        scale_x_continuous(limits = symmetric_limits) +
-        geom_rect(aes(xmin=-30, xmax=Inf, ymin=0, ymax= Inf), fill="green", alpha=0.002) +
-        geom_rect(aes(xmin=-50 , xmax=-30, ymax=Inf, ymin=-Inf), fill="yellow", alpha=0.002) +
-        geom_rect(aes(xmin=-70, xmax=-50, ymax=Inf, ymin=-Inf), fill="orange", alpha=0.002) +
-        geom_rect(aes(xmin=-Inf, xmax=-70, ymax=Inf, ymin=-Inf), fill="red", alpha=0.002) +
-        theme_classic() +
-      #  ggh4x::facet_wrap2(vars(du_number), nrow=rows, ncol=cols, trim_blank=FALSE, 
-       #                    scales="free") +
-      #  labs(title = paste(i, j, "slope posterior"), x = "MCMC draws") +
-        guides(x = "none", y = "none")
-      print(p)
+p <- ggplot(data = sub_data, aes(draw)) +
+  geom_density(fill = "gray") + 
+  scale_x_continuous(limits = symmetric_limits) +
+  geom_rect(aes(xmin=-30, xmax=Inf, ymin=0, ymax= Inf), fill="green", alpha=0.002) +
+  geom_rect(aes(xmin=-50 , xmax=-30, ymax=Inf, ymin=-Inf), fill="yellow", alpha=0.002) +
+  geom_rect(aes(xmin=-70, xmax=-50, ymax=Inf, ymin=-Inf), fill="orange", alpha=0.002) +
+  geom_rect(aes(xmin=-Inf, xmax=-70, ymax=Inf, ymin=-Inf), fill="red", alpha=0.002) +
+  theme_classic() +
+  #  ggh4x::facet_wrap2(vars(du_number), nrow=rows, ncol=cols, trim_blank=FALSE, 
+  #                    scales="free") +
+  #  labs(title = paste(i, j, "slope posterior"), x = "MCMC draws") +
+  guides(x = "none", y = "none")
+print(p)
+}
 ```
->>>>>>> Stashed changes
