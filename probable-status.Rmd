@@ -64,6 +64,7 @@ library(MetricsCOSEWIC) #run lines above if you don't have this pkg
 library(ggridges) #^dependency
 library(tidyverse)
 library(DT)
+library(here)
 
 knitr::opts_chunk$set(echo = FALSE, message=FALSE, cache=FALSE, include=TRUE, dpi=300)
 options(scipen=1, digits=4)
@@ -72,7 +73,7 @@ options(scipen=1, digits=4)
 ```{r wrangle}
 # read in data ----
 raw_sp_data <- read.csv("./data/CU_Spawner_Abund_20240808.csv", 
-                        header=TRUE) %>%
+                        header=TRUE) |>
   mutate(logSp=log(Spawner.Abundance))
 nrow(distinct(raw_sp_data, CUID))#, Species, Region))
 
@@ -92,10 +93,19 @@ if(FALSE){
   nrow(distinct(cu_metadata, cuid, cuname.x))
   nrow(distinct(cu_metadata, cuid, du_number))
   cu_check <- filter(cu_metadata, is.na(gen_length))
+  
+  cu_metadata_summary <- cu_metadata |> 
+    group_by(CUID) |>
+    summarise(count = n()) |>
+    filter(count > 1) |>
+    arrange(CUID)
+  
+  write.csv(cu_metadata_summary, "C:/Users/GLASERD/Desktop/duplicate_CUID.csv", row.names = F)
+    
 }
 
-cu_metadata <- cu_metadata %>%
-  filter(!is.na(gen_length)) %>% #why are there NAs here? do we care?
+cu_metadata <- cu_metadata |>
+  filter(!is.na(gen_length)) |> #why are there NAs here? do we care?
   rename(CUID=cuid) |>
   distinct() #just going distinct on all levels for now... 
 
@@ -104,40 +114,40 @@ nrow(cu_metadata) - nrow(distinct(cu_metadata, CUID)) #how many rows have multip
 # join, dump pops with NA DUs ----
 sp_data <- left_join(raw_sp_data, select(cu_metadata, Region, CUID, du_number, gen_length, 
                                          Sites, cu_enh_rank, COSEWIC_status, spp), 
-                     by="CUID") %>%
-  drop_na(du_number, Spawner.Abundance) %>%
-  mutate(Species = spp) %>%
-  group_by(du_number, Region.y, Year, gen_length, Sites, cu_enh_rank, COSEWIC_status, Species) %>%
-  rename(Region = Region.y) %>%
-  summarise(mat_ind = sum(Spawner.Abundance))%>%
+                     by="CUID") |>
+  drop_na(du_number, Spawner.Abundance) |>
+  mutate(Species = spp) |>
+  group_by(du_number, Region.y, Year, gen_length, Sites, cu_enh_rank, COSEWIC_status, Species) |>
+  rename(Region = Region.y) |>
+  summarise(mat_ind = sum(Spawner.Abundance))|>
   arrange(du_number, Year)
 
 # filter to DUs with spawner estimates in at least 50% of last three generations (and 20% of all years) ----
-last3_gens <- sp_data %>%
-  group_by(du_number) %>%
-  mutate(three_gens = gen_length*3) %>%
+last3_gens <- sp_data |>
+  group_by(du_number) |>
+  mutate(three_gens = gen_length*3) |>
   filter(Year > (last(Year) - three_gens), Year <= last(Year))
 
 deficient_recent_perc <- 0.3
 
-deficient_recent <- last3_gens %>%
-  group_by(du_number) %>%
+deficient_recent <- last3_gens |>
+  group_by(du_number) |>
   summarise(n = n(), #years with data  
-            n_proper = mean(gen_length)*3) %>% # years for 3 gens of data if fully sampled
-  mutate(perc_na = n/n_proper) %>%
-  filter(perc_na < deficient_recent_perc) %>%
+            n_proper = mean(gen_length)*3) |> # years for 3 gens of data if fully sampled
+  mutate(perc_na = n/n_proper) |>
+  filter(perc_na < deficient_recent_perc) |>
   pull(du_number)
 
 last3_gens_filtered <- filter(last3_gens, !(du_number %in% deficient_recent))
 
 deficient_historical_perc <- 0.2
 
-deficient_historical <- sp_data %>%
-  group_by(du_number) %>%
+deficient_historical <- sp_data |>
+  group_by(du_number) |>
   summarise(n = n(),
-            n_proper = last(Year) - first(Year) + 1) %>%
-  mutate(perc_na = n/n_proper) %>%
-  filter(perc_na < deficient_historical_perc) %>%
+            n_proper = last(Year) - first(Year) + 1) |>
+  mutate(perc_na = n/n_proper) |>
+  filter(perc_na < deficient_historical_perc) |>
   pull(du_number)
 
 sp_data_filtered <- filter(sp_data, !(du_number %in% deficient_historical))
@@ -197,12 +207,12 @@ for(i in unique(sp_data_filtered$du_number)){
 }
 
 # assess probable designation, rename a couple of regions ----
-prob_desg <- summary_table %>%
+prob_desg <- summary_table |>
   mutate(prob_designation_recent = case_when(
     per_change_recent  > -29 ~ "Not at risk",
     per_change_recent < -29 & per_change_recent > -49 ~ "Special concern",
     per_change_recent < -49 & per_change_recent > -69 ~ "Threatened",
-    per_change_recent < -69 ~ "Endangered")) %>%
+    per_change_recent < -69 ~ "Endangered")) |>
   mutate(prob_designation_all = case_when(
     per_change_all  > -29 ~ "Not at risk",
     per_change_all < -29 & per_change_all > -49 ~ "Special concern",
@@ -210,9 +220,9 @@ prob_desg <- summary_table %>%
     per_change_all < -69 ~ "Endangered"))
 
 master_desg <- left_join(cu_metadata, select(prob_desg, Region, du_number, per_change_recent, per_change_all, recent_abundance, last_year_monitored, prob_designation_recent,prob_designation_all), 
-                         by="du_number") %>%
-  mutate(COSEWIC_status = ifelse(is.na(COSEWIC_status), "Not assessed", COSEWIC_status)) %>%
-  rename(Region = Region.x) %>%
+                         by="du_number") |>
+  mutate(COSEWIC_status = ifelse(is.na(COSEWIC_status), "Not assessed", COSEWIC_status)) |>
+  rename(Region = Region.x) |>
   mutate(region_full = case_when(
     Region == "HG" ~ "Haida Gwaii",
     Region == "CC" ~ "Central Coast",
@@ -220,24 +230,24 @@ master_desg <- left_join(cu_metadata, select(prob_desg, Region, du_number, per_c
     TRUE ~ Region))
 
 # wrangle assessed and un-assessed status'
-assessed <- master_desg %>%
+assessed <- master_desg |>
   filter(COSEWIC_status != "Not assessed")
 
-not_assessed <- master_desg %>%
-  filter(COSEWIC_status == "Not assessed") %>%
+not_assessed <- master_desg |>
+  filter(COSEWIC_status == "Not assessed") |>
   mutate(prob_designation_recent = ifelse(is.na(prob_designation_recent), "Data defficient", 
                                           prob_designation_recent),
          prob_designation_all = ifelse(is.na(prob_designation_all), "Data defficient", 
                                        prob_designation_all))
 
-designations <- rbind(assessed,not_assessed)%>%
-  mutate(species = spp) %>%
+designations <- rbind(assessed,not_assessed)|>
+  mutate(species = spp) |>
   select(region_full, du_number,species, gen_length, COSEWIC_status,per_change_recent, 
-         per_change_all, recent_abundance, last_year_monitored, prob_designation_recent)%>%
-  arrange(du_number)%>%
+         per_change_all, recent_abundance, last_year_monitored, prob_designation_recent)|>
+  arrange(du_number)|>
   distinct(du_number,.keep_all = TRUE)
 
-unassessed <- designations %>%
+unassessed <- designations |>
   filter(COSEWIC_status == "Not assessed",
          prob_designation_recent != "Data defficient")
 
@@ -256,11 +266,11 @@ for(i in 1:length(designations$du_number)){
   if(designations$status[i] == "Status assessment recommended"){designations$status[i] <- designations$prob_designation_recent[i]}
 }
 
-count_bins_status <- designations %>%
-  group_by(species, region_full, status) %>%
-  summarize(du_count=n()) %>%
+count_bins_status <- designations |>
+  group_by(species, region_full, status) |>
+  summarize(du_count=n()) |>
   mutate(status = factor(status, levels = rev(c("Extinct","Endangered","Threatened", "Special concern", "Not at risk", "Data defficient"))), 
-         region_full = factor(region_full, levels = c("Yukon", "Nass","Skeena", "Haida Gwaii", "Central Coast", "Van. Isl. Main. Inl.", "Fraser"))) %>%
+         region_full = factor(region_full, levels = c("Yukon", "Nass","Skeena", "Haida Gwaii", "Central Coast", "Van. Isl. Main. Inl.", "Fraser"))) |>
   drop_na(status, region_full)
 
 count_bins_status[54,4] <- 1 # hard code Fraser pinks which have 8 DUs but only one CU
@@ -281,15 +291,15 @@ ggplot(count_bins_status, aes(x = species, y = du_count)) +
 ## Unassessed official DUs - plot
 ```{r summary-status-unassessed-dus, echo=FALSE, fig.align = "center", out.width = '90%', out.height = '60%'}
 # summarize probable status by spp and region ----
-count_bins <- unassessed %>%
-  group_by(species, region_full) %>%
+count_bins <- unassessed |>
+  group_by(species, region_full) |>
   summarize(du_count=n())
 
-count_bins_status <- unassessed %>%
-  group_by(species, region_full, prob_designation_recent) %>%
-  summarize(du_count=n()) %>%
+count_bins_status <- unassessed |>
+  group_by(species, region_full, prob_designation_recent) |>
+  summarize(du_count=n()) |>
   mutate(prob_designation_recent = factor(prob_designation_recent, levels = rev(c("Endangered","Threatened", "Special concern", "Not at risk"))), 
-         region_full = factor(region_full, levels = c("Yukon", "Nass","Skeena", "Haida Gwaii", "Central Coast", "Van. Isl. Main. Inl.", "Fraser"))) %>%
+         region_full = factor(region_full, levels = c("Yukon", "Nass","Skeena", "Haida Gwaii", "Central Coast", "Van. Isl. Main. Inl.", "Fraser"))) |>
   filter(! species %in% c("Chum", "Pink"))
 
 # plot probable status by spp and region ----
@@ -311,7 +321,7 @@ ggplot(count_bins_status, aes(x = species, y = du_count)) +
 colnames(designations) <- c("Region", "DU", "Species", "Generation length", "COSEWIC status", "% Change (recent)", "% Change (all)", "Recent abundance", "Last year", "Probable status", "Status")
 
 #switch characters to factor to make dropdown filtering
-designations <- designations %>%
+designations <- designations |>
   mutate(Region = as.factor(Region), 
          DU = as.factor(DU), 
          Species = as.factor(Species),
@@ -334,27 +344,32 @@ datatable(designations, rownames = FALSE,
 Plots of reconstructed number of mature individuals (spawners) over time for each DU, by region and species. Show are both raw and log(e) transformed estimates, and for the later the trend over the most recent three generations (red line) or entire time-series (black dashed line) are also shown.
 ```{r abundance plots, warning = FALSE, results= 'asis'}
 #note: `asis` argument is necessary to properly render headers with cat() below
-raw_sp_data <- raw_sp_data %>%
+if(TRUE){ #can I just move this up?
+  raw_sp_data <- raw_sp_data |>
   mutate(logSp=log(Spawner.Abundance))
 
 
 sp_data <- left_join(raw_sp_data, select(cu_metadata, CUID, du_number, DU_name_short,gen_length), 
-                     by="CUID") %>%
-  drop_na(du_number, Spawner.Abundance) %>%
-  mutate(du_cu=paste(du_number, DU_name_short)) %>%
-  relocate(du_cu, 1) %>%
-  arrange(du_cu, Year) %>%
+                     by="CUID") |> 
+  drop_na(du_number, Spawner.Abundance) |>
+  mutate(du_cu=paste(du_number, DU_name_short)) |> ##ERROR HERE - NOT TRULY DISTINCT! See "CK21 ECVI-Ocean-Fall"
+  relocate(du_cu, 1) |>
+  arrange(du_cu, Year) |>
   mutate(Region = case_when(Region == "HG" ~ "Haida Gwaii",
                             Region == "CC" ~ "Central Coast",
                             Region == "VIMI" ~ "Van. Isl. Main. Inl.", 
-                            TRUE ~ Region)) 
-
+                            TRUE ~ Region))
+}
+ 
+if(FALSE){ #checking things that plot bad
+check.VI.CK <- filter(sp_data, du_cu == "CK21 ECVI-Ocean-Fall")
+}
 regions_ordered <- c("Yukon", "Nass", "Skeena", "Haida Gwaii", "Central Coast", 
                      "Van. Isl. Main. Inl.", "Fraser", "Columbia")
 
-last3_gens <- sp_data %>%
-  group_by(du_cu) %>%
-  mutate(three_gens = gen_length*3) %>%
+last3_gens <- sp_data |>
+  group_by(du_cu) |>
+  mutate(three_gens = gen_length*3) |>
   filter(Year > (last(Year) - three_gens), Year <= last(Year))
 
 max_facets <- 20 #how many facets (i.e. panes) per plot?
@@ -368,7 +383,7 @@ for(i in regions_ordered){
   cat("## ", i, "\n") #nested region header
   
   for(j in unique(sp_data_region$Species)){
-    sub_data <- filter(sp_data_region, Species==j) %>%
+    sub_data <- filter(sp_data_region, Species==j) |>
       complete(Year, Species, Region, du_cu) #explicitly include NA so line draws right
     
     cat('\n')  
@@ -392,14 +407,13 @@ for(i in regions_ordered){
                     method.args = list(family = gaussian(link = 'log'))) +
         stat_smooth(data=sub_last3_2, formula=y~x, method="glm", color="red", 
                     method.args = list(family = gaussian(link = 'log')),
-                    na.rm=TRUE) +
+                    se=FALSE, na.rm=TRUE) + #wide SE messes up y axis; turned it off
         ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE, 
                            scales="free_y") +
-        labs(x="Year", y="Mature individuals (thousands)"#, title=paste(i, j, "spawner abundance")
-             ) +
+        labs(x="Year", y="Mature individuals (thousands)") +
         scale_y_continuous(labels = scales::number_format(accuracy = 1)) +
         theme_bw() +
-        theme(strip.background=element_blank(), axis.text.x=element_text(angle=0), 
+        theme(strip.background=element_blank(), axis.text.x=element_text(angle=45), vjust = 0.5, 
               strip.text = element_text(size = 5))
       print(p)
         print(p)
@@ -408,19 +422,18 @@ for(i in regions_ordered){
       p <- ggplot(data=sub_data, aes(x=Year, y=Spawner.Abundance/1000)) +
         geom_line(color="grey") +
         geom_point() +
-        #stat_smooth(formula=y~x, method="glm", color="black", lty="dashed", se=FALSE, 
-        #            method.args = list(family = gaussian(link = 'log'))) +
+        stat_smooth(formula=y~x, method="glm", color="black", lty="dashed", se=FALSE, 
+                    method.args = list(family = gaussian(link = 'log'))) +
         stat_smooth(data=sub_last3, formula=y~x, method="glm", color="red", 
                     method.args = list(family = gaussian(link = 'log')),
-                    na.rm=TRUE) +
+                    se=FALSE, na.rm=TRUE) +
         #ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE, 
-        #                   scales="free_y") +
+        #                   scales="free_y") + #turned off to let plot fill the window
         facet_wrap(~du_cu, scales = "free_y") +
-        labs(x="Year", y="Mature individuals (thousands)"#, title=paste(i, j, "spawner abundance")
-             ) +
+        labs(x="Year", y="Mature individuals (thousands)") +
         scale_y_continuous(labels = scales::number_format(accuracy = 1)) +
         theme_bw() +
-        theme(strip.background=element_blank(), axis.text.x=element_text(angle=0), 
+        theme(strip.background=element_blank(), axis.text.x=element_text(angle=45), vjust = 0.5, 
               strip.text = element_text(size = 5), strip.text.x = element_text(size=10))
       print(p)
     }
@@ -436,15 +449,15 @@ for(i in unique(last3_gens_filtered$du_number)){
   sub_data <- filter(last3_gens_filtered, du_number == i)
   jags_mod <- calcPercChangeMCMC(sub_data$mat_ind, method="jags", out.type="long") 
   
-  summary <- data.frame(jags_mod$summary) %>%
-    slice(1:3) %>%
-    select(mean, sd, X2.5., X50., X97.5., n.eff, Rhat) %>%
+  summary <- data.frame(jags_mod$summary) |>
+    slice(1:3) |>
+    select(mean, sd, X2.5., X50., X97.5., n.eff, Rhat) |>
     rename(perc_2.5 = X2.5., 
            perc_97.5 = X97.5.,
-           median = X50.) %>%
+           median = X50.) |>
     mutate(du_number = i,
            Species = sub_data$Species[1],
-           Region = sub_data$Region[1]) %>%
+           Region = sub_data$Region[1]) |>
     relocate(du_number, Region, Species, .before = mean) 
   
   rownames(summary) <- NULL #rownames to columns - probably a better way
