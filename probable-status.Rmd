@@ -41,7 +41,7 @@ h3 { /* Header 3 */
 </style>
   ```
 # About
-This document summarizes estimates of change in mature individuals over time for Pacific salmon Designatable Units (DUs) and associated  probable COSEWIC status designations. These estimates can then be used to help COSEWIC's Marine Fishes sub-committee identify high priority DUs for formally assessment. Data sources are detailed [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize#data-sources) and all code to reproduce the analyses in this document is [here](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize). These materials are solely intended to support the Marine Fishes sub-committee of COSEWIC, and may not be appropriate for other applications. 
+This document summarizes estimates of change in mature individuals over time for Pacific salmon Designatable Units (DUs) and associated  probable COSEWIC status designations. These estimates can then be used to help COSEWIC's Marine Fishes sub-committee identify high priority DUs for formally assessment. See these links for information on [Data sources](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize#data-sources), the [data](https://github.com/hertzPSF/COSEWIC-compilation/tree/main/Output) itself, and [code](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize) to reproduce this document. These materials are solely intended to support the Marine Fishes sub-committee of COSEWIC, and may not be appropriate for other applications. Data Was compiled by Eric Hertz and colleagues at the Pacific Salmon Commission and documented in this [GitHub repository](https://github.com/hertzPSF/COSEWIC-compilation). 
 
 # Prioritization decision nodes
 Initial thoughts on potential decision nodes in the prioritization process. 
@@ -66,16 +66,18 @@ library(tidyverse)
 library(DT)
 library(here)
 
-knitr::opts_chunk$set(echo = FALSE, message=FALSE, cache=FALSE, include=TRUE, dpi=300)
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, cache=FALSE, include=TRUE, 
+                      warning = FALSE, dpi=300)
 options(scipen=1, digits=4)
 ```
 
 ```{r wrangle}
 # read in data ----
-raw_sp_data <- read.csv("./data/CU_Spawner_Abund_20240808.csv", 
+
+#NOTE - MAKE SURE this is the most recent time-stamped data for spawner data and CU metadata available in this folder (https://github.com/hertzPSF/COSEWIC-compilation/tree/main/Output)
+raw_sp_data <- read.csv("https://raw.githubusercontent.com/hertzPSF/COSEWIC-compilation/main/Output/CU_Spawner_Abund_20240808.csv", 
                         header=TRUE) |>
   mutate(logSp=log(Spawner.Abundance))
-nrow(distinct(raw_sp_data, CUID))#, Species, Region))
 
 if(FALSE){ #checking units in data above
 check1 <- distinct(raw_sp_data, CUID) |>
@@ -85,7 +87,7 @@ check2 <- distinct(raw_sp_data, CUID, Species, Region) |>
 together <- cbind(check2, rbind(check1, 0)) #add 0 so they are same length, then comb through and look
 }
 
-cu_metadata <- read.csv("./data/CU_Metadata_20240808.csv",  
+cu_metadata <- read.csv("https://raw.githubusercontent.com/hertzPSF/COSEWIC-compilation/main/Output/CU_Metadata_20240808.csv",  
                         header=TRUE, na.strings=c("", "NA"))
 
 if(FALSE){
@@ -109,7 +111,7 @@ cu_metadata <- cu_metadata |>
   rename(CUID=cuid) |>
   distinct() #just going distinct on all levels for now... 
 
-nrow(cu_metadata) - nrow(distinct(cu_metadata, CUID)) #how many rows have multiple CUID now?
+#nrow(cu_metadata) - nrow(distinct(cu_metadata, CUID)) #how many rows have multiple CUID now?
 
 # join, dump pops with NA DUs ----
 sp_data <- left_join(raw_sp_data, select(cu_metadata, Region, CUID, du_number, gen_length, 
