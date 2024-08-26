@@ -88,7 +88,12 @@ together <- cbind(check2, rbind(check1, 0)) #add 0 so they are same length, then
 }
 
 cu_metadata <- read.csv("https://raw.githubusercontent.com/hertzPSF/COSEWIC-compilation/main/Output/CU_Metadata_20240808.csv",  
-                        header=TRUE, na.strings=c("", "NA"))
+                        header=TRUE, na.strings=c("", "NA")) |>
+  filter(!is.na(cuid))
+
+dup_CUs <- cu_metadata |>
+  group_by(cuid) |>
+  filter(n()>1)
 
 if(FALSE){
   nrow(distinct(cu_metadata, cuid))
@@ -103,12 +108,24 @@ if(FALSE){
     arrange(CUID)
   
   write.csv(cu_metadata_summary, "C:/Users/GLASERD/Desktop/duplicate_CUID.csv", row.names = F)
-    
 }
 
 cu_metadata <- cu_metadata |>
-  filter(!is.na(gen_length)) |> #why are there NAs here? do we care?
-  rename(CUID=cuid) |>
+  filter(!is.na(gen_length), #why are there NAs here? do we care?
+         !(Region == "Skeena" & cuid %in% dup_CUs$cuid)) #removing duplicate Skeena metadata
+
+if(FALSE){
+dup_CUs <- cu_metadata |>
+  group_by(cuid) |>
+  filter(n()>1) |>
+  distinct() |>
+  filter(n()>1)
+
+  write.csv(dup_CUs, "C:/Users/GLASERD/Desktop/true-dup-CUs.csv", row.names = F)
+}
+
+cu_metadata <- cu_metadata |>
+  rename(CUID=cuid) |> 
   distinct() #just going distinct on all levels for now... 
 
 #nrow(cu_metadata) - nrow(distinct(cu_metadata, CUID)) #how many rows have multiple CUID now?
