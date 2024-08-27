@@ -89,56 +89,56 @@ together <- cbind(check2, rbind(check1, 0)) #add 0 so they are same length, then
 
 cu_metadata <- read.csv("https://raw.githubusercontent.com/hertzPSF/COSEWIC-compilation/main/Output/CU_Metadata_20240808.csv",  
                         header=TRUE, na.strings=c("", "NA")) |>
-  filter(!is.na(cuid))
+  filter(!is.na(cuid)) #25 of these as of summer '24
 
+if(FALSE){
 dup_CUs <- cu_metadata |>
   group_by(cuid) |>
   filter(n()>1)
-
-if(FALSE){
-  nrow(distinct(cu_metadata, cuid))
-  nrow(distinct(cu_metadata, cuid, cuname.x))
-  nrow(distinct(cu_metadata, cuid, du_number))
-  cu_check <- filter(cu_metadata, is.na(gen_length))
-  
-  cu_metadata_summary <- cu_metadata |> 
-    group_by(CUID) |>
-    summarise(count = n()) |>
-    filter(count > 1) |>
-    arrange(CUID)
-  
-  write.csv(cu_metadata_summary, "C:/Users/GLASERD/Desktop/duplicate_CUID.csv", row.names = F)
-}
 
 cu_metadata <- cu_metadata |>
   filter(!is.na(gen_length), #why are there NAs here? do we care?
-         !(Region == "Skeena" & cuid %in% dup_CUs$cuid)) #removing duplicate Skeena metadata
-
-if(FALSE){
-dup_CUs <- cu_metadata |>
-  group_by(cuid) |>
-  filter(n()>1) |>
-  distinct() |>
-  filter(n()>1)
+         !(Region == "Skeena" & cuid %in% dup_CUs$cuid)) #removing duplicate Skeena metadata - not sure needed anymore
+  
+  dup_CUs <- cu_metadata |>
+    group_by(cuid) |>
+    filter(n()>1) |>
+    distinct() |>
+    filter(n()>1)
 
   write.csv(dup_CUs, "C:/Users/GLASERD/Desktop/true-dup-CUs.csv", row.names = F)
 }
 
 cu_metadata <- cu_metadata |>
   rename(CUID=cuid) |> 
-  distinct() #just going distinct on all levels for now... 
-
-#nrow(cu_metadata) - nrow(distinct(cu_metadata, CUID)) #how many rows have multiple CUID now?
+  distinct() #just going distinct on all levels for now... fair bit of duplicaets
 
 # join, dump pops with NA DUs ----
-sp_data <- left_join(raw_sp_data, select(cu_metadata, Region, CUID, du_number, gen_length, 
-                                         Sites, cu_enh_rank, COSEWIC_status, spp), 
-                     by="CUID") |>
-  drop_na(du_number, Spawner.Abundance) |>
+#the first left join (i.e., before dropping NAs) shouldn't increase the length of raw_sp_data!?
+sp_data <- left_join(raw_sp_data, select(cu_metadata, CUID, spp, du_number, gen_length, COSEWIC_status), 
+                                         #Sites, cu_enh_rank, Region), ##don't need these? 
+                     by="CUID") |> #the only real "key" in the spawner data
+  drop_na(du_number) |> 
+  drop_na(Spawner.Abundance) |>
   mutate(Species = spp) |>
-  group_by(du_number, Region.y, Year, gen_length, Sites, cu_enh_rank, COSEWIC_status, Species) |>
-  rename(Region = Region.y) |>
-  summarise(mat_ind = sum(Spawner.Abundance))|>
+  arrange(CUID, Year)
+
+#check for dup here
+sp_data |>
+  select(du_number, Region, Year, Spawner.Abundance) |> #what distinguishes du*years    
+  #select(CUID, Region, Year, Spawner.Abundance) |> #what distinguishes du*years
+  distinct() |>
+  nrow() == nrow(sp_data) #should be TRUE! #ID these dups and see
+
+#ID the dups
+bad_dups <- sp_data |>
+  group_by(du_number, Region, Year, Spawner.Abundance) |>
+  filter(n()>1)
+  
+#sum spawner abundances from DUs containing multiple CUs
+sp_data <- sp_data |>
+  group_by(du_number, Region, Year, gen_length, COSEWIC_status, Species) |>
+  summarise(mat_ind = sum(Spawner.Abundance))|> ##DOUBLE CHEK
   arrange(du_number, Year)
 
 # filter to DUs with spawner estimates in at least 50% of last three generations (and 20% of all years) ----
