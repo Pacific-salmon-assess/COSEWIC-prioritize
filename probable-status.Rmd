@@ -123,18 +123,18 @@ sp_data <- left_join(raw_sp_data, select(cu_metadata, CUID, spp, du_number, gen_
   mutate(Species = spp) |>
   arrange(CUID, Year)
 
-#check for dup here
+#check for dup here toggle select to look by du or CU
 sp_data |>
-  select(du_number, Region, Year, Spawner.Abundance) |> #what distinguishes du*years    
-  #select(CUID, Region, Year, Spawner.Abundance) |> #what distinguishes du*years
+  #select(du_number, Region, Year, Spawner.Abundance) |> #what distinguishes du*years BY DU   
+  select(CUID, Region, Year, Spawner.Abundance) |> #what distinguishes du*years BY CU
   distinct() |>
   nrow() == nrow(sp_data) #should be TRUE! #ID these dups and see
 
 #ID the dups
-bad_dups <- sp_data |>
-  group_by(du_number, Region, Year, Spawner.Abundance) |>
+CU_spawner_dups <- sp_data |>
+  group_by(CUID, Region, Year, Spawner.Abundance) |>
   filter(n()>1)
-  
+  write.csv(CU_spawner_dups, "C:/Users/GLASERD/Desktop/CU_spawner_dups.csv", row.names = F)
 #sum spawner abundances from DUs containing multiple CUs
 sp_data <- sp_data |>
   group_by(du_number, Region, Year, gen_length, COSEWIC_status, Species) |>
