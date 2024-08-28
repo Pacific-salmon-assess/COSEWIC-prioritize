@@ -3,14 +3,14 @@ title: "Prioritizing Pacific salmon DUs for COSEWIC assessment"
 date: '`r format(Sys.time(), "%d %B, %Y")`'
 output:
   html_document:
-  collapsed: no
-  fig_caption: yes
-  highlight: espresso
-  number_sections: yes
-  smooth_scroll: yes
-  theme: sandstone
-  toc: yes
-  toc_float: yes
+    collapsed: no
+    fig_caption: yes
+    highlight: espresso
+    number_sections: yes
+    smooth_scroll: yes
+    theme: sandstone
+    toc: yes
+    toc_float: yes
 ---
   
   ```{=html}
