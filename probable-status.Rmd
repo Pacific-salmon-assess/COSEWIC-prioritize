@@ -381,9 +381,6 @@ sp_data <- left_join(raw_sp_data, select(cu_metadata, CUID, du_number, DU_name_s
                             TRUE ~ Region))
 }
  
-if(FALSE){ #checking things that plot bad
-check.VI.CK <- filter(sp_data, du_cu == "CK21 ECVI-Ocean-Fall")
-}
 regions_ordered <- c("Yukon", "Nass", "Skeena", "Haida Gwaii", "Central Coast", 
                      "Van. Isl. Main. Inl.", "Fraser", "Columbia")
 
@@ -428,10 +425,11 @@ for(i in regions_ordered){
         stat_smooth(data=sub_last3_2, formula=y~x, method="glm", color="red", 
                     method.args = list(family = gaussian(link = 'log')),
                     se=FALSE, na.rm=TRUE) + #wide SE messes up y axis; turned it off
+        #ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE, 
+        #                   scales="free_y") + #turned off to let plot fill the window
         ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE, 
                            scales="free_y") +
         labs(x="Year", y="Mature individuals (thousands)") +
-        scale_y_continuous(labels = scales::number_format(accuracy = 1)) +
         theme_bw() +
         theme(strip.background=element_blank(), axis.text.x=element_text(angle=45, vjust = 0.5), 
               strip.text = element_text(size = 5))
@@ -447,11 +445,8 @@ for(i in regions_ordered){
         stat_smooth(data=sub_last3, formula=y~x, method="glm", color="red", 
                     method.args = list(family = gaussian(link = 'log')),
                     se=FALSE, na.rm=TRUE) +
-        #ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE, 
-        #                   scales="free_y") + #turned off to let plot fill the window
         facet_wrap(~du_cu, scales = "free_y") +
         labs(x="Year", y="Mature individuals (thousands)") +
-        scale_y_continuous(labels = scales::number_format(accuracy = 1)) +
         theme_bw() +
         theme(strip.background=element_blank(), axis.text.x=element_text(angle=45, vjust = 0.5), 
               strip.text = element_text(size = 5), strip.text.x = element_text(size=10))
