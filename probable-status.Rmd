@@ -44,7 +44,7 @@ h3 { /* Header 3 */
 This document summarizes estimates of change in mature individuals over time for Pacific salmon Designatable Units (DUs) and associated  probable COSEWIC status designations. These estimates can then be used to help COSEWIC's Marine Fishes sub-committee identify high priority DUs for formally assessment. See these links for information on [Data sources](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize#data-sources), the [data](https://github.com/hertzPSF/COSEWIC-compilation/tree/main/Output) itself, and [code](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize) to reproduce this document. These materials are solely intended to support the Marine Fishes sub-committee of COSEWIC, and may not be appropriate for other applications. Data Was compiled by Eric Hertz and colleagues at the Pacific Salmon Commission and documented in this [GitHub repository](https://github.com/hertzPSF/COSEWIC-compilation). 
 
 # Prioritization decision nodes
-Initial thoughts on potential decision nodes in the prioritization process. 
+Some general questions to consider in the prioritization process. 
 
 #. **Have DUs been formally defined by COSEWIC?** Chinook, sockeye, and coho salmon DUs have been defined (reports available [here](https://www.cosewic.ca/index.php/en-ca/reports/special-reports.html)), formal pink and chum DU identification is in progress. If **yes** then proceed. 
 
@@ -65,6 +65,7 @@ library(ggridges) #^dependency
 library(tidyverse)
 library(DT)
 library(here)
+library(ggsidekick) # Sean A's helper functions for ggplot;  devtools::install_github("seananderson/ggsidekick")
 
 knitr::opts_chunk$set(echo = FALSE, message=FALSE, cache=FALSE, include=TRUE, 
                       warning = FALSE, dpi=300)
@@ -75,7 +76,7 @@ options(scipen=1, digits=4)
 # read in data ----
 
 #NOTE - MAKE SURE this is the most recent time-stamped data for spawner data and CU metadata available in this folder (https://github.com/hertzPSF/COSEWIC-compilation/tree/main/Output)
-raw_sp_data <- read.csv("https://raw.githubusercontent.com/hertzPSF/COSEWIC-compilation/main/Output/CU_Spawner_Abund_20240808.csv", 
+raw_sp_data <- read.csv("https://raw.githubusercontent.com/hertzPSF/COSEWIC-compilation/main/Output/CU_Spawner_Abund_20240904.csv", 
                         header=TRUE) |>
   mutate(logSp=log(Spawner.Abundance))
 
@@ -87,7 +88,7 @@ check2 <- distinct(raw_sp_data, CUID, Species, Region) |>
 together <- cbind(check2, rbind(check1, 0)) #add 0 so they are same length, then comb through and look
 }
 
-cu_metadata <- read.csv("https://raw.githubusercontent.com/hertzPSF/COSEWIC-compilation/main/Output/CU_Metadata_20240808.csv",  
+cu_metadata <- read.csv("https://raw.githubusercontent.com/hertzPSF/COSEWIC-compilation/main/Output/CU_Metadata_20240904.csv",  
                         header=TRUE, na.strings=c("", "NA")) |>
   filter(!is.na(cuid)) #25 of these as of summer '24
 
@@ -271,7 +272,7 @@ unassessed <- designations |>
   filter(COSEWIC_status == "Not assessed",
          prob_designation_recent != "Data defficient")
 
-write.csv(designations, "./output/master-prob-status/master_status.csv")
+write.csv(designations, "./output/master-prob-status/master_status.csv", row.names=FALSE)
 
 NA_regions <- filter(designations, is.na(region_full))
 ```
@@ -303,7 +304,7 @@ ggplot(count_bins_status, aes(x = species, y = du_count)) +
   xlab("Species") +
   ylab("Number of DUs") +
   labs(fill = "Probable designation") +
-  theme_bw()+
+  theme_sleek()+
   theme(axis.text.x = element_text(angle=45, hjust=1), legend.position = "top")
 ```
 **Figure 1**. Status of all DUs. For DUs that have been previously assessed by COSEWIC the official status is shown, otherwise probable status is inferred based on percent change in mature individual abundance over the most recent three generations of data.
@@ -330,7 +331,7 @@ ggplot(count_bins_status, aes(x = species, y = du_count)) +
   xlab("Species") +
   ylab("Number of DUs") +
   labs(fill = "Probable designation") +
-  theme_bw()+
+  theme_sleek()+
   theme(axis.text.x = element_text(angle=45, hjust=1), legend.position = "top")
 ```
 **Figure 2**. Probable status of unassessed, but formally defined, Pacific salmon DUs (excluding those previously assessed by COSEWIC or recommended for status assessment) based on rate of change in mature individuals over most recent three generations. 
@@ -361,7 +362,7 @@ datatable(designations, rownames = FALSE,
 
 # Abundance plots 
 
-Plots of reconstructed number of mature individuals (spawners) over time for each DU, by region and species. Show are both raw and log(e) transformed estimates, and for the later the trend over the most recent three generations (red line) or entire time-series (black dashed line) are also shown.
+Plots of reconstructed number of mature individuals (spawners) over time for each DU, by region and species. Show are raw estimates with trend over the most recent three generations (red line) or entire time-series (black dashed line). Trends are estimated on spawner abundance in log(e) space.
 ```{r abundance plots, warning = FALSE, results= 'asis'}
 #note: `asis` argument is necessary to properly render headers with cat() below
 if(TRUE){ #can I just move this up?
@@ -430,7 +431,7 @@ for(i in regions_ordered){
         ggh4x::facet_wrap2(vars(du_cu), nrow=rows, ncol=cols, trim_blank=FALSE, 
                            scales="free_y") +
         labs(x="Year", y="Mature individuals (thousands)") +
-        theme_bw() +
+        theme_sleek() +
         theme(strip.background=element_blank(), axis.text.x=element_text(angle=45, vjust = 0.5), 
               strip.text = element_text(size = 5))
       print(p)
@@ -447,9 +448,9 @@ for(i in regions_ordered){
                     se=FALSE, na.rm=TRUE) +
         facet_wrap(~du_cu, scales = "free_y") +
         labs(x="Year", y="Mature individuals (thousands)") +
-        theme_bw() +
+        theme_sleek() +
         theme(strip.background=element_blank(), axis.text.x=element_text(angle=45, vjust = 0.5), 
-              strip.text = element_text(size = 5), strip.text.x = element_text(size=10))
+              strip.text = element_text(size = 5), strip.text.x = element_text(size=7))
       print(p)
     }
     cat('\n')  
