@@ -228,17 +228,17 @@ for(i in unique(sp_data_filtered$du_number)){
 }
 
 # assess probable designation, rename a couple of regions ----
-prob_desg <- summary_table |>
+prob_desg <- summary_table %>%
   mutate(prob_designation_recent = case_when(
-    per_change_recent  > -29 ~ "Not at risk",
-    per_change_recent < -29 & per_change_recent > -49 ~ "Special concern",
-    per_change_recent < -49 & per_change_recent > -69 ~ "Threatened",
-    per_change_recent < -69 ~ "Endangered")) |>
+    per_change_recent  > -10~ "Not at risk",
+    per_change_recent < -10& per_change_recent > -29 ~ "Special concern",
+    per_change_recent < -29 & per_change_recent > -49 ~ "Threatened",
+    per_change_recent < -49 ~ "Endangered")) %>%
   mutate(prob_designation_all = case_when(
-    per_change_all  > -29 ~ "Not at risk",
-    per_change_all < -29 & per_change_all > -49 ~ "Special concern",
-    per_change_all < -49 & per_change_all > -69 ~ "Threatened",
-    per_change_all < -69 ~ "Endangered"))
+    per_change_all  > -10 ~ "Not at risk",
+    per_change_all < -10 & per_change_all > -29 ~ "Special concern",
+    per_change_all < -29 & per_change_all > -49 ~ "Threatened",
+    per_change_all < -49 ~ "Endangered"))
 
 master_desg <- left_join(cu_metadata, select(prob_desg, Region, du_number, per_change_recent, per_change_all, recent_abundance, last_year_monitored, prob_designation_recent,prob_designation_all), 
                          by="du_number") |>
@@ -254,22 +254,28 @@ master_desg <- left_join(cu_metadata, select(prob_desg, Region, du_number, per_c
 assessed <- master_desg |>
   filter(COSEWIC_status != "Not assessed")
 
-not_assessed <- master_desg |>
-  filter(COSEWIC_status == "Not assessed") |>
+not_assessed <- master_desg %>%
+  filter(COSEWIC_status == "Not assessed") %>%
+  mutate(prob_designation_recent = ifelse(recent_abundance < 1000, "Threatened", 
+                                          prob_designation_recent))%>%
+  mutate(prob_designation_recent = ifelse(recent_abundance < 250, "Endangered", 
+                                          prob_designation_recent)) %>%
+  mutate(prob_designation_recent = ifelse(per_change_recent < -49, "Endangered", 
+                                          prob_designation_recent)) %>%
   mutate(prob_designation_recent = ifelse(is.na(prob_designation_recent), "Data defficient", 
                                           prob_designation_recent),
          prob_designation_all = ifelse(is.na(prob_designation_all), "Data defficient", 
-                                       prob_designation_all))
+                                          prob_designation_all))
 
 designations <- rbind(assessed,not_assessed)|>
   mutate(species = spp) |>
-  select(region_full, du_number,species, gen_length, COSEWIC_status,per_change_recent, 
+  select(region_full, DU_name_short, du_number,species, gen_length, COSEWIC_status,per_change_recent, 
          per_change_all, recent_abundance, last_year_monitored, prob_designation_recent)|>
   arrange(du_number)|>
   distinct(du_number,.keep_all = TRUE)
 
 unassessed <- designations |>
-  filter(COSEWIC_status == "Not assessed",
+  filter(COSEWIC_status == "Not assessed" | COSEWIC_status == "Status assessment recommended" ,
          prob_designation_recent != "Data defficient")
 
 write.csv(designations, "./output/master-prob-status/master_status.csv", row.names=FALSE)
@@ -320,8 +326,7 @@ count_bins_status <- unassessed |>
   group_by(species, region_full, prob_designation_recent) |>
   summarize(du_count=n()) |>
   mutate(prob_designation_recent = factor(prob_designation_recent, levels = rev(c("Endangered","Threatened", "Special concern", "Not at risk"))), 
-         region_full = factor(region_full, levels = c("Yukon", "Nass","Skeena", "Haida Gwaii", "Central Coast", "Van. Isl. Main. Inl.", "Fraser"))) |>
-  filter(! species %in% c("Chum", "Pink"))
+         region_full = factor(region_full, levels = c("Yukon", "Nass","Skeena", "Haida Gwaii", "Central Coast", "Van. Isl. Main. Inl.", "Fraser"))) 
 
 # plot probable status by spp and region ----
 ggplot(count_bins_status, aes(x = species, y = du_count)) + 
@@ -339,12 +344,12 @@ ggplot(count_bins_status, aes(x = species, y = du_count)) +
 ## All DUs - table
 
 ```{r, warning = FALSE}
-colnames(designations) <- c("Region", "DU", "Species", "Generation length", "COSEWIC status", "% Change (recent)", "% Change (all)", "Recent abundance", "Last year", "Probable status", "Status")
+colnames(designations) <- c("Region", "DU name", "DU no.", "Species", "Generation length", "COSEWIC status", "% Change (recent)", "% Change (all)", "Recent abundance", "Last year", "Probable status", "Status")
 
 #switch characters to factor to make dropdown filtering
-designations <- designations |>
+designations <- designations %>%
   mutate(Region = as.factor(Region), 
-         DU = as.factor(DU), 
+         'DU no.' = as.factor('DU no.'), 
          Species = as.factor(Species),
          `COSEWIC status` = as.factor(`COSEWIC status`),
          `Probable status` = as.factor(`Probable status`))
