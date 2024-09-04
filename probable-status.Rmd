@@ -313,9 +313,9 @@ ggplot(count_bins_status, aes(x = species, y = du_count)) +
   theme_sleek()+
   theme(axis.text.x = element_text(angle=45, hjust=1), legend.position = "top")
 ```
-**Figure 1**. Status of all DUs. For DUs that have been previously assessed by COSEWIC the official status is shown, otherwise probable status is inferred based on percent change in mature individual abundance over the most recent three generations of data.
+**Figure 1**. Status of all DUs. For DUs that have been previously assessed by COSEWIC the official status is shown, otherwise probable status is inferred based on COSEWIC Criteria A2 (% change in mature individual abundance over the most recent three generations of data) and D1 (absolute abundance).
 
-## Unassessed official DUs - plot
+## Unassessed DUs with data - plot
 ```{r summary-status-unassessed-dus, echo=FALSE, fig.align = "center", out.width = '90%', out.height = '60%'}
 # summarize probable status by spp and region ----
 count_bins <- unassessed |>
@@ -339,7 +339,7 @@ ggplot(count_bins_status, aes(x = species, y = du_count)) +
   theme_sleek()+
   theme(axis.text.x = element_text(angle=45, hjust=1), legend.position = "top")
 ```
-**Figure 2**. Probable status of unassessed, but formally defined, Pacific salmon DUs (excluding those previously assessed by COSEWIC or recommended for status assessment) based on rate of change in mature individuals over most recent three generations. 
+**Figure 2**. Probable status of unassessed Pacific salmon DUs based on COSEWIC Criteria A2 (% change in mature individual abundance over the most recent three generations of data) and D1 (absolute abundance). 
 
 ## All DUs - table
 
@@ -367,7 +367,7 @@ datatable(designations, rownames = FALSE,
 
 # Abundance plots 
 
-Plots of reconstructed number of mature individuals (spawners) over time for each DU, by region and species. Show are raw estimates with trend over the most recent three generations (red line) or entire time-series (black dashed line). Trends are estimated on spawner abundance in log(e) space.
+Plots of reconstructed number of mature individuals (spawners) over time for each DU, by region and species. Show are raw estimates with trend (estimated in log[e] space) over the most recent three generations (red line) or entire time-series (black dashed line). 
 ```{r abundance plots, warning = FALSE, results= 'asis'}
 #note: `asis` argument is necessary to properly render headers with cat() below
 if(TRUE){ #can I just move this up?
