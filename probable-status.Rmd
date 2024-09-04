@@ -278,7 +278,7 @@ unassessed <- designations |>
   filter(COSEWIC_status == "Not assessed" | COSEWIC_status == "Status assessment recommended" ,
          prob_designation_recent != "Data defficient")
 
-write.csv(designations, "./output/master-prob-status/master_status.csv", row.names=FALSE)
+write.csv(designations, paste0("./output/master-prob-status/master_status.", Sys.Date(), ".csv"), row.names=FALSE)
 
 NA_regions <- filter(designations, is.na(region_full))
 ```
