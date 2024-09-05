@@ -238,7 +238,20 @@ prob_desg <- summary_table %>%
     per_change_all  > -10 ~ "Not at risk",
     per_change_all < -10 & per_change_all > -29 ~ "Special concern",
     per_change_all < -29 & per_change_all > -49 ~ "Threatened",
-    per_change_all < -49 ~ "Endangered"))
+    per_change_all < -49 ~ "Endangered")) %>%
+  mutate(prob_designation_recent = ifelse(recent_abundance < 1000, "Threatened", 
+                                          prob_designation_recent))%>%
+  mutate(prob_designation_recent = ifelse(recent_abundance < 250, "Endangered", 
+                                          prob_designation_recent)) %>%
+  mutate(prob_designation_all = ifelse(recent_abundance < 1000, "Threatened", 
+                                          prob_designation_all))%>%
+  mutate(prob_designation_all = ifelse(recent_abundance < 250, "Endangered", 
+                                          prob_designation_all)) %>%
+  mutate(prob_designation_recent = ifelse(is.na(prob_designation_recent), "Data defficient", 
+                                          prob_designation_recent),
+         prob_designation_all = ifelse(is.na(prob_designation_all), "Data defficient", 
+                                          prob_designation_all))
+
 
 master_desg <- left_join(cu_metadata, select(prob_desg, Region, du_number, per_change_recent, per_change_all, recent_abundance, last_year_monitored, prob_designation_recent,prob_designation_all), 
                          by="du_number") |>
