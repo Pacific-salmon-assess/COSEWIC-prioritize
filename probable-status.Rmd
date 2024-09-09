@@ -399,7 +399,17 @@ sp_data <- left_join(raw_sp_data, select(cu_metadata, CUID, du_number, DU_name_s
                             Region == "VIMI" ~ "Van. Isl. Main. Inl.", 
                             TRUE ~ Region))
 }
+
+sp_data2 <- sp_data |>
+  group_by(du_number, Year) |>
+  summarize(mat_ind = sum(Spawner.Abundance))|> ##DOUBLE CHEK
+  arrange(du_number, Year)
  
+sp_data <- left_join(sp_data2, select(sp_data, du_number, DU_name_short, Species, Region, gen_length,du_cu), 
+                     by="du_number",
+                     multiple = "first") |>
+  mutate(Spawner.Abundance = mat_ind)
+
 regions_ordered <- c("Yukon", "Nass", "Skeena", "Haida Gwaii", "Central Coast", 
                      "Van. Isl. Main. Inl.", "Fraser", "Columbia")
 
