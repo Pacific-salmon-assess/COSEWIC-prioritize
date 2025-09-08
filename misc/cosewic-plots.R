@@ -101,10 +101,10 @@ j <- "Sockeye"
 sp_data_region <- filter(sp_data, Region %in% i)
 last3_gens_region <- filter(last3_gens, Region %in% i)
 
-sub_data <- filter(sp_data_region, Species==j,du_number %in% c("SE043", "SE160", "SE163", "SE149", "SE164", "SE041", "SE153", "SE158", "SE169", "SE173")) |>
+sub_data <- filter(sp_data_region, Species==j) |>
   complete(Year, Species, Region, du_cu) #explicitly include NA so line draws right
 
-sub_last3 <- filter(last3_gens, Region %in% i, Species==j, du_number %in% c("SE043", "SE160", "SE163", "SE149", "SE164", "SE041", "SE153", "SE158", "SE169", "SE173"))
+sub_last3 <- filter(last3_gens, Region %in% i, Species==j)
 
 p <- ggplot(data=sub_data, aes(x=Year, y=mat_ind/1000)) +
   geom_line(color="grey") +
@@ -120,5 +120,29 @@ p <- ggplot(data=sub_data, aes(x=Year, y=mat_ind/1000)) +
   theme(strip.background=element_blank(), strip.text = element_text(size = 8))
 print(p)
 
-ggsave("output/figures/skeena&nass-sk-cosewic.jpeg", width = 10, height = 5, units = "in")
+ggsave("output/figures/skeena&nass-sk-all-cosewic.jpeg", width = 10, height = 5, units = "in")
 
+####
+sp_data_region <- filter(sp_data, Region %in% i)
+last3_gens_region <- filter(last3_gens, Region %in% i)
+
+sub_data <- filter(sp_data_region, Species==j,du_number %in% c("SE137", "SE141", "SE153", "SE155", "SE158-early", "SE158-mid", "SE160", "SE163", "SE164", "SE166", "SE168","SE173", "SE041", "SE149", "SE154", "SE169")) |>
+  complete(Year, Species, Region, du_cu) #explicitly include NA so line draws right
+
+sub_last3 <- filter(last3_gens, Region %in% i, Species==j,du_number %in% c("SE137", "SE141", "SE153", "SE155", "SE158-early", "SE158-mid", "SE160", "SE163", "SE164", "SE166", "SE168","SE173", "SE041", "SE149", "SE154", "SE169"))
+
+p <- ggplot(data=sub_data, aes(x=Year, y=mat_ind/1000)) +
+  geom_line(color="grey") +
+  geom_point() +
+  stat_smooth(formula=y~x, method="glm", color="black", lty="dashed", se=TRUE, 
+              method.args = list(family = gaussian(link = 'log')), alpha=0.3) +
+  stat_smooth(data=sub_last3, formula=y~x, method="glm", color="red", 
+              method.args = list(family = gaussian(link = 'log')),
+              se=TRUE, na.rm=TRUE, fill = "red", alpha=0.1) +
+  facet_wrap(~du_cu, scales = "free_y") +
+  labs(x="Year", y="Mature individuals (thousands)") +
+  theme_sleek() +
+  theme(strip.background=element_blank(), strip.text = element_text(size = 8))
+print(p)
+
+ggsave("output/figures/skeena&nass-sk-en/th-cosewic.jpeg", width = 10, height = 7, units = "in")

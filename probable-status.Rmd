@@ -76,8 +76,9 @@ options(scipen=1, digits=4)
 # read in data ----
 
 #NOTE - MAKE SURE this is the most recent time-stamped data for spawner data and CU metadata available in this folder (https://github.com/hertzPSF/COSEWIC-compilation/tree/main/Output)
-raw_sp_data <- read.csv("https://raw.githubusercontent.com/hertzPSF/COSEWIC-compilation/main/Output/CU_Spawner_Abund_20240904.csv", 
+raw_sp_data <- read.csv("https://raw.githubusercontent.com/hertzPSF/COSEWIC-compilation/main/Output/CU_Spawner_Abund_20250925+Yukon.csv", 
                         header=TRUE) |>
+  filter(Spawner.Abundance>0)|>
   mutate(logSp=log(Spawner.Abundance))
 
 if(FALSE){ #checking units in data above
@@ -88,7 +89,7 @@ check2 <- distinct(raw_sp_data, CUID, Species, Region) |>
 together <- cbind(check2, rbind(check1, 0)) #add 0 so they are same length, then comb through and look
 }
 
-cu_metadata <- read.csv("https://raw.githubusercontent.com/hertzPSF/COSEWIC-compilation/main/Output/CU_Metadata_20240904.csv",  
+cu_metadata <- read.csv("https://raw.githubusercontent.com/hertzPSF/COSEWIC-compilation/main/Output/CU_Metadata_20241114.csv",  
                         header=TRUE, na.strings=c("", "NA")) |>
   filter(!is.na(cuid)) #25 of these as of summer '24
 
