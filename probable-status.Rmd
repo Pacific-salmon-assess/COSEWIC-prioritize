@@ -41,7 +41,7 @@ h3 { /* Header 3 */
 </style>
   ```
 # About
-This document summarizes estimates of change in mature individuals over time for Pacific salmon Designatable Units (DUs) and associated  probable COSEWIC status designations. These estimates can then be used to help COSEWIC's Marine Fishes sub-committee identify high priority DUs for formally assessment. See these links for information on [Data sources](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize#data-sources), the [data](https://github.com/hertzPSF/COSEWIC-compilation/tree/main/Output) itself, and [code](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize) to reproduce this document. These materials are solely intended to support the Marine Fishes sub-committee of COSEWIC, and may not be appropriate for other applications. Data Was compiled by Eric Hertz and colleagues at the Pacific Salmon Commission and documented in this [GitHub repository](https://github.com/hertzPSF/COSEWIC-compilation). 
+This document summarizes estimates of change in mature individuals over time for Pacific salmon Designatable Units (DUs) and associated  probable COSEWIC status designations. These estimates can then be used to help COSEWIC's Marine Fishes sub-committee identify high priority DUs for formally assessment. See these links for information on [Data sources](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize#data-sources), the [data](https://github.com/hertzPSF/COSEWIC-compilation/tree/main/Output) itself, and [code](https://github.com/Pacific-salmon-assess/COSEWIC-prioritize) to reproduce this document. These materials are solely intended to support the Marine Fishes sub-committee of COSEWIC, and may not be appropriate for other applications. Much of the data that this repository leverages were compiled by Eric Hertz and colleagues at the Pacific Salmon Foundation and documented in this [GitHub repository](https://github.com/hertzPSF/COSEWIC-compilation). 
 
 # Prioritization decision nodes
 Some general questions to consider in the prioritization process. 
@@ -123,6 +123,7 @@ sp_data <- left_join(raw_sp_data, select(cu_metadata, CUID, spp, du_number, gen_
   drop_na(du_number) |> 
   drop_na(Spawner.Abundance) |>
   mutate(Species = spp) |>
+  filter(Region != "Transboundary") |>
   arrange(CUID, Year)
 
 # #check for dup here toggle select to look by du or CU
@@ -172,7 +173,7 @@ deficient_historical <- sp_data |>
   filter(perc_na < deficient_historical_perc) |>
   pull(du_number)
 
-sp_data_filtered <- filter(sp_data, !(du_number %in% deficient_historical))
+sp_data_filtered <- filter(sp_data, !(du_number %in% deficient_historical)) 
 ```
 
 ```{r check stan model, include=FALSE}
@@ -286,7 +287,8 @@ designations <- rbind(assessed,not_assessed)|>
   select(region_full, DU_name_short, du_number,species, gen_length, COSEWIC_status,per_change_recent, 
          per_change_all, recent_abundance, last_year_monitored, prob_designation_recent)|>
   arrange(du_number)|>
-  distinct(du_number,.keep_all = TRUE)
+  distinct(du_number,.keep_all = TRUE)|>
+  filter(region_full != "Transboundary")
 
 unassessed <- designations |>
   filter(COSEWIC_status == "Not assessed" | COSEWIC_status == "Status assessment recommended" ,
