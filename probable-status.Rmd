@@ -365,7 +365,7 @@ colnames(designations) <- c("Region", "DU name", "DU no.", "Species", "Generatio
 #switch characters to factor to make dropdown filtering
 designations <- designations %>%
   mutate(Region = as.factor(Region), 
-         'DU no.' = as.factor('DU no.'), 
+         `DU no.`= as.factor(`DU no.`), 
          Species = as.factor(Species),
          `COSEWIC status` = as.factor(`COSEWIC status`),
          `Probable status` = as.factor(`Probable status`))
@@ -421,9 +421,9 @@ last3_gens <- sp_data |>
   mutate(three_gens = gen_length*3) |>
   filter(Year > (last(Year) - three_gens), Year <= last(Year))
 
-max_facets <- 20 #how many facets (i.e. panes) per plot?
-rows <- 4 #how many rows/cols? note needs to be multiple of facets. 
-cols <- 5
+max_facets <- 15 #how many facets (i.e. panes) per plot?
+rows <- 5 #how many rows/cols? note needs to be multiple of facets. 
+cols <- 3
 
 for(i in regions_ordered){
   sp_data_region <- filter(sp_data, Region==i)
@@ -465,7 +465,6 @@ for(i in regions_ordered){
         theme_sleek() +
         theme(strip.background=element_blank(), axis.text.x=element_text(angle=45, vjust = 0.5), 
               strip.text = element_text(size = 5))
-      print(p)
         print(p)
       }
     }else{
